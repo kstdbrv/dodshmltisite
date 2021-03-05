@@ -1,0 +1,50 @@
+/**
+ * @file
+ * Visual styles for tabs.
+ */
+div.tabs {
+  margin: 1em 0;
+}
+
+ul.tabs {
+  margin: 0 0 0.5em;
+  padding: 0;
+  list-style: none;
+}
+
+.tabs > li {
+  display: inline-block;
+  margin-right: 0.3em;
+  /* LTR */
+}
+
+[dir="rtl"] .tabs > li {
+  margin-right: 0;
+  margin-left: 0.3em;
+}
+
+.tabs a {
+  display: block;
+  padding: 0.2em 1em;
+  text-decoration: none;
+}
+
+.tabs a:before {
+  background-color: #1c62cd;
+  height: 3px;
+  width: 0;
+  left: auto;
+  right: 0;
+  bottom: -18px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.tabs a.is-active {
+  background-color: #f1e4e4;
+}
+
+.tabs a:focus,
+.tabs a:hover {
+  background-color: #d9dadd;
+}
