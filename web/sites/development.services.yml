@@ -10,7 +10,3 @@ parameters:
 services:
   cache.backend.null:
     class: Drupal\Core\Cache\NullBackendFactory
-
-#  twig.config:
-#    debug: true
-#    cache.rebuild: true
