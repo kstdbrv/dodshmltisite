@@ -9,6 +9,7 @@ core_version_requirement: ^9
 
 libraries:
   - start_theme/global
+  - start_theme/materialize
 
 regions:
   header: Header
