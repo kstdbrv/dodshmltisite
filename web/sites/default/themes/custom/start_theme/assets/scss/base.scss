@@ -1,0 +1,52 @@
+@import "vars";
+
+/* Global */
+html {
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+body {
+  @extend %roboto-regular;
+  font-size: $mainFontSize;
+  color: $mainFontColor;
+  line-height: $mainLineHeight;
+  min-width: 320px;
+  overflow-x: hidden;
+  position: relative;
+}
+
+*, *:before, *:after { 
+  box-sizing: border-box; 
+}
+
+h1, h2, h3, h4, h5, h6 { 
+  margin: 0;
+  font-size: inherit; 
+}
+
+p { 
+  margin: 0; 
+}
+
+a { 
+  text-decoration: none;
+  color: inherit;
+  display: inline-block; 
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  display: none;
+}

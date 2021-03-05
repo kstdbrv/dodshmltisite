@@ -1,0 +1,19 @@
+# Theme base information.
+#screenshot: screenshot.png
+name: Centerstart start_theme
+type: theme
+base theme: classy
+description: 'template for centerstart website'
+core_version_requirement: ^9
+#package: Core
+
+libraries:
+  - start_theme/global
+
+regions:
+  header: Header
+  navigation: Navigation
+  content: Content
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer: Footer

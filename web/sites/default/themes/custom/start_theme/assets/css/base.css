@@ -1,0 +1,76 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+/* %sf-semibold{
+  font-family:'SFProDisplay', sans-serif;
+  font-weight: 600;
+}
+%sf-bold{
+  font-family: 'SFProDisplay', sans-serif;
+  font-weight: 700;
+}
+%sf-medium{
+  font-family: 'SFProDisplay', sans-serif;
+  font-weight: 500;
+}
+%barlow-bold{
+  font-family: 'Barlow', sans-serif;
+  font-weight: 700;
+}
+%barlow-regular{
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+} */
+/* Global */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 100vh;
+}
+
+body {
+  font-size: 22px;
+  color: #2F3035;
+  line-height: 24px;
+  min-width: 320px;
+  overflow-x: hidden;
+  position: relative;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-size: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  display: none;
+}
