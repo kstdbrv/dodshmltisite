@@ -10,7 +10,7 @@
 /web/sites/*/settings.local.php
 
 # Ignore Drupal's file directory
-/web/sites/*/files/
+#/web/sites/*/files/
 
 # Ignore SimpleTest multi-site environment.
 /web/sites/simpletest
@@ -23,6 +23,7 @@
 /.editorconfig
 /.gitattributes
 
+# Ignore node_modules
 /web/sites/default/*/node_modules
 /web/themes/custom/*/node_modules
 /web/sites/default/themes/custom/*/node_modules

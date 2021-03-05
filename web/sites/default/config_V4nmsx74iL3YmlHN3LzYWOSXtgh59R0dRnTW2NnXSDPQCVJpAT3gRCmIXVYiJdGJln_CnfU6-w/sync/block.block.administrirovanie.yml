@@ -1,0 +1,25 @@
+uuid: 59942e12-6aee-401c-aa11-8bed19dbb0b2
+langcode: ru
+status: false
+dependencies:
+  config:
+    - system.menu.admin
+  module:
+    - system
+  theme:
+    - start_theme
+id: administrirovanie
+theme: start_theme
+region: content
+weight: -2
+provider: null
+plugin: 'system_menu_block:admin'
+settings:
+  id: 'system_menu_block:admin'
+  label: Администрирование
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

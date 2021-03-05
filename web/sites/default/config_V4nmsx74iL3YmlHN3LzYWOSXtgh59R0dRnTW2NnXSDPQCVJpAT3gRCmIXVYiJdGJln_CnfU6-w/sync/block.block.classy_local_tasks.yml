@@ -1,0 +1,22 @@
+uuid: 38382dc8-777c-49f1-8878-be816adcc76f
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - classy
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: classy_local_tasks
+theme: classy
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Вкладки
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }
