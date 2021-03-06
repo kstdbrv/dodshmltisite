@@ -1,1 +1,14 @@
-/* No CSS */
+.header {
+  background-color: #2eb3b3;
+}
+
+.header__top {
+  text-align: center;
+  font-size: 19px;
+  padding: 6px 0;
+  color: #2b5b71;
+}
+
+.header .contextual-region h2 {
+  display: none;
+}

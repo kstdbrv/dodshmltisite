@@ -2,7 +2,7 @@
 #screenshot: screenshot.png
 name: Centerstart start_theme
 type: theme
-base theme: classy
+base theme: false
 description: 'template for centerstart website'
 core_version_requirement: ^9
 #package: Core
@@ -12,7 +12,11 @@ libraries:
   - start_theme/materialize
 
 regions:
-  header: Header
+  header_top: 'Header-top'
+  header_left: 'Header-left'
+  header_center: 'Header-center'
+  header_right: 'Header-right'
+  menu: Menu
   navigation: Navigation
   content: Content
   sidebar_first: 'Sidebar first'

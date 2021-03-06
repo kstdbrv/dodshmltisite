@@ -4,7 +4,7 @@ global:
       assets/css/normalize.css: {}
       assets/css/base.css: {}
     layout:
-      assets/css/header.css: {}
+      assets/css/tabs.css: {}
     theme:
       assets/css/header.css: {}
 

@@ -1,6 +1,6 @@
 uuid: 0d3f608f-3cb9-46e5-8417-bbada2904195
 langcode: ru
-status: true
+status: false
 dependencies:
   config:
     - system.menu.main
@@ -12,8 +12,8 @@ _core:
   default_config_hash: ChCx7DYNUrPTt5uiRdQAPDKJQMc-_SyAQTrZh8H0o-c
 id: start_theme_main_menu
 theme: start_theme
-region: header
-weight: 0
+region: header_top
+weight: -5
 provider: null
 plugin: 'system_menu_block:main'
 settings:
