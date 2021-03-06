@@ -1,6 +1,6 @@
 uuid: 384bf207-a408-4b7e-b708-14b02e44acf2
 langcode: ru
-status: true
+status: false
 dependencies:
   config:
     - system.menu.footer
@@ -12,8 +12,8 @@ _core:
   default_config_hash: 8zRjTNbfNAJ94lQpZDu6MkyD87GYJ2zpH9VQPVmRbcM
 id: start_theme_footer
 theme: start_theme
-region: header
-weight: 0
+region: header_top
+weight: -2
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

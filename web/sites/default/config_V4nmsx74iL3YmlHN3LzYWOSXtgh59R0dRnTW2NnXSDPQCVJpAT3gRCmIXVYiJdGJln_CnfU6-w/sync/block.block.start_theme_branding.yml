@@ -1,6 +1,6 @@
 uuid: 07b3249c-0415-4a5d-977a-d43a1949adea
 langcode: ru
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
 id: start_theme_branding
 theme: start_theme
-region: header
-weight: 0
+region: header_top
+weight: -7
 provider: null
 plugin: system_branding_block
 settings:
