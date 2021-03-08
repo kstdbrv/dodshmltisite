@@ -11,14 +11,14 @@ dependencies:
 id: place
 theme: start_theme
 region: header_top
-weight: 0
+weight: -9
 provider: null
 plugin: 'block_content:cd5c3b45-9530-4cc1-a4d4-23ec67e779c7'
 settings:
   id: 'block_content:cd5c3b45-9530-4cc1-a4d4-23ec67e779c7'
   label: 'Округ образовательной организации'
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full
