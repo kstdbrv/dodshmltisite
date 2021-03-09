@@ -1,12 +1,35 @@
 .header {
-  background-color: #2eb3b3;
   &__top {
     text-align: center;
     font-size: 19px;
-    padding: 6px 0;
+    padding: 6px 10px;
     color: #2b5b71;
+    background-color: #2eb3b3;
   }
-  .contextual-region h2 {
-    display: none;
+  &__center {
+    display: grid;
+    grid-template-rows: 120px;
+    grid-template-columns: 550px 110px 425px;
+    grid-gap: 100px;
+    align-items: center;
+    text-align: center;
+  }
+  &__bottom {
+
+
+  }
+}
+
+.center-header {
+  font-size: 19px;
+  font-weight: 300;
+  &__left a {
+    color: #1a171b;
+  }
+  &__logo {
+    
+  }
+  &__right {
+    color: #2eb3b3;
   }
 }

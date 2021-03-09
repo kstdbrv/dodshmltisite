@@ -1,14 +1,26 @@
 <header class="header">
   <div class="container">
-	 	<div class="header__top">
+	  <div class="header__top">
       {{ page.header_top }}
     </div>
-   
-   {{ page.header_left }}
-	 
-	 {{ page.header_center }}
-	 {{ page.header_right }}
-	 {{ page.menu }}
+
+     <div class="header__center center-header">
+			<div class="center-header__left">
+				{{ page.header_left }}
+			 </div>
+			 <div class="center-header__logo">
+				{{ page.header_center }}
+			 </div>
+			<div class="center-header__right">
+				{{ page.header_right }}
+			</div>
+		 </div>
+
+	 <div class="header__bottom">
+    <nav class="header__menu">
+      {{ page.menu }}
+    </nav>
+   </div>
   </div>
 </header>
 

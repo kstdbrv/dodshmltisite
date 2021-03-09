@@ -74,3 +74,8 @@ ul, li {
 .visually-hidden {
   display: none;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
