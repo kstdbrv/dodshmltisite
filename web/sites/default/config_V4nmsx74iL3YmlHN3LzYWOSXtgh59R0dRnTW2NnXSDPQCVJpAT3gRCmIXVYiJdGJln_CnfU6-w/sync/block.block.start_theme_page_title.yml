@@ -1,6 +1,6 @@
 uuid: 4a45cf6e-baf9-4475-8b56-8dff1b4e4051
 langcode: ru
-status: true
+status: false
 dependencies:
   theme:
     - start_theme

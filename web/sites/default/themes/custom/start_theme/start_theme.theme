@@ -1,6 +1,18 @@
 <?php
-
 /**
  * @file
- * Custom hooks and functions special for theme.
+ * Contains theme override functions and preprocess functions
  */
+define('THEME_PATH', base_path() . drupal_get_path('theme', 'start_theme'));
+
+use Drupal\Core\Template\RenderWrapper;
+use Drupal\Core\Template\Attribute;
+use Drupal\search\Form\SearchBlockForm;
+use Drupal\Component\Utility\SafeMarkup;
+use Drupal\Core\Path\AliasManager;
+
+function start_theme_preprocess_page(&$variables) {
+  // Вывод названия сайта в twig шаблоне
+
+
+}

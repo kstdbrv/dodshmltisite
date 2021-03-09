@@ -1,8 +1,8 @@
 # Theme base information.
-#screenshot: screenshot.png
-name: Centerstart start_theme
+screenshot: logo.png
+name: start_theme
 type: theme
-base theme: false
+base theme: classy
 description: 'template for centerstart website'
 core_version_requirement: ^9
 #package: Core

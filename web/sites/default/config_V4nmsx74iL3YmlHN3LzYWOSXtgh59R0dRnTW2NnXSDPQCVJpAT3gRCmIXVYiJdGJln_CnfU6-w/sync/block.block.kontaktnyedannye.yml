@@ -1,0 +1,25 @@
+uuid: 2f269711-52bc-43a7-8625-95c38c1ab2ac
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:186cdbd6-2c34-46d3-b43c-af1e623adc55'
+  module:
+    - block_content
+  theme:
+    - start_theme
+id: kontaktnyedannye
+theme: start_theme
+region: header_right
+weight: 0
+provider: null
+plugin: 'block_content:186cdbd6-2c34-46d3-b43c-af1e623adc55'
+settings:
+  id: 'block_content:186cdbd6-2c34-46d3-b43c-af1e623adc55'
+  label: 'Контактные данные '
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,14 +1,34 @@
-.header {
-  background-color: #2eb3b3;
-}
-
 .header__top {
   text-align: center;
   font-size: 19px;
-  padding: 6px 0;
+  padding: 6px 10px;
   color: #2b5b71;
+  background-color: #2eb3b3;
 }
 
-.header .contextual-region h2 {
-  display: none;
+.header__center {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 120px;
+      grid-template-rows: 120px;
+  -ms-grid-columns: 550px 110px 425px;
+      grid-template-columns: 550px 110px 425px;
+  grid-gap: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.center-header {
+  font-size: 19px;
+  font-weight: 300;
+}
+
+.center-header__left a {
+  color: #1a171b;
+}
+
+.center-header__right {
+  color: #2eb3b3;
 }

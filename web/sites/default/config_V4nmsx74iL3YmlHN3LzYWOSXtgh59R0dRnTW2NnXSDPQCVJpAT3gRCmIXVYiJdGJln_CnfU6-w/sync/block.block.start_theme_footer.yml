@@ -12,8 +12,8 @@ _core:
   default_config_hash: 8zRjTNbfNAJ94lQpZDu6MkyD87GYJ2zpH9VQPVmRbcM
 id: start_theme_footer
 theme: start_theme
-region: header_top
-weight: -2
+region: footer
+weight: -8
 provider: null
 plugin: 'system_menu_block:footer'
 settings:
