@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for start_block module.
+ *
+ * @DCG
+ * This file is no longer required in Drupal 8.
+ * @see https://www.drupal.org/node/2217931
+ */
+
+ function start_block_theme($existng, $type, $theme, $path) {
+   return [
+     'menu_user_anonymous' => [
+      'variables' => []
+     ],
+
+     'uv_social_network' => [
+      'variables' => []
+     ]
+   ];
+ }  

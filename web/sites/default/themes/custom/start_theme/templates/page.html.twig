@@ -1,44 +1,108 @@
 <header class="header">
-  <div class="container">
-	  <div class="header__top">
-      {{ page.header_top }}
-    </div>
-
-     <div class="header__center center-header">
-			<div class="center-header__left">
-				{{ page.header_left }}
-			 </div>
-			 <div class="center-header__logo">
-				{{ page.header_center }}
-			 </div>
-			<div class="center-header__right">
-				{{ page.header_right }}
-			</div>
-		 </div>
-
-	 <div class="header__bottom">
-    <nav class="header__menu">
-      {{ page.menu }}
-    </nav>
-   </div>
+  <div class="header__top">
+   {{ page.header_top }}
   </div>
+  <div class="container">
+    <div class="header__center center-header">
+     <div class="center-header__left">
+       {{ page.header_left }}
+      </div>
+      <div class="center-header__logo">
+       {{ page.header_center }}
+      </div>
+     <div class="center-header__right">
+       {{ page.header_right }}
+     </div>
+    </div>
+  </div> 
+  <div class="header__underline"></div>
+
+  <div class="container">
+    <div class="header__bottom bottom-header">
+     <div class="bottom-header__logos">
+      {{ page.header__logos }}
+     </div>
+     <nav class="bottom-header__menu">
+       {{ page.menu }}
+     </nav>
+     <div class="bottom-header__icons">
+      {{ page.header__icons }}
+
+      {% if logged_in == false %}
+       <!-- Modal Trigger -->
+        <a class="waves-effect waves-light btn modal-trigger" href="#modal_login">
+         вход
+        </a>
+      {% endif %}
+
+      {% if logged_in %}
+        <a class="link unregister" href="{{ path('user.logout') }}">
+         выход
+        </a>
+      {% endif %}
+
+     </div>
+    </div>
+  </div>  
 </header>
 
+
+
+
+
+
 <main class="main">
-  <div class="container">
-	 {{ page.content }}
-  </div>
+ <div class="container">
+  {{ page.content }}
+ </div>
 </main>
 
 <footer class="footer">
-  <div class="container">
-   {{ page.footer }}
-  </div>
+ <div class="container">
+  {{ page.footer }}
+ </div>
 </footer>
 
-<div id="button-up">
- <span class="button-up-txt">Наверх ^</span>
+
+  <!-- modal_login Structure -->
+
+
+  
+
+  <div id="modal_login" class="modal">
+    <div class="modal-content">
+      <form class="user-login-form antibot" data-drupal-selector="user-login-form" data-action="/user/login" action="/user/login" method="post" id="user-login-form" accept-charset="UTF-8">
+        <noscript>
+          <div class="antibot-no-js antibot-message antibot-message-warning">Вы должны включить JavaScript чтобы использовать эту форму.</div>
+        </noscript>
+        
+        <label>Имя пользователя</label>
+        <input autocorrect="none" autocapitalize="none" spellcheck="false" autofocus="autofocus" data-drupal-selector="edit-name" aria-describedby="edit-name--description" type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required" required="required" aria-required="true">
+
+        <label for="edit-pass" class="js-form-required form-required active">Пароль</label>
+        <input data-drupal-selector="edit-pass" aria-describedby="edit-pass--description" type="password" id="edit-pass" name="pass" size="60" maxlength="128" class="form-text required" required="required" aria-required="true">
+
+        <input data-drupal-selector="edit-user-login-form" type="hidden" name="form_id" value="user_login_form">
+        
+        <input data-drupal-selector="edit-antibot-key" type="hidden" name="antibot_key" value="bUcEpvn70wYuyn-OQ8_zbOdLXsI15V0oE8hkQKaU4z8">
+
+    <div class="modal-footer">
+      <input type="submit" value="Войти" class="waves-effect waves-light btn modal-trigger">
+    </div>
+  </form>
 </div>
+  </div>
+
+
+
+
+
+
+{# <div id="button-up">
+<span class="button-up-txt">Наверх ^</span>
+</div> #}
+
+
 
 
 

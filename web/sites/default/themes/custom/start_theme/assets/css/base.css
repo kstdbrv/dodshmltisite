@@ -1,6 +1,8 @@
 body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 /* %sf-semibold{
@@ -31,9 +33,9 @@ html {
 }
 
 body {
-  font-size: 22px;
-  color: #2F3035;
-  line-height: 24px;
+  font-size: 19px;
+  color: #1a171b;
+  line-height: 1.15;
   min-width: 320px;
   overflow-x: hidden;
   position: relative;
@@ -65,10 +67,52 @@ ul, li {
   list-style-type: none;
 }
 
+button:active, button:focus {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+a:active, a:focus {
+  outline: none;
+}
+
+input, textarea {
+  outline: none;
+}
+
+input:active, textarea:active {
+  outline: none;
+}
+
+:focus {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+textarea {
+  resize: horizontal;
+}
+
 .container {
   max-width: 1470px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+@media (max-width: 375px) {
+  .container {
+    padding: 0 10px;
+  }
 }
 
 .visually-hidden {

@@ -1,35 +1,80 @@
+@import "vars";
+@import "brakepoints";
+
 .header {
+  font-size: $mainFontSize;
+  @media (max-width: 455px) {
+    font-size: 15px;
+  }
   &__top {
+    @extend %myriad-bold;
     text-align: center;
-    font-size: 19px;
     padding: 6px 10px;
-    color: #2b5b71;
-    background-color: #2eb3b3;
+    color: $secondColor;
+    background-color: $mainColor;
   }
   &__center {
     display: grid;
-    grid-template-rows: 120px;
-    grid-template-columns: 550px 110px 425px;
-    grid-gap: 100px;
+    margin: 0 15px;
     align-items: center;
     text-align: center;
+    grid-template-areas:
+    "header-left header-logo header-right";
+    grid-template-rows: 120px;
+    grid-template-columns: minmax(350px, 550px) minmax(90px, 145px) minmax(350px, 550px);
+    grid-gap: clamp(0.5vw, 4vw, 4vw); //
+    @include desctop {
+      margin: 0;
+      grid-gap: 0.2vw;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "header-left"
+      "header-logo"
+      "header-right";
+    }
   }
-  &__bottom {
-
-
+  &__underline {
+    min-height: 31px;
+    background-color: $mainColor;
+    @media (max-width: 1024px) {
+      margin-top: 5px;
+    }
   }
 }
 
 .center-header {
-  font-size: 19px;
   font-weight: 300;
-  &__left a {
-    color: #1a171b;
+  &__left {
+    grid-area: header-left;
+    a {
+      color: $mainFontColor;
+    }
   }
   &__logo {
-    
+    grid-area: header-logo;
+    img {
+      max-height: 105px;
+      max-width: 145px;
+    }
   }
   &__right {
-    color: #2eb3b3;
+    grid-area: header-right;
+    color: $mainColor;
+  }
+}
+
+.bottom-header {
+  margin: 0 10px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  &__logos img {
+    max-height: 42px;
+    max-width: 135px;
+  }
+  &__menu {
+    display: flex;
+  }
+  &__icons {
+    
   }
 }

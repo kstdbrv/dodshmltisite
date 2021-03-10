@@ -1,0 +1,23 @@
+@import "vars";
+
+.modal {
+  overflow: hidden;
+  font-size: $mainFontSize;
+  max-width: 450px;
+  border-radius: 5px;
+  .modal-content {
+    padding-bottom: 10px;
+}
+  label {
+    font-size: $mainFontSize;
+    color: $secondColor;
+ }
+
+ input[type=text], input[type=password] {
+  font-size: $mainFontSize;
+  height: 2.5rem;
+ }
+ @media (max-width: 425px) {
+    width: 95%;
+ }
+}
