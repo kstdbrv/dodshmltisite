@@ -22,33 +22,46 @@
      <div class="bottom-header__logos">
       {{ page.header__logos }}
      </div>
-     <nav class="bottom-header__menu">
+     <div class="bottom-header__menu">
        {{ page.menu }}
-     </nav>
+       
+      <div class="bottom-header__burger">
+        <p class="icon-menu">МЕНЮ</p>
+        <div class="icon-menu">
+          <span></span>
+          <span></span> {# hamburger icon #}
+          <span></span>
+        </div>
+      </div>
+
+      
+     </div>
      <div class="bottom-header__icons">
-       <a href="">
-        <span class="material-icons main-color">face</span>
+       <a href="#" title="Версия для слабовидящих">
+        <i class="material-icons main-color">face</i>
        </a>
-       <a href="">
-        <span class="material-icons main-color">search</span>
+       <a href="/search" title="Поиск">
+        <i class="material-icons main-color">search</i>
       </a>
+
       {% if logged_in == false %}
        <!-- Modal Trigger -->
-        <a href="#modal_login" class="modal-trigger">
-        <span class="material-icons main-color">login</span>
+        <a href="#modal_login" class="modal-trigger" title="вход на сайт">
+        <i class="material-icons main-color">login</i>
          {# <img class="icon-login" src="/sites/default/themes/custom/start_theme/assets/images/icons/login.svg" alt="вход на сайт"> #}
         </a>
       {% endif %}
 
       {% if logged_in %}
-        <a class="link unregister" href="{{ path('user.logout') }}">
+        <a class="link unregister" title="вход на сайт" href="{{ path('user.logout') }}">
          <i class="material-icons main-color">logout</i>
         </a>
       {% endif %}
 
      </div>
     </div>
-  </div>  
+  </div> 
+
 </header>
 
 

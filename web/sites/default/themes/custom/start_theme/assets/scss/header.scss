@@ -2,7 +2,6 @@
 @import "brakepoints";
 
 .header {
-  font-size: $mainFontSize;
   @media (max-width: 455px) {
     font-size: 17px;
   }
@@ -22,7 +21,7 @@
     "header-left header-logo header-right";
     grid-template-rows: 120px;
     grid-template-columns: minmax(350px, 550px) minmax(90px, 145px) minmax(350px, 550px);
-    grid-gap: clamp(0.5vw, 4vw, 4vw); //
+    grid-gap: clamp(0.5vw, 4vw, 4vw);
     @include lg {
       margin: 0;
       grid-gap: 1vw;
@@ -68,6 +67,7 @@
 }
 
 .bottom-header {
+  position: relative; // for menu-mobile
   margin: 5px 10px;
   display: flex;
   justify-content: space-between;
@@ -140,15 +140,6 @@
 }
 
 .icon-menu {
-/*   &::before {
-    content: "МЕНЮ";
-    position: absolute;
-    top: 3px;
-    right: 50px;
-    color: $secondColor;
-    font-size: 19px;
-    @extend %calibri-bold;
-  } */
   display: none;
   @media (max-width: 1295px){
    display: block;
@@ -187,5 +178,48 @@
      }
    }
  }
+}
+
+.menu-mobile {
+  z-index: 5;
+  position: absolute;
+  top: 54px;
+  left: -24px;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 245px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  transform: translate(-100%);
+  transition: all .4s;
+  position: absolute;
+  z-index: 15;
+  &.active{
+    transform: translate(0%);
+  }
+/*   &__item{
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  &__adress{
+    @extend %sf-bold;
+    font-size: 20px;
+    line-height: 24px;
+    width: 181px;
+    padding-left: 44px;
+    padding-bottom: 136px;
+  }
+  &__link{
+    display: block;
+   padding-left: 53px;
+   padding-top: 36px;
+   width: 220px;
+  }
+  &__img{
+    position: absolute;
+    left: 11px;
+    bottom: 0;
+  } */
 }
 
