@@ -1,0 +1,46 @@
+/* %sf-semibold{
+  font-family:'SFProDisplay', sans-serif;
+  font-weight: 600;
+}
+%sf-bold{
+  font-family: 'SFProDisplay', sans-serif;
+  font-weight: 700;
+}
+%sf-medium{
+  font-family: 'SFProDisplay', sans-serif;
+  font-weight: 500;
+}
+%barlow-bold{
+  font-family: 'Barlow', sans-serif;
+  font-weight: 700;
+}
+%barlow-regular{
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+} */
+.modal {
+  overflow: hidden;
+  font-size: 19px;
+  max-width: 450px;
+  border-radius: 5px;
+}
+
+.modal .modal-content {
+  padding-bottom: 10px;
+}
+
+.modal label {
+  font-size: 19px;
+  color: #2b5b71;
+}
+
+.modal input[type=text], .modal input[type=password] {
+  font-size: 19px;
+  height: 2.5rem;
+}
+
+@media (max-width: 425px) {
+  .modal {
+    width: 95%;
+  }
+}

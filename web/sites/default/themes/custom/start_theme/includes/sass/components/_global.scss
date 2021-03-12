@@ -1,22 +1,5 @@
 //Default styles
 
-html {
- box-sizing: border-box;
-}
-*, *:before, *:after {
- box-sizing: inherit;
-}
-
-body {
-  // display: flex;
-  // min-height: 100vh;
-  // flex-direction: column;
-}
-
-main {
-  // flex: 1 0 auto;
-}
-
 button,
 input,
 optgroup,
@@ -36,13 +19,6 @@ ul {
   }
 }
 
-a {
-	color: $link-color;
-	text-decoration: none;
-
-  // Gets rid of tap active state
-  -webkit-tap-highlight-color: transparent;
-}
 
 
 // Positioning

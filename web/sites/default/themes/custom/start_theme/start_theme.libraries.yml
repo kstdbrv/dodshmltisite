@@ -4,7 +4,9 @@ global:
       assets/css/normalize.css: {}
       assets/css/base.css: {}
     layout:
+      includes/css/materialize.css: {}
       assets/css/tabs.css: {}
+      assets/css/login-popup.css: {}
     theme:
       assets/css/header.css: {}
 
@@ -13,6 +15,7 @@ global:
 
   dependencies:
     - start_theme/google.fonts
+    - start_theme/adobe.fonts
     - start_theme/materialize.icons
     - core/jquery
 #    - core/drupal.ajax
@@ -25,14 +28,16 @@ google.fonts:
     theme:
       //fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap: { type: external, minified: true }
 
+adobe.fonts:
+  css:
+    theme:
+      //use.typekit.net/iub5xya.css: { type: external, minified: true }
+
 materialize.icons:
   css:
     theme:
       //fonts.googleapis.com/icon?family=Material+Icons: { type: external, minified: true }
       
 materialize:
-  css:
-    theme:
-      includes/css/materialize.css: {}
   js:
      includes/js/bin/materialize.js: {}

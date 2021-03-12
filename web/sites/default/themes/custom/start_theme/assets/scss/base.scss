@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  @extend %roboto-regular;
+  @extend %calibri-regular;
   font-size: $mainFontSize;
   color: $mainFontColor;
   line-height: $mainLineHeight;
@@ -31,7 +31,7 @@ p {
 
 a { 
   text-decoration: none;
-  color: inherit;
+  color: $mainFontColor;
   display: inline-block; 
 }
 
@@ -41,10 +41,29 @@ ul, li {
   list-style-type: none;
 }
 
+button:active, button:focus {
+  outline: none;
+}
+button::-moz-focus-inner {
+  border: 0;
+}
+
+a:active, a:focus { outline: none; }
+
+input, textarea {outline:none;}
+input:active, textarea:active {outline:none;}
+:focus {outline:none;}
+textarea {resize:none;}
+textarea {resize:vertical;}
+textarea {resize:horizontal;}
+
 .container {
   max-width: 1470px;
   padding: 0 15px;
   margin: 0 auto;
+  @media (max-width: 375px) {
+    padding: 0 10px;
+  }
 }
 
 .visually-hidden {
