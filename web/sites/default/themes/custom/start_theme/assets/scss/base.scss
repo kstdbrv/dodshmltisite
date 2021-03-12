@@ -70,6 +70,11 @@ textarea {resize:horizontal;}
   display: none;
 }
 
+//STYLE FOR menu-icon
+body.lock{
+  overflow: hidden;
+}
+
 img {
   max-width: 100%;
   height: auto;
