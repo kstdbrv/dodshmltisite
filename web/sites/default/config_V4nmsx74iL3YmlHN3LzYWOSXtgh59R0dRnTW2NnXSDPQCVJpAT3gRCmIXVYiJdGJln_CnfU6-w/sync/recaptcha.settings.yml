@@ -1,0 +1,13 @@
+site_key: 6LfwdHwaAAAAACOEihvrhtsnqL6yr0nbLmjOiK7R
+secret_key: 6LfwdHwaAAAAAK-6vRzp5ncdVh_yPpXJWkfTjce6
+verify_hostname: false
+use_globally: false
+widget:
+  theme: light
+  type: image
+  size: ''
+  tabindex: 0
+  noscript: false
+_core:
+  default_config_hash: eKR4FfUD7Cp3bXamsCz6GAxh0PCLIZNMa65y2kChIh0
+langcode: ru
