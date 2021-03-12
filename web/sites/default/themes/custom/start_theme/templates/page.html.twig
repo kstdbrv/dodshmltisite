@@ -26,18 +26,23 @@
        {{ page.menu }}
      </nav>
      <div class="bottom-header__icons">
-      {{ page.header__icons }}
-
+       <a href="">
+        <span class="material-icons main-color">face</span>
+       </a>
+       <a href="">
+        <span class="material-icons main-color">search</span>
+      </a>
       {% if logged_in == false %}
        <!-- Modal Trigger -->
-        <a class="waves-effect waves-light btn modal-trigger" href="#modal_login">
-         вход
+        <a href="#modal_login" class="modal-trigger">
+        <span class="material-icons main-color">login</span>
+         {# <img class="icon-login" src="/sites/default/themes/custom/start_theme/assets/images/icons/login.svg" alt="вход на сайт"> #}
         </a>
       {% endif %}
 
       {% if logged_in %}
         <a class="link unregister" href="{{ path('user.logout') }}">
-         выход
+         <i class="material-icons main-color">logout</i>
         </a>
       {% endif %}
 
@@ -65,12 +70,8 @@
 
 
   <!-- modal_login Structure -->
-
-
-  
-
-  <div id="modal_login" class="modal">
-    <div class="modal-content">
+<div id="modal_login" class="modal">
+  <div class="modal-content">
       <form class="user-login-form antibot" data-drupal-selector="user-login-form" data-action="/user/login" action="/user/login" method="post" id="user-login-form" accept-charset="UTF-8">
         <noscript>
           <div class="antibot-no-js antibot-message antibot-message-warning">Вы должны включить JavaScript чтобы использовать эту форму.</div>
@@ -86,12 +87,14 @@
         
         <input data-drupal-selector="edit-antibot-key" type="hidden" name="antibot_key" value="bUcEpvn70wYuyn-OQ8_zbOdLXsI15V0oE8hkQKaU4z8">
 
-    <div class="modal-footer">
-      <input type="submit" value="Войти" class="waves-effect waves-light btn modal-trigger">
-    </div>
+  <div class="modal-footer">
+    <button type="submit" class="waves-effect waves-light btn modal-trigger">
+       войти<i class="material-icons right">login</i>
+    </button>
+   </div>
   </form>
+ </div>
 </div>
-  </div>
 
 
 

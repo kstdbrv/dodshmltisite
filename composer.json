@@ -24,6 +24,7 @@
         "drupal/devel": "^4.1",
         "drupal/devel_kint_extras": "^1.0",
         "drupal/pathauto": "^1.8",
+        "drupal/superfish": "^1.4",
         "drupal/twig_tweak": "^3.0",
         "drush/drush": "^10.4"
     },

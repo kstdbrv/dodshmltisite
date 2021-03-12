@@ -1,0 +1,25 @@
+uuid: 37f36fa3-6bbc-429a-8a01-99ee4d0316c6
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f3f12c72-b4c0-4447-ab5b-b4268f6c6b3c'
+  module:
+    - block_content
+  theme:
+    - start_theme
+id: logotipy
+theme: start_theme
+region: header__logos
+weight: 0
+provider: null
+plugin: 'block_content:f3f12c72-b4c0-4447-ab5b-b4268f6c6b3c'
+settings:
+  id: 'block_content:f3f12c72-b4c0-4447-ab5b-b4268f6c6b3c'
+  label: Логотипы
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

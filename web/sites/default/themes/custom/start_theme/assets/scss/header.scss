@@ -4,10 +4,10 @@
 .header {
   font-size: $mainFontSize;
   @media (max-width: 455px) {
-    font-size: 15px;
+    font-size: 17px;
   }
   &__top {
-    @extend %myriad-bold;
+    @extend %calibri-bold;
     text-align: center;
     padding: 6px 10px;
     color: $secondColor;
@@ -23,10 +23,11 @@
     grid-template-rows: 120px;
     grid-template-columns: minmax(350px, 550px) minmax(90px, 145px) minmax(350px, 550px);
     grid-gap: clamp(0.5vw, 4vw, 4vw); //
-    @include desctop {
+    @include lg {
       margin: 0;
-      grid-gap: 0.2vw;
+      grid-gap: 1vw;
       grid-template-columns: 1fr;
+      grid-template-rows: auto;
       grid-template-areas:
       "header-left"
       "header-logo"
@@ -52,6 +53,9 @@
   }
   &__logo {
     grid-area: header-logo;
+    @media (max-width: 550px) {
+      display: none;
+    }
     img {
       max-height: 105px;
       max-width: 145px;
@@ -64,17 +68,124 @@
 }
 
 .bottom-header {
-  margin: 0 10px;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  &__logos img {
-    max-height: 42px;
-    max-width: 135px;
+  margin: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 550px) {
+    margin: 5px 10px 5px 0;
   }
-  &__menu {
-    display: flex;
+  &__logos {
+    @media (max-width: 550px) {
+      display: none;
+    }
+    img {
+      max-height: 42px;
+      max-width: 135px;
+    }
   }
+
   &__icons {
-    
+    .material-icons.main-color { 
+      color: $mainFontColor;
+      font-size: 43px;
+      transition: all 0.2s;
+      &:hover {
+        color: $mainColor;
+      }
+     }
+  }
+  &__burger {
+    display: flex;
+    align-items: center;
+    @media (max-width: 550px) {
+      order: 1;
+    }
+    p {
+      @extend %calibri-bold;
+      margin-right: clamp(30px, 4vw, 60px);
+      @media (max-width: 455px) {
+       font-size: 19px;
+     }
+     &.active {
+       color: $mainColor;
+     }
+    }
   }
 }
+
+.menu-header {
+  @media (max-width: 1295px) {
+    display: none;
+  }
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  white-space: nowrap;
+  &__item a {
+    padding: 19px 58px;
+    position: relative;
+  }
+  &__item:hover a {
+    color: $mainColor;
+    outline: 1px solid $mainColor;
+  }
+  .submenu {
+    display: none;
+    position: absolute;
+  }
+  &__item_collapsed:hover .submenu {
+   display: block;
+  }
+}
+
+.icon-menu {
+/*   &::before {
+    content: "МЕНЮ";
+    position: absolute;
+    top: 3px;
+    right: 50px;
+    color: $secondColor;
+    font-size: 19px;
+    @extend %calibri-bold;
+  } */
+  display: none;
+  @media (max-width: 1295px){
+   display: block;
+   position: relative;
+   width: 33px;
+   height: 26px;
+   cursor: pointer;
+   z-index: 5;
+    span{
+      transition: all 0.3s ease 0s;
+      top: calc(50% - 1px);
+      left: 0;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color:#000;
+      &:first-child{
+        top: 0;
+      }
+      &:last-child{
+        top: auto;
+        bottom: 0;
+      }
+    }
+    &.active{
+      span{
+       transform: scale(0);
+       &:first-child{
+         transform: rotate(-45deg);
+         top: calc(50% - 1px);
+        }
+       &:last-child{
+         transform: rotate(45deg);
+         bottom: calc(50% - 1px);
+       }
+     }
+   }
+ }
+}
+

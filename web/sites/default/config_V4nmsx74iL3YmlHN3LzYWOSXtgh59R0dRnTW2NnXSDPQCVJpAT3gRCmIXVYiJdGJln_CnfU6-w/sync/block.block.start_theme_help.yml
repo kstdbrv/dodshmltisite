@@ -1,6 +1,6 @@
 uuid: 04368cce-d9ac-4540-ab73-03cfe510a47e
 langcode: ru
-status: true
+status: false
 dependencies:
   module:
     - help

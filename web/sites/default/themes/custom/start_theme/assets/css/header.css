@@ -1,7 +1,8 @@
-.header__top {
-  font-family: myriad-pro, sans-serif;
-  font-style: normal;
+@charset "UTF-8";
+.header__top, .bottom-header__burger p {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   font-weight: 700;
+  font-style: normal;
 }
 
 /* %sf-semibold{
@@ -30,7 +31,7 @@
 
 @media (max-width: 455px) {
   .header {
-    font-size: 15px;
+    font-size: 17px;
   }
 }
 
@@ -60,9 +61,11 @@
 @media (max-width: 1024px) {
   .header__center {
     margin: 0;
-    grid-gap: 0.2vw;
+    grid-gap: 1vw;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
         grid-template-areas: "header-left" "header-logo" "header-right";
   }
 }
@@ -98,6 +101,12 @@
   grid-area: header-logo;
 }
 
+@media (max-width: 550px) {
+  .center-header__logo {
+    display: none;
+  }
+}
+
 .center-header__logo img {
   max-height: 105px;
   max-width: 145px;
@@ -111,11 +120,28 @@
 }
 
 .bottom-header {
-  margin: 0 10px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto 1fr auto;
-      grid-template-columns: auto 1fr auto;
+  margin: 5px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 550px) {
+  .bottom-header {
+    margin: 5px 10px 5px 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .bottom-header__logos {
+    display: none;
+  }
 }
 
 .bottom-header__logos img {
@@ -123,8 +149,136 @@
   max-width: 135px;
 }
 
-.bottom-header__menu {
+.bottom-header__icons .material-icons.main-color {
+  color: #1a171b;
+  font-size: 43px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.bottom-header__icons .material-icons.main-color:hover {
+  color: #2eb3b3;
+}
+
+.bottom-header__burger {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 550px) {
+  .bottom-header__burger {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+.bottom-header__burger p {
+  margin-right: clamp(30px, 4vw, 60px);
+}
+
+@media (max-width: 455px) {
+  .bottom-header__burger p {
+    font-size: 19px;
+  }
+}
+
+.bottom-header__burger p.active {
+  color: #2eb3b3;
+}
+
+.menu-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  white-space: nowrap;
+}
+
+@media (max-width: 1295px) {
+  .menu-header {
+    display: none;
+  }
+}
+
+.menu-header__item a {
+  padding: 19px 58px;
+  position: relative;
+}
+
+.menu-header__item:hover a {
+  color: #2eb3b3;
+  outline: 1px solid #2eb3b3;
+}
+
+.menu-header .submenu {
+  display: none;
+  position: absolute;
+}
+
+.menu-header__item_collapsed:hover .submenu {
+  display: block;
+}
+
+.icon-menu {
+  /*   &::before {
+    content: "МЕНЮ";
+    position: absolute;
+    top: 3px;
+    right: 50px;
+    color: $secondColor;
+    font-size: 19px;
+    @extend %calibri-bold;
+  } */
+  display: none;
+}
+
+@media (max-width: 1295px) {
+  .icon-menu {
+    display: block;
+    position: relative;
+    width: 33px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 5;
+  }
+  .icon-menu span {
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    top: calc(50% - 1px);
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+  }
+  .icon-menu span:first-child {
+    top: 0;
+  }
+  .icon-menu span:last-child {
+    top: auto;
+    bottom: 0;
+  }
+  .icon-menu.active span {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  .icon-menu.active span:first-child {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: calc(50% - 1px);
+  }
+  .icon-menu.active span:last-child {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    bottom: calc(50% - 1px);
+  }
 }

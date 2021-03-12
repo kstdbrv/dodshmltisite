@@ -2134,16 +2134,6 @@
   color: transparent !important;
 }
 
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
 button,
 input,
 optgroup,
@@ -2159,12 +2149,6 @@ ul:not(.browser-default) {
 
 ul:not(.browser-default) > li {
   list-style-type: none;
-}
-
-a {
-  color: #039be5;
-  text-decoration: none;
-  -webkit-tap-highlight-color: transparent;
 }
 
 .valign-wrapper {
