@@ -12,8 +12,8 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* sites/default/themes/custom/start_theme/templates/page--front.html.twig */
-class __TwigTemplate_d211d424b5c7fd62804fe0b60f7b29d5ed53372539d9fecb8e6e660fd7116630 extends \Twig\Template
+/* sites/default/themes/custom/start_theme/templates/page.html.twig */
+class __TwigTemplate_e423f3f64663d8fc5ec302d5a1bd11c800993c3997cb2df2bd3df97e478426c7 extends \Twig\Template
 {
     private $source;
     private $macros = [];
@@ -95,22 +95,22 @@ class __TwigTemplate_d211d424b5c7fd62804fe0b60f7b29d5ed53372539d9fecb8e6e660fd71
      </div>
      <div class=\"bottom-header__icons\">
        <a href=\"#\" title=\"Версия для слабовидящих\">
-        <i class=\"material-icons main-color\">face</i>
-       </a>
+        <img class=\"icon-impaired\" src=\"/sites/default/themes/custom/start_theme/assets/images/icons/impraired.png\" alt=\"вход на сайт\">
+        ";
+        // line 43
+        echo "       </a>
        <a href=\"/search\" title=\"Поиск\">
         <i class=\"material-icons main-color\">search</i>
       </a>
 
       ";
-        // line 47
+        // line 48
         if ((($context["logged_in"] ?? null) == false)) {
-            // line 48
+            // line 49
             echo "       <!-- Modal Trigger -->
         <a href=\"#modal_login\" class=\"modal-trigger\" title=\"вход на сайт\">
         <i class=\"material-icons main-color\">login</i>
-         ";
-            // line 52
-            echo "        </a>
+        </a>
       ";
         }
         // line 54
@@ -206,7 +206,7 @@ class __TwigTemplate_d211d424b5c7fd62804fe0b60f7b29d5ed53372539d9fecb8e6e660fd71
 
     public function getTemplateName()
     {
-        return "sites/default/themes/custom/start_theme/templates/page--front.html.twig";
+        return "sites/default/themes/custom/start_theme/templates/page.html.twig";
     }
 
     public function isTraitable()
@@ -216,7 +216,7 @@ class __TwigTemplate_d211d424b5c7fd62804fe0b60f7b29d5ed53372539d9fecb8e6e660fd71
 
     public function getDebugInfo()
     {
-        return array (  195 => 120,  155 => 80,  146 => 74,  130 => 60,  122 => 56,  120 => 55,  117 => 54,  113 => 52,  108 => 48,  106 => 47,  90 => 33,  81 => 26,  75 => 23,  63 => 14,  57 => 11,  51 => 8,  43 => 3,  39 => 1,);
+        return array (  195 => 120,  155 => 80,  146 => 74,  130 => 60,  122 => 56,  120 => 55,  117 => 54,  110 => 49,  108 => 48,  101 => 43,  90 => 33,  81 => 26,  75 => 23,  63 => 14,  57 => 11,  51 => 8,  43 => 3,  39 => 1,);
     }
 
     public function getSourceContext()
@@ -261,7 +261,8 @@ class __TwigTemplate_d211d424b5c7fd62804fe0b60f7b29d5ed53372539d9fecb8e6e660fd71
      </div>
      <div class=\"bottom-header__icons\">
        <a href=\"#\" title=\"Версия для слабовидящих\">
-        <i class=\"material-icons main-color\">face</i>
+        <img class=\"icon-impaired\" src=\"/sites/default/themes/custom/start_theme/assets/images/icons/impraired.png\" alt=\"вход на сайт\">
+        {#<i class=\"material-icons main-color\">face</i> #}
        </a>
        <a href=\"/search\" title=\"Поиск\">
         <i class=\"material-icons main-color\">search</i>
@@ -271,7 +272,6 @@ class __TwigTemplate_d211d424b5c7fd62804fe0b60f7b29d5ed53372539d9fecb8e6e660fd71
        <!-- Modal Trigger -->
         <a href=\"#modal_login\" class=\"modal-trigger\" title=\"вход на сайт\">
         <i class=\"material-icons main-color\">login</i>
-         {# <img class=\"icon-login\" src=\"/sites/default/themes/custom/start_theme/assets/images/icons/login.svg\" alt=\"вход на сайт\"> #}
         </a>
       {% endif %}
 
@@ -349,12 +349,12 @@ class __TwigTemplate_d211d424b5c7fd62804fe0b60f7b29d5ed53372539d9fecb8e6e660fd71
 
 
 
-", "sites/default/themes/custom/start_theme/templates/page--front.html.twig", "/var/www/html/web/sites/default/themes/custom/start_theme/templates/page--front.html.twig");
+", "sites/default/themes/custom/start_theme/templates/page.html.twig", "/var/www/html/web/sites/default/themes/custom/start_theme/templates/page.html.twig");
     }
     
     public function checkSecurity()
     {
-        static $tags = array("if" => 47);
+        static $tags = array("if" => 48);
         static $filters = array("escape" => 3);
         static $functions = array("path" => 56);
 
