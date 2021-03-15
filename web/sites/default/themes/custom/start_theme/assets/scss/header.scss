@@ -125,6 +125,7 @@
   flex-wrap: wrap;
   white-space: nowrap;
   &__item a {
+    display: block;
     padding: 19px 58px;
     position: relative;
     transition: all .3s;
@@ -148,13 +149,37 @@
       left: 0;
     }
   }
+  
   .submenu {
-    display: none;
+    padding-bottom: 10px;
+    display: block;
     position: absolute;
+    max-width: 100%;
+    background: #fafafa;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    border: 1px solid #ededed;
+    z-index: 5;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(.8);
+    transition: .2s ease-in-out;
+    .menu-header__item {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      transition: all .3s;
+      &:hover {
+        border-bottom: 1px solid $mainColor;
+      }
+    }
+    .menu-header__item a:before {
+      height: 0px;
+    }
   }
   &__item_collapsed:hover .submenu {
-   display: block;
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
   }
+
 }
 
 .icon-menu {
@@ -201,7 +226,6 @@
 .menu-mobile {
   position: absolute;
   z-index: 15;
-  position: absolute;
   top: 54px;
   left: -24px;
   height: 100vh;
@@ -215,28 +239,24 @@
   &.active{
     transform: translate(0%);
   }
-/*   &__item{
-    position: relative;
+  .menu-header__item {
+    /* position: relative; */
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    &:hover {
+      color: $mainColor;
+      border-bottom:1px solid $mainColor;
+    }
+    a:before {
+      height: 0px;
+    }
   }
-  &__adress{
-    @extend %sf-bold;
-    font-size: 20px;
-    line-height: 24px;
-    width: 181px;
-    padding-left: 44px;
-    padding-bottom: 136px;
-  }
-  &__link{
-    display: block;
-   padding-left: 53px;
-   padding-top: 36px;
-   width: 220px;
-  }
-  &__img{
+/*   &__img{
     position: absolute;
     left: 11px;
     bottom: 0;
   } */
+  .submenu {
+    display: block;
+  }
 }
 

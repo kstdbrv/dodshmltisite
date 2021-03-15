@@ -10,6 +10,14 @@ use Drupal\Core\Template\Attribute;
 use Drupal\search\Form\SearchBlockForm;
 use Drupal\Component\Utility\SafeMarkup;
 use Drupal\Core\Path\AliasManager;
+/**
+ * @file
+ * Functions to support theming in the beginning theme.
+ */
+
+/**
+ * Implements hook_preprocess_HOOK() for page templates.
+ */
 
 function start_theme_preprocess_page(&$variables) {
   // Вывод названия сайта в twig шаблоне
