@@ -14,7 +14,7 @@ jQuery(document).ready(function(){
 }); */
 
 
-window.addEventListener('DOMContentLoaded', (e) => {
+window.addEventListener('DOMContentLoaded', e => {
 
    //работа c menu_header menu-mobile
   let icon = document.querySelectorAll('.icon-menu');
@@ -42,10 +42,10 @@ window.addEventListener('DOMContentLoaded', (e) => {
    
       let menuMobile = document.querySelector('.menu-mobile');
 
-      setTimeout(() => {
+      setTimeout(() => { // нужно для эффекта transision
         menuMobile.classList.remove('menu-mobile');
         menuMobile.classList.add('menu-header');
-      }, 500);
+      }, 500); 
       
       menuMobile.classList.remove('active');
     }

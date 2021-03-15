@@ -47,10 +47,8 @@ settings:
         -
           name: Media
           items:
-            - Blockquote
-            - Table
-            - DrupalMediaLibrary
-            - HorizontalRule
+            - ImceLink
+            - ImceImage
         -
           name: 'Block Formatting'
           items:
@@ -58,6 +56,9 @@ settings:
         -
           name: Tools
           items:
+            - HorizontalRule
+            - Blockquote
+            - Table
             - ShowBlocks
             - Source
             - Maximize

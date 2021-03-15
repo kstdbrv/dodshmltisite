@@ -206,6 +206,7 @@
 }
 
 .menu-header__item a {
+  display: block;
   padding: 19px 58px;
   position: relative;
   -webkit-transition: all .3s;
@@ -236,12 +237,42 @@
 }
 
 .menu-header .submenu {
-  display: none;
+  padding-bottom: 10px;
+  display: block;
   position: absolute;
+  max-width: 100%;
+  background: #fafafa;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  border: 1px solid #ededed;
+  z-index: 5;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.menu-header .submenu .menu-header__item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.menu-header .submenu .menu-header__item:hover {
+  border-bottom: 1px solid #2eb3b3;
+}
+
+.menu-header .submenu .menu-header__item a:before {
+  height: 0px;
 }
 
 .menu-header__item_collapsed:hover .submenu {
-  display: block;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .icon-menu {
@@ -293,7 +324,6 @@
 .menu-mobile {
   position: absolute;
   z-index: 15;
-  position: absolute;
   top: 54px;
   left: -24px;
   height: 100vh;
@@ -307,25 +337,7 @@
           transform: translate(-100%);
   -webkit-transition: all .4s;
   transition: all .4s;
-  /*   &__item{
-    position: relative;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-  &__adress{
-    @extend %sf-bold;
-    font-size: 20px;
-    line-height: 24px;
-    width: 181px;
-    padding-left: 44px;
-    padding-bottom: 136px;
-  }
-  &__link{
-    display: block;
-   padding-left: 53px;
-   padding-top: 36px;
-   width: 220px;
-  }
-  &__img{
+  /*   &__img{
     position: absolute;
     left: 11px;
     bottom: 0;
@@ -335,4 +347,22 @@
 .menu-mobile.active {
   -webkit-transform: translate(0%);
           transform: translate(0%);
+}
+
+.menu-mobile .menu-header__item {
+  /* position: relative; */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.menu-mobile .menu-header__item:hover {
+  color: #2eb3b3;
+  border-bottom: 1px solid #2eb3b3;
+}
+
+.menu-mobile .menu-header__item a:before {
+  height: 0px;
+}
+
+.menu-mobile .submenu {
+  display: block;
 }
