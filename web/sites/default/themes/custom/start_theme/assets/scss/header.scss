@@ -43,7 +43,6 @@
 }
 
 .center-header {
-  font-weight: 300;
   &__left {
     grid-area: header-left;
     a {
@@ -73,7 +72,7 @@
   justify-content: space-between;
   align-items: center;
   @media (max-width: 550px) {
-    margin: 5px 10px 5px 0;
+    margin: 5px 0;
   }
   &__logos {
     @media (max-width: 550px) {
@@ -86,6 +85,9 @@
   }
 
   &__icons {
+    .icon-impaired {
+      height: 37px;
+    }
     .material-icons.main-color { 
       color: $mainFontColor;
       font-size: 43px;
@@ -103,7 +105,7 @@
     }
     p {
       @extend %calibri-bold;
-      margin-right: clamp(30px, 4vw, 60px);
+      margin-right: clamp(40px, 4vw, 70px);
       @media (max-width: 455px) {
        font-size: 19px;
      }
@@ -125,11 +127,27 @@
   &__item a {
     padding: 19px 58px;
     position: relative;
+    transition: all .3s;
+    &:hover {
+      color: $mainColor;
+    }
+    &:before {
+      position: absolute;
+      content: "";
+      background-color: $mainColor;
+      height: 3px;
+      width: 0;
+      left: auto;
+      right: 0;
+      bottom: 0;
+      transition: all .3s;
+    }
+    &:hover:before {
+      width: 100%;
+      right: auto;
+      left: 0;
   }
-  &__item:hover a {
-    color: $mainColor;
-    outline: 1px solid $mainColor;
-  }
+
   .submenu {
     display: none;
     position: absolute;
@@ -181,7 +199,8 @@
 }
 
 .menu-mobile {
-  z-index: 5;
+  position: absolute;
+  z-index: 15;
   position: absolute;
   top: 54px;
   left: -24px;
@@ -193,8 +212,6 @@
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
   transform: translate(-100%);
   transition: all .4s;
-  position: absolute;
-  z-index: 15;
   &.active{
     transform: translate(0%);
   }
