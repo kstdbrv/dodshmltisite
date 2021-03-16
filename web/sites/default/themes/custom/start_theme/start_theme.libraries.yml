@@ -11,12 +11,14 @@ global:
       assets/css/header.css: {}
 
   js:
-    assets/js/script.js: {} 
+    assets/js/script.js: {}
+    assets/js/header.js: {} 
 
   dependencies:
     - start_theme/google.fonts
     - start_theme/adobe.fonts
     - start_theme/materialize.icons
+    - start_theme/dynamic-adapt
     - core/jquery
 #    - core/drupal.ajax
 #    - core/drupal
@@ -41,3 +43,7 @@ materialize.icons:
 materialize:
   js:
      includes/js/bin/materialize.js: {}
+
+dynamic-adapt:
+  js:
+     includes/js/dynamic-adapt.js: {}

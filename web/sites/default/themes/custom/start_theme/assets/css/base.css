@@ -119,10 +119,9 @@ textarea {
   display: none;
 }
 
-body.lock {
+/* body.lock{
   overflow: hidden;
-}
-
+} */
 img {
   max-width: 100%;
   height: auto;
