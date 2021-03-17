@@ -36,28 +36,28 @@
      </div>
      <div class="bottom-header__icons">
      
-       <a href="#" title="Версия для слабовидящих">
-        <div class="art" ><img class="icon-impaired" src="/sites/default/themes/custom/start_theme/assets/images/icons/glasses.svg" alt="вход на сайт"></div>
+       <a class="icon-impaired" href="#" title="Версия для слабовидящих">
+        <img  class="icons_header" src="/sites/default/themes/custom/start_theme/assets/images/icons/glasses.svg" alt="вход на сайт"/>
+        {# <img class="icon-impaired art" src="/sites/default/themes/custom/start_theme/assets/images/icons/glasses.svg" alt="вход на сайт"> #}
         {#<i class="material-icons main-color">face</i> #}
        </a>
 
        <a href="/search" title="Поиск">
         {# <i class="material-icons main-color">search</i> #}
-        <img class="icon-impaired" src="/sites/default/themes/custom/start_theme/assets/images/icons/search.svg" alt="поиск">
+        <img class="icons_header" src="/sites/default/themes/custom/start_theme/assets/images/icons/search.svg" alt="поиск">
       </a>
         
 
       {% if logged_in == false %}
        <!-- Modal Trigger -->
         <a href="#modal_login" class="modal-trigger" title="вход на сайт">
-        <img class="icon-impaired" src="/sites/default/themes/custom/start_theme/assets/images/icons/input.svg" alt="вход на сайт">
+        <img class="icons_header" src="/sites/default/themes/custom/start_theme/assets/images/icons/input.svg" alt="вход на сайт">
         </a>
       {% endif %}
 
       {% if logged_in %}
-        <a class="link unregister" title="вход на сайт" href="{{ path('user.logout') }}">
-
-         {# <i class="material-icons main-color">logout</i> #}
+        <a title="вход на сайт" href="{{ path('user.logout') }}">
+         <i class="material-icons main-color">logout</i>
         </a>
       {% endif %}
 

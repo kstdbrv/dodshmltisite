@@ -42,15 +42,6 @@
   }
 }
 
- .art { 
-  width: 37px;
-  height: 37px;
-
-  &:hover{
-    background-color: #000;
-    cursor: pointer;
- }
-}
 .center-header {
   &__left {
     grid-area: header-left;
@@ -73,7 +64,9 @@
     color: $mainColor;
   }
 }
-
+.bottom-header__icons{
+  width: 126px;
+}
 .bottom-header {
   position: relative; // for menu-mobile
   margin: 5px 10px;
@@ -93,11 +86,15 @@
       
     }
   }
-
+  .icons_header {
+    height: 37px; 
+    width: 37px;
+   &:hover{
+     transition: all 0.2s;
+     transform: scale(1.2);
+  }
+ }
   &__icons {
-    .icon-impaired {
-      height: 37px;
-    }
     .material-icons.main-color { 
       color: $mainFontColor;
       font-size: 43px;
@@ -130,6 +127,7 @@
   @media (max-width: 1295px) {
     display: none;
   }
+  max-width: 995px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
