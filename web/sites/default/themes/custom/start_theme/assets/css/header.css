@@ -59,7 +59,9 @@
         grid-template-columns: 1fr;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-template-areas: "header-left" "header-logo" "header-right";
+        grid-template-areas: "header-left"
+ "header-logo"
+ "header-right";
   }
 }
 
@@ -108,6 +110,10 @@
   color: #2eb3b3;
 }
 
+.bottom-header__icons {
+  width: 126px;
+}
+
 .bottom-header {
   position: relative;
   margin: 5px 10px;
@@ -133,8 +139,15 @@
   max-width: 135px;
 }
 
-.bottom-header__icons .icon-impaired {
+.bottom-header .icons_header {
   height: 37px;
+  width: 37px;
+}
+
+.bottom-header .icons_header:hover {
+  transition: all 0.2s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .bottom-header__icons .material-icons.main-color {
@@ -173,6 +186,7 @@
 }
 
 .menu-header {
+  max-width: 995px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
