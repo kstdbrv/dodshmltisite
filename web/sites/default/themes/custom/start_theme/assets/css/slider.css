@@ -1,0 +1,82 @@
+/* @import "_vars";
+
+.slider-banner {
+  max-width: 100%;
+  &__img {
+    object-fit: cover;
+    min-height: 537px;
+    max-width: 1472px;
+  }
+  &__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    outline: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    z-index: 5;
+    cursor: pointer;
+    &:hover {
+      svg {
+        path {
+          fill: $mainColor;
+        }
+      }
+    }
+    &:active {
+      svg {
+        path {
+          fill: #fff;
+        }
+      }
+    }
+     &_left{
+      left: 20px;
+     }
+     &_right{
+       right: 20px;
+    }
+  }
+  .slick-dots{
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    @media (max-width: 640px) {
+      bottom: 25px;
+     }
+    @media (max-width: 440px) {
+      bottom: 15px;
+     }
+  }
+  .slick-dots li{
+    display: inline-block;
+    padding: 0 5px;
+  }
+  .slick-dots button{
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: transparent;
+    outline: none;
+    @media (max-width: 640px) {
+      width: 7px;
+      height: 7px;
+     }
+  }
+  .slick-active button{
+    background-color:rgb(233, 29, 29);
+  }
+  .slick-slide img {
+    @media (max-width: 968px) {
+     display: inline-block;
+    }
+}
+} */

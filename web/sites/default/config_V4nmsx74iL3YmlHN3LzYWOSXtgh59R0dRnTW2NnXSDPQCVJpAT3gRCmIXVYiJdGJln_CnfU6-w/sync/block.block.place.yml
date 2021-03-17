@@ -11,7 +11,7 @@ dependencies:
 id: place
 theme: start_theme
 region: header_top
-weight: -9
+weight: -11
 provider: null
 plugin: 'block_content:cd5c3b45-9530-4cc1-a4d4-23ec67e779c7'
 settings:

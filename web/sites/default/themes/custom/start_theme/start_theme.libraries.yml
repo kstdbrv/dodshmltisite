@@ -9,10 +9,12 @@ global:
       assets/css/login-popup.css: {}
     theme:
       assets/css/header.css: {}
+      assets/css/slider.css: {}
 
   js:
     assets/js/script.js: {}
-    assets/js/header.js: {} 
+    assets/js/header.js: {}
+    assets/js/slider.js: {}
 
   dependencies:
     - start_theme/google.fonts
@@ -42,7 +44,7 @@ materialize.icons:
       
 materialize:
   js:
-     includes/js/bin/materialize.js: {}
+     includes/js/bin/materialize.min.js: { minified: true }
 
 dynamic-adapt:
   js:

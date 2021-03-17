@@ -1,0 +1,23 @@
+uuid: 0c04592f-eae4-4eca-b5ab-400e5ace079a
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.slider_image
+  module:
+    - link
+id: node.slider_image.field_link
+field_name: field_link
+entity_type: node
+bundle: slider_image
+label: ссылка
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

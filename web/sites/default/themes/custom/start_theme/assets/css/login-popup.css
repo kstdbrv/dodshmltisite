@@ -35,6 +35,7 @@
 }
 
 .modal input[type=text], .modal input[type=password] {
+  padding-left: 10px;
   font-size: 19px;
   height: 2.5rem;
 }
