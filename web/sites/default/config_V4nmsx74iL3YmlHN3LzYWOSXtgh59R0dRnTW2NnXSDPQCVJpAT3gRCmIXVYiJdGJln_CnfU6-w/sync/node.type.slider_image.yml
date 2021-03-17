@@ -1,0 +1,17 @@
+uuid: f09244c6-182d-417a-b3a7-bcc439f64c9a
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Картинка в слайдер'
+type: slider_image
+description: 'изображение для слайдера'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

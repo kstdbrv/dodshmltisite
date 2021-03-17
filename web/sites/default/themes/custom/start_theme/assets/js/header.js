@@ -57,11 +57,11 @@ window.addEventListener('DOMContentLoaded', e => {
 jQuery(document).ready(function () {
   
 
-  $('.menu-header__item_collapsed').on('click', function (e) {
+  jQuery('.menu-header__item_collapsed').on('click', function (e) {
     e.preventDefault();
     
-    $(this).toggleClass('active');
-    $(this).find('.submenu').slideToggle(300);
+    jQuery(this).toggleClass('active');
+    jQuery(this).find('.submenu').slideToggle(300);
   });
 
 });

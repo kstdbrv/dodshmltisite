@@ -1,0 +1,47 @@
+uuid: e2a8221d-92b9-4237-b44f-b364c92c8bbf
+langcode: ru
+status: true
+dependencies: {  }
+id: banner_slider
+label: 'Главный слайдер'
+options:
+  animation: fade
+  animationSpeed: 500
+  direction: horizontal
+  slideshow: true
+  easing: swing
+  smoothHeight: false
+  reverse: false
+  slideshowSpeed: 5000
+  animationLoop: true
+  randomize: false
+  startAt: 0
+  itemWidth: 0
+  itemMargin: 0
+  minItems: 0
+  maxItems: 0
+  move: 0
+  directionNav: true
+  controlNav: '0'
+  thumbCaptions: false
+  thumbCaptionsBoth: false
+  keyboard: true
+  multipleKeyboard: false
+  mousewheel: false
+  touch: true
+  prevText: ''
+  nextText: Next
+  namespace: flex-
+  selector: '.slides > li'
+  sync: ''
+  asNavFor: ''
+  initDelay: 0
+  useCSS: true
+  video: false
+  pausePlay: false
+  pauseText: Pause
+  playText: Play
+  pauseOnAction: true
+  pauseOnHover: false
+  controlsContainer: ''
+  manualControls: ''

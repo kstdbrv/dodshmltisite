@@ -11,7 +11,7 @@ dependencies:
 id: mainnavigation_2
 theme: start_theme
 region: menu
-weight: 0
+weight: -12
 provider: null
 plugin: 'system_menu_block:main'
 settings:

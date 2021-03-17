@@ -9,7 +9,7 @@ dependencies:
 id: vkladki
 theme: start_theme
 region: content
-weight: -1
+weight: -3
 provider: null
 plugin: local_tasks_block
 settings:

@@ -1,6 +1,6 @@
 uuid: d6414bba-9258-4907-9e54-d4da36627c2c
 langcode: ru
-status: false
+status: true
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
 id: start_theme_messages
 theme: start_theme
-region: header_top
-weight: -8
+region: content
+weight: -11
 provider: null
 plugin: system_messages_block
 settings:

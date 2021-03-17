@@ -12,8 +12,8 @@ _core:
   default_config_hash: ChCx7DYNUrPTt5uiRdQAPDKJQMc-_SyAQTrZh8H0o-c
 id: start_theme_main_menu
 theme: start_theme
-region: header_top
-weight: -8
+region: sidebar_first
+weight: -10
 provider: null
 plugin: 'system_menu_block:main'
 settings:

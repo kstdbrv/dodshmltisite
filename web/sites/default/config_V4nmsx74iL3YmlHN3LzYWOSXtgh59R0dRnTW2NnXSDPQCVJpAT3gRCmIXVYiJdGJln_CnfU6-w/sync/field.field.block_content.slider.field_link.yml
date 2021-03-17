@@ -1,0 +1,23 @@
+uuid: 0d9647c6-3362-4f95-9775-9f9c5090da09
+langcode: ru
+status: true
+dependencies:
+  config:
+    - block_content.type.slider
+    - field.storage.block_content.field_link
+  module:
+    - link
+id: block_content.slider.field_link
+field_name: field_link
+entity_type: block_content
+bundle: slider
+label: link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link
