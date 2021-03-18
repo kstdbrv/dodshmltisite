@@ -1,0 +1,15 @@
+uuid: 905e63f3-6898-4c09-8e32-ae292dc13c5a
+langcode: ru
+status: true
+dependencies: {  }
+name: image_slider
+label: 'главный сладер (1472 * 537)'
+effects:
+  be04afd1-535b-4dbc-a1d5-fc3d0d8ddd05:
+    uuid: be04afd1-535b-4dbc-a1d5-fc3d0d8ddd05
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1472
+      height: 537
+      anchor: center-center

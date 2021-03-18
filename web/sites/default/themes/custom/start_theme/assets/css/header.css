@@ -59,9 +59,7 @@
         grid-template-columns: 1fr;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-template-areas: "header-left"
- "header-logo"
- "header-right";
+        grid-template-areas: "header-left" "header-logo" "header-right";
   }
 }
 
@@ -110,13 +108,9 @@
   color: #2eb3b3;
 }
 
-.bottom-header__icons {
-  width: 126px;
-}
-
 .bottom-header {
   position: relative;
-  margin: 5px 10px;
+  margin: 5px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -145,9 +139,18 @@
 }
 
 .bottom-header .icons_header:hover {
-  transition: all 0.2s;
+  transition: all 0.3s;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+.bottom-header__icons {
+  display: flex;
+  flex-direction: row;
+}
+
+.bottom-header__icons a:not(:last-child) {
+  margin-right: 5px;
 }
 
 .bottom-header__icons .material-icons.main-color {
@@ -186,7 +189,6 @@
 }
 
 .menu-header {
-  max-width: 995px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -312,7 +314,7 @@
 .menu-mobile {
   position: absolute;
   z-index: 15;
-  top: 54px;
+  top: 45px;
   left: -24px;
   height: 100vh;
   min-width: clamp(275px, 50vw, 375px);

@@ -13,11 +13,29 @@ label: 'Главный слайдер'
 weight: -10
 group: ''
 skin: default
-breakpoints: null
+breakpoints: 1
 optimized: true
 options:
   options__active_tab: edit-options-responsives
   settings:
-    fade: true
+    autoplay: true
+    pauseOnDotsHover: true
+    prevArrow: ''
+    nextArrow: ''
     lazyLoad: ondemand
+    mouseWheel: true
     slidesToShow: 1
+  responsives:
+    responsive:
+      -
+        breakpoint: 768
+        unslick: false
+        settings:
+          autoplay: true
+          arrows: false
+          dots: true
+          draggable: false
+          fade: true
+          swipe: false
+          touchMove: false
+          waitForAnimate: false

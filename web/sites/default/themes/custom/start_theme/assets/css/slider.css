@@ -1,82 +1,144 @@
-/* @import "_vars";
-
-.slider-banner {
-  max-width: 100%;
-  &__img {
-    object-fit: cover;
-    min-height: 537px;
-    max-width: 1472px;
-  }
-  &__btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: transparent;
-    outline: none;
-    border: none;
-    margin: 0;
-    padding: 0;
-    z-index: 5;
-    cursor: pointer;
-    &:hover {
-      svg {
-        path {
-          fill: $mainColor;
-        }
-      }
-    }
-    &:active {
-      svg {
-        path {
-          fill: #fff;
-        }
-      }
-    }
-     &_left{
-      left: 20px;
-     }
-     &_right{
-       right: 20px;
-    }
-  }
-  .slick-dots{
-    position: absolute;
-    bottom: 40px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    @media (max-width: 640px) {
-      bottom: 25px;
-     }
-    @media (max-width: 440px) {
-      bottom: 15px;
-     }
-  }
-  .slick-dots li{
-    display: inline-block;
-    padding: 0 5px;
-  }
-  .slick-dots button{
-    font-size: 0;
-    margin: 0;
-    padding: 0;
-    width: 11px;
-    height: 11px;
-    border: 1px solid #fff;
-    border-radius: 50%;
-    background-color: transparent;
-    outline: none;
-    @media (max-width: 640px) {
-      width: 7px;
-      height: 7px;
-     }
-  }
-  .slick-active button{
-    background-color:rgb(233, 29, 29);
-  }
-  .slick-slide img {
-    @media (max-width: 968px) {
-     display: inline-block;
-    }
+/* %sf-semibold{
+  font-family:'SFProDisplay', sans-serif;
+  font-weight: 600;
 }
+%sf-bold{
+  font-family: 'SFProDisplay', sans-serif;
+  font-weight: 700;
+}
+%sf-medium{
+  font-family: 'SFProDisplay', sans-serif;
+  font-weight: 500;
+}
+%barlow-bold{
+  font-family: 'Barlow', sans-serif;
+  font-weight: 700;
+}
+%barlow-regular{
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
 } */
+.slider-banner .slick {
+  border: 1px solid #b6b5b5;
+  /* box-shadow: 0px 2px 15px rgba(0,0,0,.7); */
+}
+
+.slider-banner .slick, .slider-banner .slick-wrapper {
+  max-width: 100%;
+  position: relative;
+}
+
+.slider-banner .slick-arrow.slick-prev, .slider-banner .slick-arrow.slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.slider-banner .slick-arrow.slick-prev:hover, .slider-banner .slick-arrow.slick-next:hover {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.slider-banner .slick-arrow.slick-prev {
+  left: 20px;
+}
+
+.slider-banner .slick-arrow.slick-prev::before {
+  display: block;
+  content: ' ';
+  background-image: url("../images/icons/arrow.svg");
+  background-size: 28px 28px;
+  height: 28px;
+  width: 28px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.slider-banner .slick-arrow.slick-next {
+  right: 25px;
+}
+
+.slider-banner .slick-arrow.slick-next::before {
+  display: block;
+  content: ' ';
+  background-image: url("../images/icons/arrow.svg");
+  background-size: 28px 28px;
+  background-color: transparent;
+  height: 28px;
+  width: 28px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.slider-banner .slick-dots {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .slider-banner .slick-dots {
+    bottom: 25px;
+  }
+}
+
+@media (max-width: 440px) {
+  .slider-banner .slick-dots {
+    bottom: 15px;
+  }
+}
+
+.slider-banner .slick-dots li {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.slider-banner .slick-dots button {
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #2eb3b3;
+  /* border: transparent; */
+  border-radius: 50%;
+  background-color: #fff;
+  outline: none;
+}
+
+@media (max-width: 640px) {
+  .slider-banner .slick-dots button {
+    width: 7px;
+    height: 7px;
+  }
+}
+
+.slider-banner .slick-active button {
+  background-color: #2eb3b3;
+}
+
+.slider-banner .container-for-slider {
+  max-width: 1470px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1025px) {
+  .slider-banner .container-for-slider {
+    padding: 0;
+  }
+}

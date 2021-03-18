@@ -1,45 +1,64 @@
-/* @import "_vars";
+@import "_vars";
 
 .slider-banner {
-  max-width: 100%;
-  &__img {
-    object-fit: cover;
-    min-height: 537px;
-    max-width: 1472px;
+  .slick {
+    border: 1px solid rgb(182, 181, 181);
+    /* box-shadow: 0px 2px 15px rgba(0,0,0,.7); */
   }
-  &__btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: transparent;
-    outline: none;
-    border: none;
-    margin: 0;
-    padding: 0;
-    z-index: 5;
-    cursor: pointer;
-    &:hover {
-      svg {
-        path {
-          fill: $mainColor;
-        }
+  .slick, .slick-wrapper {
+    max-width: 100%;
+    position: relative;
+}
+  .slick-arrow {
+    &.slick-prev, &.slick-next {
+      font-size: 0;
+      line-height: 0;
+      position: absolute;
+      top: 50%;
+      display: block;
+      width: 20px;
+      height: 20px;
+      padding: 0;
+      transform: translate(0, -50%);
+      cursor: pointer;
+      color: transparent;
+      border: none;
+      outline: none;
+      background: transparent;
+      &:hover {
+        filter: invert(1);
       }
     }
-    &:active {
-      svg {
-        path {
-          fill: #fff;
-        }
-      }
-    }
-     &_left{
+
+    &.slick-prev {
       left: 20px;
-     }
-     &_right{
-       right: 20px;
+      &::before {
+        display: block;
+        content: ' ';
+        background-image: url('../images/icons/arrow.svg');
+        background-size: 28px 28px;
+        height: 28px;
+        width: 28px;
+        transform: rotate(90deg);
+      }
     }
+    &.slick-next {
+      right: 25px;
+      &::before {
+        display: block;
+        content: ' ';
+        background-image: url('../images/icons/arrow.svg');
+        background-size: 28px 28px;
+        background-color: transparent;
+        height: 28px;
+        width: 28px;
+        transform: rotate(-90deg);
+      }
+    }
+
   }
-  .slick-dots{
+
+  .slick-dots {
     position: absolute;
     bottom: 40px;
     left: 0;
@@ -62,21 +81,29 @@
     padding: 0;
     width: 11px;
     height: 11px;
-    border: 1px solid #fff;
+    border: 1px solid $mainColor;
+    /* border: transparent; */
     border-radius: 50%;
-    background-color: transparent;
+    background-color: #fff;
     outline: none;
     @media (max-width: 640px) {
       width: 7px;
       height: 7px;
      }
   }
-  .slick-active button{
-    background-color:rgb(233, 29, 29);
+  .slick-active button {
+    background-color:$mainColor;
   }
-  .slick-slide img {
-    @media (max-width: 968px) {
-     display: inline-block;
+  .container-for-slider {
+    max-width: 1470px;
+    padding: 0 15px;
+    margin: 0 auto;
+    @media (max-width:1025px) {
+      padding: 0;
     }
+
+  }
 }
-} */
+
+
+

@@ -64,12 +64,9 @@
     color: $mainColor;
   }
 }
-.bottom-header__icons{
-  width: 126px;
-}
 .bottom-header {
   position: relative; // for menu-mobile
-  margin: 5px 10px;
+  margin: 5px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -83,18 +80,22 @@
     img {
       max-height: 42px;
       max-width: 135px;
-      
     }
   }
   .icons_header {
     height: 37px; 
     width: 37px;
    &:hover{
-     transition: all 0.2s;
+     transition: all 0.3s;
      transform: scale(1.2);
   }
  }
   &__icons {
+    display: flex;
+    flex-direction: row;
+    a:not(:last-child) {
+      margin-right: 5px;
+    }
     .material-icons.main-color { 
       color: $mainFontColor;
       font-size: 43px;
@@ -127,7 +128,6 @@
   @media (max-width: 1295px) {
     display: none;
   }
-  max-width: 995px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -234,7 +234,7 @@
 .menu-mobile {
   position: absolute;
   z-index: 15;
-  top: 54px;
+  top: 45px;
   left: -24px;
   height: 100vh;
   min-width: clamp(275px, 50vw, 375px);
