@@ -1,8 +1,0 @@
-uuid: 9e58486d-3526-4234-b25c-7ced74c48b64
-langcode: ru
-status: true
-dependencies: {  }
-id: slider
-label: Слайдер
-revision: 0
-description: ''

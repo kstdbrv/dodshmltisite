@@ -68,16 +68,25 @@
 
 </header>
 
-
-
-
-
+{% if page.system %}
+<section class="system">
+  <div class="container">
+    {{ page.system }}
+  </div>
+</section>
+{% endif %}
 
 <section class="slider-banner">
- <div class="container-for-slider">
+ <div class="container-no-padding">
   {{ page.slider }}
  </div>
 </section>
+
+
+<aside class="menu-main">
+  {{ page.sidebar_menu }}
+</aside>
+
 
 
 

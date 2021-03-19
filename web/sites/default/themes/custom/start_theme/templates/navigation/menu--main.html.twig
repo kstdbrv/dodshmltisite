@@ -30,17 +30,19 @@
   {% import _self as menus %}
   {% if items %}
     {% if menu_level == 0 %}
-      <ul{{ attributes.addClass('menu-main') }}>
+      <ul{{ attributes.addClass('menu-header') }}>
+    {% elseif menu_level == 1 %}
+      <ul class="menu-header submenu">
     {% else %}
-      <ul class="menu-main submenu">
+      <ul class="menu-header submenu-2">
     {% endif %}
     {% for item in items %}
       {%
         set classes = [
-          'menu-main__item',
-          item.is_expanded ? 'menu-main__item_collapsed',
-          item.is_collapsed ? 'menu-main__item_collapsed-real',
-          item.in_active_trail ? 'menu-main__item_active-trail',
+          'menu-header__item',
+          item.is_expanded ? 'menu-header__item_collapsed',
+          item.is_collapsed ? 'menu-header__item_collapsed-real',
+          item.in_active_trail ? 'menu-header__item_active-trail',
         ]
       %}
       <li{{ item.attributes.addClass(classes) }}>
