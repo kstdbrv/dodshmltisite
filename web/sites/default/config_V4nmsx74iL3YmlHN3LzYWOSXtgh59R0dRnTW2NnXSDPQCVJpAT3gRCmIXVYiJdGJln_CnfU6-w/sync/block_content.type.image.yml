@@ -1,0 +1,8 @@
+uuid: c61d4db1-9cf0-4a57-ac5a-f5e47fc1602d
+langcode: ru
+status: true
+dependencies: {  }
+id: image
+label: Изображение
+revision: 0
+description: 'блок для добавления изображения'

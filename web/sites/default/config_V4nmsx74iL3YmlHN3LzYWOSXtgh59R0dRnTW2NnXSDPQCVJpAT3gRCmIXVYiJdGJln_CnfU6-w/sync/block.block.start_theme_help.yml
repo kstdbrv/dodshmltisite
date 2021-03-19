@@ -1,6 +1,6 @@
 uuid: 04368cce-d9ac-4540-ab73-03cfe510a47e
 langcode: ru
-status: false
+status: true
 dependencies:
   module:
     - help
@@ -10,8 +10,8 @@ _core:
   default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
 id: start_theme_help
 theme: start_theme
-region: content
-weight: -7
+region: system
+weight: -6
 provider: null
 plugin: help_block
 settings:

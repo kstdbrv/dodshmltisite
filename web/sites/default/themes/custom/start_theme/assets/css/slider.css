@@ -135,14 +135,14 @@
   background-color: #2eb3b3;
 }
 
-.slider-banner .container-for-slider {
+.slider-banner .container-no-padding {
   max-width: 1470px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
 @media (max-width: 1025px) {
-  .slider-banner .container-for-slider {
+  .slider-banner .container-no-padding {
     padding: 0;
   }
 }

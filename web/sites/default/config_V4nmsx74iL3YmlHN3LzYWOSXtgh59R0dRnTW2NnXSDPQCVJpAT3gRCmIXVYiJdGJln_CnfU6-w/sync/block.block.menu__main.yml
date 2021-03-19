@@ -1,0 +1,25 @@
+uuid: e8aed666-7f06-4b89-846a-3702ec9fa70f
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.glavnoe-menyu
+  module:
+    - system
+  theme:
+    - start_theme
+id: menu__main
+theme: start_theme
+region: sidebar_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:glavnoe-menyu'
+settings:
+  id: 'system_menu_block:glavnoe-menyu'
+  label: 'Главное меню'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

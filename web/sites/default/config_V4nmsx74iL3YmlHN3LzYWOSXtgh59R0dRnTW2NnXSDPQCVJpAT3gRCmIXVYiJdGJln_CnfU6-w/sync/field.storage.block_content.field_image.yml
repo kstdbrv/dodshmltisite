@@ -1,4 +1,4 @@
-uuid: 436770d3-7f5e-4f51-9016-55c5067bb1ce
+uuid: b9c1df95-61ef-4088-9520-610bdd81e5d7
 langcode: ru
 status: true
 dependencies:
@@ -23,7 +23,7 @@ settings:
   display_default: false
 module: image
 locked: false
-cardinality: 1
+cardinality: -1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

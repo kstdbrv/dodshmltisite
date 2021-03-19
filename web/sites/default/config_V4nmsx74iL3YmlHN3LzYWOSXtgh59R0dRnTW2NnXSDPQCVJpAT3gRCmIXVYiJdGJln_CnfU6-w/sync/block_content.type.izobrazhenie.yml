@@ -1,8 +1,0 @@
-uuid: 45aa2387-c172-40d7-ad56-07cd075739a8
-langcode: ru
-status: true
-dependencies: {  }
-id: izobrazhenie
-label: 'Главный слайдер'
-revision: 0
-description: ''

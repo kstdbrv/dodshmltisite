@@ -17,9 +17,9 @@ regions:
   header_center: 'Шапка (центр)'
   header_right: 'Шапка (правая)'
   header__logos: 'Шапка (логотип)'
-  menu: 'Меню'
+  menu: 'Меню в шапке'
   slider: 'Слайдер'
+  system: 'Система'
+  sidebar_menu: 'Главное меню (левое)'
   content: Content
-  sidebar_first: 'Sidebar first'
-  sidebar_second: 'Sidebar second'
   footer: Footer

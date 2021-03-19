@@ -79,7 +79,7 @@
     display: inline-block;
     padding: 0 5px;
   }
-  .slick-dots button{
+  .slick-dots button {
     font-size: 0;
     margin: 0;
     padding: 0;
@@ -98,7 +98,7 @@
   .slick-active button {
     background-color:$mainColor;
   }
-  .container-for-slider {
+  .container-no-padding {
     max-width: 1470px;
     padding: 0 15px;
     margin: 0 auto;
