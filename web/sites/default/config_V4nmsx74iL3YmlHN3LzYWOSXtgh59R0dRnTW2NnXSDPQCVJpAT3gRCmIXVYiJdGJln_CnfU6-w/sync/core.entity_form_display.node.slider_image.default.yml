@@ -11,6 +11,7 @@ dependencies:
   module:
     - field_layout
     - image
+    - imce
     - layout_discovery
     - link
     - media_library
@@ -33,9 +34,11 @@ content:
   field_image:
     weight: 5
     settings:
-      progress_indicator: throbber
       preview_image_style: thumbnail
-    third_party_settings: {  }
+      progress_indicator: throbber
+    third_party_settings:
+      imce:
+        enabled: true
     type: image_image
     region: content
   field_link:
