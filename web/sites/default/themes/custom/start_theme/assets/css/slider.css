@@ -148,7 +148,7 @@
 }
 
 .slider-banner .views-field-field-image a {
-  position: absolute;
+  position: relative;
 }
 
 .slider-banner .views-field-edit-node a {
@@ -166,7 +166,18 @@
   border: 1px solid #2eb3b3;
 }
 
+@media (max-width: 425px) {
+  .slider-banner .views-field-edit-node a {
+    font-size: 12px;
+    bottom: 5px;
+  }
+}
+
 .slider-banner .views-field-edit-node a:hover {
   background-color: #fff;
   color: #2eb3b3;
+}
+
+.slider-banner a {
+  display: block;
 }
