@@ -52,6 +52,20 @@ window.addEventListener('DOMContentLoaded', e => {
       menuMobile.classList.remove('active');
     }
   }));
+//
+  document.addEventListener('click', e => {
+    var e = document.querySelector('.menu-mobile');
+    if (!e.contains(e.target)) {
+      
+
+      setTimeout(() => { // нужно для эффекта transision
+        menuMobile.classList.remove('menu-mobile');
+        menuMobile.classList.add('menu-header');
+      }, 500); 
+      
+      menuMobile.classList.remove('active');
+    };
+  });
 
 });
 
