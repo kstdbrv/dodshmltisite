@@ -18,6 +18,10 @@
   font-family: 'Barlow', sans-serif;
   font-weight: 400;
 } */
+.slider-banner {
+  margin-bottom: 15px;
+}
+
 .slider-banner .slick {
   /*  box-shadow: inset -20px -8px 0px 0px rgba(46, 179, 179, 1); */
   border: 1px solid #2eb3b3;
@@ -162,6 +166,7 @@
   border-radius: 25px;
   background-color: #2eb3b3;
   color: #fff;
+  -webkit-transition: all .3s;
   transition: all .3s;
   border: 1px solid #2eb3b3;
 }

@@ -10,6 +10,7 @@ global:
     theme:
       assets/css/header.css: {}
       assets/css/slider.css: {}
+      assets/css/section-1.css: {}
 
   js:
     assets/js/script.js: {}

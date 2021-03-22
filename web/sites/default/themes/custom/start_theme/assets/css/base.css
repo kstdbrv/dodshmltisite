@@ -27,7 +27,8 @@ body {
 } */
 /* Global */
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   min-height: 100vh;
 }
 
@@ -41,7 +42,8 @@ body {
 }
 
 *, *:before, *:after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -125,6 +127,6 @@ img {
   height: auto;
 }
 
-/* .system {
+.system .messages {
   margin-bottom: 20px;
-} */
+}

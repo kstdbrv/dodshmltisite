@@ -159,16 +159,6 @@
   }
   .is-active {
     color: $mainColor;
-    &:before {
-      position: absolute;
-      content: "";
-      background-color: $mainColor;
-      height: 3px;
-      width: 100%;
-      right: auto;
-      left: 0;
-      bottom: 0;
-    }
   }
 
   li ul { // submenu
@@ -203,7 +193,7 @@
 /*   li:hover > ul .submenu-2 {
     transition: .1s ease-in-out;
   } */
-  .menu-header__item_collapsed .submenu-2 {
+  .submenu-2 {
     position: absolute;
     left: 225px;
     top: 12px;
