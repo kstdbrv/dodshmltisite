@@ -166,7 +166,6 @@
   border-radius: 25px;
   background-color: #2eb3b3;
   color: #fff;
-  -webkit-transition: all .3s;
   transition: all .3s;
   border: 1px solid #2eb3b3;
 }
