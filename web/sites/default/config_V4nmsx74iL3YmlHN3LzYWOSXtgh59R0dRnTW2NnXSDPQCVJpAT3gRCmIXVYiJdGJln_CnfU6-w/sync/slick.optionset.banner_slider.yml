@@ -19,12 +19,12 @@ options:
   options__active_tab: edit-options-settings
   settings:
     autoplay: true
+    pauseOnHover: false
     pauseOnDotsHover: true
     prevArrow: ''
     nextArrow: ''
     fade: true
     lazyLoad: ondemand
-    mouseWheel: true
     slidesToShow: 1
   responsives:
     responsive:

@@ -30,9 +30,11 @@
   {% import _self as menus %}
   {% if items %}
     {% if menu_level == 0 %}
-      <ul{{ attributes.addClass('menu-main') }}>
-    {% else %}
+      <ul {{ attributes.addClass('menu-main') }}>
+    {% elseif menu_level == 1 %}
       <ul class="menu-main submenu">
+    {% else %}
+      <ul class="menu-main submenu-2">
     {% endif %}
     {% for item in items %}
       {%
@@ -43,7 +45,7 @@
           item.in_active_trail ? 'menu-main__item_active-trail',
         ]
       %}
-      <li{{ item.attributes.addClass(classes) }}>
+        <li {{ item.attributes.addClass(classes) }}>
         {{ link(item.title, item.url) }}
         {% if item.below %}
           {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
@@ -56,6 +58,55 @@
   {# {{ kint() }} #}
 
 {% endmacro %}
+
+
+
+
+{# 
+{% import _self as menus %}
+
+
+{{ menus.menu_links(items, attributes, 0) }}
+
+{% macro menu_links(items, attributes, menu_level) %}
+  {% import _self as menus %}
+  {% if items %}
+    {% if menu_level == 0 %}
+      <ul{{ attributes.addClass('menu-main') }}>
+    {% elseif menu_level == 1 %}
+      <ul class="menu-main submenu">
+    {% else %}
+      <ul class="menu-main submenu-2">
+    {% endif %}
+    {% for item in items %}
+      {%
+        set classes = [
+          'menu-main__item',
+          item.is_expanded ? 'menu-main__item_collapsed',
+          menu_level == 2 ? 'collapsed-2',
+          item.is_collapsed ? 'menu-main__item_collapsed-real',
+          item.in_active_trail ? 'menu-main__item_active-trail',
+        ]
+      %}
+      {% if menu_level == 0 %}
+        <li {{ item.attributes.addClass(classes) }} id="subs-1">
+      {% elseif menu_level == 1 %}
+        <li {{ item.attributes.addClass(classes) }} id="subs-2">
+      {% else %}
+        <li {{ item.attributes.addClass(classes) }}>
+      {% endif %}
+        {{ link(item.title, item.url) }}
+        {% if item.below %}
+          {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
+        {% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+
+
+
+{% endmacro %} #}
 
 
 
