@@ -1,0 +1,7 @@
+name: Visually_impaired
+description: Версия для слабовидящих
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: Модули разработанные сотрудниками "МКУ КМЦИКТ Старт"
+type: module
+

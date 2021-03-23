@@ -1,0 +1,11 @@
+cookie:
+  version: 1.x
+  css:
+    base:
+      css/index.css: {}
+  js:
+    js/custom.js: {}
+    js/cookie.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once

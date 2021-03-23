@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * @param $variables
+ * Implements hook_preprocess_page()
+ */
+function visually_impaired_preprocess_page(&$variables){
+
+  # Add library
+  $variables['#attached']['library'][] =  'visually_impaired/visually_impaired';
+
+}

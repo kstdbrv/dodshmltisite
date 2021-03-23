@@ -30,7 +30,7 @@
   {% import _self as menus %}
   {% if items %}
     {% if menu_level == 0 %}
-      <ul id="menu-mobile" {{ attributes.addClass('menu-header') }}>
+      <ul {{ attributes.addClass('menu-header') }}>
     {% elseif menu_level == 1 %}
       <ul class="menu-header submenu">
     {% else %}

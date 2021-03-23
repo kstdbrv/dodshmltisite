@@ -1,0 +1,13 @@
+info_block:
+  version: 1.x
+
+  css:
+    base:
+      css/index.css: {}
+  js:
+    
+    js/script.js: {}
+    
+  dependencies:
+    - core/jquery
+    - core/jquery.once
