@@ -1,6 +1,8 @@
+@import "vars";
+
 .section-1 {
   display: grid;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   grid-template-areas:
   "menu-main content banners";
   grid-template-rows: 1fr;
@@ -14,5 +16,50 @@
   }
   &__banner {
     grid-area: banners;
+  }
+  .menu-main {
+    @extend %myriad-bold;
+    font-size: 17px;
+    #block-menu-main-menu {
+      font-size: $mainFontSize;
+      color: $mainColor;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    li ul {
+      display: none;
+    }
+    li a {
+      margin-bottom: 15px;
+      display: block;
+      padding-left: 27px;
+      position: relative;
+      transition: all .3s;
+      cursor: pointer;
+      &:hover {
+        color: $mainColor;
+      }
+    }
+    &__item_collapsed > a:before {
+      position: absolute;
+      content: "";
+      background-image: url('../images/icons/arrow-nav.svg');
+      background-color: transparent;
+      background-repeat: no-repeat;
+      left: 0;
+      bottom: 38%;
+      width: 12px;
+      height: 8px;
+      transform: rotate(180deg) scale(1.3);
+    }
+    .active > a:before {
+      transform: rotate(0) scale(1.3);
+    }
+    .is-active {
+      color: $mainColor;
+    }
+    .submenu-2 {
+      position: static;
+    }
   }
 }

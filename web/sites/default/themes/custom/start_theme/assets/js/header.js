@@ -2,7 +2,7 @@ $ = jQuery.noConflict();
 
 /*  всплывающее модальное окно Login */
 jQuery(document).ready(function () {
-  jQuery('#modal_login').modal();
+  $('#modal_login').modal();
 });
 
 
@@ -41,13 +41,14 @@ window.addEventListener('DOMContentLoaded', e => {
   }));
   /* клик по области не меню */
   document.addEventListener('click', e => {
+    
     let target = e.target;
     let its_menu = target == menu || menu.contains(target);
     let its_burger = target == burger.length;
     let menu_is_active = menu.classList.contains('active');
     
     if (!its_menu && !its_burger && menu_is_active) {
-    
+      e.preventDefault();
       burger.forEach(el => el.classList.toggle('active'));
       menu.classList.toggle('active');
       body.classList.toggle('lock');
@@ -63,14 +64,25 @@ window.addEventListener('DOMContentLoaded', e => {
 });
 
 
-jQuery(document).ready(function () {
-  
+ /* accordeon */
+ $(document).ready(function () {
 
-  jQuery('.menu-header__item_collapsed').on('click', function (e) {
-    e.preventDefault();
-    
-    jQuery(this).toggleClass('active');
-    jQuery(this).find('.submenu').slideToggle(300);
-  });
-
+   $('#menu-mobile li.menu-header__item_collapsed>a').on('click', function () {
+     
+      $(this).removeAttr('href');
+      var element = $(this).parent('li');
+      if (element.hasClass('active')) {
+        element.removeClass('active');
+        element.find('li').removeClass('active');
+        element.find('ul').slideUp();
+      }
+      else {
+        element.addClass('active');
+        element.children('ul').slideDown();
+        element.siblings('li').children('ul').slideUp();
+        element.siblings('li').removeClass('active');
+        element.siblings('li').find('li').removeClass('active');
+        element.siblings('li').find('ul').slideUp();
+      }
+    });
 });
