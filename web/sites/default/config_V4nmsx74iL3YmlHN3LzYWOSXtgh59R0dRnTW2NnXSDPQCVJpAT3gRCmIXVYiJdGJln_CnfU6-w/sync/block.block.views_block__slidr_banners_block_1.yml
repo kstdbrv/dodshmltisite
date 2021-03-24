@@ -1,0 +1,24 @@
+uuid: e4d341a4-e6ff-434e-9dbe-108df043b80c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - views.view.slidr_banners
+  module:
+    - views
+  theme:
+    - start_theme
+id: views_block__slidr_banners_block_1
+theme: start_theme
+region: banners_right
+weight: 0
+provider: null
+plugin: 'views_block:slidr_banners-block_1'
+settings:
+  id: 'views_block:slidr_banners-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

@@ -1,0 +1,24 @@
+uuid: 10530e34-a677-4d97-96ab-0721122143a4
+langcode: ru
+status: false
+dependencies:
+  config:
+    - views.view.slidr_banners
+  module:
+    - views
+  theme:
+    - start_theme
+id: slider_banners_custom
+theme: start_theme
+region: header_top
+weight: 0
+provider: null
+plugin: 'views_block:slidr_banners-block_1'
+settings:
+  id: 'views_block:slidr_banners-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

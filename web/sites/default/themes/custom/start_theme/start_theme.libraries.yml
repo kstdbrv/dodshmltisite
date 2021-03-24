@@ -15,7 +15,7 @@ global:
   js:
     assets/js/script.js: {}
     assets/js/header.js: {}
-    assets/js/slider.js: {}
+    assets/js/section-1.js: {}
 
   dependencies:
     - start_theme/google.fonts
