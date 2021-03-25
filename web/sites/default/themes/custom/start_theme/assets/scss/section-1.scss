@@ -18,13 +18,13 @@
     grid-area: banners;
     text-align: center;
     a {
-      margin-bottom: 15px; 
+      margin-bottom: 5px; 
       width: 100%;
     }
     img {
-      border: 1px solid #DDDDDD;
-    width: 100%;
-    object-fit: contain;
+     border: 1px solid #DDDDDD;
+     width: 100%;
+     object-fit: contain;
     }
     .slick-list { // высота видимости баннеров (slides to show)
       height: 750px !important;

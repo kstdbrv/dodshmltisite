@@ -1,0 +1,40 @@
+uuid: 9c807b87-a973-49ae-aab5-19b72dd9e1f5
+langcode: ru
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.page_fz.body
+    - field.field.node.page_fz.field_file_fz
+    - node.type.page_fz
+  module:
+    - field_layout
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: node.page_fz.teaser
+targetEntityType: node
+bundle: page_fz
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_file_fz: true
+  langcode: true

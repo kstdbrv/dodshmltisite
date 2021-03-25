@@ -1,0 +1,22 @@
+uuid: 3c1a420f-aea4-4659-a232-b303262263a5
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.page_fz
+id: node.page_fz.promote
+field_name: promote
+entity_type: node
+bundle: page_fz
+label: 'Помещено на главную страницу'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

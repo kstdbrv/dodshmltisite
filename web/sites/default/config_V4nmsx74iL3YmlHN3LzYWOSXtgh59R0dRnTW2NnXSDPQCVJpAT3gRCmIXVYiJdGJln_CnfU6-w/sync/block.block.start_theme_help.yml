@@ -11,7 +11,7 @@ _core:
 id: start_theme_help
 theme: start_theme
 region: system
-weight: -6
+weight: -7
 provider: null
 plugin: help_block
 settings:

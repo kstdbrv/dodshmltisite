@@ -1,6 +1,6 @@
 uuid: aca2b57a-a239-4b2a-be04-5e0009258451
 langcode: ru
-status: false
+status: true
 dependencies:
   module:
     - system
@@ -10,13 +10,13 @@ _core:
   default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
 id: start_theme_content
 theme: start_theme
-region: header_top
+region: section_1
 weight: -7
 provider: null
 plugin: system_main_block
 settings:
   id: system_main_block
-  label: 'Main page content'
+  label: 'Содержание главной страницы'
   provider: system
   label_display: '0'
 visibility: {  }
