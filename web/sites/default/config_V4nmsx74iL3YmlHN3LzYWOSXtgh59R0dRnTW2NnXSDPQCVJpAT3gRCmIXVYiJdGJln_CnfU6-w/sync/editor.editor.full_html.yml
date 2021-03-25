@@ -25,6 +25,8 @@ settings:
             - Subscript
             - '-'
             - RemoveFormat
+            - TextColor
+            - BGColor
             - Styles
             - SpecialChar
         -
@@ -47,8 +49,11 @@ settings:
         -
           name: Media
           items:
+            - Iframe
+            - Youtube
             - ImceLink
             - ImceImage
+            - Templates
         -
           name: 'Block Formatting'
           items:
@@ -67,6 +72,14 @@ settings:
       language_list: un
     stylescombo:
       styles: ''
+    font:
+      font_names: ''
+      font_sizes: ''
+    templates:
+      template_path: ''
+      replace_content: 0
+    colorbutton:
+      colors: ''
 image_upload:
   status: true
   scheme: public

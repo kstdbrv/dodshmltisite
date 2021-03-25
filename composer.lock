@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b5475346a5623cd446ac0b8463cb4ec4",
+    "content-hash": "34f271ebb3097e5544575aae437bd9f3",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1847,6 +1847,40 @@
             "time": "2020-10-27T21:46:55+00:00"
         },
         {
+            "name": "drupal-ckeditor-libraries-group/font",
+            "version": "4.13.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal-ckeditor-libraries-group/font.git",
+                "reference": "81cbe90726319bb0a8c0c12c0a893e1e2e660c60"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/drupal-ckeditor-libraries-group/font/zipball/81cbe90726319bb0a8c0c12c0a893e1e2e660c60",
+                "reference": "81cbe90726319bb0a8c0c12c0a893e1e2e660c60",
+                "shasum": ""
+            },
+            "type": "drupal-library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later",
+                "LGPL-2.1-or-later",
+                "MPL-1.1"
+            ],
+            "description": "CKEditor 4 font plugin",
+            "homepage": "https://ckeditor.com/cke4/addon/font",
+            "keywords": [
+                "CKEditor",
+                "font",
+                "plugin"
+            ],
+            "support": {
+                "issues": "https://github.com/ckeditor/ckeditor4/issues",
+                "source": "https://github.com/ckeditor/ckeditor4/tree/master/plugins/font"
+            },
+            "time": "2019-06-27T14:05:00+00:00"
+        },
+        {
             "name": "drupal/admin_toolbar",
             "version": "3.0.0",
             "source": {
@@ -2027,6 +2061,60 @@
             }
         },
         {
+            "name": "drupal/anchor_link",
+            "version": "2.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/anchor_link.git",
+                "reference": "8.x-2.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/anchor_link-8.x-2.5.zip",
+                "reference": "8.x-2.5",
+                "shasum": "849e94b2687ffc1f7984604fda929d7201933757"
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/fakeobjects": "^1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.5",
+                    "datestamp": "1612887560",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "branch-alias": {
+                    "dev-8.x-2.x": "8.2.x-dev"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Vardot",
+                    "homepage": "https://www.drupal.org/vardot",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "RajabNatshah",
+                    "homepage": "https://www.drupal.org/user/1414312"
+                }
+            ],
+            "description": "This plugin module adds the better link dialog and anchor related features to CKEditor in Drupal 8.",
+            "homepage": "https://www.drupal.org/project/anchor_link",
+            "support": {
+                "source": "http://cgit.drupalcode.org/anchor_link",
+                "issues": "https://www.drupal.org/project/issues/anchor_link"
+            }
+        },
+        {
             "name": "drupal/antibot",
             "version": "1.4.0",
             "source": {
@@ -2204,6 +2292,282 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/captcha",
                 "issues": "https://www.drupal.org/project/issues/captcha"
+            }
+        },
+        {
+            "name": "drupal/ckeditor_font",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ckeditor_font.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_font-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "a8d0d10e7b23307bb9aba5de707518c108f69570"
+            },
+            "require": {
+                "drupal-ckeditor-libraries-group/font": "4.13.1",
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1590157419",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Webbeh",
+                    "homepage": "https://www.drupal.org/user/1160608"
+                },
+                {
+                    "name": "cobenash",
+                    "homepage": "https://www.drupal.org/user/2138470"
+                },
+                {
+                    "name": "darol100",
+                    "homepage": "https://www.drupal.org/user/2667123"
+                },
+                {
+                    "name": "dinarcon",
+                    "homepage": "https://www.drupal.org/user/909522"
+                }
+            ],
+            "description": "This plugin adds Font Size and Font Family dropdowns that applies as inline element style.",
+            "homepage": "https://www.drupal.org/project/ckeditor_font",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/ckeditor_font",
+                "issues": "http://drupal.org/project/issues/ckeditor_font"
+            }
+        },
+        {
+            "name": "drupal/ckeditor_iframe",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ckeditor_iframe.git",
+                "reference": "8.x-2.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_iframe-8.x-2.1.zip",
+                "reference": "8.x-2.1",
+                "shasum": "a6e315348eb2cc26a6c845d956b1716810b0edff"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/fakeobjects": "^1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.1",
+                    "datestamp": "1592830028",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Quillen (kevinquillen)",
+                    "homepage": "https://www.drupal.org/u/kevinquillen",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Brian Osborne (bkosborne)",
+                    "homepage": "https://www.drupal.org/u/bkosborne",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Adds the iFrame dialog plugin to CKEditor.",
+            "homepage": "http://drupal.org/project/ckeditor_iframe",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/ckeditor_iframe",
+                "issues": "https://drupal.org/project/issues/ckeditor_iframe"
+            }
+        },
+        {
+            "name": "drupal/ckeditor_templates",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ckeditor_templates.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_templates-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "4957f9d3b1d817433432f00518c18f52980a5376"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1601232517",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "lucaslg",
+                    "homepage": "https://www.drupal.org/user/3128975"
+                },
+                {
+                    "name": "mandclu",
+                    "homepage": "https://www.drupal.org/user/52136"
+                }
+            ],
+            "description": "Integrates the CKEditor templates plugin.",
+            "homepage": "https://www.drupal.org/project/ckeditor_templates",
+            "support": {
+                "source": "https://git.drupalcode.org/project/ckeditor_templates"
+            }
+        },
+        {
+            "name": "drupal/ckeditor_youtube",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ckeditor_youtube.git",
+                "reference": "8.x-1.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_youtube-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "18b5da4328c3ffee5b3c9b280e48d6195c519c54"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "php": "^7.1"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.3",
+                    "datestamp": "1587581152",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Mauricio Dinarte (dinarcon)",
+                    "homepage": "https://www.drupal.org/u/dinarcon",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "gnuget",
+                    "homepage": "https://www.drupal.org/user/992990"
+                }
+            ],
+            "description": "Adds the Youtube plugin to CKEditor.",
+            "homepage": "http://drupal.org/project/ckeditor_youtube",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/ckeditor_youtube",
+                "issues": "http://drupal.org/project/issues/ckeditor_youtube"
+            }
+        },
+        {
+            "name": "drupal/colorbutton",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/colorbutton.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/colorbutton-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "a3467286d9882819bc45e9573dc2253444971bfc"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/panelbutton": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1589886092",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Quillen (kevinquillen)",
+                    "homepage": "https://www.drupal.org/u/kevinquillen",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "ddrozdik",
+                    "homepage": "https://www.drupal.org/user/574124"
+                },
+                {
+                    "name": "kevinquillen",
+                    "homepage": "https://www.drupal.org/user/317279"
+                }
+            ],
+            "description": "Adds the Color Button plugin to CKEditor.",
+            "homepage": "http://drupal.org/project/colorbutton",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/colorbutton",
+                "issues": "http://drupal.org/project/issues/colorbutton"
             }
         },
         {
@@ -2854,6 +3218,59 @@
             }
         },
         {
+            "name": "drupal/fakeobjects",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/fakeobjects.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/fakeobjects-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "0a7a3ead609d1efd62f4f4803a41317970d8292d"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1592829875",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Quillen (kevinquillen)",
+                    "homepage": "https://www.drupal.org/u/kevinquillen",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "kevinquillen",
+                    "homepage": "https://www.drupal.org/user/317279"
+                }
+            ],
+            "description": "Adds the FakeObjects plugin to CKEditor. This plugin is a utility plugin that is required by certain user-facing CKEditor plugins.",
+            "homepage": "http://drupal.org/project/fakeobjects",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/fakeobjects",
+                "issues": "http://drupal.org/project/issues/fakeobjects"
+            }
+        },
+        {
             "name": "drupal/flexslider",
             "version": "2.0.0",
             "source": {
@@ -2970,6 +3387,63 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/imce",
                 "issues": "https://www.drupal.org/project/issues/imce?version=8.x"
+            }
+        },
+        {
+            "name": "drupal/panelbutton",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/panelbutton.git",
+                "reference": "8.x-1.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/panelbutton-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "1d65e6b9d9b1dfbc27364e2b713f63826bc33031"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.3",
+                    "datestamp": "1592593051",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Quillen (kevinquillen)",
+                    "homepage": "https://www.drupal.org/u/kevinquillen",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "ddrozdik",
+                    "homepage": "https://www.drupal.org/user/574124"
+                },
+                {
+                    "name": "kevinquillen",
+                    "homepage": "https://www.drupal.org/user/317279"
+                }
+            ],
+            "description": "Adds the Panel Button plugin to CKEditor. This plugin is a utility plugin that is required by certain user-facing CKEditor plugins.",
+            "homepage": "http://drupal.org/project/panelbutton",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/panelbutton",
+                "issues": "http://drupal.org/project/issues/panelbutton"
             }
         },
         {

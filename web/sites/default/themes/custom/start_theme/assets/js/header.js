@@ -65,7 +65,13 @@ window.addEventListener('DOMContentLoaded', e => {
 
 
  /* accordeon */
- $(document).ready(function () {
+$(document).ready(function () {
+
+  if ($(window).width() < 1295) {
+  
+    $('.menu-header').attr('id', 'menu-mobile');
+    console.log('sdfsd')
+  }
 
    $('#menu-mobile li.menu-header__item_collapsed>a').on('click', function () {
      

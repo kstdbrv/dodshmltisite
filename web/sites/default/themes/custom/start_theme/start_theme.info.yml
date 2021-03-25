@@ -22,4 +22,5 @@ regions:
   system: 'Система'
   sidebar_menu: 'Главное меню (левое)'
   section_1: 'Секция-1'
+  banners_right: 'Правые баннеры'
   footer: Footer

@@ -1,0 +1,11 @@
+uuid: b1bf25b4-cdf4-467e-98c1-60d8390054f8
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.banners_custom
+id: node.banners_custom
+target_entity_type_id: node
+target_bundle: banners_custom
+default_langcode: site_default
+language_alterable: false

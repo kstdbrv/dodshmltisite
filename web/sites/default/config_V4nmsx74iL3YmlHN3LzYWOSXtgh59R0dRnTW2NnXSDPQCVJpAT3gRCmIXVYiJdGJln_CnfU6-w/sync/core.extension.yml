@@ -2,6 +2,7 @@ module:
   admin_toolbar: 0
   admin_toolbar_tools: 0
   adminimal_admin_toolbar: 0
+  anchor_link: 0
   antibot: 0
   automated_cron: 0
   big_pipe: 0
@@ -9,10 +10,16 @@ module:
   blazy_ui: 0
   block: 0
   block_content: 0
+  book: 0
   breakpoint: 0
   captcha: 0
   ckeditor: 0
+  ckeditor_font: 0
+  ckeditor_iframe: 0
+  ckeditor_templates: 0
+  ckeditor_youtube: 0
   color: 0
+  colorbutton: 0
   comment: 0
   config: 0
   contact: 0
@@ -26,6 +33,7 @@ module:
   dynamic_page_cache: 0
   editor: 0
   entity_reference_revisions: 0
+  fakeobjects: 0
   field: 0
   field_layout: 0
   field_ui: 0
@@ -40,6 +48,7 @@ module:
   image: 0
   image_captcha: 0
   imce: 0
+  info_block: 0
   language: 0
   layout_discovery: 0
   libraries: 0
@@ -52,6 +61,7 @@ module:
   node: 0
   options: 0
   page_cache: 0
+  panelbutton: 0
   path: 0
   path_alias: 0
   quickedit: 0

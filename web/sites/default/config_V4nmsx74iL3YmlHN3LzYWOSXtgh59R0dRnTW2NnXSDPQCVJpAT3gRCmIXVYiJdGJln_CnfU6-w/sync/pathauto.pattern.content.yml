@@ -9,14 +9,15 @@ label: content
 type: 'canonical_entities:node'
 pattern: '[node:title]'
 selection_criteria:
-  370ac72f-a296-4269-840d-e82e6172706d:
+  1442aabb-2974-4dd5-ab0a-523e38120a1a:
     id: node_type
     bundles:
       page: page
+      page_fz: page_fz
     negate: false
     context_mapping:
       node: node
-    uuid: 370ac72f-a296-4269-840d-e82e6172706d
+    uuid: 1442aabb-2974-4dd5-ab0a-523e38120a1a
 selection_logic: and
 weight: -5
 relationships: {  }

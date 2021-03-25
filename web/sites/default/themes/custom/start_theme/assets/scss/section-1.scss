@@ -6,17 +6,31 @@
   grid-template-areas:
   "menu-main content banners";
   grid-template-rows: 1fr;
-  grid-template-columns: minmax(350px, 385px) auto minmax(345px, 355px);
-  grid-gap: clamp(1vw, 2vw, 3vw);
+  grid-template-columns: minmax(350px, 385px) auto minmax(260px, 280px);
+  grid-gap: clamp(0.5vw, 1vw, 2vw);
   &__main-menu {
    grid-area: menu-main;
   }
   &__content {
     grid-area: content;
   }
-  &__banner {
+  &__banners {
     grid-area: banners;
+    text-align: center;
+    a {
+      margin-bottom: 5px; 
+      width: 100%;
+    }
+    img {
+     border: 1px solid #DDDDDD;
+     width: 100%;
+     object-fit: contain;
+    }
+    .slick-list { // высота видимости баннеров (slides to show)
+      height: 750px !important;
+    }
   }
+
   .menu-main {
     @extend %myriad-bold;
     font-size: 17px;
@@ -62,4 +76,6 @@
       position: static;
     }
   }
+
+
 }

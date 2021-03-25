@@ -1,0 +1,7 @@
+name: Info Block
+description: Общий информационный блок, который размещается в левой колонке сайта.
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: Модули разработанные сотрудниками "МКУ КМЦИКТ Старт"
+type: module
+
