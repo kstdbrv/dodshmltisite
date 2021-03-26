@@ -1,0 +1,41 @@
+/* %sf-semibold{
+  font-family:'SFProDisplay', sans-serif;
+  font-weight: 600;
+}
+%sf-bold{
+  font-family: 'SFProDisplay', sans-serif;
+  font-weight: 700;
+}
+%sf-medium{
+  font-family: 'SFProDisplay', sans-serif;
+  font-weight: 500;
+}
+%barlow-bold{
+  font-family: 'Barlow', sans-serif;
+  font-weight: 700;
+}
+%barlow-regular{
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+} */
+.news-teaser {
+  position: relative;
+}
+
+.news-teaser__link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.news-teaser__text {
+  max-height: 50px;
+  overflow: hidden;
+}
+
+.news-teaser__tegs {
+  position: relative;
+  z-index: 3;
+}

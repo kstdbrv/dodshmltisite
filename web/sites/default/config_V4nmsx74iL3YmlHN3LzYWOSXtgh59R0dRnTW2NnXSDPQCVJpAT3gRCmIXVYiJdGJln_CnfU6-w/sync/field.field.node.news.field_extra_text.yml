@@ -1,0 +1,21 @@
+uuid: f4b8a625-cd25-4424-8c68-49280ac852da
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_extra_text
+    - node.type.news
+  module:
+    - text
+id: node.news.field_extra_text
+field_name: field_extra_text
+entity_type: node
+bundle: news
+label: 'Дополнительный текст'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

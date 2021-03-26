@@ -11,6 +11,7 @@ global:
       assets/css/header.css: {}
       assets/css/slider.css: {}
       assets/css/section-1.css: {}
+      assets/css/news.css: {}
 
   js:
     assets/js/script.js: {}

@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * @param $variables
+ * Implements hook_preprocess_page()
+ */
+function code_block_preprocess_page(&$variables){
+
+  # Add library
+  $variables['#attached']['library'][] =  'code_block/code_block';
+
+}

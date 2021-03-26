@@ -1,0 +1,8 @@
+uuid: 4ea2c0d6-1c6a-4489-81f6-4b4de82ba255
+langcode: ru
+status: true
+dependencies: {  }
+name: marker
+vid: marker
+description: ''
+weight: 0

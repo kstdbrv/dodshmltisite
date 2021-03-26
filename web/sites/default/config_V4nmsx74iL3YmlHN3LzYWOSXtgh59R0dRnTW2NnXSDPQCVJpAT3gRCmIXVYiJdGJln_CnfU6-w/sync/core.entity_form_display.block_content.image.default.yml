@@ -7,15 +7,8 @@ dependencies:
     - field.field.block_content.image.field_image
     - image.style.thumbnail
   module:
-    - field_layout
     - image
     - imce
-    - layout_discovery
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings:
-      label: ''
 id: block_content.image.default
 targetEntityType: block_content
 bundle: image

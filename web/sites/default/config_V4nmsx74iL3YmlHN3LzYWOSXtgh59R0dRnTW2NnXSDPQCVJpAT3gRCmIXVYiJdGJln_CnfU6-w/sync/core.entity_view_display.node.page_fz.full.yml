@@ -6,18 +6,12 @@ dependencies:
     - core.entity_view_mode.node.full
     - field.field.node.page_fz.body
     - field.field.node.page_fz.field_file_fz
+    - field.field.node.page_fz.field_tegs
     - node.type.page_fz
   module:
-    - field_layout
     - file
-    - layout_discovery
     - text
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings:
-      label: ''
 id: node.page_fz.full
 targetEntityType: node
 bundle: page_fz
@@ -32,7 +26,7 @@ content:
     region: content
   field_file_fz:
     weight: 102
-    label: above
+    label: hidden
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
@@ -40,8 +34,9 @@ content:
     region: content
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
+  field_tegs: true
   langcode: true

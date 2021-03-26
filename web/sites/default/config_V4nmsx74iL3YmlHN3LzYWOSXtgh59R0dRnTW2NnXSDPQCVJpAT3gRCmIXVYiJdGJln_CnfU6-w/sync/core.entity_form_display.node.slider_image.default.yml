@@ -9,17 +9,10 @@ dependencies:
     - image.style.thumbnail
     - node.type.slider_image
   module:
-    - field_layout
     - image
     - imce
-    - layout_discovery
     - link
     - media_library
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings:
-      label: ''
 id: node.slider_image.default
 targetEntityType: node
 bundle: slider_image
@@ -88,6 +81,11 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden:
   path: true
   promote: true

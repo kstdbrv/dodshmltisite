@@ -1,0 +1,29 @@
+uuid: 1bf48874-04c5-42ad-9c43-8db03201b499
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tegs
+    - node.type.news
+    - taxonomy.vocabulary.tags
+id: node.news.field_tegs
+field_name: field_tegs
+entity_type: node
+bundle: news
+label: Теги
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

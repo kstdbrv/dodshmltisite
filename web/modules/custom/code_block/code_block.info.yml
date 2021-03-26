@@ -1,0 +1,6 @@
+name: Code Block
+type: module
+description: 'пользовательский блок, для добавления кода на все сайты'
+package: Модули разработанные сотрудниками "МКУ КМЦИКТ Старт"
+core: 8.x
+core_version_requirement: ^8 || ^9
