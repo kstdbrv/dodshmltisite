@@ -11,7 +11,7 @@ _core:
 id: start_theme_search
 theme: start_theme
 region: header_top
-weight: -10
+weight: -9
 provider: null
 plugin: search_form_block
 settings:

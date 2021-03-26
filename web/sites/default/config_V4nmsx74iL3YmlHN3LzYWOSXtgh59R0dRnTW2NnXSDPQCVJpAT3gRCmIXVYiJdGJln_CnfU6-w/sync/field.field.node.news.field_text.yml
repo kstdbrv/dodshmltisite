@@ -1,0 +1,21 @@
+uuid: 840695f6-0e86-4b51-89ef-c479d14b5e45
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_text
+    - node.type.news
+  module:
+    - text
+id: node.news.field_text
+field_name: field_text
+entity_type: node
+bundle: news
+label: Текст
+description: 'Текст без картинок'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

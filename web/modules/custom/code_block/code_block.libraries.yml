@@ -1,0 +1,12 @@
+code_block:
+  version: 1.x
+
+  css:
+    base:
+      css/style.css: {}
+  js:
+    js/script.js: {}
+    
+  dependencies:
+    - core/jquery
+    - core/jquery.once

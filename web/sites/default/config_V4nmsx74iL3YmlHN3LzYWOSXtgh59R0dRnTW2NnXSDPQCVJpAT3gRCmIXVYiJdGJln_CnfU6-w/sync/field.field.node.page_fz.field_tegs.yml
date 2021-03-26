@@ -1,0 +1,29 @@
+uuid: 7645fbef-c51d-48a4-8169-4214d72245db
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tegs
+    - node.type.page_fz
+    - taxonomy.vocabulary.tags
+id: node.page_fz.field_tegs
+field_name: field_tegs
+entity_type: node
+bundle: page_fz
+label: Теги
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

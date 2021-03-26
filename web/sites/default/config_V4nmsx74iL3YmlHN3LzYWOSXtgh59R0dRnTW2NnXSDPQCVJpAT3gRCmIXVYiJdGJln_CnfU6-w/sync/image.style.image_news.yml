@@ -1,0 +1,15 @@
+uuid: 613fea99-c531-4328-bba8-855f4ae2031c
+langcode: ru
+status: true
+dependencies: {  }
+name: image_news
+label: 'Картинка в новость (201*161)'
+effects:
+  ec21d74a-90f9-4fb6-82c1-f6b759de69ca:
+    uuid: ec21d74a-90f9-4fb6-82c1-f6b759de69ca
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 201
+      height: 161
+      anchor: center-center

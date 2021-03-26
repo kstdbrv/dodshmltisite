@@ -8,16 +8,9 @@ dependencies:
     - image.style.thumbnail
     - node.type.banners_custom
   module:
-    - field_layout
     - image
     - imce
-    - layout_discovery
     - link
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings:
-      label: ''
 id: node.banners_custom.default
 targetEntityType: node
 bundle: banners_custom
@@ -79,6 +72,11 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden:
   path: true
   promote: true

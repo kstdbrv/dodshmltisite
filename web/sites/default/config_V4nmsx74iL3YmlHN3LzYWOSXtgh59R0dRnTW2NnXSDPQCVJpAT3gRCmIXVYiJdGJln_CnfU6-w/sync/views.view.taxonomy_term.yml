@@ -101,16 +101,20 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          default_action: 'not found'
+          default_action: default
           exception:
             value: ''
             title_enable: false
             title: All
           title_enable: true
           title: '{{ arguments.tid }}'
-          default_argument_type: fixed
+          default_argument_type: taxonomy_tid
           default_argument_options:
-            argument: ''
+            term_page: '1'
+            anyall: ','
+            node: false
+            limit: false
+            vids: {  }
           default_argument_skip_url: false
           summary_options:
             base_path: ''
@@ -227,20 +231,7 @@ display:
         type: 'entity:node'
         options:
           view_mode: teaser
-      header:
-        entity_taxonomy_term:
-          id: entity_taxonomy_term
-          table: views
-          field: entity_taxonomy_term
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: true
-          tokenize: true
-          target: '{{ raw_arguments.tid }}'
-          view_mode: full
-          bypass_access: false
-          plugin_id: entity
+      header: {  }
       footer: {  }
       empty: {  }
       relationships: {  }
@@ -248,6 +239,26 @@ display:
       display_extenders: {  }
       link_url: ''
       link_display: page_1
+    cache_metadata:
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      max-age: -1
+      tags: {  }
+  block_2:
+    display_plugin: block
+    id: block_2
+    display_title: Блок
+    position: 1
+    display_options:
+      display_extenders: {  }
+      query:
+        type: views_query
+        options: {  }
+      enabled: true
     cache_metadata:
       contexts:
         - 'languages:language_interface'
@@ -287,6 +298,7 @@ display:
           relationship: none
           view_mode: default
       display_extenders: {  }
+      enabled: false
     cache_metadata:
       contexts:
         - 'languages:language_interface'
@@ -306,6 +318,7 @@ display:
         options: {  }
       path: taxonomy/term/%
       display_extenders: {  }
+      enabled: false
     cache_metadata:
       contexts:
         - 'languages:language_interface'

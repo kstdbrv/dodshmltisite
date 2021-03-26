@@ -6,17 +6,11 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.page_fz.body
     - field.field.node.page_fz.field_file_fz
+    - field.field.node.page_fz.field_tegs
     - node.type.page_fz
   module:
-    - field_layout
-    - layout_discovery
     - text
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings:
-      label: ''
 id: node.page_fz.teaser
 targetEntityType: node
 bundle: page_fz
@@ -37,4 +31,5 @@ content:
     region: content
 hidden:
   field_file_fz: true
+  field_tegs: true
   langcode: true

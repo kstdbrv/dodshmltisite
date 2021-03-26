@@ -8,8 +8,8 @@ _core:
   default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
 id: start_theme_local_actions
 theme: start_theme
-region: header_top
-weight: -9
+region: footer
+weight: -6
 provider: null
 plugin: local_actions_block
 settings:

@@ -6,15 +6,8 @@ dependencies:
     - field.field.node.book.body
     - node.type.book
   module:
-    - field_layout
-    - layout_discovery
     - path
     - text
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings:
-      label: ''
 _core:
   default_config_hash: vLiV0db8dn1tmCTZrfImOXWBXV9bX677QMct9iI5nn0
 id: node.book.default
@@ -90,4 +83,9 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden: {  }

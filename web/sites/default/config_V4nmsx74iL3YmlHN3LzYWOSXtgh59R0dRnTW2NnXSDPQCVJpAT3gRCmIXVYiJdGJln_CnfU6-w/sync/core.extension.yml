@@ -18,6 +18,7 @@ module:
   ckeditor_iframe: 0
   ckeditor_templates: 0
   ckeditor_youtube: 0
+  code_block: 0
   color: 0
   colorbutton: 0
   comment: 0
@@ -26,6 +27,8 @@ module:
   content_moderation: 0
   contextual: 0
   ctools: 0
+  ctools_block: 0
+  ctools_views: 0
   datetime: 0
   dblog: 0
   devel: 0
@@ -35,12 +38,10 @@ module:
   entity_reference_revisions: 0
   fakeobjects: 0
   field: 0
-  field_layout: 0
   field_ui: 0
   file: 0
   filter: 0
   flexslider: 0
-  flexslider_example: 0
   flexslider_fields: 0
   flexslider_views: 0
   help: 0
@@ -50,6 +51,7 @@ module:
   imce: 0
   info_block: 0
   language: 0
+  layout_builder: 0
   layout_discovery: 0
   libraries: 0
   link: 0
@@ -67,6 +69,8 @@ module:
   quickedit: 0
   rdf: 0
   recaptcha: 0
+  redirect: 0
+  redirect_404: 0
   search: 0
   shortcut: 0
   slick: 0
