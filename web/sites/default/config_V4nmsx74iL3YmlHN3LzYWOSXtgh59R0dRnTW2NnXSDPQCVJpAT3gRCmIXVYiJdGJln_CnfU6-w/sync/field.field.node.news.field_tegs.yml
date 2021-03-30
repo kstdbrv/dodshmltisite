@@ -6,6 +6,8 @@ dependencies:
     - field.storage.node.field_tegs
     - node.type.news
     - taxonomy.vocabulary.tags
+  content:
+    - 'taxonomy_term:tags:c8e7ec56-443e-42a5-85a5-55c45ac173ca'
 id: node.news.field_tegs
 field_name: field_tegs
 entity_type: node
@@ -14,7 +16,9 @@ label: Теги
 description: ''
 required: false
 translatable: true
-default_value: {  }
+default_value:
+  -
+    target_uuid: c8e7ec56-443e-42a5-85a5-55c45ac173ca
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'

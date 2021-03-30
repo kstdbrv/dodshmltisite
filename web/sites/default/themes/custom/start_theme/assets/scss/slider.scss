@@ -1,10 +1,10 @@
 @import "_vars";
 
 .slider-banner {
-  margin-bottom: 15px;
+  margin-bottom: 35px;
   .slick {
    /*  box-shadow: inset -20px -8px 0px 0px rgba(46, 179, 179, 1); */
-    border: 1px solid $mainColor;
+   border: 1px solid $borderColor;
 /*     @media (max-width:425px) {
       box-shadow:none;
       border: none;

@@ -19,7 +19,7 @@ default_value: {  }
 default_value_callback: ''
 settings:
   file_directory: 'images/news/[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'png gif jpg jpeg'
+  file_extensions: 'png gif jpg jpeg svg'
   max_filesize: '1  MB'
   max_resolution: 1000x600
   min_resolution: 140x140
@@ -29,7 +29,7 @@ settings:
   title_field_required: false
   default_image:
     uuid: ''
-    alt: ''
+    alt: 'картинка новости'
     title: ''
     width: null
     height: null

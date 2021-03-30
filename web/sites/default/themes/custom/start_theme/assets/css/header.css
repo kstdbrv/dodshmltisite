@@ -1,29 +1,9 @@
 .header__top, .bottom-header__burger p {
   font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
 }
 
-/* %sf-semibold{
-  font-family:'SFProDisplay', sans-serif;
-  font-weight: 600;
-}
-%sf-bold{
-  font-family: 'SFProDisplay', sans-serif;
-  font-weight: 700;
-}
-%sf-medium{
-  font-family: 'SFProDisplay', sans-serif;
-  font-weight: 500;
-}
-%barlow-bold{
-  font-family: 'Barlow', sans-serif;
-  font-weight: 700;
-}
-%barlow-regular{
-  font-family: 'Barlow', sans-serif;
-  font-weight: 400;
-} */
 @media (max-width: 455px) {
   .header {
     font-size: 17px;
@@ -81,7 +61,7 @@
 }
 
 .center-header__left a {
-  color: #1a171b;
+  color: #1f1d21;
 }
 
 .center-header__logo {
@@ -154,7 +134,7 @@
 }
 
 .bottom-header__icons .material-icons.main-color {
-  color: #1a171b;
+  color: #1f1d21;
   font-size: 43px;
   transition: all 0.2s;
 }

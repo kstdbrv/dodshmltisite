@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  @extend %calibri-regular;
+  @extend %calibri-light;
   font-size: $mainFontSize;
   color: $mainFontColor;
   line-height: $mainLineHeight;
@@ -86,3 +86,11 @@ img {
   }
 }
 
+/* a {
+  color: $mainColor;
+  text-decoration: underline;
+  transition: all .2s;
+  &:hover {
+    color: $mainFontColor;
+  }
+} */

@@ -1,30 +1,10 @@
-/* %sf-semibold{
-  font-family:'SFProDisplay', sans-serif;
-  font-weight: 600;
-}
-%sf-bold{
-  font-family: 'SFProDisplay', sans-serif;
-  font-weight: 700;
-}
-%sf-medium{
-  font-family: 'SFProDisplay', sans-serif;
-  font-weight: 500;
-}
-%barlow-bold{
-  font-family: 'Barlow', sans-serif;
-  font-weight: 700;
-}
-%barlow-regular{
-  font-family: 'Barlow', sans-serif;
-  font-weight: 400;
-} */
 .slider-banner {
-  margin-bottom: 15px;
+  margin-bottom: 35px;
 }
 
 .slider-banner .slick {
   /*  box-shadow: inset -20px -8px 0px 0px rgba(46, 179, 179, 1); */
-  border: 1px solid #2eb3b3;
+  border: 1px solid #a7a6a6;
   /*     @media (max-width:425px) {
       box-shadow:none;
       border: none;
