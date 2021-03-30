@@ -6,6 +6,9 @@
   height: 295px;
   width: 255px;
   border: 1px solid $borderColor;
+/*   img {
+    border-bottom: 1px solid $borderColor;
+  } */
   &__link {
     position: absolute;
     left: 0;
@@ -52,7 +55,7 @@
     left: 0;
     width: 100%;
     height: 54%;
-    background-color: $mainColor;
+    background-color: $secondColor;
     &::before {
       transform: scale(1.2);
       top: 35px;
@@ -75,6 +78,7 @@
     align-items: center;
     @extend %calibri-bold;
     text-transform: uppercase;
+    margin-bottom: 5px;
    }
   &__tags {
     .field__item:not(:last-child) {

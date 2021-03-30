@@ -101,7 +101,7 @@
   padding: 0;
   width: 11px;
   height: 11px;
-  border: 1px solid #2eb3b3;
+  border: 1px solid #569797;
   /* border: transparent; */
   border-radius: 50%;
   background-color: #fff;
@@ -116,7 +116,7 @@
 }
 
 .slider-banner .slick-active button {
-  background-color: #2eb3b3;
+  background-color: #569797;
 }
 
 .slider-banner .container-no-padding {
@@ -144,10 +144,10 @@
   letter-spacing: 1.3px;
   padding: 7px 15px;
   border-radius: 25px;
-  background-color: #2eb3b3;
+  background-color: #569797;
   color: #fff;
-  transition: all .3s;
-  border: 1px solid #2eb3b3;
+  transition: all .2s;
+  box-shadow: 1px 3px 4px rgba(59, 59, 59, 0.45);
 }
 
 @media (max-width: 425px) {
@@ -158,8 +158,11 @@
 }
 
 .slider-banner .views-field-edit-node a:hover {
-  background-color: #fff;
-  color: #2eb3b3;
+  box-shadow: none;
+}
+
+.slider-banner .views-field-edit-node a:active {
+  box-shadow: inset 0px 5px 4px rgba(59, 59, 59, 0.3);
 }
 
 .slider-banner a {

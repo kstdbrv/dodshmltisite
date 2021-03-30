@@ -13,8 +13,8 @@
 .header__top {
   text-align: center;
   padding: 6px 10px;
-  color: #2b5b71;
-  background-color: #2eb3b3;
+  color: #569797;
+  background-color: #569797;
 }
 
 .header__center {
@@ -45,7 +45,7 @@
 
 .header__underline {
   min-height: 31px;
-  background-color: #2eb3b3;
+  background-color: #569797;
 }
 
 @media (max-width: 1024px) {
@@ -85,7 +85,7 @@
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: header-right;
-  color: #2eb3b3;
+  color: #569797;
 }
 
 .bottom-header {
@@ -140,7 +140,7 @@
 }
 
 .bottom-header__icons .material-icons.main-color:hover {
-  color: #2eb3b3;
+  color: #569797;
 }
 
 .bottom-header__burger {
@@ -165,7 +165,7 @@
 }
 
 .bottom-header__burger p.active {
-  color: #2eb3b3;
+  color: #569797;
 }
 
 .menu-header {
@@ -194,13 +194,13 @@
 }
 
 .menu-header__item a:hover {
-  color: #2eb3b3;
+  color: #569797;
 }
 
 .menu-header__item a:before {
   position: absolute;
   content: "";
-  background-color: #2eb3b3;
+  background-color: #569797;
   height: 3px;
   width: 0;
   left: auto;
@@ -214,7 +214,7 @@
 }
 
 .menu-header .is-active {
-  color: #2eb3b3;
+  color: #569797;
 }
 
 .menu-header li ul {
@@ -239,7 +239,7 @@
 }
 
 .menu-header li ul .menu-header__item:hover {
-  border-bottom: 1px solid #2eb3b3;
+  border-bottom: 1px solid #569797;
 }
 
 .menu-header li ul .menu-header__item a:before {

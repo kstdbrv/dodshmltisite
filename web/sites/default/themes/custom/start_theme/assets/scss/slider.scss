@@ -122,17 +122,18 @@
     border-radius: 25px;
     background-color: $mainColor;
     color: #fff;
-    transition: all .3s;
-    border: 1px solid $mainColor;
-
+    transition: all .2s;
     @media (max-width:425px) {
       font-size: 12px;
       bottom: 5px; 
     } 
 
+    box-shadow: 1px 3px 4px rgba(59, 59, 59, 0.45);
     &:hover {
-      background-color: #fff;
-      color: $mainColor;
+      box-shadow: none;
+    }
+    &:active {
+      box-shadow: inset 0px 5px 4px rgba(59, 59, 59, 0.3);
     }
   }
   a {

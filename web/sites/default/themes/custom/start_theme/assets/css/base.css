@@ -17,6 +17,7 @@ body {
   min-width: 320px;
   overflow-x: hidden;
   position: relative;
+  background: url("../images/icons/bg.svg") 0% 0 repeat;
 }
 
 *, *:before, *:after {
@@ -117,3 +118,37 @@ img {
     color: $mainFontColor;
   }
 } */
+.link-more {
+  display: table;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.link-more a {
+  height: 50px;
+  padding: 15px 20px 17px;
+  text-decoration: none !important;
+  color: #fff !important;
+  text-align: center;
+  letter-spacing: .12px;
+  text-transform: uppercase;
+  background-color: #569797;
+  transition: all .2s;
+  color: #fff !important;
+  box-shadow: 1px 3px 4px rgba(59, 59, 59, 0.45);
+}
+
+.link-more a:hover {
+  box-shadow: none;
+}
+
+.link-more a:active {
+  box-shadow: inset 0px 5px 4px rgba(59, 59, 59, 0.3);
+}
+
+.page-title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #569797;
+  font-size: 23px;
+}
