@@ -1,5 +1,6 @@
+@import 'vars';
+
 .breadcrumbs {
-  /* margin-bottom: 40px; */
   &__inner{
     @media (max-width:815px) {
       overflow-x: scroll;
@@ -16,11 +17,20 @@
     margin-right: 5px;
     font-size: 15px;
     line-height: 18px;
-    color: #C4C4C4 !important;
     position: relative;
-/*     @media (max-width:640px){
-      margin-top: 20px;
-   } */
+    text-transform: lowercase;
+    &:first-letter {
+      text-transform: capitalize;
+    }
+    a {
+      transition: all 0.2s;
+      &:hover {
+        color: $mainColor;
+      }
+      &:first-letter {
+        text-transform: capitalize;
+      }
+    }
     &::after {
       position: absolute;
       content: "";
