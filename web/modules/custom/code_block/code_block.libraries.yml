@@ -6,6 +6,8 @@ code_block:
       css/style.css: {}
   js:
     js/script.js: {}
+    js/gov-serv.js: {}
+
     
   dependencies:
     - core/jquery

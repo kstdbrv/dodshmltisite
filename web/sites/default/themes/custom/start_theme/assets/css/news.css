@@ -1,25 +1,18 @@
-/* %sf-semibold{
-  font-family:'SFProDisplay', sans-serif;
-  font-weight: 600;
-}
-%sf-bold{
-  font-family: 'SFProDisplay', sans-serif;
-  font-weight: 700;
-}
-%sf-medium{
-  font-family: 'SFProDisplay', sans-serif;
+.news-teaser__title {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   font-weight: 500;
+  font-style: normal;
 }
-%barlow-bold{
-  font-family: 'Barlow', sans-serif;
-  font-weight: 700;
-}
-%barlow-regular{
-  font-family: 'Barlow', sans-serif;
-  font-weight: 400;
-} */
+
 .news-teaser {
   position: relative;
+  transition: all .3s;
+  height: 295px;
+  width: 255px;
+  border: 1px solid #a7a6a6;
+  /*   img {
+    border-bottom: 1px solid $borderColor;
+  } */
 }
 
 .news-teaser__link {
@@ -30,12 +23,161 @@
   height: 100%;
 }
 
-.news-teaser__text {
-  max-height: 50px;
-  overflow: hidden;
+.news-teaser__link:hover {
+  box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+  border-radius: 3px;
 }
 
-.news-teaser__tegs {
+.news-teaser__link:hover .news-teaser__hover-text {
+  opacity: 1;
+}
+
+.news-teaser__link:hover img {
+  /* transform: scale(1.2); */
+}
+
+.news-teaser__hover-text {
+  opacity: 0;
+  transition: all .3s;
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  padding: 18px 35px;
+  color: #1f1d21;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+.news-teaser__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px 8px 5px 8px;
+  width: 100%;
+  min-height: 45%;
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+}
+
+.news-teaser__no-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 54%;
+  background-color: #8ccaca;
+}
+
+.news-teaser__no-img::before {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  top: 35px;
+  left: 85px;
+  position: absolute;
+  height: 78px;
+  width: 78px;
+  content: '';
+  background: url("../images/icons/news-no_img.svg") 50% 50% no-repeat;
+}
+
+.news-teaser__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.news-teaser__title {
+  flex-grow: 1;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.news-teaser__tags .field__item:not(:last-child) {
+  margin-bottom: -10px;
+}
+
+.news-teaser__tags a {
+  text-decoration: none;
+  color: #1f1d21;
   position: relative;
   z-index: 3;
+  max-height: 23px;
+  overflow: hidden;
+  padding-left: 12px;
+  transition: all .2s;
+}
+
+.news-teaser__tags a::before {
+  position: absolute;
+  left: 0;
+  height: 24px;
+  width: 9px;
+  content: '';
+  background: url("../images/icons/hash.svg") 50% 50% no-repeat;
+  -webkit-filter: invert(0.35);
+          filter: invert(0.35);
+  transition: all .2s;
+}
+
+.news-teaser__tags a:hover::before {
+  -webkit-filter: invert(0.65);
+          filter: invert(0.65);
+}
+
+.news-teaser__tags a:hover {
+  color: #569797;
+}
+
+.news-teaser__comments {
+  text-decoration: none;
+  color: #1f1d21;
+  position: relative;
+  padding-left: 30px;
+  transition: all .2s;
+}
+
+.news-teaser__comments::before {
+  position: absolute;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  content: '';
+  background: url("../images/icons/comment.svg") 50% 50% no-repeat;
+  -webkit-filter: invert(0.35);
+          filter: invert(0.35);
+  transition: all .2s;
+}
+
+.news-teaser__comments:hover::before {
+  -webkit-filter: invert(0.65);
+          filter: invert(0.65);
+}
+
+.news-teaser__created {
+  text-decoration: none;
+  color: #1f1d21;
+  position: relative;
+  padding-left: 27px;
+  transition: all .2s;
+}
+
+.news-teaser__created::before {
+  position: absolute;
+  left: 0;
+  height: 22px;
+  width: 23px;
+  content: '';
+  background: url("../images/icons/calendar.svg") 50% 50% no-repeat;
+  -webkit-filter: invert(0.35);
+          filter: invert(0.35);
+  transition: all .2s;
+}
+
+.news-teaser__created:hover::before {
+  -webkit-filter: invert(0.65);
+          filter: invert(0.65);
 }

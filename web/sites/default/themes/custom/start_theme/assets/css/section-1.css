@@ -4,35 +4,15 @@
   font-weight: 700;
 }
 
-/* %sf-semibold{
-  font-family:'SFProDisplay', sans-serif;
-  font-weight: 600;
-}
-%sf-bold{
-  font-family: 'SFProDisplay', sans-serif;
-  font-weight: 700;
-}
-%sf-medium{
-  font-family: 'SFProDisplay', sans-serif;
-  font-weight: 500;
-}
-%barlow-bold{
-  font-family: 'Barlow', sans-serif;
-  font-weight: 700;
-}
-%barlow-regular{
-  font-family: 'Barlow', sans-serif;
-  font-weight: 400;
-} */
 .section-1 {
   display: -ms-grid;
   display: grid;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
       grid-template-areas: "menu-main content banners";
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  -ms-grid-columns: minmax(350px, 385px) auto minmax(260px, 280px);
-      grid-template-columns: minmax(350px, 385px) auto minmax(260px, 280px);
+  -ms-grid-columns: minmax(290px, 310px) auto minmax(260px, 280px);
+      grid-template-columns: minmax(290px, 310px) auto minmax(260px, 280px);
   grid-gap: clamp(0.5vw, 1vw, 2vw);
 }
 
@@ -42,10 +22,15 @@
   grid-area: menu-main;
 }
 
-.section-1__content {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: content;
+.section-1__content a {
+  color: #569797;
+  text-decoration: underline;
+  transition: all .2s;
+}
+
+.section-1__content a:hover {
+  color: #1f1d21;
+  text-decoration: none;
 }
 
 .section-1__banners {
@@ -61,7 +46,7 @@
 }
 
 .section-1__banners img {
-  border: 1px solid #DDDDDD;
+  border: 1px solid #a7a6a6;
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
@@ -77,7 +62,7 @@
 
 .section-1 .menu-main #block-menu-main-menu {
   font-size: 19px;
-  color: #2eb3b3;
+  color: #569797;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -96,7 +81,7 @@
 }
 
 .section-1 .menu-main li a:hover {
-  color: #2eb3b3;
+  color: #569797;
 }
 
 .section-1 .menu-main__item_collapsed > a:before {
@@ -119,9 +104,20 @@
 }
 
 .section-1 .menu-main .is-active {
-  color: #2eb3b3;
+  color: #569797;
 }
 
 .section-1 .menu-main .submenu-2 {
   position: static;
+}
+
+.section-1 .content-section-1 .view-content {
+  display: -ms-grid;
+  display: grid;
+  justify-content: center;
+  align-content: start;
+  grid-auto-rows: 1fr;
+  -ms-grid-columns: (255px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 255px);
+  grid-gap: clamp(0.5vw, 1vw, 2vw);
 }

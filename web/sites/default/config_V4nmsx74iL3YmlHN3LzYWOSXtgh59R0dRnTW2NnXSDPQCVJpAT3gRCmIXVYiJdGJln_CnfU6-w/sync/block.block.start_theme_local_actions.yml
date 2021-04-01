@@ -9,7 +9,7 @@ _core:
 id: start_theme_local_actions
 theme: start_theme
 region: footer
-weight: -6
+weight: -8
 provider: null
 plugin: local_actions_block
 settings:
