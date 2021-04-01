@@ -314,10 +314,10 @@ display:
       pager:
         type: infinite_scroll
         options:
-          items_per_page: 6
+          items_per_page: 3
           offset: 0
           id: 1
-          total_pages: 0
+          total_pages: null
           tags:
             previous: '‹ Previous'
             next: 'Next ›'
@@ -332,6 +332,7 @@ display:
           views_infinite_scroll:
             button_text: 'Загрузить ещё'
             automatically_load_content: true
+            initially_load_all_pages: false
       use_ajax: true
     cache_metadata:
       max-age: -1

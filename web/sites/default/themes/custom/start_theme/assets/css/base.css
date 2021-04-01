@@ -18,6 +18,7 @@ body {
   overflow-x: hidden;
   position: relative;
   background: url("../images/icons/bg.svg") 0% 0 repeat;
+  background-attachment: fixed;
 }
 
 *, *:before, *:after {

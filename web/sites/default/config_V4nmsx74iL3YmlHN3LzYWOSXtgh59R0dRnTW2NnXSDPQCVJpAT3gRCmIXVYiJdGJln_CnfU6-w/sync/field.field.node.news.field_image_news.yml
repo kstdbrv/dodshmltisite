@@ -11,7 +11,7 @@ id: node.news.field_image_news
 field_name: field_image_news
 entity_type: node
 bundle: news
-label: Картинка
+label: Изображение
 description: ''
 required: false
 translatable: false

@@ -7,6 +7,7 @@ global:
       includes/css/materialize.css: {}
       assets/css/tabs.css: {}
       assets/css/login-popup.css: {}
+      assets/css/breadcrumb.css: {}
     theme:
       assets/css/header.css: {}
       assets/css/slider.css: {}
