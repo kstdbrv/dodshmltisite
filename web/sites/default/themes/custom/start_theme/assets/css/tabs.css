@@ -30,10 +30,10 @@ ul.tabs {
 }
 
 .tabs a {
-  color: #1565c0;
+  color: #1565c0 !important;
   display: block;
   padding: 0.2em 1em;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .tabs a.is-active {

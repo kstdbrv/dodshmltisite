@@ -4,16 +4,19 @@
 html {
   box-sizing: border-box;
   min-height: 100vh;
+  columns: #0000;
 }
 
 body {
-  @extend %calibri-regular;
+  @extend %calibri-light;
   font-size: $mainFontSize;
   color: $mainFontColor;
   line-height: $mainLineHeight;
   min-width: 320px;
   overflow-x: hidden;
   position: relative;
+  background: url('../images/icons/bg.svg') 0% 0 repeat;
+  background-attachment: fixed;
 }
 
 *, *:before, *:after { 
@@ -83,6 +86,53 @@ img {
 .system {
   .messages {
     margin-bottom: 20px;
+  }
+}
+
+/* a {
+  color: $mainColor;
+  text-decoration: underline;
+  transition: all .2s;
+  &:hover {
+    color: $mainFontColor;
+  }
+} */
+
+.link-more {
+  display: table;
+  margin: 0 auto;
+  padding-top: 30px;
+  a {
+    height: 50px;
+    padding: 15px 20px 17px;
+    text-decoration: none !important;
+    color: #fff !important;
+    text-align: center;
+    letter-spacing: .12px;
+    text-transform: uppercase;
+    background-color: $mainColor;
+    transition: all .2s;
+    color: #fff !important;
+    box-shadow: 1px 3px 4px rgba(59, 59, 59, 0.45);
+    &:hover {
+      box-shadow: none;
+    }
+    &:active {
+      box-shadow: inset 0px 5px 4px rgba(59, 59, 59, 0.3);
+    }
+  }
+}
+
+.page-title {
+  text-align: center;
+  text-transform: uppercase;
+  color: $mainColor;
+  font-size: 23px;
+}
+
+#block-start-theme-content { // убирает кнопку "добавить материал" на главной
+  .view-empty {
+    display: none;
   }
 }
 

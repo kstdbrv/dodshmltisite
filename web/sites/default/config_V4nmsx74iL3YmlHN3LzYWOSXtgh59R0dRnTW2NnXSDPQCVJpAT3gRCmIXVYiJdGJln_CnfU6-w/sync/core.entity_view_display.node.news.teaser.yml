@@ -4,8 +4,6 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.news.field_comments
-    - field.field.node.news.field_date
     - field.field.node.news.field_extra_text
     - field.field.node.news.field_image
     - field.field.node.news.field_image_news
@@ -48,9 +46,12 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
+  sharethis:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden:
-  field_comments: true
-  field_date: true
   field_extra_text: true
   field_image: true
   field_link_news: true

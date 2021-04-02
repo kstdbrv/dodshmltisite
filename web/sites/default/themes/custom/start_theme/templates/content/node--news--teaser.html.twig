@@ -77,20 +77,41 @@
 
 <article{{ attributes.addClass(classes) }}>
   <div class="news-teaser__image">
-    {{ content.field_image_news }}
+  {% set field_image_news = content.field_image_news|render %}
+    {% if field_image_news|length %}
+      {{ field_image_news }}
+  {% else %}
+    <div class="news-teaser__no-img"></div>
+  {% endif %}
   </div>
-  <div class="news-teaser__title">
-    {{ label }}
+  <div class="news-teaser__wrapper">
+    <div class="news-teaser__title">
+      {{ label }}
+    </div>
+    {% set field_tegs = content.field_tegs|render %}
+      {% if field_tegs|length %}
+      <div class="news-teaser__tags">
+        {{ content.field_tegs }}
+      </div>
+      {% endif %}
+    <div class="news-teaser__bottom">
+      <div class="news-teaser__comments">
+        0 
+      </div>
+      <div class="news-teaser__created">
+        <span>{{ content.node.getCreatedTime()|date("d.m.Y") }}</span>  
+      </div>
+    </div>
   </div>
-  <div class="news-teaser__text">
-    {{ content.field_text }}
-  </div>
-  <div class="news-teaser__created">
-    {{ content.node.getCreatedTime()|date("d.m.Y") }}
-  </div>
-    <div class="news-teaser__tegs">
-    {{ content.field_tegs }}
-  </div>
-  {# {{ content|without('field_image_news') }} #}
-  <a href="{{ url }}" class="news-teaser__link"></a>
+
+  <a href="{{ url }}" class="news-teaser__link">
+    <span class="news-teaser__hover-text">Смотреть новость</span>
+  </a>
+  
 </article>
+
+{# {{ content|without('field_image_news') }} #}
+{# {% if pathToPhoto|length == null %} #}
+
+{# Лучше всего его через препроцесс или ещё как вбросить туда
+$entity->get('FIELD_WITH_COMMENTS')->comment_count #}
