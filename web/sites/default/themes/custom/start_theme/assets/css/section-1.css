@@ -7,7 +7,7 @@
 .section-1 {
   display: -ms-grid;
   display: grid;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
       grid-template-areas: "menu-main content banners";
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
@@ -115,8 +115,23 @@
   display: -ms-grid;
   display: grid;
   justify-content: center;
-  align-content: start;
-  grid-auto-rows: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: (255px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 255px);
+  grid-gap: clamp(0.5vw, 1vw, 2vw);
+}
+
+.section-1 .news-infinite-scroll .view-content {
+  display: block;
+}
+
+.section-1 .news-infinite-scroll .view-content > div {
+  display: -ms-grid;
+  display: grid;
+  justify-content: center;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
   -ms-grid-columns: (255px)[auto-fill];
       grid-template-columns: repeat(auto-fill, 255px);
   grid-gap: clamp(0.5vw, 1vw, 2vw);

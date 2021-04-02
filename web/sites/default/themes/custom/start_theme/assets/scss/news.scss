@@ -91,16 +91,16 @@
       z-index: 3;
       max-height: 23px;
       overflow: hidden;
-      padding-left: 12px;
+      padding-left: 20px;
       transition: all .2s;
       &::before {
         position: absolute;
         left: 0;
-        height: 24px;
-        width: 9px;
+        height: 26px;
+        width: 16px;
         content: '';
-        background: url('../images/icons/hash.svg') 50% 50% no-repeat;
-        filter: invert(.35);
+        background: url('../images/icons/hash-tag.svg') 50% 50% no-repeat;
+        filter: invert(1);
         transition: all .2s;
       }
       &:hover::before {
@@ -152,3 +152,81 @@
     }
   }
 }
+
+.news-full {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: $distance;
+    margin-bottom: $distance;
+  }
+  &__no-img {
+    flex: 0 0 255px;
+    height:161px;
+    background-color: $secondColor;
+    &::before {
+      transform: scale(1.2);
+      top: 35px;
+      left: 85px;
+      position: absolute;
+      height: 78px;
+      width: 78px;
+      content: '';
+      background: url('../images/icons/news-no_img.svg') 50% 50% no-repeat;
+    }
+  }
+  &__image {
+    flex: 0 0 255px;
+  }
+  &__text {
+    margin-left: $distance;
+  }
+  &__text-extra {
+    margin-bottom: $distance;
+  }
+  &__tags {
+    .field__item:not(:last-child) {
+      margin-bottom: -10px;
+    }
+    a {
+      text-decoration: none;
+      color: $mainFontColor; 
+      position: relative;
+      padding-left: 20px;
+      transition: all .2s;
+      &::before {
+        position: absolute;
+        left: 0;
+        height: 26px;
+        width: 16px;
+        content: '';
+        background: url('../images/icons/hash-tag.svg') 50% 50% no-repeat;
+        filter: invert(1);
+        transition: all .2s;
+      }
+      &:hover::before {
+        filter: invert(.65);
+      }
+      &:hover {
+        color: $mainColor;
+      }
+    }
+  }
+  &__gallary {
+    text-align: center;
+    .field__item {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 5px;
+      border: 1px solid $borderColor;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+      transition: 0.5s;
+    }
+/*     a {
+      transition: 0.5s;
+    }
+    a:hover img {
+      transform: scale(1.05);
+   } */
+  }
+} 
