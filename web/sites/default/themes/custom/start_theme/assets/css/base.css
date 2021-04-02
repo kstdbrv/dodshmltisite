@@ -8,6 +8,8 @@ body {
 html {
   box-sizing: border-box;
   min-height: 100vh;
+  -webkit-columns: #0000;
+          columns: #0000;
 }
 
 body {
@@ -152,4 +154,8 @@ img {
   text-transform: uppercase;
   color: #569797;
   font-size: 23px;
+}
+
+#block-start-theme-content .view-empty {
+  display: none;
 }

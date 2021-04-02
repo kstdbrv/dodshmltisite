@@ -1,5 +1,6 @@
 {%
   set classes = [
+    'news-full',
     'node',
     'node-' ~ node.bundle|clean_class,
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
@@ -7,5 +8,34 @@
 %}
 
 <article{{ attributes.addClass(classes) }}>
-    {{ content }}
+
+  <div class="news-full__wrapper">
+    {% set field_image_news = content.field_image_news|render %}
+    {% if field_image_news|length %}
+    <div class="news-full__image">
+      {{ field_image_news }}
+    </div>    
+    {% else %}
+    <div class="news-full__no-img"></div>
+    {% endif %}
+    <div class="news-full__text">
+      {{ content.field_text }}
+    </div>
+  </div>
+
+  <div class="news-full__text-extra">
+    {{ content.field_extra_text }}
+  </div>
+  <div class="news-full__gallary">
+    {{ content.field_image }}
+  </div>
+  {% set field_tegs = content.field_tegs|render %}
+  {% if field_tegs|length %}
+  <div class="news-full__tags">
+    {{ content.field_tegs }}
+  </div>
+  {% endif %}
+  <div class="news-full__social">
+    {{ content|without('field_image_news', 'field_text', 'field_extra_text', 'field_tegs', 'field_image') }}
+  </div>
 </article>

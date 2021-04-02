@@ -21,7 +21,7 @@ settings:
   file_directory: 'images/news/[date:custom:Y]-[date:custom:m]'
   file_extensions: 'png gif jpg jpeg'
   max_filesize: '1  MB'
-  max_resolution: 600x600
+  max_resolution: 1200x900
   min_resolution: 140x140
   alt_field: true
   alt_field_required: true

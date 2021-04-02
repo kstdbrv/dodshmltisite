@@ -4,6 +4,7 @@
 html {
   box-sizing: border-box;
   min-height: 100vh;
+  columns: #0000;
 }
 
 body {
@@ -127,5 +128,11 @@ img {
   text-transform: uppercase;
   color: $mainColor;
   font-size: 23px;
+}
+
+#block-start-theme-content { // убирает кнопку "добавить материал" на главной
+  .view-empty {
+    display: none;
+  }
 }
 
