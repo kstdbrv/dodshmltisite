@@ -7,16 +7,16 @@ dependencies:
 id: news
 label: новость
 type: 'canonical_entities:node'
-pattern: 'news/[node:title]'
+pattern: '/news/[node:title]'
 selection_criteria:
-  08c20814-10e4-4517-96df-3c4983d783ac:
+  ecc87007-3def-441e-a4f7-290b21051ed9:
     id: node_type
     bundles:
       news: news
     negate: false
     context_mapping:
       node: node
-    uuid: 08c20814-10e4-4517-96df-3c4983d783ac
+    uuid: ecc87007-3def-441e-a4f7-290b21051ed9
 selection_logic: and
 weight: -5
 relationships: {  }

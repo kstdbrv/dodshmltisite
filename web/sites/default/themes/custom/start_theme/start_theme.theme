@@ -9,7 +9,9 @@ use Drupal\Core\Template\RenderWrapper;
 use Drupal\Core\Template\Attribute;
 use Drupal\search\Form\SearchBlockForm;
 use Drupal\Component\Utility\SafeMarkup;
+use Drupal\Component\Utility\Variable;
 use Drupal\Core\Path\AliasManager;
+
 /**
  * @file
  * Functions to support theming in the beginning theme.
@@ -20,7 +22,21 @@ use Drupal\Core\Path\AliasManager;
  */
 
 function start_theme_preprocess_page(&$variables) {
-  // Вывод названия сайта в twig шаблоне
 
 
 }
+
+
+function start_theme_preprocess_node(&$variables) {
+
+  $statistics = \Drupal::service('statistics.storage.node')->fetchView($variables['node']->id());
+  $variables['statistics'] = 0;
+  if ($statistics) {
+    $variables['statistics'] = $statistics->getTotalCount();
+  }
+
+  
+  /* $variables['comment_count'] = $variables['node']->get('FIELD_WITH_COMMENTS')->comment_count; */
+}
+
+

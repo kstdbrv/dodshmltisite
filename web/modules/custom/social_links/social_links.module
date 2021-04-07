@@ -1,0 +1,75 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for start_block module.
+ *
+ * @DCG
+ * This file is no longer required in Drupal 8.
+ * @see https://www.drupal.org/node/2217931
+ */
+
+ function social_links_theme($existng, $type, $theme, $path) {
+   return [
+     'social_links' => [
+      'variables' => []
+     ]
+   ];
+ } 
+
+
+
+
+/* <?php */
+
+/**
+ * @file
+ * Primary module hooks for social-links module.
+ *
+ * @DCG
+ * This file is no longer required in Drupal 8.
+ * @see https://www.drupal.org/node/2217931
+ */
+
+/* use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Entity\Entity\EntityFormDisplay;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\node\Entity\NodeType; */
+
+/**
+ * Implements hook_entity_extra_field_info().
+ */
+/* function social_links_entity_extra_field_info() {
+  $extra = [];
+
+  foreach (NodeType::loadMultiple() as $bundle) {
+    $extra['node'][$bundle->id()]['display']['social_links'] = [
+      'label' => t('social links'),
+      'description' => t('Add social links for comments'),
+      'weight' => 100,
+      'visible' => FALSE,
+    ];
+
+
+  }
+
+  return $extra;
+} */
+
+/**
+ * Implements hook_ENTITY_TYPE_view().
+ */
+/* function dummy_node_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+  if ($display->getComponent('social_links') && $entity->hasField('body')) {
+    if ($entity->body->isEmpty()) {
+      $value = t("Can't be calculated because body field is empty");
+    }
+    else {
+    $build['social_links'] = [
+      '#type' => 'markup',
+      '#markup' => "<p><strong>ERT:</strong> {$value}</p>",
+    ];
+  }
+ }
+} */

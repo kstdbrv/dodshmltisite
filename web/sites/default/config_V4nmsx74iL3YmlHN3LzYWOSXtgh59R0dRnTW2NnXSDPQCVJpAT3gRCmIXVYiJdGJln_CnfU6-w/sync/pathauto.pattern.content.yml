@@ -9,16 +9,15 @@ label: content
 type: 'canonical_entities:node'
 pattern: '[node:title]'
 selection_criteria:
-  ab021c3d-6340-4637-a7ed-cb396c81914d:
+  4135af73-aa1c-4a28-9d7b-da6042c058ee:
     id: node_type
     bundles:
-      news: news
       page: page
       page_fz: page_fz
     negate: false
     context_mapping:
       node: node
-    uuid: ab021c3d-6340-4637-a7ed-cb396c81914d
+    uuid: 4135af73-aa1c-4a28-9d7b-da6042c058ee
 selection_logic: and
 weight: -5
 relationships: {  }

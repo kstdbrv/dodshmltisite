@@ -15,9 +15,15 @@ $distanceBlock           : 30px;
   font-style: normal;
 }
 
-%calibri-bold { 
+%calibri-medium { 
   font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   font-weight: 500;
+  font-style: normal;
+}
+
+%calibri-bold { 
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-weight: 700;
   font-style: normal;
 }
 

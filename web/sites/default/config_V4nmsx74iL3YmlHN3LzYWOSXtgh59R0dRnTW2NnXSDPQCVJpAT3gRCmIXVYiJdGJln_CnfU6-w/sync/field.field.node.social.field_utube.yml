@@ -1,0 +1,23 @@
+uuid: 18f9b9a8-17d1-4f22-8a7e-49d6308fe52d
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_utube
+    - node.type.social
+  module:
+    - link
+id: node.social.field_utube
+field_name: field_utube
+entity_type: node
+bundle: social
+label: 'Ссылка на youtube'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

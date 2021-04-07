@@ -1,7 +1,7 @@
 .section-1 .menu-main {
-  font-family: myriad-pro, sans-serif;
-  font-style: normal;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   font-weight: 700;
+  font-style: normal;
 }
 
 .section-1 {
@@ -20,17 +20,6 @@
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: menu-main;
-}
-
-.section-1__content a {
-  color: #569797;
-  text-decoration: underline;
-  transition: all .2s;
-}
-
-.section-1__content a:hover {
-  color: #1f1d21;
-  text-decoration: none;
 }
 
 .section-1__banners {
@@ -56,32 +45,31 @@
   height: 750px !important;
 }
 
-.section-1 .menu-main {
-  font-size: 17px;
-}
-
 .section-1 .menu-main #block-menu-main-menu {
   font-size: 19px;
   color: #569797;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 8px;
 }
 
 .section-1 .menu-main li ul {
   display: none;
+  background-color: #8ccaca;
 }
 
 .section-1 .menu-main li a {
-  margin-bottom: 15px;
+  color: #1f1d21;
+  padding: 7px;
   display: block;
   padding-left: 27px;
   position: relative;
-  transition: all .3s;
+  transition: all .2s;
   cursor: pointer;
 }
 
 .section-1 .menu-main li a:hover {
-  color: #569797;
+  color: #fff;
+  background-color: #569797;
 }
 
 .section-1 .menu-main__item_collapsed > a:before {
@@ -90,7 +78,7 @@
   background-image: url("../images/icons/arrow-nav.svg");
   background-color: transparent;
   background-repeat: no-repeat;
-  left: 0;
+  left: 7px;
   bottom: 38%;
   width: 12px;
   height: 8px;
@@ -98,13 +86,26 @@
           transform: rotate(180deg) scale(1.3);
 }
 
-.section-1 .menu-main .active > a:before {
+.section-1 .menu-main__item_collapsed > a:hover::before {
+  -webkit-filter: brightness(10);
+          filter: brightness(10);
+}
+
+.section-1 .menu-main .active > a {
+  color: #fff;
+  background-color: #569797;
+}
+
+.section-1 .menu-main .active > a::before {
   -webkit-transform: rotate(0) scale(1.3);
           transform: rotate(0) scale(1.3);
+  -webkit-filter: brightness(10);
+          filter: brightness(10);
 }
 
 .section-1 .menu-main .is-active {
-  color: #569797;
+  color: #fff;
+  background-color: #569797;
 }
 
 .section-1 .menu-main .submenu-2 {
@@ -122,11 +123,12 @@
   grid-gap: clamp(0.5vw, 1vw, 2vw);
 }
 
-.section-1 .news-infinite-scroll .view-content {
+.section-1 .infinite-scroll .view-content {
   display: block;
+  margin-top: 15px;
 }
 
-.section-1 .news-infinite-scroll .view-content > div {
+.section-1 .infinite-scroll .view-content > div {
   display: -ms-grid;
   display: grid;
   justify-content: center;

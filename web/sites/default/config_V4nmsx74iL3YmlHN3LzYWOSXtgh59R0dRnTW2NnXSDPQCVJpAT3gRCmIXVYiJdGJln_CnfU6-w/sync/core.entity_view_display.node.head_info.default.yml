@@ -1,0 +1,51 @@
+uuid: a4750532-3a87-49da-8957-514ce5c5b96f
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.head_info.field_email
+    - field.field.node.head_info.field_image_flags
+    - field.field.node.head_info.field_phone
+    - image.style.flags
+    - node.type.head_info
+  module:
+    - image
+    - telephone
+    - user
+id: node.head_info.default
+targetEntityType: node
+bundle: head_info
+mode: default
+content:
+  field_email:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_image_flags:
+    weight: 3
+    label: above
+    settings:
+      image_style: flags
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_phone:
+    weight: 2
+    label: above
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  sharethis: true

@@ -112,29 +112,8 @@
   }
 
   .views-field-edit-node a {
-    font-size: 15px;
-    position: absolute;
     bottom: 20px;
     right: 25px;
-    text-transform: uppercase;
-    letter-spacing: 1.3px;
-    padding:  7px 15px;
-    border-radius: 25px;
-    background-color: $mainColor;
-    color: #fff;
-    transition: all .2s;
-    @media (max-width:425px) {
-      font-size: 12px;
-      bottom: 5px; 
-    } 
-
-    box-shadow: 1px 3px 4px rgba(59, 59, 59, 0.45);
-    &:hover {
-      box-shadow: none;
-    }
-    &:active {
-      box-shadow: inset 0px 5px 4px rgba(59, 59, 59, 0.3);
-    }
   }
   a {
     display: block;

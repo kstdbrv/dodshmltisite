@@ -1,0 +1,21 @@
+uuid: 2da4db47-7f1e-43dc-931d-4176507ae708
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_phone
+    - node.type.head_info
+  module:
+    - telephone
+id: node.head_info.field_phone
+field_name: field_phone
+entity_type: node
+bundle: head_info
+label: телефон
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

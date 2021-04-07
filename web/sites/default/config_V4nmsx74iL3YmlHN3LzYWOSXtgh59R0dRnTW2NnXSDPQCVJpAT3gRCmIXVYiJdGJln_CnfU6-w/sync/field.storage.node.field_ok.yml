@@ -1,0 +1,19 @@
+uuid: 0b562831-3531-468c-8160-d99b1bdb5916
+langcode: ru
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_ok
+field_name: field_ok
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -23,9 +23,13 @@
       text-transform: capitalize;
     }
     a {
+      color: $mainFontColor;
       transition: all 0.2s;
       &:hover {
         color: $mainColor;
+      }
+      &:active {
+        color: $mainFontColor;
       }
       &:first-letter {
         text-transform: capitalize;

@@ -11,17 +11,6 @@
   &__main-menu {
    grid-area: menu-main;
   }
-  &__content {
-    a {
-      color: $mainColor;
-      text-decoration: underline;
-      transition: all .2s;
-      &:hover {
-        color: $mainFontColor;
-        text-decoration: none;
-      }
-    }
-  }
   &__banners {
     grid-area: banners;
     text-align: center;
@@ -40,27 +29,29 @@
   }
 
   .menu-main {
-    @extend %myriad-bold;
-    font-size: 17px;
+    @extend %calibri-bold;
     #block-menu-main-menu {
       font-size: $mainFontSize;
       color: $mainColor;
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 8px;
     }
     li ul {
       display: none;
+      background-color: $secondColor;
     }
     li a {
-      margin-bottom: 15px;
+      color: $mainFontColor;
+      &:hover {
+        color: #fff;
+        background-color: $mainColor;
+      }
+      padding: 7px;
       display: block;
       padding-left: 27px;
       position: relative;
-      transition: all .3s;
+      transition: all .2s;
       cursor: pointer;
-      &:hover {
-        color: $mainColor;
-      }
     }
     &__item_collapsed > a:before {
       position: absolute;
@@ -68,17 +59,30 @@
       background-image: url('../images/icons/arrow-nav.svg');
       background-color: transparent;
       background-repeat: no-repeat;
-      left: 0;
+      left: 7px;
       bottom: 38%;
       width: 12px;
       height: 8px;
       transform: rotate(180deg) scale(1.3);
     }
-    .active > a:before {
-      transform: rotate(0) scale(1.3);
+    &__item_collapsed > a:hover {
+      &::before {
+        filter: brightness(10);
+      }
     }
+    .active > a {
+      color: #fff;
+      background-color: $mainColor;
+
+      &::before {
+        transform: rotate(0) scale(1.3);
+        filter: brightness(10);
+      }
+    }
+
     .is-active {
-      color: $mainColor;
+      color: #fff;
+      background-color: $mainColor;
     }
     .submenu-2 {
       position: static;
@@ -94,9 +98,10 @@
       grid-gap: clamp(0.5vw, 1vw, 2vw);
     }
   }
-  .news-infinite-scroll {
+  .infinite-scroll {
     .view-content {
       display: block;
+      margin-top: $distance;
     }
     .view-content > div {
       display: grid;

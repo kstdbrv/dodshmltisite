@@ -10,8 +10,8 @@ _core:
   default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
 id: start_theme_branding
 theme: start_theme
-region: header_left
-weight: -7
+region: header_center_name
+weight: -10
 provider: null
 plugin: system_branding_block
 settings:

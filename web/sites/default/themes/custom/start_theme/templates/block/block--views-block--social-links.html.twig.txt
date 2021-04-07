@@ -1,0 +1,49 @@
+{%
+  set classes = [
+    'social-links',
+    'node',
+    'node-' ~ node.bundle|clean_class,
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+  ]
+%}
+
+<div{{ attributes.addClass(classes) }}>
+
+ <ul>
+  {% set field_social_link = content.field_social_link|render %}
+  {% if field_social_link|length %}
+   <li class="social-links__vk">
+    {{ field_social_link }}
+   </li>
+  {% endif %}
+
+  {% set field_ok = content.field_ok|render %}
+  {% if field_ok|length %}
+   <li cclass="social-links__ok">
+    {{ field_ok }}
+   </li>
+   {% endif %}
+
+   {% set field_facebook = content.field_facebook|render %}
+   {% if field_facebook|length %}
+    <li class="social-links__facebook">
+     {{ field_facebook }}
+    </li>
+    {% endif %}
+
+    {% set field_instagram = content.field_instagram|render %}
+    {% if field_instagram|length %}
+     <li class="social-links__instagram">
+      {{ field_instagram }}
+     </li>
+     {% endif %}
+
+    {% set field_utube = content.field_utube|render %}
+    {% if field_utube|length %}
+     <li class="social-links__ytube">
+       {{ field_utube }}
+     </li>
+    {% endif %}
+ </ul>
+
+</div>
