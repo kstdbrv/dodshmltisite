@@ -19,7 +19,6 @@
  */
 #}
 {% import _self as menus %}
-
 {#
   We call a macro which calls itself to render the full tree.
   @see https://twig.symfony.com/doc/1.x/tags/macro.html
@@ -29,20 +28,20 @@
 {% macro menu_links(items, attributes, menu_level) %}
   {% import _self as menus %}
   {% if items %}
-    {% if menu_level == 0 %}
-      <ul {{ attributes.addClass('menu-main') }}>
+    {% if menu_level == 0 %} 
+      <ul {{ attributes.addClass('main-menu') }}>
     {% elseif menu_level == 1 %}
-      <ul class="menu-main submenu">
+      <ul class="main-menu submenu">
     {% else %}
-      <ul class="menu-main submenu-2">
+      <ul class="main-menu submenu-2">
     {% endif %}
     {% for item in items %}
       {%
         set classes = [
-          'menu-main__item',
-          item.is_expanded ? 'menu-main__item_collapsed',
-          item.is_collapsed ? 'menu-main__item_collapsed-real',
-          item.in_active_trail ? 'menu-main__item_active-trail',
+          'main-menu__item',
+          item.is_expanded ? 'main-menu__item_collapsed',
+          item.is_collapsed ? 'main-menu__item_collapsed-real',
+          item.in_active_trail ? 'main-menu__item_active-trail',
         ]
       %}
         <li {{ item.attributes.addClass(classes) }}>

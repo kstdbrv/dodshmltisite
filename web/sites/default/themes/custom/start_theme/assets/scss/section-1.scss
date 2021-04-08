@@ -6,36 +6,52 @@
   grid-template-areas:
   "menu-main content banners";
   grid-template-rows: 1fr;
-  grid-template-columns: minmax(290px, 310px) auto minmax(260px, 280px);
+  grid-template-columns: minmax(260px, 20%) 1fr minmax(210px, 20%);
   grid-gap: clamp(0.5vw, 1vw, 2vw);
+  @media (max-width:1045px) {
+    grid-template-areas:
+    "menu-main"
+    "content"
+    "banners";
+    grid-template-columns: auto;
+    /* justify-items: stretch; */
+  }
   &__main-menu {
    grid-area: menu-main;
+  }
+  &__content {
+    grid-area: content;
   }
   &__banners {
     grid-area: banners;
     text-align: center;
+    @media (max-width:1045px) {
+     margin-top: 20px;
+   }
     a {
       margin-bottom: 5px; 
       width: 100%;
     }
     img {
       border: 1px solid $borderColor;
-     width: 100%;
-     object-fit: contain;
+      width: 100%;
+      object-fit: contain;
+      @media (max-width: 1045px) {
+         width: 280px;
+         margin: 0 auto;
+      }
     }
     .slick-list { // высота видимости баннеров (slides to show)
       height: 750px !important;
     }
   }
 
-  .menu-main {
+  .main-menu {
+    text-align: left;
     @extend %calibri-bold;
-    #block-menu-main-menu {
-      font-size: $mainFontSize;
-      color: $mainColor;
-      text-align: center;
-      margin-bottom: 8px;
-    }
+     @media (max-width: 1045px) {
+        display: none;
+      } 
     li ul {
       display: none;
       background-color: $secondColor;
@@ -87,6 +103,35 @@
     .submenu-2 {
       position: static;
     }
+  }
+  #block-menu-main {
+    text-align: center;
+  }
+  #block-menu-main-menu {
+    font-size: $mainFontSize;
+    color: $mainColor;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 8px;
+    @media (max-width: 1045px) {
+      padding-left: 100px;
+      padding-right: 100px;
+      padding-top: 8px;
+      &::before {
+        position: absolute;
+        content: "";
+        background-image: url('../images/icons/arrow-nav.svg');
+        background-color: transparent;
+        left: 70px;
+        bottom: 12px;
+        width: 18px;
+        height: 12px;
+        transform: rotate(180deg);
+      }
+   }
+  }
+  .active#block-menu-main-menu::before {
+    transform: rotate(0);
   }
 
   .content-section-1 {

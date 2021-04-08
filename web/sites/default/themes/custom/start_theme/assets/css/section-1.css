@@ -1,4 +1,4 @@
-.section-1 .menu-main {
+.section-1 .main-menu {
   font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -11,9 +11,18 @@
       grid-template-areas: "menu-main content banners";
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  -ms-grid-columns: minmax(290px, 310px) auto minmax(260px, 280px);
-      grid-template-columns: minmax(290px, 310px) auto minmax(260px, 280px);
+  -ms-grid-columns: minmax(260px, 20%) 1fr minmax(210px, 20%);
+      grid-template-columns: minmax(260px, 20%) 1fr minmax(210px, 20%);
   grid-gap: clamp(0.5vw, 1vw, 2vw);
+}
+
+@media (max-width: 1045px) {
+  .section-1 {
+        grid-template-areas: "menu-main" "content" "banners";
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    /* justify-items: stretch; */
+  }
 }
 
 .section-1__main-menu {
@@ -22,11 +31,23 @@
   grid-area: menu-main;
 }
 
+.section-1__content {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: content;
+}
+
 .section-1__banners {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: banners;
   text-align: center;
+}
+
+@media (max-width: 1045px) {
+  .section-1__banners {
+    margin-top: 20px;
+  }
 }
 
 .section-1__banners a {
@@ -41,23 +62,33 @@
      object-fit: contain;
 }
 
+@media (max-width: 1045px) {
+  .section-1__banners img {
+    width: 280px;
+    margin: 0 auto;
+  }
+}
+
 .section-1__banners .slick-list {
   height: 750px !important;
 }
 
-.section-1 .menu-main #block-menu-main-menu {
-  font-size: 19px;
-  color: #569797;
-  text-align: center;
-  margin-bottom: 8px;
+.section-1 .main-menu {
+  text-align: left;
 }
 
-.section-1 .menu-main li ul {
+@media (max-width: 1045px) {
+  .section-1 .main-menu {
+    display: none;
+  }
+}
+
+.section-1 .main-menu li ul {
   display: none;
   background-color: #8ccaca;
 }
 
-.section-1 .menu-main li a {
+.section-1 .main-menu li a {
   color: #1f1d21;
   padding: 7px;
   display: block;
@@ -67,12 +98,12 @@
   cursor: pointer;
 }
 
-.section-1 .menu-main li a:hover {
+.section-1 .main-menu li a:hover {
   color: #fff;
   background-color: #569797;
 }
 
-.section-1 .menu-main__item_collapsed > a:before {
+.section-1 .main-menu__item_collapsed > a:before {
   position: absolute;
   content: "";
   background-image: url("../images/icons/arrow-nav.svg");
@@ -86,30 +117,67 @@
           transform: rotate(180deg) scale(1.3);
 }
 
-.section-1 .menu-main__item_collapsed > a:hover::before {
+.section-1 .main-menu__item_collapsed > a:hover::before {
   -webkit-filter: brightness(10);
           filter: brightness(10);
 }
 
-.section-1 .menu-main .active > a {
+.section-1 .main-menu .active > a {
   color: #fff;
   background-color: #569797;
 }
 
-.section-1 .menu-main .active > a::before {
+.section-1 .main-menu .active > a::before {
   -webkit-transform: rotate(0) scale(1.3);
           transform: rotate(0) scale(1.3);
   -webkit-filter: brightness(10);
           filter: brightness(10);
 }
 
-.section-1 .menu-main .is-active {
+.section-1 .main-menu .is-active {
   color: #fff;
   background-color: #569797;
 }
 
-.section-1 .menu-main .submenu-2 {
+.section-1 .main-menu .submenu-2 {
   position: static;
+}
+
+.section-1 #block-menu-main {
+  text-align: center;
+}
+
+.section-1 #block-menu-main-menu {
+  font-size: 19px;
+  color: #569797;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+@media (max-width: 1045px) {
+  .section-1 #block-menu-main-menu {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 8px;
+  }
+  .section-1 #block-menu-main-menu::before {
+    position: absolute;
+    content: "";
+    background-image: url("../images/icons/arrow-nav.svg");
+    background-color: transparent;
+    left: 70px;
+    bottom: 12px;
+    width: 18px;
+    height: 12px;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+.section-1 .active#block-menu-main-menu::before {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
 }
 
 .section-1 .content-section-1 .view-content {

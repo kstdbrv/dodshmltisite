@@ -190,3 +190,11 @@ img {
 .views-field-edit-node a:active {
   box-shadow: inset 0px 5px 4px rgba(59, 59, 59, 0.3);
 }
+
+.toolbar-icon-9 .views-field-edit-node a {
+  display: block;
+}
+
+.views-field-edit-node a {
+  display: none;
+}
