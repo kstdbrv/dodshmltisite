@@ -564,6 +564,8 @@ display:
         filters: false
         filter_groups: false
         css_class: false
+        style: false
+        row: false
       filters:
         type:
           id: type
@@ -612,6 +614,20 @@ display:
         groups:
           1: AND
       css_class: contacts
+      style:
+        type: grid
+        options:
+          grouping: {  }
+          columns: 2
+          automatic_width: true
+          alignment: vertical
+          col_class_default: true
+          col_class_custom: ''
+          row_class_default: true
+          row_class_custom: ''
+      row:
+        type: fields
+        options: {  }
     cache_metadata:
       max-age: -1
       contexts:

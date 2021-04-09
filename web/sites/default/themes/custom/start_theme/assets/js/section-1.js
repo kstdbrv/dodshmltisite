@@ -37,7 +37,26 @@ $(document).ready(function () {
     });
   }
 
+
+  if ($(window).width() < 1450) {
+    $(document).ready(function() {
+      $('.center-header__contacts').appendTo('#menu-mobile');
+   })
+  }
+
+  if ($(window).width() < 475) {
+    $(document).ready(function() {
+      $('#block-views-block-social-links').appendTo('#menu-mobile');
+   })
+  }
+/*   if ($(window).width() < 475) {
+    $(document).ready(function() {
+      $('#block-poisk').appendTo('#menu-mobile');
+   })
+  } */
 });
+
+;
 
 /* slick for banners */
 /* $(document).ready(function () {

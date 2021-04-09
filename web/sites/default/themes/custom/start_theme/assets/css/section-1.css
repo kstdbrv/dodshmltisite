@@ -19,9 +19,9 @@
 @media (max-width: 1045px) {
   .section-1 {
         grid-template-areas: "menu-main" "content" "banners";
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-    /* justify-items: stretch; */
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    justify-content: center;
   }
 }
 
@@ -38,6 +38,7 @@
 }
 
 .section-1__banners {
+  max-width: 1470px;
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: banners;
@@ -55,6 +56,12 @@
   width: 100%;
 }
 
+@media (max-width: 1045px) {
+  .section-1__banners a {
+    width: 280px;
+  }
+}
+
 .section-1__banners img {
   border: 1px solid #a7a6a6;
   width: 100%;
@@ -69,8 +76,45 @@
   }
 }
 
+.section-1__banners .field-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .section-1__banners .slick-list {
-  height: 750px !important;
+  height: 700px !important;
+}
+
+@media (max-width: 1045px) {
+  .section-1__banners .slick-list {
+    height: 622px !important;
+  }
+}
+
+@media (max-width: 1045px) {
+  .section-1__banners .views-field-field-banner {
+    overflow-y: scroll;
+  }
+}
+
+@media (max-width: 1045px) {
+  .section-1__banners .views-field-field-banner .field-content {
+    height: 550px;
+  }
+}
+
+@media (max-width: 1045px) {
+  .section-1__banners .slide--0, .section-1__banners .slide--1 {
+    display: none;
+  }
+}
+
+@media (max-width: 1045px) {
+  .section-1__banners .slide--2 {
+    width: 280px;
+    margin: 0 auto;
+  }
 }
 
 .section-1 .main-menu {
@@ -148,8 +192,8 @@
 }
 
 .section-1 #block-menu-main-menu {
-  font-size: 19px;
   color: #569797;
+  font-size: 19px;
   position: relative;
   display: inline-block;
   padding-bottom: 8px;
@@ -157,9 +201,13 @@
 
 @media (max-width: 1045px) {
   .section-1 #block-menu-main-menu {
+    background-color: #569797;
+    color: #fff;
+    letter-spacing: 1.5px;
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 8px;
+    margin-bottom: 10px;
   }
   .section-1 #block-menu-main-menu::before {
     position: absolute;
@@ -172,6 +220,8 @@
     height: 12px;
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
+    -webkit-filter: brightness(10);
+            filter: brightness(10);
   }
 }
 
