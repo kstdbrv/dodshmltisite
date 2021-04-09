@@ -96,7 +96,7 @@
       {% endif %}
     <div class="news-teaser__bottom">
       <div class="news-teaser__comments">
-        0 
+        {{ statistics }}
       </div>
       <div class="news-teaser__created">
         <span>{{ content.node.getCreatedTime()|date("d.m.Y") }}</span>  
@@ -115,3 +115,4 @@
 
 {# Лучше всего его через препроцесс или ещё как вбросить туда
 $entity->get('FIELD_WITH_COMMENTS')->comment_count #}
+

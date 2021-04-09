@@ -1,0 +1,15 @@
+uuid: a143b40a-4bcc-41da-a79f-99125754c5ac
+langcode: ru
+status: true
+dependencies: {  }
+name: flags
+label: 'Изображение гербы (50*52)'
+effects:
+  c607159b-43d5-438c-94db-68706bda29f9:
+    uuid: c607159b-43d5-438c-94db-68706bda29f9
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 50
+      height: 52
+      anchor: center-center

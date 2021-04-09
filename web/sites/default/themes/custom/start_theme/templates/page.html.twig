@@ -1,71 +1,71 @@
 <header class="header">
-  <div class="header__top">
-   {{ page.header_top }}
+
+  <div class="header__top top-header container">
+    <div class="top-header__column">
+     {{ page.header_top_left }}
+    </div>
+    <div class="top-header__column">
+      {{ page.header_top_right }}
+     </div>
   </div>
-  <div class="container">
-    <div class="header__center center-header">
-     <div class="center-header__left">
-       {{ page.header_left }}
-      </div>
-      <div class="center-header__logo">
-       {{ page.header_center }}
-      </div>
-     <div class="center-header__right">
-       {{ page.header_right }}
-     </div>
-    </div>
-  </div> 
-  <div class="header__underline"></div>
 
-  <div class="container">
-    <div class="header__bottom bottom-header">
-     <div class="bottom-header__logos">
-      {{ page.header__logos }}
+  <div class="header__center center-header">
+    <div class="container">
+      <div class="center-header__column">
+     <div class="center-header__flags">
+      {{ page.header_center_flags }}
      </div>
-     <div class="bottom-header__menu">
-       {{ page.menu }}
-       
-      <div class="bottom-header__burger">
-        <p class="icon-menu">МЕНЮ</p>
-        <div class="icon-menu">
-          <span></span>
-          <span></span> {# hamburger icon #}
-          <span></span>
-        </div>
+     <div class="center-header__name">
+      {{ page.header_center_name }}
+     </div>
       </div>
 
-      
+      <div class="center-header__column">
+     {{ page.header_center_logo }}
+      </div>
+
+      <div class="center-header__column">
+    <div class="center-header__contacts">
+      {{ page.header_center_contacts }}
      </div>
-     <div class="bottom-header__icons">
-     
-        <a class="icon-impaired" href="#" title="Версия для слабовидящих">
-        <img  class="icons_header" src="/sites/default/themes/custom/start_theme/assets/images/icons/glasses.svg" alt="вход на сайт"/>
-        {# <img class="icon-impaired art" src="/sites/default/themes/custom/start_theme/assets/images/icons/glasses.svg" alt="вход на сайт"> #}
-        {#<i class="material-icons main-color">face</i> #}
+
+     <div class="center-header__icons" data-da="bottom-header,3,1450">
+       <a class="icon-impaired" href="#" title="Версия для слабовидящих">
+         <img src="/sites/default/themes/custom/start_theme/assets/images/icons/eye.png" alt="Версия для слабовидящих">
        </a>
-       
-       <a href="/search" title="Поиск">
-        {# <i class="material-icons main-color">search</i> #}
-        <img class="icons_header" src="/sites/default/themes/custom/start_theme/assets/images/icons/search.svg" alt="поиск">
-      </a>
-        
-      {% if logged_in == false %}
+
+       {% if logged_in == false %}
        <!-- Modal Trigger -->
-        <a href="#modal_login" class="modal-trigger" title="вход на сайт">
-        <img class="icons_header" src="/sites/default/themes/custom/start_theme/assets/images/icons/input.svg" alt="вход на сайт">
-        </a>
-      {% endif %}
+       <a href="#modal_login" class="modal-trigger" title="вход на сайт">
+         <img src="/sites/default/themes/custom/start_theme/assets/images/icons/login.png" alt="Вход на сайт">
+       </a>
+       {% endif %}
 
-      {% if logged_in %}
-        <a class="link unregister" title="вход на сайт" href="{{ path('user.logout') }}">
+       {% if logged_in %}
+       <a class="link unregister" title="вход на сайт" href="{{ path('user.logout') }}">
          <i class="material-icons main-color">logout</i>
-        </a>
-      {% endif %}
-
-     </div>
+       </a>
+       {% endif %}
     </div>
-  </div> 
 
+      </div>
+    </div>
+  </div>
+
+  <div class="header__bottom bottom-header container">
+    <div class="bottom-header__menu">
+      {{ page.menu }}
+     </div> 
+     <div class="bottom-header__burger">
+       <p class="icon-menu">МЕНЮ</p>
+       <div class="icon-menu">
+         <span></span>
+         <span></span> {# hamburger icon #}
+         <span></span>
+       </div>
+     </div>
+  </div>
+     
 </header>
 
 {% if page.system %}
@@ -91,20 +91,10 @@
       {{ page.section_1 }}
     </div>
 
-    <div class="section-1__banners banners-custom">
+    <aside class="section-1__banners banners-custom">
       {{ page.banners_right }}
-    </div>
+    </aside>
 </section>
-
-
-
-
-
-
-
-
-
-
 
 
 <footer class="footer">
@@ -150,12 +140,3 @@
 {# <div id="button-up">
 <span class="button-up-txt">Наверх ^</span>
 </div> #}
-
-
-
-
-
-
-
-
-

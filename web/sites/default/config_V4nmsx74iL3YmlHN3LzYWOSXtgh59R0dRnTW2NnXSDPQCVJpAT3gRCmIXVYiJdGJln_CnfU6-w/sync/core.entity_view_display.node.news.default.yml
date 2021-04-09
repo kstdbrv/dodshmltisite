@@ -9,26 +9,32 @@ dependencies:
     - field.field.node.news.field_link_news
     - field.field.node.news.field_tegs
     - field.field.node.news.field_text
+    - image.style.image_news
     - node.type.news
   module:
     - colorbox
+    - layout_builder
     - link
     - text
     - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
 id: node.news.default
 targetEntityType: node
 bundle: news
 mode: default
 content:
   field_extra_text:
-    weight: 3
+    weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_image:
-    weight: 4
+    weight: 3
     label: hidden
     settings:
       colorbox_node_style: medium
@@ -42,10 +48,10 @@ content:
     type: colorbox
     region: content
   field_image_news:
-    weight: 1
+    weight: 0
     label: hidden
     settings:
-      colorbox_node_style: ''
+      colorbox_node_style: image_news
       colorbox_node_style_first: ''
       colorbox_image_style: ''
       colorbox_gallery: post
@@ -56,7 +62,7 @@ content:
     type: colorbox
     region: content
   field_link_news:
-    weight: 5
+    weight: 4
     label: hidden
     settings:
       trim_length: 80
@@ -68,7 +74,7 @@ content:
     type: link
     region: content
   field_tegs:
-    weight: 6
+    weight: 5
     label: hidden
     settings:
       link: true
@@ -76,22 +82,18 @@ content:
     type: entity_reference_label
     region: content
   field_text:
-    weight: 2
+    weight: 1
     label: hidden
     settings:
-      trim_length: 500
+      trim_length: 470
     third_party_settings: {  }
     type: text_trimmed
     region: content
-  links:
-    weight: 0
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   sharethis:
-    weight: 10
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
   langcode: true
+  links: true
