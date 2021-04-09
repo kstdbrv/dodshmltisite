@@ -12,6 +12,7 @@ dependencies:
   module:
     - image
     - node
+    - statistics
     - text
     - user
     - views_infinite_scroll
@@ -651,6 +652,18 @@ display:
           expose:
             label: ''
           granularity: second
+        totalcount:
+          id: totalcount
+          table: node_counter
+          field: totalcount
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
       defaults:
         sorts: false
         pager: false
@@ -690,7 +703,7 @@ display:
         options:
           relationship: none
           view_mode: teaser
-      css_class: news-infinite-scroll
+      css_class: infinite-scroll
     cache_metadata:
       max-age: -1
       contexts:

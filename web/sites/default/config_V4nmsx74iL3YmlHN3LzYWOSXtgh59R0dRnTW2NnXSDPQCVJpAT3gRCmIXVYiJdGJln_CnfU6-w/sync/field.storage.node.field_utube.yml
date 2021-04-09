@@ -1,0 +1,19 @@
+uuid: 289ab415-b0e7-4993-91c8-13b171917c0e
+langcode: ru
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_utube
+field_name: field_utube
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

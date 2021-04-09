@@ -37,17 +37,17 @@ ul.tabs {
 }
 
 .tabs a.is-active {
-  background-color: #e3f2fd;
+  background-color: #bbdefb !important;
   border-radius: 5px;
   font-weight: 500;
 }
 
 .tabs a:hover {
-  background-color: #bbdefb;
+  background-color: #bbdefb !important;
   border-radius: 5px;
 }
 
 .tabs a:active {
-  background-color: #e3f2fd;
+  background-color: #e3f2fd !important;
   border-radius: 5px;
 }

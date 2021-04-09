@@ -12,15 +12,16 @@ libraries:
   - start_theme/materialize
 
 regions:
-  header_top: 'Шапка (верх)'
-  header_left: 'Шапка (левая)'
-  header_center: 'Шапка (центр)'
-  header_right: 'Шапка (правая)'
-  header__logos: 'Шапка (логотип)'
+  header_top_left: 'Шапка-верх-лево'
+  header_top_right: 'Шапка-верх-право'
+  header_center_flags: 'Шапка (гербы)'
+  header_center_name: 'Шапка (название)'
+  header_center_logo: 'Шапка (логотип)'
+  header_center_contacts: 'Шапка (контакты)'
   menu: 'Меню в шапке'
   slider: 'Слайдер'
   system: 'Система'
   sidebar_menu: 'Главное меню (левое)'
   section_1: 'Секция-1'
-  banners_right: 'Правые баннеры'
+  banners_right: 'Баннеры справа'
   footer: Footer

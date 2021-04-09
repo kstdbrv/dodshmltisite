@@ -1,0 +1,11 @@
+uuid: 4b474162-5903-4499-b612-1c83d3558e4b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.social
+id: node.social
+target_entity_type_id: node
+target_bundle: social
+default_langcode: site_default
+language_alterable: false

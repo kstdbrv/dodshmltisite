@@ -1,0 +1,38 @@
+uuid: ffae7320-f19c-4273-a56d-3dc1e2b81c75
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_flags
+    - node.type.head_info
+  module:
+    - image
+id: node.head_info.field_image_flags
+field_name: field_image_flags
+entity_type: node
+bundle: head_info
+label: Изображение
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'images/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '1  MB'
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

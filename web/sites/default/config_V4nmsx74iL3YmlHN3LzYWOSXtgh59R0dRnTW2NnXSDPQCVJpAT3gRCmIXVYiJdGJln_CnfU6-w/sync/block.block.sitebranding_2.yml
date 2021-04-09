@@ -8,8 +8,8 @@ dependencies:
     - start_theme
 id: sitebranding_2
 theme: start_theme
-region: header_center
-weight: 0
+region: header_center_logo
+weight: -10
 provider: null
 plugin: system_branding_block
 settings:

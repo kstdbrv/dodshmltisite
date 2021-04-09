@@ -1,0 +1,18 @@
+uuid: 2ae7905b-5440-49fe-93c0-2cf1e76d1d82
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.social
+id: node.social.title
+field_name: title
+entity_type: node
+bundle: social
+label: Заголовок
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

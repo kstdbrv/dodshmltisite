@@ -25,11 +25,16 @@
 }
 
 .breadcrumbs__list-item a {
+  color: #1f1d21;
   transition: all 0.2s;
 }
 
 .breadcrumbs__list-item a:hover {
   color: #569797;
+}
+
+.breadcrumbs__list-item a:active {
+  color: #1f1d21;
 }
 
 .breadcrumbs__list-item a:first-letter {

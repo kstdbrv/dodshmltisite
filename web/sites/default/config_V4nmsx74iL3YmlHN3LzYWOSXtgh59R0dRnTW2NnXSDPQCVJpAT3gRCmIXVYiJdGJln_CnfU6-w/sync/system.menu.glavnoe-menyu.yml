@@ -3,6 +3,6 @@ langcode: ru
 status: true
 dependencies: {  }
 id: glavnoe-menyu
-label: 'Главное меню'
+label: Mеню
 description: ''
 locked: false
