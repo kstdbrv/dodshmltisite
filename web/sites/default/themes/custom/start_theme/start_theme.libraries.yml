@@ -13,6 +13,8 @@ global:
       assets/css/slider.css: {}
       assets/css/section-1.css: {}
       assets/css/news.css: {}
+      assets/css/social-links.css: {}
+      assets/css/table.css: {}
 
   js:
     assets/js/script.js: {}
