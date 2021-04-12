@@ -82,7 +82,7 @@
       }
     }
     @media (max-width: 455px) {
-      flex: 0 0 80px;
+      flex: 0 0 73px;
       img {
         max-height: 70px;
       }
@@ -201,8 +201,7 @@
       @media (max-width: 1450px){
         img {
           filter: invert(1);
-          height: 36px;
-          width: 58px;
+          width: 44px;
         }
       }
     }
@@ -232,6 +231,7 @@
     justify-content: space-between;
   }
   &__burger {
+    z-index: 15;
     display: flex;
     align-items: center;
     @media (max-width: 1450px) {
@@ -239,13 +239,10 @@
     }
     p {
       @extend %calibri-bold;
-      margin-right: clamp(30px, 4vw, 70px);
+      margin-right: clamp(40px, 5vw, 70px);
       @media (max-width: 455px) {
        font-size: 17px;
      }
-/*      &.active {
-       color: $mainColor;
-     } */
     }
   }
 }
@@ -367,7 +364,7 @@
   margin-bottom: 35px;
   position: absolute;
   z-index: 15;
-  top: 50px;
+  top: 47px;
   left: -24px;
   overflow-y: auto;
   overflow-x: hidden;
@@ -376,6 +373,9 @@
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
   transform: translate(-100%);
   transition: all .4s;
+  @media (max-width:455px) {
+    top: 43px;
+  }
   &.active {
     transform: translate(0%);
   }
@@ -442,6 +442,7 @@
 }
 
 .backdrop-menu {
+  z-index: 10;
   position: fixed;
   left: -100%;
   top: 0;
@@ -456,64 +457,6 @@
   left: 0;
   opacity: 1;
 }
-
-.social-links {
-  display: flex;
-  flex: 0 1 100%;
-  margin-top: 7px;
-  margin-bottom: 7px;
-  margin-left: 40px;
-  li:not(:last-child) {
-    margin-right: 10px;
-  }
-  li {
-    transition: all .2s;
-    a {
-      height: 29px;
-      width: 29px;
-      color: transparent;
-      @media (max-width:475px) {
-        padding: 0;
-        padding-top: 20px;
-        margin-bottom: 40px;
-        li:not(:last-child) {
-          margin-right: 0px;
-        }
-      }
-    }
-  }
-  &__vk {
-    background: url('../images/icons/vk.png') 50% 50% no-repeat;
-    &:hover {
-      background-image: url('../images/icons/vk-bg.png');
-    }
-  }
-
-  &__ok {
-    background: url('../images/icons/ok.png') 50% 50% no-repeat;
-    &:hover {
-      background-image: url('../images/icons/ok-bg.png');
-    }
-  }
-  &__facebook {
-    background: url('../images/icons/facebook.png') 50% 50% no-repeat;
-    &:hover {
-      background-image: url('../images/icons/facebook-bg.png');
-    }
-  }
-  &__instagram {
-    background: url('../images/icons/instagram.png') 50% 50% no-repeat;
-    &:hover {
-      background-image: url('../images/icons/instagram-bg.png');
-    }
-  }
-  &__ytube {
-    background: url('../images/icons/ytube.png') 50% 50% no-repeat;
-    &:hover {
-      background-image: url('../images/icons/ytube-bg.png');
-    }
-  }
- }
 
  #block-views-block-head-info-block-2-2 {
   @media screen {

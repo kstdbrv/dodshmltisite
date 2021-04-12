@@ -1,18 +1,26 @@
 @charset "UTF-8";
-/* styles for templates main menu */
-/* для всех шаблонов */
-.tp-2, .tp-3, .tp-4, .tp-5, .tp-6 {
-  text-align: center;
-}
-
-.tp-2 table {
-  width: 100%;
-}
-
 /* для всех таблиц */
-.table-1 {
-  width: 100%;
-  margin-bottom: 50px;
+table {
+  margin-top: 15px;
+  margin-bottom: 45px;
+  background-color: #fff;
+}
+
+@media (max-width: 375px) {
+  table {
+    font-size: 15px;
+  }
+}
+
+td, th {
+  padding: 10px;
+  border: 1px solid #bbb;
+}
+
+@media (max-width: 375px) {
+  td, th {
+    padding: 5px;
+  }
 }
 
 .table-1 td:nth-child(1) {

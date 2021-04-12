@@ -28,12 +28,15 @@
     transition: all .3s;
     position: absolute;
     top: 50px;
-    left: 20px;
+    left: 11px;
     padding: 18px 35px;
     color: $mainFontColor;
     background-color: rgba(255,255,255,.9);
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
     border-radius: 3px;
+    @media (max-width: 555px) {
+      left: 20px;
+    }
   }
   &__wrapper {
     display: flex;
@@ -155,6 +158,9 @@
     justify-content: space-between;
     margin-top: $distance;
     margin-bottom: $distance;
+    @media (max-width: 768px) {
+      display: block;
+    }
   }
   &__no-img {
     position: relative;
@@ -171,6 +177,10 @@
       content: '';
       background: url('../images/icons/news-no_img.svg') 50% 50% no-repeat;
     }
+    @media (max-width: 768px) {
+      width: 255px;
+      margin: 0 auto;
+    }
   }
   &__image {
     overflow: hidden;
@@ -181,10 +191,17 @@
       }
     }
     flex: 0 0 255px;
+    @media (max-width: 768px) {
+      text-align: center;
+    }
   }
   &__text {
     flex-grow: 1;
+    margin-top: $distance;
     margin-left: $distance;
+    @media (max-width: 768px) {
+     margin-left: 5px;
+    }
   }
   &__text-extra {
     margin-bottom: $distance;

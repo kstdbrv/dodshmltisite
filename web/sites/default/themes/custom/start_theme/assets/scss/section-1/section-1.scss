@@ -1,12 +1,13 @@
 @import "../base/vars";
 
 .section-1 {
+  margin-top: $distance;
   display: grid;
   margin-bottom: $distanceBlock;
   grid-template-areas:
   "menu-main content banners";
   grid-template-rows: 1fr;
-  grid-template-columns: minmax(260px, 20%) 1fr minmax(210px, 20%);
+  grid-template-columns: minmax(260px, 22%) 1fr minmax(210px, 20%);
   grid-gap: clamp(0.5vw, 1vw, 2vw);
   @media (max-width:1045px) {
     grid-template-areas:
@@ -155,6 +156,11 @@
       padding-right: 100px;
       padding-top: 8px;
       margin-bottom: 10px;
+      @media (max-width: 425px) {
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+      }
       &::before {
         position: absolute;
         content: "";
@@ -166,7 +172,10 @@
         height: 12px;
         transform: rotate(180deg);
         filter: brightness(10);
+        @media (max-width: 425px) {
+         left: 15%;
       }
+    }
    }
   }
   .active#block-menu-main-menu::before {

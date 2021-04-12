@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a3c42ad13f43ea2671b373f8d46f047d",
+    "content-hash": "d8c00ce14f7efed8cd64eccdabafff3f",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3998,6 +3998,102 @@
             "homepage": "https://www.drupal.org/project/redirect",
             "support": {
                 "source": "https://git.drupalcode.org/project/redirect"
+            }
+        },
+        {
+            "name": "drupal/sharethis",
+            "version": "2.0.0-beta5",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/sharethis.git",
+                "reference": "8.x-2.0-beta5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/sharethis-8.x-2.0-beta5.zip",
+                "reference": "8.x-2.0-beta5",
+                "shasum": "d60ba0cea25d0aa7c852cafac470848347f6a65c"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.0-beta5",
+                    "datestamp": "1592286577",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Clark Zhang",
+                    "homepage": "https://www.drupal.org/user/2911755"
+                },
+                {
+                    "name": "Gaofengzzz",
+                    "homepage": "https://www.drupal.org/user/1478184"
+                },
+                {
+                    "name": "RobLoach",
+                    "homepage": "https://www.drupal.org/user/61114"
+                },
+                {
+                    "name": "abhishek-anand",
+                    "homepage": "https://www.drupal.org/user/468982"
+                },
+                {
+                    "name": "bhavikshah9",
+                    "homepage": "https://www.drupal.org/user/2784353"
+                },
+                {
+                    "name": "himerus",
+                    "homepage": "https://www.drupal.org/user/159141"
+                },
+                {
+                    "name": "jvalencia",
+                    "homepage": "https://www.drupal.org/user/1259538"
+                },
+                {
+                    "name": "manu.mukerji",
+                    "homepage": "https://www.drupal.org/user/639872"
+                },
+                {
+                    "name": "naveenvalecha",
+                    "homepage": "https://www.drupal.org/user/2665733"
+                },
+                {
+                    "name": "neetu morwani",
+                    "homepage": "https://www.drupal.org/user/2632025"
+                },
+                {
+                    "name": "pankaj.shukla",
+                    "homepage": "https://www.drupal.org/user/2720739"
+                },
+                {
+                    "name": "purushotam.rai",
+                    "homepage": "https://www.drupal.org/user/3193859"
+                },
+                {
+                    "name": "ronsharethis",
+                    "homepage": "https://www.drupal.org/user/1448422"
+                },
+                {
+                    "name": "sagarpgaikwad",
+                    "homepage": "https://www.drupal.org/user/3133879"
+                }
+            ],
+            "description": "Add the <a href=\"http://www.sharethis.com/\">ShareThis</a> widget to nodes on your site.",
+            "homepage": "https://www.drupal.org/project/sharethis",
+            "support": {
+                "source": "https://git.drupalcode.org/project/sharethis"
             }
         },
         {
@@ -9031,7 +9127,8 @@
     "aliases": [],
     "minimum-stability": "alpha",
     "stability-flags": {
-        "drupal/libraries": 10
+        "drupal/libraries": 10,
+        "drupal/sharethis": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,

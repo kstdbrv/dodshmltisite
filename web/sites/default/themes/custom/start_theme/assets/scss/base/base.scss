@@ -4,7 +4,6 @@
 html {
   box-sizing: border-box;
   min-height: 100vh;
-  columns: #0000;
 }
 
 body {
@@ -15,8 +14,11 @@ body {
   min-width: 320px;
   overflow-x: hidden;
   position: relative;
-  background: url('../images/icons/bg.svg') 0% 0 repeat;
+  background: url('../images/icons/bg.svg') 0% 0% repeat;
   background-attachment: fixed;
+  @media (max-width: 555px) {
+    font-size: 17px;
+  }
 }
 
 *, *:before, *:after { 
@@ -127,6 +129,9 @@ img {
   text-transform: uppercase;
   color: $mainColor;
   font-size: 23px;
+  @media (max-width: 555px) {
+    font-size: 19px;
+  }
 }
 
 #block-start-theme-content { // убирает кнопку "добавить материал" на главной
