@@ -37,7 +37,7 @@ $(document).ready(function () {
     });
   }
 
-
+ /* меняем место при адаптиве */
   if ($(window).width() < 1450) {
     $(document).ready(function() {
       $('.center-header__contacts').appendTo('#menu-mobile');
@@ -56,7 +56,56 @@ $(document).ready(function () {
   } */
 });
 
-;
+
+/* раскрывает главное меню, если открыты страницы */
+const toggle = () => {
+  $('.main-menu').children().first().toggleClass('active');
+  $('.main-menu .submenu').first().slideToggle(0);
+}
+if (window.location.pathname === '/sveden/education') {
+  toggle();
+}
+if (window.location.pathname === '/sveden/common') {
+  toggle();
+}
+if (window.location.pathname ==='/sveden/struct') {
+  toggle();
+}
+if (window.location.pathname ==='/sveden/document') {
+  toggle();
+}
+if (window.location.pathname === '/sveden/eduStandarts') {
+  toggle();
+}
+if (window.location.pathname === '/sveden/employees') {
+  toggle();
+}
+if (window.location.pathname === '/sveden/objects') {
+  toggle();
+}
+if (window.location.pathname === '/sveden/grants') {
+  toggle();
+}
+if (window.location.pathname === '/sveden/paid_edu') {
+  toggle();
+}
+if (window.location.pathname === '/sveden/budget') {
+  toggle();
+}
+if (window.location.pathname === '/sveden/vacant') {
+  toggle();
+}
+if (window.location.pathname === '/sveden/ovz') {
+  toggle();
+}
+if (window.location.pathname === '/sveden/inter') {
+  toggle();
+}
+
+
+
+
+
 
 /* slick for banners */
 /* $(document).ready(function () {

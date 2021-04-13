@@ -39,21 +39,3 @@
     {{ content|without('field_image_news', 'field_text', 'field_extra_text', 'field_tegs', 'field_image') }}
   </div>
 </article>
-
-
-
-{# {% set links = {
-  'vk': 'https://vk.com/share.php?url=' ~ url ~ '&title=' ~ text,
-  'facebook': 'https://facebook.com/sharer/sharer.php?u=' ~ url,
-  'twitter': 'https://twitter.com/intent/tweet?url=' ~ url ~ '&text=' ~ text,
-  'telegram': 'https://telegram.me/share/url?url=' ~ url ~ '&text=' ~ text,
-  'mail': 'mailto:?subject=' ~ text ~ '&body=' ~ url,
-} %}
-<div{{ attributes.addClass('share') }}>
-  <div class="share__title">❤️ {{ 'Did you like it? Share it with others.'|t }}</div>
-  <div class="share__links">
-    {% for modifier, href in links %}
-      <a href="{{ href }}" class="share__link share__link--{{ modifier }}" rel="nofollow noopener" target="_blank"></a>
-    {% endfor %}
-  </div>
-</div> #}

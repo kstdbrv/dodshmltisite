@@ -1,11 +1,6 @@
-# Custom module library for general purposes.
 social_links:
-  js:
-    js/social-links.js: {}
+  version: VERSION
   css:
-    component:
-      css/social-links.css: {}
-  dependencies:
-    - core/drupalSettings
-    - social_links/jquery-labelauty
+    layout:
+      assets/style.css: {}
 

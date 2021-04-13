@@ -6,9 +6,6 @@
   height: 295px;
   width: 255px;
   border: 1px solid $borderColor;
-/*   img {
-    border-bottom: 1px solid $borderColor;
-  } */
   &__link {
     position: absolute;
     left: 0;
@@ -28,14 +25,14 @@
     transition: all .3s;
     position: absolute;
     top: 50px;
-    left: 11px;
+    left: 20px;
     padding: 18px 35px;
     color: $mainFontColor;
     background-color: rgba(255,255,255,.9);
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     @media (max-width: 555px) {
-      left: 20px;
+      left: 28px;
     }
   }
   &__wrapper {
@@ -235,9 +232,6 @@
         color: $mainColor;
       }
     }
-  }
-  &__social {
-    margin-top: $distance;
   }
   &__gallary {
     text-align: center;

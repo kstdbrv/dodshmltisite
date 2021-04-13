@@ -7,7 +7,7 @@
   grid-template-areas:
   "menu-main content banners";
   grid-template-rows: 1fr;
-  grid-template-columns: minmax(260px, 22%) 1fr minmax(210px, 20%);
+  grid-template-columns: minmax(260px, 21%) 1fr minmax(210px, 20%);
   grid-gap: clamp(0.5vw, 1vw, 2vw);
   @media (max-width:1045px) {
     grid-template-areas:

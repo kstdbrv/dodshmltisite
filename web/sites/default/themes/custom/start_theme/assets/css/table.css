@@ -23,6 +23,10 @@ td, th {
   }
 }
 
+thead td {
+  text-align: center;
+}
+
 .table-1 td:nth-child(1) {
   width: 50%;
 }
