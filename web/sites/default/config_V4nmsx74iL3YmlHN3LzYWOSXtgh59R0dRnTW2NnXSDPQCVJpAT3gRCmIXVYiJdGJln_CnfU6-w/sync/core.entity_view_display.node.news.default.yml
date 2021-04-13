@@ -89,7 +89,7 @@ content:
     third_party_settings: {  }
     type: text_trimmed
     region: content
-  sharethis:
+  social_links:
     weight: 6
     region: content
     settings: {  }
@@ -97,3 +97,4 @@ content:
 hidden:
   langcode: true
   links: true
+  sharethis: true
