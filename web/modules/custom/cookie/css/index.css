@@ -1,0 +1,58 @@
+.cookie-policy {
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    color: #333;
+    padding: 40px;
+    z-index: 1000;
+    bottom: 0;
+    right: 0;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,.4);
+    display: none;
+    font-size: 20px;
+    text-align: center;
+    background: #ffffffeb;
+}
+
+button.cookie-popup__close,
+.cookie_info__close {
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    background: #c10024;
+    color: #fff;
+}
+.cookie_info__close{
+   background: #008cc1;
+   position: fixed;
+    top: 0;
+    left: 10%;
+}
+button.cookie-popup__close:hover,
+.cookie_info__close:hover {
+        background: #00c14d;
+}
+.cookie_info {
+    position: fixed;
+    background: #fff;
+    width: 80%;
+    color: #333;
+    padding: 40px;
+    margin: 1% auto;
+    z-index: 1010;
+    top: 0;
+    height: auto;
+    max-height: 75vh;
+    left: 0;
+    overflow: auto;
+    right: 0;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,.4);
+    font-size: 20px;
+    background: #ffffffeb;
+    display: none;
+    font-size: 16px;
+}
+
+.polit-conf {
+    font-size: 14px;
+}

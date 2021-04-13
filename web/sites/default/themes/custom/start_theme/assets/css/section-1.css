@@ -31,9 +31,9 @@
       grid-template-areas: "menu-main content banners";
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  -ms-grid-columns: minmax(350px, 385px) auto minmax(345px, 355px);
-      grid-template-columns: minmax(350px, 385px) auto minmax(345px, 355px);
-  grid-gap: clamp(1vw, 2vw, 3vw);
+  -ms-grid-columns: minmax(350px, 385px) auto minmax(260px, 280px);
+      grid-template-columns: minmax(350px, 385px) auto minmax(260px, 280px);
+  grid-gap: clamp(0.5vw, 1vw, 2vw);
 }
 
 .section-1__main-menu {
@@ -48,10 +48,27 @@
   grid-area: content;
 }
 
-.section-1__banner {
+.section-1__banners {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: banners;
+  text-align: center;
+}
+
+.section-1__banners a {
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.section-1__banners img {
+  border: 1px solid #DDDDDD;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.section-1__banners .slick-list {
+  height: 750px !important;
 }
 
 .section-1 .menu-main {

@@ -1,6 +1,6 @@
 uuid: 4a45cf6e-baf9-4475-8b56-8dff1b4e4051
 langcode: ru
-status: false
+status: true
 dependencies:
   theme:
     - start_theme
@@ -8,13 +8,13 @@ _core:
   default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
 id: start_theme_page_title
 theme: start_theme
-region: header_top
-weight: -9
+region: section_1
+weight: -8
 provider: null
 plugin: page_title_block
 settings:
   id: page_title_block
-  label: 'Page title'
+  label: 'Заголовок страницы'
   provider: core
   label_display: '0'
 visibility: {  }

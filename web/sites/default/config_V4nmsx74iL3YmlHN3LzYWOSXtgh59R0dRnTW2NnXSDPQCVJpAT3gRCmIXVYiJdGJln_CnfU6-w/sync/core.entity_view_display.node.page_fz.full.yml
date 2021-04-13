@@ -1,0 +1,47 @@
+uuid: 769f46e9-d654-4466-b414-483afcf60a77
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.page_fz.body
+    - field.field.node.page_fz.field_file_fz
+    - node.type.page_fz
+  module:
+    - field_layout
+    - file
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: node.page_fz.full
+targetEntityType: node
+bundle: page_fz
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_file_fz:
+    weight: 102
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,23 @@
+uuid: 3780e6c1-3f0f-41b4-9533-46576cbbc066
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.page_fz
+  module:
+    - text
+id: node.page_fz.body
+field_name: body
+entity_type: node
+bundle: page_fz
+label: Содержимое
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,22 @@
+uuid: a3806601-af0e-4733-8c85-3496d7999f7c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.banners_custom
+id: node.banners_custom.promote
+field_name: promote
+entity_type: node
+bundle: banners_custom
+label: 'Помещено на главную страницу'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean
