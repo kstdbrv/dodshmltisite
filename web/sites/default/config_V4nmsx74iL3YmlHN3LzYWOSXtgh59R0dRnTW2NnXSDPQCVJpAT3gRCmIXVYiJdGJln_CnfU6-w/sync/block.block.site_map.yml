@@ -11,7 +11,7 @@ dependencies:
 id: site_map
 theme: start_theme
 region: header_top_left
-weight: 0
+weight: -13
 provider: null
 plugin: 'block_content:50d22246-e8b3-470c-9b6a-ea10076e63a1'
 settings:

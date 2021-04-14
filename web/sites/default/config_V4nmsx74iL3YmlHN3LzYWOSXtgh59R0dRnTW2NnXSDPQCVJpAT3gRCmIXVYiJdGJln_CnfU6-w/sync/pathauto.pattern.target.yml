@@ -1,0 +1,22 @@
+uuid: d12562a9-d76d-4bc4-b995-a4b4188680c2
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+id: target
+label: Направленности
+type: 'canonical_entities:node'
+pattern: 'targets/[node:title]'
+selection_criteria:
+  46dafe1c-8bfc-4698-ad43-6685b767ff39:
+    id: node_type
+    bundles:
+      target: target
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 46dafe1c-8bfc-4698-ad43-6685b767ff39
+selection_logic: and
+weight: -5
+relationships: {  }

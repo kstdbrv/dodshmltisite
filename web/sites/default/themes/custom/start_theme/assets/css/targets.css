@@ -1,0 +1,81 @@
+#block-targets, #block-views-block-target a {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* %myriad-bold {
+  font-family: myriad-pro, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+} */
+#block-targets {
+  padding: 20px 0;
+  margin-bottom: 15px;
+  text-align: center;
+  background-color: #569797;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+}
+
+#block-views-block-target {
+  max-width: 845px;
+  margin: 0 auto;
+}
+
+#block-views-block-target a {
+  display: block;
+  color: #1f1d21;
+}
+
+#block-views-block-target .view-content {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: -ms-grid;
+  display: grid;
+  justify-content: center;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: (255px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 255px);
+  grid-gap: clamp(0.5vw, 1vw, 2vw);
+  grid-row-gap: 30px;
+}
+
+@media (max-width: 425px) {
+  #block-views-block-target .view-content {
+    grid-row-gap: 10px;
+  }
+}
+
+#block-views-block-target .field-content {
+  position: relative;
+  text-align: center;
+}
+
+#block-views-block-target .field-content a:first-child {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+#block-views-block-target .front {
+  opacity: 1;
+  transition: all .3s ease;
+}
+
+#block-views-block-target .back {
+  opacity: 0;
+  position: absolute;
+  top: -4px;
+  left: 90px;
+  transition: all .4s;
+}
+
+#block-views-block-target .field-content:hover .back {
+  opacity: 1;
+}
+
+#block-views-block-target .field-content:hover .front {
+  opacity: 0;
+}

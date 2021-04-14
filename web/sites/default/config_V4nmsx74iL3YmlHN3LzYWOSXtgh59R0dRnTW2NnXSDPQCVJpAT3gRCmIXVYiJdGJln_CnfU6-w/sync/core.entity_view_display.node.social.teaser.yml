@@ -34,3 +34,4 @@ hidden:
   field_social_link: true
   field_utube: true
   langcode: true
+  social_links: true

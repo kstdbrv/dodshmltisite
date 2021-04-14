@@ -1,0 +1,33 @@
+@import "../base/vars";
+
+.section-2.grid {
+  display: grid;
+  margin-bottom: $distanceBlock;
+  grid-template-areas:
+  "left content right";
+  grid-template-rows: 1fr;
+  grid-template-columns: minmax(260px, 21%) 1fr minmax(210px, 20%);
+  grid-gap: clamp(0.5vw, 1vw, 2vw);
+  @media (max-width:1045px) {
+    grid-template-areas:
+    "left"
+    "content"
+    "right";
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+}
+
+.section-2 {
+  &__left {
+    grid-area: left;
+    text-align: center;
+   }
+   &__content {
+     grid-area: content;
+   }
+   &__right {
+     grid-area: right;
+     text-align: center;
+   }
+}
