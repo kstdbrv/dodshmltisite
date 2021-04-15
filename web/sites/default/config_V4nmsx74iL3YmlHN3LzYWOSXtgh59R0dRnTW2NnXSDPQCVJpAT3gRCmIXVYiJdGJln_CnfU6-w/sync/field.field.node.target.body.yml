@@ -11,7 +11,7 @@ id: node.target.body
 field_name: body
 entity_type: node
 bundle: target
-label: Body
+label: 'Содержимое страницы'
 description: ''
 required: false
 translatable: true

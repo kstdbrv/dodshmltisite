@@ -6,7 +6,10 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.target.body
     - field.field.node.target.field__hover
+    - field.field.node.target.field_galary
+    - field.field.node.target.field_image_target
     - field.field.node.target.field_target_image
+    - field.field.node.target.field_target_text
     - node.type.target
   module:
     - image
@@ -41,5 +44,8 @@ content:
     third_party_settings: {  }
 hidden:
   field__hover: true
+  field_galary: true
+  field_image_target: true
+  field_target_text: true
   langcode: true
   social_links: true

@@ -1,0 +1,21 @@
+uuid: 4c4bc672-34b4-4bf3-99f0-2210579508a6
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_target_text
+    - node.type.target
+  module:
+    - text
+id: node.target.field_target_text
+field_name: field_target_text
+entity_type: node
+bundle: target
+label: 'Текст (описание)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

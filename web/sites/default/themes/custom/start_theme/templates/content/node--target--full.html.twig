@@ -1,0 +1,34 @@
+{%
+  set classes = [
+    'target-full',
+    'node',
+    'node-' ~ node.bundle|clean_class,
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+  ]
+%}
+
+<article{{ attributes.addClass(classes) }}>
+
+  <div class="target-full__wrapper">
+    {% set field_target_text = content.field_target_text|render %}
+    {% if field_target_text|length %}
+    <div class="target-full__text">
+      {{ field_target_text }}
+    </div>
+    {% endif %}
+    {% set field_image_target = content.field_image_target|render %}
+    {% if field_image_target|length %}
+    <div class="target-full__image">
+      {{ field_image_target }}
+    </div>    
+    {% endif %}
+  </div>
+
+  {% set field_galary = content.field_galary|render %}
+  {% if field_galary|length %}
+  <div class="target-full__gallary">
+    {{ field_galary }}
+  </div>
+  {% endif %}
+{{ content.body }}
+</article>

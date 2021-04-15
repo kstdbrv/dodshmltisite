@@ -22,6 +22,10 @@
   &__left {
     grid-area: left;
     text-align: center;
+    img{
+      border: 1px solid $borderColor;
+      margin-bottom: 5px;
+    }
    }
    &__content {
      grid-area: content;
@@ -29,5 +33,9 @@
    &__right {
      grid-area: right;
      text-align: center;
+     img{
+      border: 1px solid $borderColor;
+      margin-bottom: 5px;
+    }
    }
 }

@@ -311,7 +311,12 @@
   overflow: hidden;
 }
 
+.news-full__gallary .field__item a {
+  display: inline;
+}
+
 .news-full__gallary .field__item img {
+  display: block;
   transition: 1s;
 }
 

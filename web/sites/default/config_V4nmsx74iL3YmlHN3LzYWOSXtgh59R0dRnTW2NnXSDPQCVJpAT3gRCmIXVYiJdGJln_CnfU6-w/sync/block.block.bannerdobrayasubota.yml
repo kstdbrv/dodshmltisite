@@ -1,0 +1,30 @@
+uuid: ee79ebe7-eed9-42ac-86e7-19bb6dfe4bb8
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:cfcfaa01-5221-44f5-891d-39e62ec83dae'
+  module:
+    - block_content
+    - system
+  theme:
+    - start_theme
+id: bannerdobrayasubota
+theme: start_theme
+region: section_2_right
+weight: 0
+provider: null
+plugin: 'block_content:cfcfaa01-5221-44f5-891d-39e62ec83dae'
+settings:
+  id: 'block_content:cfcfaa01-5221-44f5-891d-39e62ec83dae'
+  label: 'Баннер добрая субота'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

@@ -5,9 +5,14 @@ dependencies:
   config:
     - field.field.node.target.body
     - field.field.node.target.field__hover
+    - field.field.node.target.field_galary
+    - field.field.node.target.field_image_target
     - field.field.node.target.field_target_image
+    - field.field.node.target.field_target_text
+    - image.style.target_gallary
     - node.type.target
   module:
+    - colorbox
     - image
     - text
     - user
@@ -32,6 +37,29 @@ content:
     third_party_settings: {  }
     type: image
     region: content
+  field_galary:
+    weight: 6
+    label: hidden
+    settings:
+      colorbox_node_style: target_gallary
+      colorbox_node_style_first: ''
+      colorbox_image_style: target_gallary
+      colorbox_gallery: post
+      colorbox_gallery_custom: ''
+      colorbox_caption: auto
+      colorbox_caption_custom: ''
+    third_party_settings: {  }
+    type: colorbox
+    region: content
+  field_image_target:
+    weight: 4
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
   field_target_image:
     weight: 0
     label: hidden
@@ -40,6 +68,14 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
+    region: content
+  field_target_text:
+    weight: 5
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    type: text_trimmed
     region: content
   links:
     weight: 3

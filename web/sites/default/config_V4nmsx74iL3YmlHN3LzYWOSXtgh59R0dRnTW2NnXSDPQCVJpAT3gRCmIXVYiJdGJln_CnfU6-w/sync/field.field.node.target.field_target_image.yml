@@ -11,7 +11,7 @@ id: node.target.field_target_image
 field_name: field_target_image
 entity_type: node
 bundle: target
-label: Изображение
+label: 'Изображение для анонса'
 description: ''
 required: false
 translatable: false

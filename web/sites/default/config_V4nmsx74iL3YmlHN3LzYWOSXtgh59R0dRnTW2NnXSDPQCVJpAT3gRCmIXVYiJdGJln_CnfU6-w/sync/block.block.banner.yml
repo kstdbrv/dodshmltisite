@@ -1,11 +1,12 @@
 uuid: ecafdadb-d3bc-42c9-8798-e1e369b2d63e
 langcode: ru
-status: false
+status: true
 dependencies:
   content:
     - 'block_content:basic:ea574d03-3353-442a-aa9b-1f7b66d8936d'
   module:
     - block_content
+    - system
   theme:
     - start_theme
 id: banner
@@ -22,4 +23,8 @@ settings:
   status: true
   info: ''
   view_mode: full
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

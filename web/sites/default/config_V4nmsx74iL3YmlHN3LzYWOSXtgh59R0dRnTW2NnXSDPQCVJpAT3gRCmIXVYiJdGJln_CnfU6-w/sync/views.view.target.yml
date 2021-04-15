@@ -3,6 +3,7 @@ langcode: ru
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.storage.node.field__hover
     - field.storage.node.field_target_image
     - node.type.target
@@ -61,7 +62,10 @@ display:
           row_class: ''
           default_row_class: true
       row:
-        type: fields
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: full
       fields:
         title:
           id: title
@@ -326,7 +330,63 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      block_description: Направленности
+      block_description: направления
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+      defaults:
+        style: false
+        row: false
+        title: false
+      row:
+        type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
+      title: направления
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field__hover'
+        - 'config:field.storage.node.field_target_image'
+  page_1:
+    display_plugin: page
+    id: page_1
+    display_title: Page
+    position: 1
+    display_options:
+      display_extenders: {  }
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+      defaults:
+        style: false
+        row: false
+        css_class: false
+        title: false
+      row:
+        type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
+      path: targets
+      css_class: targets-page
+      title: направления
     cache_metadata:
       max-age: -1
       contexts:

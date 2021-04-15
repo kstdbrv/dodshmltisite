@@ -16,6 +16,7 @@
 }
 
 .social-links li {
+  background-color: #fff;
   transition: all .2s;
 }
 
@@ -37,41 +38,41 @@
 }
 
 .social-links__vk {
-  background: url("../images/icons/vk.png") 50% 50% no-repeat;
+  background: url("../images/icons/vk-bg.png") 50% 50% no-repeat;
 }
 
 .social-links__vk:hover {
-  background-image: url("../images/icons/vk-bg.png");
+  background-image: url("../images/icons/vk.png");
 }
 
 .social-links__ok {
-  background: url("../images/icons/ok.png") 50% 50% no-repeat;
+  background: url("../images/icons/ok-bg.png") 50% 50% no-repeat;
 }
 
 .social-links__ok:hover {
-  background-image: url("../images/icons/ok-bg.png");
+  background-image: url("../images/icons/ok.png");
 }
 
 .social-links__facebook {
-  background: url("../images/icons/facebook.png") 50% 50% no-repeat;
+  background: url("../images/icons/facebook-bg.png") 50% 50% no-repeat;
 }
 
 .social-links__facebook:hover {
-  background-image: url("../images/icons/facebook-bg.png");
+  background-image: url("../images/icons/facebook.png");
 }
 
 .social-links__instagram {
-  background: url("../images/icons/instagram.png") 50% 50% no-repeat;
+  background: url("../images/icons/instagram-bg.png") 50% 50% no-repeat;
 }
 
 .social-links__instagram:hover {
-  background-image: url("../images/icons/instagram-bg.png");
+  background-image: url("../images/icons/instagram.png");
 }
 
 .social-links__ytube {
-  background: url("../images/icons/ytube.png") 50% 50% no-repeat;
+  background: url("../images/icons/ytube-bg.png") 50% 50% no-repeat;
 }
 
 .social-links__ytube:hover {
-  background-image: url("../images/icons/ytube-bg.png");
+  background-image: url("../images/icons/ytube.png");
 }
