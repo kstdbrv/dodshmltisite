@@ -23,7 +23,15 @@ use Drupal\Core\Path\AliasManager;
 
 function start_theme_preprocess_page(&$variables) {
 
-
+  if (!empty($variables['page']['section_2_left']) or !empty($variables['page']['section_2_right'])) {
+    $variables['grid'] = ' grid container';
+  }
+/*   elseif((empty($variables['page']['banner_bottom_first']) && !empty($variables['page']['banner_bottom_second'])) or (!empty($variables['page']['banner_bottom_first']) && !empty($variables['page']['banner_bottom_third'])) or (!empty($variables['page']['banner_bottom_third']) && !empty($variables['page']['banner_bottom_second']))) {
+    $variables['banner_bottom_class'] = 'col-md-6';
+  }
+  else {
+    $variables['banner_bottom_class'] = 'col-md-12';
+  } */
 }
 
 

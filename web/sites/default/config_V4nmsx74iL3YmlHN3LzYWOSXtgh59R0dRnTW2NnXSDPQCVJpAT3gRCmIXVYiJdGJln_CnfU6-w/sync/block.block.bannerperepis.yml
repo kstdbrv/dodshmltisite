@@ -1,0 +1,30 @@
+uuid: e1b7d785-46de-47b3-bb6e-b3e5ae3d3072
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ea574d03-3353-442a-aa9b-1f7b66d8936d'
+  module:
+    - block_content
+    - system
+  theme:
+    - start_theme
+id: bannerperepis
+theme: start_theme
+region: section_2_right
+weight: 0
+provider: null
+plugin: 'block_content:ea574d03-3353-442a-aa9b-1f7b66d8936d'
+settings:
+  id: 'block_content:ea574d03-3353-442a-aa9b-1f7b66d8936d'
+  label: 'Баннер перепись'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

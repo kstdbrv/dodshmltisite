@@ -15,7 +15,8 @@ global:
       assets/css/news.css: {}
       assets/css/social-links.css: {}
       assets/css/table.css: {}
-
+      assets/css/targets.css: {}
+      assets/css/section-2.css: {}
   js:
     assets/js/script.js: {}
     assets/js/header.js: {}

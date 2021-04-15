@@ -1,0 +1,17 @@
+uuid: f93687ba-7d59-4f2b-a31a-243efe3adc2c
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Направленности
+type: target
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

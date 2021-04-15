@@ -1,0 +1,30 @@
+uuid: cfebae9e-21ea-4b06-a894-893b2b38f7a8
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ec21198c-5772-4b3f-9cc9-093120b934e9'
+  module:
+    - block_content
+    - system
+  theme:
+    - start_theme
+id: banner_gos
+theme: start_theme
+region: section_2_left
+weight: 0
+provider: null
+plugin: 'block_content:ec21198c-5772-4b3f-9cc9-093120b934e9'
+settings:
+  id: 'block_content:ec21198c-5772-4b3f-9cc9-093120b934e9'
+  label: 'Баннер обратная связь'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

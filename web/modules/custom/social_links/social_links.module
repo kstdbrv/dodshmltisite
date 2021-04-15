@@ -36,8 +36,10 @@ function social_links_node_view(array &$build, EntityInterface $entity, EntityVi
       '#theme' => 'social_links',
       '#url' => $entity->toUrl('canonical', ['absolute' => TRUE])->toString(TRUE)->getGeneratedUrl(),
       '#text' => $entity->label(),
-      /* '#img' => file_create_url($entity->field_image_news->entity->getFileUri()), */
     ];
+    if (!$entity->get('field_image_news')->isEmpty()) {
+      $build['social_links']['#img'] = file_create_url($entity->field_image_news->entity->getFileUri());
+    }
   }
 }
 

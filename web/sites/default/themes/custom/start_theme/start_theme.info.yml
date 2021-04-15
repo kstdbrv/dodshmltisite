@@ -22,6 +22,9 @@ regions:
   slider: 'Слайдер'
   system: 'Система'
   sidebar_menu: 'Главное меню (левое)'
-  section_1: 'Секция-1'
   banners_right: 'Баннеры справа'
+  section_1: 'Секция-1'
+  section_2_left: 'Секция-2 слева'
+  section_2_center: 'Секция-2 центр'
+  section_2_right: 'Секция-2 справа'
   footer: Footer

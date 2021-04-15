@@ -1,0 +1,29 @@
+uuid: 9ad0bcca-7c1d-441a-b1d9-23f26a9fa735
+langcode: ru
+status: true
+dependencies:
+  config:
+    - views.view.target
+  module:
+    - system
+    - views
+  theme:
+    - start_theme
+id: views_block__target
+theme: start_theme
+region: section_2_center
+weight: -11
+provider: null
+plugin: 'views_block:target-block_1'
+settings:
+  id: 'views_block:target-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

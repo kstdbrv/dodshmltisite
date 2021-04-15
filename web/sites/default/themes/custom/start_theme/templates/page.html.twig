@@ -96,6 +96,22 @@
     </aside>
 </section>
 
+<section class="section-2{{ grid }}">
+{% if page.section_2_left %}
+  <aside class="section-2__left">
+    {{ page.section_2_left }}
+  </aside>
+{% endif %}
+  <div class="section-2__content">
+    {{ page.section_2_center }}
+  </div>
+{% if page.section_2_right %}
+  <aside class="section-2__right">
+     {{ page.section_2_right }}
+  </aside>
+{% endif %}  
+</section>
+
 
 <footer class="footer">
  <div class="container">

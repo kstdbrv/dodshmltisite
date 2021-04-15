@@ -1,0 +1,55 @@
+/* %myriad-bold {
+  font-family: myriad-pro, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+} */
+.section-2.grid {
+  display: -ms-grid;
+  display: grid;
+  margin-bottom: 30px;
+      grid-template-areas: "left content right";
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: minmax(260px, 21%) 1fr minmax(210px, 20%);
+      grid-template-columns: minmax(260px, 21%) 1fr minmax(210px, 20%);
+  grid-gap: clamp(0.5vw, 1vw, 2vw);
+}
+
+@media (max-width: 1045px) {
+  .section-2.grid {
+        grid-template-areas: "left" "content" "right";
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    justify-content: center;
+  }
+}
+
+.section-2__left {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: left;
+  text-align: center;
+}
+
+.section-2__left img {
+  border: 1px solid #a7a6a6;
+  margin-bottom: 5px;
+}
+
+.section-2__content {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: content;
+}
+
+.section-2__right {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: right;
+  text-align: center;
+}
+
+.section-2__right img {
+  border: 1px solid #a7a6a6;
+  margin-bottom: 5px;
+}
