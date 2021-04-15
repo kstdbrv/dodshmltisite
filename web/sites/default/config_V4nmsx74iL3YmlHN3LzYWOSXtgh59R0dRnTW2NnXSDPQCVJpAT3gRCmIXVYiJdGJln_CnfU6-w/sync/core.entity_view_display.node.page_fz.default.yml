@@ -5,18 +5,17 @@ dependencies:
   config:
     - field.field.node.page_fz.body
     - field.field.node.page_fz.field_file_fz
+    - field.field.node.page_fz.field_tegs
     - node.type.page_fz
   module:
-    - field_layout
     - file
-    - layout_discovery
+    - layout_builder
     - text
     - user
 third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings:
-      label: ''
+  layout_builder:
+    allow_custom: false
+    enabled: false
 id: node.page_fz.default
 targetEntityType: node
 bundle: page_fz
@@ -38,5 +37,7 @@ content:
     type: file_default
     region: content
 hidden:
+  field_tegs: true
   langcode: true
   links: true
+  sharethis: true

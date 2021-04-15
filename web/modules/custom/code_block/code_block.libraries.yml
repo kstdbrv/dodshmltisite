@@ -1,0 +1,14 @@
+code_block:
+  version: 1.x
+
+  css:
+    base:
+      css/style.css: {}
+  js:
+    js/script.js: {}
+    js/gov-serv.js: {}
+
+    
+  dependencies:
+    - core/jquery
+    - core/jquery.once

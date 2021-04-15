@@ -2,12 +2,17 @@
  * @file
  * Visual styles for tabs.
  */
+.tabs {
+  margin-bottom: 15px;
+  height: 38px;
+}
+
 div.tabs {
   margin: 1em 0;
 }
 
 ul.tabs {
-  margin: 0 0 0.5em;
+  margin: 0;
   padding: 0;
   list-style: none;
   border-bottom: 2px solid #1976d2;
@@ -25,24 +30,24 @@ ul.tabs {
 }
 
 .tabs a {
-  color: #1565c0;
+  color: #1565c0 !important;
   display: block;
   padding: 0.2em 1em;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .tabs a.is-active {
-  background-color: #e3f2fd;
+  background-color: #bbdefb !important;
   border-radius: 5px;
   font-weight: 500;
 }
 
 .tabs a:hover {
-  background-color: #bbdefb;
+  background-color: #bbdefb !important;
   border-radius: 5px;
 }
 
 .tabs a:active {
-  background-color: #e3f2fd;
+  background-color: #e3f2fd !important;
   border-radius: 5px;
 }

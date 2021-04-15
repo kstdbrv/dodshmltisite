@@ -1,0 +1,17 @@
+uuid: da1376d4-bfdc-4811-8ab3-28b2178dba7a
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Шапка сайта'
+type: head_info
+description: 'Контакты (почта, телефон организации) + изображения слева (гербы)'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

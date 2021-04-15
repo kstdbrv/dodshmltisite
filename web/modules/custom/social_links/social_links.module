@@ -1,0 +1,89 @@
+<?php
+
+/**
+ * @file
+ * Main file for hooks and custom functions.
+ */
+
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\node\Entity\NodeType;
+
+//добавляем поле в сущность
+/**
+ * Implements hook_entity_extra_field_info().
+ */
+function social_links_entity_extra_field_info() {
+  $extra = [];
+
+  foreach (NodeType::loadMultiple() as $bundle) {
+    $extra['node'][$bundle->id()]['display']['social_links'] = [
+      'label' => t('social links'),
+      'description' => t('Add links on social network'),
+      'weight' => 100,
+      'visible' => FALSE,
+    ];
+  }
+  return $extra;
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_view().
+ */
+function social_links_node_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+  if ($display->getComponent('social_links')) {
+    $build['social_links'] = [
+      '#theme' => 'social_links',
+      '#url' => $entity->toUrl('canonical', ['absolute' => TRUE])->toString(TRUE)->getGeneratedUrl(),
+      '#text' => $entity->label(),
+      /* '#img' => file_create_url($entity->field_image_news->entity->getFileUri()), */
+    ];
+  }
+}
+
+/**
+* Implements hook_theme().
+*/
+function social_links_theme($existing, $type, $theme, $path) {
+  //переменные по умолчанию
+  return [
+    'social_links' => [
+      'variables' => [
+        'url' => NULL,
+        'text' => NULL,
+        'img' => NULL,
+      ],
+    ],
+  ];
+}
+
+
+/*  function template_preprocess_social_links(&$variables) {
+
+  //здесь можно писать логику, как в .theme.module
+  $url = $entity->toUrl('canonical', ['absolute' => TRUE])->toString(TRUE)->getGeneratedUrl();
+  $text = $entity->label();
+  $img = file_create_url($entity->field_image_news->entity->getFileUri());
+
+  if ($img) {
+    $variables['img'] = $img;
+  }
+  $variables['$text'] = $text;
+  $variables['url'] = $url;
+
+} */
+
+
+
+/* можно так подключить, а можно в twig (как я сделал) */
+/* function template_preprocess_social_links(&$variables){
+
+  # Add library
+  $variables['#attached']['library'][] = 'social_links/social_links';
+
+} */
+
+
+/* ресурс!  */
+
+/* https://niklan.net/blog/151#primer-no1-prostoe-obyavlenie-theme-hook */

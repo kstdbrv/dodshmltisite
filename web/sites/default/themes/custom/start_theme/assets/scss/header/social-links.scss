@@ -1,0 +1,64 @@
+@import "../base/vars";
+
+.social-links {
+  display: flex;
+  flex: 0 1 100%;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  margin-left: 40px;
+  li:not(:last-child) {
+    margin-right: 10px;
+  }
+  li {
+    transition: all .2s;
+    a {
+      height: 29px;
+      width: 29px;
+      color: transparent;
+      @media (max-width:475px) {
+        padding: 0;
+        padding-top: 20px;
+        margin-bottom: 40px;
+        li:not(:last-child) {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+  &__vk {
+    background: url('../images/icons/vk.png') 50% 50% no-repeat;
+    &:hover {
+      background-image: url('../images/icons/vk-bg.png');
+    }
+  }
+
+  &__ok {
+    background: url('../images/icons/ok.png') 50% 50% no-repeat;
+    &:hover {
+      background-image: url('../images/icons/ok-bg.png');
+    }
+  }
+  &__facebook {
+    background: url('../images/icons/facebook.png') 50% 50% no-repeat;
+    &:hover {
+      background-image: url('../images/icons/facebook-bg.png');
+    }
+  }
+  &__instagram {
+    background: url('../images/icons/instagram.png') 50% 50% no-repeat;
+    &:hover {
+      background-image: url('../images/icons/instagram-bg.png');
+    }
+  }
+  &__ytube {
+    background: url('../images/icons/ytube.png') 50% 50% no-repeat;
+    &:hover {
+      background-image: url('../images/icons/ytube-bg.png');
+    }
+  }
+ }
+
+
+
+
+

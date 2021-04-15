@@ -8,14 +8,7 @@ dependencies:
     - field.field.node.banners_custom.field_link_banners
     - node.type.banners_custom
   module:
-    - field_layout
-    - layout_discovery
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings:
-      label: ''
 id: node.banners_custom.teaser
 targetEntityType: node
 bundle: banners_custom

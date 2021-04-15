@@ -8,16 +8,9 @@ dependencies:
     - field.field.node.slider_image.field_media
     - node.type.slider_image
   module:
-    - field_layout
     - image
-    - layout_discovery
     - link
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings:
-      label: ''
 id: node.slider_image.default
 targetEntityType: node
 bundle: slider_image

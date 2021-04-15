@@ -1,0 +1,8 @@
+uuid: fa8fa110-9da4-4996-b888-4f6fc21c4c9a
+langcode: ru
+status: true
+dependencies: {  }
+id: menu-third
+label: 'Третье меню'
+description: 'меню под главным'
+locked: false

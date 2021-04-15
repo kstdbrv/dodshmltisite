@@ -7,15 +7,8 @@ dependencies:
     - field.field.paragraph.image.field_link
     - paragraphs.paragraphs_type.image
   module:
-    - field_layout
     - image
-    - layout_discovery
     - link
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings:
-      label: ''
 id: paragraph.image.default
 targetEntityType: paragraph
 bundle: image

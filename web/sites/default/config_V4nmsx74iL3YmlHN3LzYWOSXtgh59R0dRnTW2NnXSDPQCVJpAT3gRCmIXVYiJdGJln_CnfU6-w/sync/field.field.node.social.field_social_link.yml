@@ -1,0 +1,23 @@
+uuid: 14d94ca2-9d26-4227-b0c0-10293f3f85f3
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_social_link
+    - node.type.social
+  module:
+    - link
+id: node.social.field_social_link
+field_name: field_social_link
+entity_type: node
+bundle: social
+label: 'Ссылка на  VK'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

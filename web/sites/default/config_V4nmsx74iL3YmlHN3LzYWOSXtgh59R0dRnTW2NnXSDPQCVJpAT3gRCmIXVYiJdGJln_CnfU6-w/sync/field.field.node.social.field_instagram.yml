@@ -1,0 +1,23 @@
+uuid: a0b21a24-00b0-4324-ae3f-f21f122cc3ad
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_instagram
+    - node.type.social
+  module:
+    - link
+id: node.social.field_instagram
+field_name: field_instagram
+entity_type: node
+bundle: social
+label: 'Ссылка на instagram'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

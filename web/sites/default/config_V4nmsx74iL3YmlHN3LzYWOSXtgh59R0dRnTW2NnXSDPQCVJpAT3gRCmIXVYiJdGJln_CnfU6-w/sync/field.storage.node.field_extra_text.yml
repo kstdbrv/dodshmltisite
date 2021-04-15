@@ -1,0 +1,19 @@
+uuid: f4b196c3-4e7f-472f-9664-9207887093f5
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_extra_text
+field_name: field_extra_text
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

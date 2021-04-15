@@ -1,30 +1,6 @@
-/* %sf-semibold{
-  font-family:'SFProDisplay', sans-serif;
-  font-weight: 600;
-}
-%sf-bold{
-  font-family: 'SFProDisplay', sans-serif;
-  font-weight: 700;
-}
-%sf-medium{
-  font-family: 'SFProDisplay', sans-serif;
-  font-weight: 500;
-}
-%barlow-bold{
-  font-family: 'Barlow', sans-serif;
-  font-weight: 700;
-}
-%barlow-regular{
-  font-family: 'Barlow', sans-serif;
-  font-weight: 400;
-} */
-.slider-banner {
-  margin-bottom: 15px;
-}
-
 .slider-banner .slick {
   /*  box-shadow: inset -20px -8px 0px 0px rgba(46, 179, 179, 1); */
-  border: 1px solid #2eb3b3;
+  border: 1px solid #a7a6a6;
   /*     @media (max-width:425px) {
       box-shadow:none;
       border: none;
@@ -121,7 +97,7 @@
   padding: 0;
   width: 11px;
   height: 11px;
-  border: 1px solid #2eb3b3;
+  border: 1px solid #569797;
   /* border: transparent; */
   border-radius: 50%;
   background-color: #fff;
@@ -136,7 +112,7 @@
 }
 
 .slider-banner .slick-active button {
-  background-color: #2eb3b3;
+  background-color: #569797;
 }
 
 .slider-banner .container-no-padding {
@@ -156,30 +132,8 @@
 }
 
 .slider-banner .views-field-edit-node a {
-  font-size: 15px;
-  position: absolute;
   bottom: 20px;
   right: 25px;
-  text-transform: uppercase;
-  letter-spacing: 1.3px;
-  padding: 7px 15px;
-  border-radius: 25px;
-  background-color: #2eb3b3;
-  color: #fff;
-  transition: all .3s;
-  border: 1px solid #2eb3b3;
-}
-
-@media (max-width: 425px) {
-  .slider-banner .views-field-edit-node a {
-    font-size: 12px;
-    bottom: 5px;
-  }
-}
-
-.slider-banner .views-field-edit-node a:hover {
-  background-color: #fff;
-  color: #2eb3b3;
 }
 
 .slider-banner a {

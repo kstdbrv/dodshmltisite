@@ -1,0 +1,25 @@
+uuid: 14fed1b4-441f-44fd-a146-6849ebf85a30
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.menu-third
+  module:
+    - system
+  theme:
+    - start_theme
+id: tretemenyu
+theme: start_theme
+region: sidebar_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-third'
+settings:
+  id: 'system_menu_block:menu-third'
+  label: 'Третье меню'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 3
+  expand_all_items: true
+visibility: {  }

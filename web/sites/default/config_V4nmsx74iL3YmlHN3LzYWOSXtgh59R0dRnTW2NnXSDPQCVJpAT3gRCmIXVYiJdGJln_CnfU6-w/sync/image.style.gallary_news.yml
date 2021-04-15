@@ -1,0 +1,7 @@
+uuid: 28ac0176-a2c4-47b3-9a3b-4aab7e429b6a
+langcode: ru
+status: true
+dependencies: {  }
+name: gallary_news
+label: 'Галерея в новости'
+effects: {  }

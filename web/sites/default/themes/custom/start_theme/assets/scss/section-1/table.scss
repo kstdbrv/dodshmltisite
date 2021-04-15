@@ -1,0 +1,40 @@
+@import "../base/vars";
+
+/* для всех таблиц */
+
+table {
+  margin-top: $distance;
+  margin-bottom: 45px;
+  background-color: #fff;
+  @media (max-width:375px) {
+    font-size: 15px;
+  }
+}
+
+td, th {
+  padding: 10px;
+  border: 1px solid #bbb;
+  @media (max-width:375px) {
+    padding: 5px;
+  }
+}
+
+thead td {
+  text-align: center;
+}
+
+.table-1 td:nth-child(1) {
+  width: 50%;
+}
+
+.table-1 td:nth-child(2) {
+  width: 50%;
+}
+
+.tp-3 .table-1 td:nth-child(1) {
+  width: 70%;
+}
+
+.tp-3 .table-1 td:nth-child(2) {
+  width: 30%;
+}
