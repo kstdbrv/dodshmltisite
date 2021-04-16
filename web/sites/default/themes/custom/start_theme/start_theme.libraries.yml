@@ -17,6 +17,8 @@ global:
       assets/css/table.css: {}
       assets/css/targets.css: {}
       assets/css/section-2.css: {}
+      assets/css/section-3.css: {}
+      assets/css/photo-gallery.css: {}
   js:
     assets/js/script.js: {}
     assets/js/header.js: {}

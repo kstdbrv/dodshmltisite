@@ -16,11 +16,6 @@
   font-style: normal;
 }
 
-/* %myriad-bold {
-  font-family: myriad-pro, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-} */
 @media (max-width: 555px) {
   .header {
     font-size: 17px;

@@ -1,0 +1,21 @@
+uuid: 38e8a463-1b9a-40d7-bf8b-26983cce170c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_photo_text
+    - node.type.photo_gallery
+  module:
+    - text
+id: node.photo_gallery.field_photo_text
+field_name: field_photo_text
+entity_type: node
+bundle: photo_gallery
+label: Описание
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

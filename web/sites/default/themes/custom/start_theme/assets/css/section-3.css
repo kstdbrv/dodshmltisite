@@ -1,0 +1,16 @@
+.section-3 {
+  background-color: #8ccaca;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.section-3 .view-content {
+  display: -ms-grid;
+  display: grid;
+  justify-content: center;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: (255px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 255px);
+  grid-gap: clamp(0.5vw, 1vw, 2vw);
+}

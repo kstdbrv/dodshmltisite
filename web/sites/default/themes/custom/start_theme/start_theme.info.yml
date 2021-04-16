@@ -27,4 +27,5 @@ regions:
   section_2_left: 'Секция-2 слева'
   section_2_center: 'Секция-2 центр'
   section_2_right: 'Секция-2 справа'
+  section_3: 'Секция-3'
   footer: Footer

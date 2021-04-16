@@ -76,11 +76,13 @@
 </section>
 {% endif %}
 
+{% if page.slider %}
 <section class="slider-banner">
  <div class="container-no-padding">
   {{ page.slider }}
  </div>
 </section>
+{% endif %}
 
 <section class="container section-1">
     <aside class="section-1__main-menu menu-main">
@@ -96,6 +98,7 @@
     </aside>
 </section>
 
+{% if page.section_2_center %}
 <section class="section-2{{ grid }}">
 {% if page.section_2_left %}
   <aside class="section-2__left">
@@ -111,7 +114,13 @@
   </aside>
 {% endif %}  
 </section>
+{% endif %}
 
+{% if page.section_3 %}
+<section class="section-3">
+  {{ page.section_3 }}
+</section>
+{% endif %}
 
 <footer class="footer">
  <div class="container">
