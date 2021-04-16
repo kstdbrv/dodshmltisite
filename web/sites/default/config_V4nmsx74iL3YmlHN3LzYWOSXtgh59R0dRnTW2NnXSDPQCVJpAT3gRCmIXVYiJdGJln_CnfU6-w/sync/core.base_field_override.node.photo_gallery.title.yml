@@ -1,0 +1,18 @@
+uuid: df619c18-6c5a-41ad-b828-a320f646f27e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.photo_gallery
+id: node.photo_gallery.title
+field_name: title
+entity_type: node
+bundle: photo_gallery
+label: Заголовок
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,15 @@
+uuid: f94fec44-c1fc-4e1f-945a-1e1759f3d063
+langcode: ru
+status: true
+dependencies: {  }
+name: photo_teaser
+label: 'Изображение фотоальбом teaser (255*220)'
+effects:
+  085a2c0a-1857-4d8c-bcd4-352e47daf5fd:
+    uuid: 085a2c0a-1857-4d8c-bcd4-352e47daf5fd
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 255
+      height: 220
+      anchor: center-center

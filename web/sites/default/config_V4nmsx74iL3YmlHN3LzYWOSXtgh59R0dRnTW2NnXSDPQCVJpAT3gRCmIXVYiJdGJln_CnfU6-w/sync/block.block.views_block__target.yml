@@ -12,7 +12,7 @@ dependencies:
 id: views_block__target
 theme: start_theme
 region: section_2_center
-weight: -11
+weight: -15
 provider: null
 plugin: 'views_block:target-block_1'
 settings:

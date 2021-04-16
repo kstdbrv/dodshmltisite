@@ -4,11 +4,6 @@ body {
   font-style: normal;
 }
 
-/* %myriad-bold {
-  font-family: myriad-pro, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-} */
 /* Global */
 html {
   box-sizing: border-box;
@@ -138,7 +133,7 @@ img {
 
 .link-more a {
   height: 50px;
-  padding: 15px 20px 17px;
+  padding: 15px 25px 17px;
   text-decoration: none !important;
   color: #fff !important;
   text-align: center;

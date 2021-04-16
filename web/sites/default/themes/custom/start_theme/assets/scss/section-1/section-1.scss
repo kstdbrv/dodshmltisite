@@ -191,7 +191,7 @@
       grid-gap: clamp(0.5vw, 1vw, 2vw);
     }
   }
-  .infinite-scroll {
+  .infinite-scroll { // Для страниц с сеткой с infinite-scroll добавить в css представления
     .view-content {
       display: block;
       margin-top: $distance;

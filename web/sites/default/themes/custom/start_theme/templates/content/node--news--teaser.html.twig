@@ -95,11 +95,11 @@
       </div>
       {% endif %}
     <div class="news-teaser__bottom">
-      <div class="news-teaser__comments">
+      <div class="news-teaser__statistics">
         {{ statistics }}
       </div>
       <div class="news-teaser__created">
-        <span>{{ content.node.getCreatedTime()|date("d.m.Y") }}</span>  
+        <span>{{ node.getCreatedTime()|date("d.m.Y") }}</span>  
       </div>
     </div>
   </div>
