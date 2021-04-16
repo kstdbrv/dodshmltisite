@@ -12,7 +12,7 @@ dependencies:
 id: targets
 theme: start_theme
 region: section_2_center
-weight: -12
+weight: -16
 provider: null
 plugin: 'block_content:fd4b1093-03bf-4871-8221-fde5b6e93d79'
 settings:
