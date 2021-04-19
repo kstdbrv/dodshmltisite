@@ -1,0 +1,22 @@
+uuid: 180e52c5-3078-4cc3-ac7a-1cf2ccb392ab
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.stranica
+  module:
+    - text
+id: node.stranica.body
+field_name: body
+entity_type: node
+bundle: stranica
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,22 @@
+uuid: 44bfad7f-89c5-41d3-9fe1-883432a6b169
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.slider_five_cols
+  module:
+    - text
+id: node.slider_five_cols.body
+field_name: body
+entity_type: node
+bundle: slider_five_cols
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

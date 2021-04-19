@@ -1,0 +1,22 @@
+uuid: 3bad5779-8da0-4ab2-be0f-28f4b9e0247e
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - integrity
+_core:
+  default_config_hash: BWDcThZUkxHXbrO9BOQ0MIsrWE7kaNkt9sq2dsL5QCM
+id: integrity_breadcrumbs
+theme: integrity
+region: main_menu
+weight: -6
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

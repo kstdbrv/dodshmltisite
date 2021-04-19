@@ -1,0 +1,86 @@
+uuid: 4e37638b-2023-4a10-a9c1-2c7293f5eaf9
+langcode: ru
+status: true
+dependencies: {  }
+id: vkladki_na_glavnoi
+label: 'Вкладки на главной'
+renderer: ui_tabs
+options:
+  accordion_tabs:
+    jquery_ui:
+      collapsible: 0
+      heightStyle: auto
+  quick_tabs:
+    ajax: '0'
+hide_empty_tabs: 0
+default_tab: '0'
+configuration_data:
+  -
+    title: 'Виртуальная приемная'
+    weight: '-10'
+    type: block_content
+    content:
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: '1'
+      block_content:
+        options:
+          bid: 'block_content:9c56a1ab-cb05-4545-9b0b-fcd980dc50e2'
+          block_title: ''
+          display_title: 0
+      view_content:
+        options:
+          vid: archive
+          display: default
+          args: ''
+      qtabs_content:
+        options:
+          machine_name: ''
+  -
+    title: 'Электронный журнал'
+    weight: '-9'
+    type: block_content
+    content:
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: '1'
+      block_content:
+        options:
+          bid: 'block_content:35121610-abe4-4682-b7b2-71afd4eaa576'
+          block_title: ''
+          display_title: 0
+      view_content:
+        options:
+          vid: archive
+          display: default
+          args: ''
+      qtabs_content:
+        options:
+          machine_name: ''
+  -
+    title: 'Телефон "Горячей линии"'
+    weight: '-8'
+    type: block_content
+    content:
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: '1'
+      block_content:
+        options:
+          bid: 'block_content:d1b5b4bc-c90f-409b-bbe7-99b880f404c3'
+          block_title: ''
+          display_title: 0
+      view_content:
+        options:
+          vid: archive
+          display: default
+          args: ''
+      qtabs_content:
+        options:
+          machine_name: ''

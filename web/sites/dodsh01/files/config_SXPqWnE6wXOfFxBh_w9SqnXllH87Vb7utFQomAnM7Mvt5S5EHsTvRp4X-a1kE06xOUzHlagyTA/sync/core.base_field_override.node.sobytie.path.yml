@@ -1,0 +1,20 @@
+uuid: 6534a1ed-6264-48f8-89ae-e82fc8657542
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.sobytie
+  module:
+    - path
+id: node.sobytie.path
+field_name: path
+entity_type: node
+bundle: sobytie
+label: 'Синоним URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

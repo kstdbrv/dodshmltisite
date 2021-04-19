@@ -1,0 +1,22 @@
+uuid: 013c86f9-97fb-4209-887a-729ee588de96
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupal8_custom_theme
+_core:
+  default_config_hash: Agj8oQdJgQwc5oMIpNW-5Hjhlu8BGoBaIjkP0PAe2xQ
+id: drupal8_custom_theme_powered
+theme: drupal8_custom_theme
+region: auto_hidden_block
+weight: -10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

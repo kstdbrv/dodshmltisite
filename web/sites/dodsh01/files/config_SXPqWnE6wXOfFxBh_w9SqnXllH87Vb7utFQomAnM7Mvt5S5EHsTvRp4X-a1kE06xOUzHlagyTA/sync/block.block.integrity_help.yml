@@ -1,0 +1,22 @@
+uuid: 317d2391-5138-4492-962d-cc408af6cb6e
+langcode: ru
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - integrity
+_core:
+  default_config_hash: 4s2kdWvGJWWkDASiP5Ig5UjcJJOb52uHpX_Oo6rxjEA
+id: integrity_help
+theme: integrity
+region: content
+weight: -6
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

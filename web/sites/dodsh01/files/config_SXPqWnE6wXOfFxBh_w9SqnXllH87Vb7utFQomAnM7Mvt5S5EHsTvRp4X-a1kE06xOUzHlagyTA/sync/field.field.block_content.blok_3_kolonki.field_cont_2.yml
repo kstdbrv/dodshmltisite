@@ -1,0 +1,22 @@
+uuid: fed4a791-2022-4f0a-89cc-b515c45fc92d
+langcode: ru
+status: true
+dependencies:
+  config:
+    - block_content.type.blok_3_kolonki
+    - field.storage.block_content.field_cont_2
+  module:
+    - text
+id: block_content.blok_3_kolonki.field_cont_2
+field_name: field_cont_2
+entity_type: block_content
+bundle: blok_3_kolonki
+label: Содержимое
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

@@ -1,0 +1,25 @@
+uuid: 98a7257d-ec40-44b4-bb9b-800d76e0f139
+langcode: ru
+status: false
+dependencies:
+  content:
+    - 'block_content:shapka:12e4d623-d7a8-4eaf-9bbe-fb050f0de712'
+  module:
+    - block_content
+  theme:
+    - fusionblue
+id: shapka
+theme: fusionblue
+region: header_img
+weight: 0
+provider: null
+plugin: 'block_content:12e4d623-d7a8-4eaf-9bbe-fb050f0de712'
+settings:
+  id: 'block_content:12e4d623-d7a8-4eaf-9bbe-fb050f0de712'
+  label: Шапка
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

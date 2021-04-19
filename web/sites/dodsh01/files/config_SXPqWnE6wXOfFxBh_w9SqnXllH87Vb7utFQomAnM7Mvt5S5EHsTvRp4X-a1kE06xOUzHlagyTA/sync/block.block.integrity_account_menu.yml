@@ -1,0 +1,27 @@
+uuid: 7fe73202-de48-4eeb-b6cb-ca920af991ab
+langcode: ru
+status: false
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - integrity
+_core:
+  default_config_hash: 4dvazvqTK2mI5qkyX-6CTt0539HxI59Nhb_pbyGnCMo
+id: integrity_account_menu
+theme: integrity
+region: ''
+weight: -9
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

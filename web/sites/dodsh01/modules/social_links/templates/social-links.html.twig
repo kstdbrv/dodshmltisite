@@ -1,0 +1,36 @@
+{{ attach_library('social_links/social_links') }}
+
+{% set links = {
+  'vk': 'https://vk.com/share.php?url=' ~ url ~ '&title=' ~ text ~ '&imageUrl=' ~ img,
+  'ok': 'https://connect.ok.ru/offer?url=' ~ url ~ '&title=' ~ text ~ '&imageUrl=' ~ img,
+  'facebook': 'https://facebook.com/sharer/sharer.php?u=' ~ url,
+  'twitter': 'https://twitter.com/intent/tweet?url=' ~ url ~ '&text=' ~ text,
+  'telegram': 'https://telegram.me/share/url?url=' ~ url ~ '&text=' ~ text,
+  'whatsup': 'https://api.whatsapp.com/send?&text=' ~ '&text=' ~ text ~ ' ' ~ url,
+  'mail': 'mailto:?subject=' ~ text ~ '&body=' ~ url,
+} %}
+
+<div{{ attributes.addClass('share') }}>
+  <p>Поделиться</p>
+  <div class="share__links">
+    {% for modifier, href in links %}
+      <a href="{{ href }}" class="share__link share__link_{{ modifier }}" rel="nofollow noopener" target="_blank"></a>
+    {% endfor %}
+  </div>
+</div>
+
+
+
+{# // от яндекса #}
+{# https://yandex.ru/dev/share/
+
+<div{{ attributes.addClass('share ya-share2') }}>
+  <div class="share__links">
+    {% for modifier, href in links %}
+      <a href="{{ href }}" class="share__link share__link_{{ modifier }}" rel="nofollow noopener" target="_blank"></a>
+    {% endfor %}
+  </div>
+</div>
+
+<script src="https://yastatic.net/share2/share.js"></script>
+<div class="ya-share2" data-curtain data-shape="round" data-services="messenger,vkontakte,facebook,odnoklassniki,telegram,twitter,whatsapp"></div> #}

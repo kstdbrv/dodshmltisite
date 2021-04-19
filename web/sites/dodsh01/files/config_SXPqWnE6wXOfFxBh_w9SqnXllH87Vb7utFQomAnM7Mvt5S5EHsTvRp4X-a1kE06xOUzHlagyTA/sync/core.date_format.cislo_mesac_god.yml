@@ -1,0 +1,8 @@
+uuid: eb4c0243-8060-47ff-8708-4cc15b051f6b
+langcode: ru
+status: true
+dependencies: {  }
+id: cislo_mesac_god
+label: Число.Месяц.Год
+locked: false
+pattern: m.d.Y

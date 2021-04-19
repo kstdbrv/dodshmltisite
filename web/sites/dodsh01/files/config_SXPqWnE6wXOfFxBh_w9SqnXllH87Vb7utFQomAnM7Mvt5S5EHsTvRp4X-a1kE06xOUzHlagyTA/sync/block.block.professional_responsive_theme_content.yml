@@ -1,0 +1,22 @@
+uuid: 9e807104-e77c-4c38-9491-2e534a4b16a5
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - professional_responsive_theme
+_core:
+  default_config_hash: 1VlSC6aHIstjCNoyO9rMTdIoFPEOk8STFCrhoKCQ_Jc
+id: professional_responsive_theme_content
+theme: professional_responsive_theme
+region: content
+weight: 1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

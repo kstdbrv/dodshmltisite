@@ -1,0 +1,25 @@
+uuid: 7550f804-0c26-491c-990a-b82a25e488a5
+langcode: ru
+status: false
+dependencies:
+  config:
+    - system.menu.glavnoe-menu
+  module:
+    - system
+  theme:
+    - startupgrowth_lite
+id: glavnoemenu_5
+theme: startupgrowth_lite
+region: ''
+weight: -10
+provider: null
+plugin: 'system_menu_block:glavnoe-menu'
+settings:
+  id: 'system_menu_block:glavnoe-menu'
+  label: 'Главное меню'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

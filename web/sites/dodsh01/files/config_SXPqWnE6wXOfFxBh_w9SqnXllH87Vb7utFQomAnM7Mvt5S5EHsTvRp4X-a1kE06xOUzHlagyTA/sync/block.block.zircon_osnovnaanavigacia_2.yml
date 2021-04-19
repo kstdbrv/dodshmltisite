@@ -1,0 +1,25 @@
+uuid: 8c3a30c8-1e07-4f85-985f-dcf8d2c43047
+langcode: ru
+status: false
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - zircon
+id: zircon_osnovnaanavigacia_2
+theme: zircon
+region: ''
+weight: -7
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Основная навигация'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

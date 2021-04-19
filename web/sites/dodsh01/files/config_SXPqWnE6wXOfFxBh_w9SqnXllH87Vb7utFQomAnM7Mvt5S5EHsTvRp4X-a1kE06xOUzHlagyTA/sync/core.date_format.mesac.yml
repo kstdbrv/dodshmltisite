@@ -1,0 +1,8 @@
+uuid: 67185d2c-469d-452b-ba37-c8132db774ab
+langcode: ru
+status: true
+dependencies: {  }
+id: mesac
+label: Месяц
+locked: false
+pattern: M

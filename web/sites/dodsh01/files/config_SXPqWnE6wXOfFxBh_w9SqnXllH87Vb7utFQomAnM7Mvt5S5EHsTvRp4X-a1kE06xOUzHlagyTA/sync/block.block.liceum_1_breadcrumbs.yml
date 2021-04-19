@@ -1,0 +1,22 @@
+uuid: 4adc7ff1-a350-4e5f-bd6a-c5a36e165d8c
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - liceum_1
+_core:
+  default_config_hash: BWDcThZUkxHXbrO9BOQ0MIsrWE7kaNkt9sq2dsL5QCM
+id: liceum_1_breadcrumbs
+theme: liceum_1
+region: content
+weight: -8
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

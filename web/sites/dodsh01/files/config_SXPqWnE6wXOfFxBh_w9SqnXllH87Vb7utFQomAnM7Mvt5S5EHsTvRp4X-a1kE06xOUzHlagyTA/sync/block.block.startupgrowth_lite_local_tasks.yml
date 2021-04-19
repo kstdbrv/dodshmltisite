@@ -1,0 +1,22 @@
+uuid: 40f2389c-2795-4523-b8e6-0db84368b783
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - startupgrowth_lite
+_core:
+  default_config_hash: 5uTUBtmfJzB01ZjPotp-_m3vbxR9VWf3EvHv-5yVsmE
+id: startupgrowth_lite_local_tasks
+theme: startupgrowth_lite
+region: content
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

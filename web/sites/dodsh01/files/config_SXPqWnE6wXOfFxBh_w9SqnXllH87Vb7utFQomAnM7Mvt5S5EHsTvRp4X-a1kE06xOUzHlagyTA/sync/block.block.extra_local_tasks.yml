@@ -1,0 +1,22 @@
+uuid: d45542e4-71d8-4cc7-8ce8-87afad68f390
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - extra
+_core:
+  default_config_hash: 5uTUBtmfJzB01ZjPotp-_m3vbxR9VWf3EvHv-5yVsmE
+id: extra_local_tasks
+theme: extra
+region: content
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

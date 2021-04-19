@@ -1,0 +1,8 @@
+uuid: bb672d54-5d05-4ba5-8247-d0a2566d6e36
+langcode: ru
+status: true
+dependencies: {  }
+id: blok_2_kolonki_50_50_
+label: 'Блок 2 колонки (50/50)'
+revision: 0
+description: "\tРазделяет строку на 2 колонки одинаковой ширины"

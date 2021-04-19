@@ -1,0 +1,18 @@
+uuid: af051155-8d87-46be-a118-afab44cddf09
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.novost
+id: node.novost.title
+field_name: title
+entity_type: node
+bundle: novost
+label: Заголовок
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

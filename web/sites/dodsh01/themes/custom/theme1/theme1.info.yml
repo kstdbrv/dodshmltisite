@@ -1,0 +1,38 @@
+name: Theme 1
+type: theme
+base theme: classy
+description: Bootsrap Mobile Responsive theme
+package: Core
+
+libraries:
+  - theme1/theme1-bootstrap
+  - theme1/global-css
+regions:
+  header_up: 'Шапка Up'
+  header_top: 'Шапка (Верх)'
+  header_left: 'Шапка (Левая колонка)'
+  header_center: ' Шапка (Центральная колонка)'
+  header_right: 'Шапка (Правая колонка)'
+  header_info: 'Шапка (Информация)'
+  nav_top: 'Меню'
+  main_top: 'Main_top'
+  system_menu: 'Главное меню'
+  left_sidebar: 'Левая колонка'
+  system: 'Система'
+  content: 'Содержимое'  
+  right_sidebar: 'Правая колонка'
+  screen_1: 'Экран № 1'
+  screen_2: 'Экран № 2'
+  screen_3: 'Экран № 3'
+  screen_4: 'Экран № 4'
+  screen_5: 'Экран № 5'
+  screen_6: 'Экран № 6'
+  screen_7: 'Экран № 7'
+  screen_8: 'Экран № 8'
+  screen_9: 'Экран № 9'
+
+# Information added by Drupal.org packaging script on 2016-07-28
+version: '8.x'
+core: '8.x'
+#project: 'fusionblue'
+

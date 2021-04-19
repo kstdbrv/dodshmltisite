@@ -1,0 +1,11 @@
+uuid: cc07ec39-d318-4d35-8f97-0852460d0108
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.stranica
+id: node.stranica
+target_entity_type_id: node
+target_bundle: stranica
+default_langcode: site_default
+language_alterable: false

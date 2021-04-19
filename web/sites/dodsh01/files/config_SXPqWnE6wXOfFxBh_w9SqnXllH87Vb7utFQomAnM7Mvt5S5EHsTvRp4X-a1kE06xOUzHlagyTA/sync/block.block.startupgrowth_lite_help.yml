@@ -1,0 +1,22 @@
+uuid: f401faeb-cf7f-40d7-afdc-d4bc1652b82c
+langcode: ru
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - startupgrowth_lite
+_core:
+  default_config_hash: 4s2kdWvGJWWkDASiP5Ig5UjcJJOb52uHpX_Oo6rxjEA
+id: startupgrowth_lite_help
+theme: startupgrowth_lite
+region: content
+weight: -6
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Справка
+  provider: help
+  label_display: '0'
+visibility: {  }

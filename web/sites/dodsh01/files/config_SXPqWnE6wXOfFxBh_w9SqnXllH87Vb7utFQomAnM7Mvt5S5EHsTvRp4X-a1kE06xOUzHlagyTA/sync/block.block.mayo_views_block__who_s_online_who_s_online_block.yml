@@ -1,0 +1,24 @@
+uuid: b2aed861-4078-424b-97d6-581de2012fdd
+langcode: ru
+status: true
+dependencies:
+  config:
+    - views.view.who_s_online
+  module:
+    - views
+  theme:
+    - mayo
+id: mayo_views_block__who_s_online_who_s_online_block
+theme: mayo
+region: sidebar_first
+weight: -3
+provider: null
+plugin: 'views_block:who_s_online-who_s_online_block'
+settings:
+  id: 'views_block:who_s_online-who_s_online_block'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: '5'
+visibility: {  }

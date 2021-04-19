@@ -1,0 +1,8 @@
+uuid: 69011c67-a7eb-4aae-a344-a3427895ea49
+langcode: ru
+status: true
+dependencies: {  }
+id: blok_3_kolonki
+label: 'Блок 3 колонки'
+revision: 0
+description: 'Разделяет строку на три колонки одинаковой ширины'

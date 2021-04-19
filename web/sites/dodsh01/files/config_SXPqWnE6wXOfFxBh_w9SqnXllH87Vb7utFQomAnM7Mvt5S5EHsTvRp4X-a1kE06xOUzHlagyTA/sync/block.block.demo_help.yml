@@ -1,0 +1,22 @@
+uuid: 97b15b25-24d6-4d53-af4d-8f5da867c54a
+langcode: ru
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - demo
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: demo_help
+theme: demo
+region: content
+weight: -7
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Справка
+  provider: help
+  label_display: '0'
+visibility: {  }

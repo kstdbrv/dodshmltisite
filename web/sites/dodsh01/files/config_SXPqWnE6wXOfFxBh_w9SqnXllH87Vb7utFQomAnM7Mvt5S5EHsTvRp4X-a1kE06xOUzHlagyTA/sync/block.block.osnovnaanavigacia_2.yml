@@ -1,0 +1,25 @@
+uuid: 38813092-f735-4882-9bbc-7f2d2bf85c4f
+langcode: ru
+status: false
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - professional_responsive_theme
+id: osnovnaanavigacia_2
+theme: professional_responsive_theme
+region: ''
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Основная навигация'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 6e50da90-9695-4350-9a53-421fc27d44a2
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - extr
+_core:
+  default_config_hash: Wy5XGV7zH9BEcs1q0osTbXFQY3kH2Pn4MwUmnlHJj6k
+id: extr_local_tasks
+theme: extr
+region: content
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

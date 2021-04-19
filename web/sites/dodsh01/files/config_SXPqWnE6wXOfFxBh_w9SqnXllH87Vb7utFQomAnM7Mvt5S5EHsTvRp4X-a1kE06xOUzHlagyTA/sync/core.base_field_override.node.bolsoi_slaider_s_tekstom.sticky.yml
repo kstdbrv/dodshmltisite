@@ -1,0 +1,22 @@
+uuid: c35725db-170d-488e-831d-47facad91e3a
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.bolsoi_slaider_s_tekstom
+id: node.bolsoi_slaider_s_tekstom.sticky
+field_name: sticky
+entity_type: node
+bundle: bolsoi_slaider_s_tekstom
+label: 'Закреплять вверху списков'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

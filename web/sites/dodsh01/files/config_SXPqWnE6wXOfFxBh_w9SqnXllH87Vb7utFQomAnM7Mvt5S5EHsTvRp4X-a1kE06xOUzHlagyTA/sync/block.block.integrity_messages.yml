@@ -1,0 +1,22 @@
+uuid: 6e847887-4094-4ea3-848d-09abeee79726
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - integrity
+_core:
+  default_config_hash: Y3vA-FHR0Ew7pBDZycWH4cD7J0FJyt_08yo9OUBRvcA
+id: integrity_messages
+theme: integrity
+region: main_menu
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

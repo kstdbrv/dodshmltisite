@@ -1,0 +1,22 @@
+uuid: 897d9a5c-76e9-4eee-bc41-6a77f9a1c28b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.novost
+id: node.novost.promote
+field_name: promote
+entity_type: node
+bundle: novost
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

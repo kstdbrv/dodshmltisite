@@ -1,0 +1,22 @@
+uuid: 4936e1e4-6233-4d53-aea6-83f524e623c9
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.stranica
+id: node.stranica.promote
+field_name: promote
+entity_type: node
+bundle: stranica
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

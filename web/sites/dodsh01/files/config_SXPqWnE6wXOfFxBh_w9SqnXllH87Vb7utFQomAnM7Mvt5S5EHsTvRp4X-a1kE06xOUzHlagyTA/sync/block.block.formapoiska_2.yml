@@ -1,0 +1,20 @@
+uuid: 19315860-b34b-455f-b3a8-2c683d32349a
+langcode: ru
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - startupgrowth_lite
+id: formapoiska_2
+theme: startupgrowth_lite
+region: featured_bottom
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Форма поиска'
+  provider: search
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 036fd9c6-a344-4fe6-80f9-88d85a6ab278
+langcode: ru
+status: false
+dependencies:
+  config:
+    - system.menu.glavnoe-menu
+  module:
+    - system
+  theme:
+    - mayo
+id: mayo_glavnoemenu_5
+theme: mayo
+region: ''
+weight: -10
+provider: null
+plugin: 'system_menu_block:glavnoe-menu'
+settings:
+  id: 'system_menu_block:glavnoe-menu'
+  label: 'Главное меню'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

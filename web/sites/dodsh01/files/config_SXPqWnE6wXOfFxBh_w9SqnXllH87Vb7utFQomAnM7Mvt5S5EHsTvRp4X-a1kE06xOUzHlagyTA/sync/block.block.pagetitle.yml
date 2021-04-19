@@ -1,0 +1,18 @@
+uuid: 4eecc420-9ab4-4f9b-a4c9-b3a55110d9de
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - liceum_1
+id: pagetitle
+theme: liceum_1
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

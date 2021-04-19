@@ -1,0 +1,20 @@
+uuid: 3f8a36b9-ee0d-4879-a5fb-fdf28a36ba81
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.bolsoi_slaider_s_tekstom
+id: node.bolsoi_slaider_s_tekstom.uid
+field_name: uid
+entity_type: node
+bundle: bolsoi_slaider_s_tekstom
+label: Автор
+description: 'Имя пользователя автора содержимого.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

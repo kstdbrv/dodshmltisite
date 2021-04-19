@@ -1,0 +1,19 @@
+uuid: 72706cd6-278f-49eb-9b43-b269519c94fa
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_content_news
+field_name: field_content_news
+entity_type: node
+type: text_with_summary
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

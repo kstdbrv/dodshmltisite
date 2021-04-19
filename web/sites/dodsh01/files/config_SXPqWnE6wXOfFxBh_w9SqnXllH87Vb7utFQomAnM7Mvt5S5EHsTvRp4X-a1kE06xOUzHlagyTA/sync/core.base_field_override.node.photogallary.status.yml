@@ -1,0 +1,22 @@
+uuid: bfe8f72b-e591-4172-a1d8-30ef25117574
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.photogallary
+id: node.photogallary.status
+field_name: status
+entity_type: node
+bundle: photogallary
+label: Опубликовано
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

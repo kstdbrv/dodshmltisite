@@ -1,0 +1,29 @@
+uuid: 0c1db77e-7cfd-4f8e-8b81-e319ed82ab62
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ead53f38-0431-4ba5-9180-cc65eabb9717'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - liceum_1
+third_party_settings:
+  block_class:
+    classes: ''
+id: kartasaita
+theme: liceum_1
+region: footer_third
+weight: -9
+provider: null
+plugin: 'block_content:ead53f38-0431-4ba5-9180-cc65eabb9717'
+settings:
+  id: 'block_content:ead53f38-0431-4ba5-9180-cc65eabb9717'
+  label: 'Карта сайта'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

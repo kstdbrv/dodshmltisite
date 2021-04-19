@@ -1,0 +1,22 @@
+uuid: aed01e71-94f4-4e88-a143-a777a53e1dff
+langcode: ru
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - drupal8_custom_theme
+_core:
+  default_config_hash: UqxaGgvBayUkZyR7Zyjt995spCPYuIjgbaJM4JrdV3s
+id: drupal8_custom_theme_help
+theme: drupal8_custom_theme
+region: highlighted
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

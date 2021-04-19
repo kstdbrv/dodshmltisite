@@ -1,0 +1,22 @@
+uuid: b252e07e-c377-499f-a03c-e1b0e3f84b62
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - fusionblue
+_core:
+  default_config_hash: SZZYSZ9z-m5uU14vuhrsJpvTjropuv_Dgiexwe3aX9A
+id: fusionblue_content
+theme: fusionblue
+region: content
+weight: -2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

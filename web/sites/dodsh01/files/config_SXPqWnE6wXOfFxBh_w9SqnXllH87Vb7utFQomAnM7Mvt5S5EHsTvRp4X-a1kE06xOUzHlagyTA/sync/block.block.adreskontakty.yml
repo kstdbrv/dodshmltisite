@@ -1,0 +1,25 @@
+uuid: 0faf1e3f-3fac-4b6b-b351-7411ec1ba627
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:blok_2_kolonki_50_50_:2ae5abbe-2f1e-4678-9261-7b917dcd11cb'
+  module:
+    - block_content
+  theme:
+    - fusionblue
+id: adreskontakty
+theme: fusionblue
+region: ds1_site_name
+weight: 0
+provider: null
+plugin: 'block_content:2ae5abbe-2f1e-4678-9261-7b917dcd11cb'
+settings:
+  id: 'block_content:2ae5abbe-2f1e-4678-9261-7b917dcd11cb'
+  label: 'Адрес, контакты '
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

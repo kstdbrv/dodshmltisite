@@ -1,0 +1,20 @@
+uuid: f0b61a52-3b88-4211-9dea-fe3c6afa8d02
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_kategoriya_materiala
+field_name: field_kategoriya_materiala
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

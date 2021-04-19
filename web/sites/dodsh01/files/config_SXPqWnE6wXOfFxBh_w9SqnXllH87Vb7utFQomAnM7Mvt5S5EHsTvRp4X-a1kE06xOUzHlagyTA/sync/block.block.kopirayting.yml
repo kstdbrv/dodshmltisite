@@ -1,0 +1,25 @@
+uuid: 6db09c73-3cd7-4cb8-a8f9-d18ab4757211
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d22d0836-8683-4539-ba39-71fd9f96631a'
+  module:
+    - block_content
+  theme:
+    - fusionblue
+id: kopirayting
+theme: fusionblue
+region: footer_top
+weight: -8
+provider: null
+plugin: 'block_content:d22d0836-8683-4539-ba39-71fd9f96631a'
+settings:
+  id: 'block_content:d22d0836-8683-4539-ba39-71fd9f96631a'
+  label: Копирайтинг
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,18 @@
+uuid: 4594c22c-c125-4f95-9983-5407eeccbc21
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.bolsoi_slaider_s_tekstom
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.bolsoi_slaider_s_tekstom
+target_entity_type_id: node
+target_bundle: bolsoi_slaider_s_tekstom
+default_langcode: site_default
+language_alterable: false

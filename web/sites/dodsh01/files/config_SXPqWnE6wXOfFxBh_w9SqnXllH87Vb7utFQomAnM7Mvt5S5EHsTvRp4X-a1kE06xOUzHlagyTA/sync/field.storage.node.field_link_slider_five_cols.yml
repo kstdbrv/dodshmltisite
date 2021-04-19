@@ -1,0 +1,19 @@
+uuid: e8879deb-ec00-4b57-9e9c-c02f6ae73038
+langcode: ru
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_link_slider_five_cols
+field_name: field_link_slider_five_cols
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

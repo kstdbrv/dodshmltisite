@@ -1,0 +1,10 @@
+uuid: e7873ed8-0163-4bca-8935-999e022ffe05
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 7yrlW5z9zdg2eBucB2GPqXKSMQfH9lSRSO4DbWF7AFc
+id: footer
+label: Footer
+description: 'Ссылки информации о сайте'
+locked: true

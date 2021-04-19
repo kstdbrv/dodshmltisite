@@ -1,0 +1,38 @@
+uuid: 006bf7e4-3a63-471e-bdba-4dc9ff53c694
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.stranica.body
+    - field.field.node.stranica.field_add_file
+    - node.type.stranica
+  module:
+    - field_formatter_file_size
+    - text
+    - user
+id: node.stranica.default
+targetEntityType: node
+bundle: stranica
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_add_file:
+    weight: 102
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: File_size
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

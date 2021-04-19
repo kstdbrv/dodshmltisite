@@ -1,0 +1,27 @@
+uuid: 58982c1c-5985-493a-b14d-453894e45b63
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.novost.field_cat_news
+    - field.field.node.novost.field_content_news
+    - field.field.node.novost.field_img_news
+    - node.type.novost
+  module:
+    - user
+id: node.novost.teaser
+targetEntityType: node
+bundle: novost
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_cat_news: true
+  field_content_news: true
+  field_img_news: true
+  langcode: true

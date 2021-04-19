@@ -1,0 +1,24 @@
+uuid: 937979cf-8a2c-4ea2-bf69-79582a1f00ba
+langcode: ru
+status: true
+dependencies:
+  config:
+    - views.view.bolsoi_slaider_
+  module:
+    - views
+  theme:
+    - fusionblue
+id: views_block__bolsoi_slaider__block_1
+theme: fusionblue
+region: header_img
+weight: 0
+provider: null
+plugin: 'views_block:bolsoi_slaider_-block_1'
+settings:
+  id: 'views_block:bolsoi_slaider_-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

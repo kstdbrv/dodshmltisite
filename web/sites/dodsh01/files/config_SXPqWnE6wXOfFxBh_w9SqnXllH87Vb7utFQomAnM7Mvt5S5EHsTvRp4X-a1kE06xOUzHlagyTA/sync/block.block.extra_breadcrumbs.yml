@@ -1,0 +1,22 @@
+uuid: a7ed7b48-9547-4352-a167-4f7b36ab9010
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - extra
+_core:
+  default_config_hash: BWDcThZUkxHXbrO9BOQ0MIsrWE7kaNkt9sq2dsL5QCM
+id: extra_breadcrumbs
+theme: extra
+region: footer
+weight: -6
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,18 @@
+uuid: 0c1d10d2-4486-4b55-a14e-1cd0921f3f84
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.novost
+id: node.novost.created
+field_name: created
+entity_type: node
+bundle: novost
+label: 'Время создания'
+description: 'Время создания материала.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

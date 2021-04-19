@@ -1,0 +1,22 @@
+uuid: f1b455ed-16f2-45c0-b8cc-701223cec9e0
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - extra
+_core:
+  default_config_hash: _kWZrlVlVIZlQ0bOlcIou2iU0GlMRHYNuKbbVgcwv6s
+id: extra_poweredbydrupal
+theme: extra
+region: footer
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

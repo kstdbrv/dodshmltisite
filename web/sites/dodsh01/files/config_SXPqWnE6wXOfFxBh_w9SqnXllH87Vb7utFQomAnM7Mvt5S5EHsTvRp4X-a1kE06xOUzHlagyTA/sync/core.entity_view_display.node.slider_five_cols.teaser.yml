@@ -1,0 +1,35 @@
+uuid: fdd7b7ca-5f58-499e-846f-3d761a7cb080
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.slider_five_cols.body
+    - field.field.node.slider_five_cols.field_link_slider_five_cols
+    - field.field.node.slider_five_cols.field_slider_img_five_cols
+    - node.type.slider_five_cols
+  module:
+    - text
+    - user
+id: node.slider_five_cols.teaser
+targetEntityType: node
+bundle: slider_five_cols
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_link_slider_five_cols: true
+  field_slider_img_five_cols: true
+  langcode: true

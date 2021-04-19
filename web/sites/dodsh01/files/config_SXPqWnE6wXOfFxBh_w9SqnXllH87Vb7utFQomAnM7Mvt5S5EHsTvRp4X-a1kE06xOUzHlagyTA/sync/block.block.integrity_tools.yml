@@ -1,0 +1,27 @@
+uuid: a26b10de-5107-4812-beb0-42f79f99ecb1
+langcode: ru
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - integrity
+_core:
+  default_config_hash: LUPWtb-Kmr0sI5mQTGBF7u-UyS7b_UHpX9fSV5Il5Wc
+id: integrity_tools
+theme: integrity
+region: ''
+weight: -8
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

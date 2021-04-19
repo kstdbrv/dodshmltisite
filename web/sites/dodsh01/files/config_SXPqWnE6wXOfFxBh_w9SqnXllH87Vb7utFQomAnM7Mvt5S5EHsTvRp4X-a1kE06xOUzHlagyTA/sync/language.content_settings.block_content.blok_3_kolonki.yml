@@ -1,0 +1,11 @@
+uuid: ee562e3b-7460-4ab1-b57c-ec9f966bc90a
+langcode: ru
+status: true
+dependencies:
+  config:
+    - block_content.type.blok_3_kolonki
+id: block_content.blok_3_kolonki
+target_entity_type_id: block_content
+target_bundle: blok_3_kolonki
+default_langcode: site_default
+language_alterable: false

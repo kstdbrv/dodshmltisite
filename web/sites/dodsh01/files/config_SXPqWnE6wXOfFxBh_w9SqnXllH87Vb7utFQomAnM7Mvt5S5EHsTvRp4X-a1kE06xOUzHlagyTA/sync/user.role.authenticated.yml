@@ -1,0 +1,27 @@
+uuid: 278ed8b8-0fca-4080-8b20-5d338375b208
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Аутентифицированный пользователь'
+weight: -8
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access polls'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'access sitemap'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use text format basic_html'
+  - 'use text format restricted_html'
+  - 'view paragraph content cetyre_kartinki_v_rad'
+  - 'view paragraph content four_colums_in_row'
+  - 'view paragraph content image_description'
+  - 'view paragraph content slider_colums'
+  - 'view paragraph content three_coloms_adaptive'

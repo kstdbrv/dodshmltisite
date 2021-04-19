@@ -1,0 +1,23 @@
+uuid: afddba01-f1bc-443d-a5b4-3223659d4525
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - fusionblue
+id: sitebranding
+theme: fusionblue
+region: ds1_site_name
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

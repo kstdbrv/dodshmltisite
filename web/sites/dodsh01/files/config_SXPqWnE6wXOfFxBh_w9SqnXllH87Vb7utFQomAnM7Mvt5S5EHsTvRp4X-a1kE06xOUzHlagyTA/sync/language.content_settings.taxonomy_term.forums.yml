@@ -1,0 +1,18 @@
+uuid: 15da51de-d2c6-48f3-9853-8cd94629230b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.forums
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.forums
+target_entity_type_id: taxonomy_term
+target_bundle: forums
+default_langcode: site_default
+language_alterable: false

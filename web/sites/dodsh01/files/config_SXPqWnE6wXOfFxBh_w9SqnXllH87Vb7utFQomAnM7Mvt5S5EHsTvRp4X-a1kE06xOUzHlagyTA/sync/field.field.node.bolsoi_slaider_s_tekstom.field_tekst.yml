@@ -1,0 +1,19 @@
+uuid: 8d50d96d-d8b9-41db-b7ec-c8dcabd71c38
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tekst
+    - node.type.bolsoi_slaider_s_tekstom
+id: node.bolsoi_slaider_s_tekstom.field_tekst
+field_name: field_tekst
+entity_type: node
+bundle: bolsoi_slaider_s_tekstom
+label: Текст
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

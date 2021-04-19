@@ -1,0 +1,20 @@
+uuid: 3baf985e-9847-4afb-896f-37414c0ba5ed
+langcode: ru
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - extra
+id: extra_formapoiska_3
+theme: extra
+region: bottom_column_fourth
+weight: -11
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Форма поиска'
+  provider: search
+  label_display: '0'
+visibility: {  }

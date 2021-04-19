@@ -1,0 +1,20 @@
+uuid: f9212d67-0fa7-4470-8ec5-fff0dc9445c2
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.sobytie
+id: node.sobytie.uid
+field_name: uid
+entity_type: node
+bundle: sobytie
+label: Автор
+description: 'Имя пользователя автора содержимого.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

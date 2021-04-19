@@ -1,0 +1,22 @@
+uuid: ece2f50b-b751-482e-9e81-bcade8d604a5
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.photogallary
+id: node.photogallary.sticky
+field_name: sticky
+entity_type: node
+bundle: photogallary
+label: 'Закреплять вверху списков'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,19 @@
+uuid: e36e16c0-f8de-4665-993e-56da29e34291
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_predmet
+    - node.type.slider_1
+id: node.slider_1.field_predmet
+field_name: field_predmet
+entity_type: node
+bundle: slider_1
+label: Предмет
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

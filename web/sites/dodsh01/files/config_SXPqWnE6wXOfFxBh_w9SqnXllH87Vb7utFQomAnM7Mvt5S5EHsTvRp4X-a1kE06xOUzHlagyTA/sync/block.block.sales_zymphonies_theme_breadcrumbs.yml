@@ -1,0 +1,22 @@
+uuid: 71c33bea-759f-42e4-a0a0-121c83c1f245
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sales_zymphonies_theme
+_core:
+  default_config_hash: UV0qgA8T2pWMecJ4JSl10YXu-DHUwJ0NxQwgCd86RXE
+id: sales_zymphonies_theme_breadcrumbs
+theme: sales_zymphonies_theme
+region: breadcrumb
+weight: -100
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

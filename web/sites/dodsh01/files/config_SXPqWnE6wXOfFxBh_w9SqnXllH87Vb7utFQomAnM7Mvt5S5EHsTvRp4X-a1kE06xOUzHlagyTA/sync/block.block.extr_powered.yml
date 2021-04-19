@@ -1,0 +1,22 @@
+uuid: 2635f7ac-14b1-4e28-bd1d-6d5316c18459
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - extr
+_core:
+  default_config_hash: l8QkegkoUsuxOs4FD-hE-fIensxx7cuIrtIYzo187bE
+id: extr_powered
+theme: extr
+region: auto_hidden_block
+weight: -10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

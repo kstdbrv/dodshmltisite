@@ -1,0 +1,329 @@
+*div.sf-accordion-toggle.sf-style-blue  > a:after {
+  content: "≡";
+  font-size: 2em;
+  position: absolute;
+  right: 0.5em;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  speak: none;
+}
+.oo .top_menu ul.menu > ul {background: inherit;}
+.oo .top_menu ul.sf-menu li li,
+.oo .top_menu ul.sf-menu .sf-navbar {
+ 
+}
+.oo .top_menu ul.sf-menu li li a:hover,
+.oo .top_menu ul.sf-menu li li:hover,
+.oo .top_menu ul.sf-menu .sf-navbar:hover {
+  background: inherit; 
+color: inherit;
+}
+.oo .top_menu ul.sf-menu li li,
+.oo .top_menu ul.sf-menu .sf-navbar > li > ul {
+  text-align: left;
+}
+.oo .menu ul.sf-menu li li li,
+.oo .top_menu ul.sf-menu li {
+  background: inherit; 
+}
+/*.oo .top_menu ul.sf-menu li:hover,
+.oo .top_menu ul.sf-menu li.sfHover,
+.oo .top_menu ul.sf-menu a:focus,
+.oo .top_menu ul.sf-menu a:hover,
+.oo .top_menu ul.sf-menu  span.nolink:hover{
+  background: #ffcc33;
+  border-radius: 10em;
+  border: 1px solid #333;
+}*/
+.oo .top_menu .sf-menu .sf-navbar li ul {
+  background: inherit;
+}
+
+.oo .top_menu div.sf-accordion-toggle > a::after {
+  content: "≡";
+    font-size: 2em;
+    position: absolute;
+    right: 0.5em;
+    top: 50%;
+    transform: translateY(-50%);
+    speak: none;
+}
+.oo .top_menu div.sf-accordion-toggle. a.sf-expanded,
+.oo .top_menu ul.sf-menu .sf-accordion li.sf-expanded {
+  background: inherit;
+}
+.oo .top_menu ul ul {
+  width: 100%;
+}
+.oo .top_menu ul.menu a.is-active {
+  font-weight: bold;
+}
+.oo .top_menu ul.menu li > a {
+    display: block;
+    padding: 20px;
+    font-size: 18px;
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+}
+.oo .top_menu ul.menu > li > a:hover:before {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: inherit;
+}
+
+/*СТРЕЛКА-ИНДИКАТОР В МЕНЮ*/
+.oo .top_menu ul.sf-menu .sf-sub-indicator {
+    height: 16px;
+    width: 16px;
+    right: 0.55em;
+}
+.oo .top_menu span.sf-sub-indicator:after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    left: 0;
+    background: url(../images/m-arrow.png);
+    background-size: 100%;
+    opacity: 0;
+}
+
+.oo .top_menu ul.sf-menu li:hover span.sf-sub-indicator:after {
+  opacity: 1;
+}
+
+.oo .top_menu ul.sf-menu li:hover > ul, 
+.oo .top_menu ul.sf-menu li.sfHover > ul {
+    top: 3.5em;
+}
+
+.top_menu {
+    text-align: center;
+    margin: 0;
+    font-size: 18px;
+}
+
+
+.oo .top_menu a {
+    color: inherit;
+}
+
+.oo .top_menu ul.menu { text-align: center; background: inherit;}
+.oo .top_menu ul.menu li {display: inline-block; margin: 0; padding: 0;}
+
+.oo .top_menu .block .block-content {padding: 0;}
+.oo .top_menu ul.sf-menu li {float:none; flex-basis: auto; flex-grow: 1;}
+.oo .left_sidebar ul.sf-menu.sf-vertical,
+.oo .right_sidebar ul.sf-menu.sf-vertical {
+    width: 100%;
+}
+/*МЕНЮ ЛЕВАЯ И ПРАВАЯ КОЛОНКА*/
+.oo .sidebar ul.sf-menu {
+  float: left;
+  padding: 0;
+}
+.oo .sidebar .menu li a {
+    text-decoration: none;
+    position: relative;
+}
+/*.oo .sidebar .menu li a:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    width: 12px;
+    margin-top: -6px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid #99cc33;
+}*/
+
+.oo .sidebar .menu li a:hover {
+    text-decoration: underline;
+}
+.oo .sidebar ul.sf-menu {
+  width: 100%;
+}
+.oo .sidebar ul.sf-menu ul {
+  margin: 0;
+  padding: 0;
+}
+.oo .sidebar .fz_menu ul.sf-menu a,
+.oo .sidebar .fz_menu ul.sf-menu a:visited,
+.oo .sidebar .fz_menu ul.sf-menu span.nolink {
+  border: 0 none;
+  color: #fff;
+  padding: 0.75em 1em 0.75em 0.5em;
+  border: 1px solid #fff;
+}
+.oo .sidebar ul.sf-menu a.sf-with-ul,
+.oo .sidebarul.sf-menu span.nolink.sf-with-ul {
+  padding-left: 2.25em;
+}
+.oo .sidebar ul.sf-menu.rtl a.sf-with-ul,
+.oo .sidebar ul.sf-menu.rtl span.nolink.sf-with-ul {
+  padding-left: 2.25em;
+  padding-right: 1em;
+}
+.oo .sidebar ul.sf-menu span.sf-description {
+  color: #aaa;
+  display: block;
+  font-size: smaller;
+  line-height: 1.5;
+  margin: 0.25em 0 0 0;
+  padding: 0;
+}
+.oo .sidebar ul.sf-menu li,
+.oo .sidebar ul.sf-menu.sf-navbar,
+.oo .sidebar ul.sf-menu  li li, 
+.oo .sidebar ul.sf-menu.sf-navbar > li > ul {
+  background: inherit;
+  float: none;
+  padding-bottom: 5px;
+
+}
+.oo .sidebar ul.sf-menu li li,
+.oo .sidebar ul.sf-menu.sf-navbar > li > ul {
+/*  background: #fff;*/
+}
+.oo .sidebar ul.sf-menu li li li {
+ /* background: #fff;*/
+}
+.oo .sidebar ul.sf-menu li:hover,
+.oo .sidebar ul.sf-menu li.sfHover,
+.oo .sidebar ul.sf-menu a:focus,
+.oo .sidebar ul.sf-menu a:hover,
+.oo .sidebar ul.sf-menu span.nolink:hover {
+  background: inherit;
+  outline: 0;
+}
+.oo .sidebar .sf-menu.sf-navbar li ul {
+  background: inherit;
+}
+.oo .sidebar .sf-menu.sf-navbar li ul li ul {
+  background: transparent;
+}
+.oo .top_menu div.sf-accordion-toggle a {
+  background: #eee;
+  border: 1px solid #eee;
+  color: #333;
+  display: inline-block;
+  font-weight: bold;
+  padding: 1em 3em 1em 1em;
+  position: relative;
+  width: 100%;
+}
+.oo .sidebar div.sf-accordion-toggle a {
+	background: inherit;
+    border: 1px solid inherit;
+    font-size: 20px;
+    color: #fff;
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	text-decoration: none;
+
+}
+
+.oo .sidebar div.sf-accordion-toggle  > a:after {
+  content: "≡";
+  font-size: 2em;
+  position: absolute;
+  right: 0.5em;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  speak: none;
+}
+.oo .sidebar div.sf-accordion-toggle a.sf-expanded,
+.oo .sidebar ul.sf-menu.sf-accordion li.sf-expanded {
+ /* background: #095cb1;*/
+}
+.oo .sidebar div.sf-accordion-toggle a.sf-expanded,
+.oo .sidebar ul.sf-menu.sf-accordion li.sf-expanded > a,
+.oo .sidebar ul.sf-menu.sf-accordion li.sf-expanded > span.nolink {
+  font-weight: bold;
+}
+.oo .sidebar ul.sf-menu.sf-accordion li a.sf-accordion-button {
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 499;
+}
+.oo .sidebar ul.sf-menu.sf-accordion li li a,
+.oo .sidebar ul.sf-menu.sf-accordion li li span.nolink {
+  padding-left: 2em;
+}
+.oo .sidebar ul.sf-menu.sf-accordion li li li a,
+.oo .sidebar ul.sf-menu.sf-accordion li li li span.nolink {
+  padding-left: 3em;
+}
+.oo .sidebar ul.sf-menu.sf-accordion li li li li a,
+.oo .sidebar ul.sf-menu.sf-accordion li li li li span.nolink {
+  padding-left: 4em;
+}
+.oo .sidebar ul.sf-menu.sf-accordion li li li li li a,
+.oo .sidebar ul.sf-menu.sf-accordion li li li li li span.nolink {
+  padding-left: 5em;
+}
+.oo .sidebar ul.sf-menu.rtl.sf-accordion li li a,
+.oo .sidebar ul.sf-menu.rtl.sf-accordion li li span.nolink {
+  padding-left: auto;
+  padding-right: 2em;
+}
+.oo .sidebar ul.sf-menu.rtl.sf-accordion li li li a,
+.oo .sidebar ul.sf-menu.rtl.sf-accordion li li li span.nolink {
+  padding-left: auto;
+  padding-right: 3em;
+}
+.oo .sidebar ul.sf-menu.rtl.sf-accordion li li li li a,
+.oo .sidebar ul.sf-menu.rtl.sf-accordion li li li li span.nolink {
+  padding-left: auto;
+  padding-right: 4em;
+}
+.oo .sidebar ul.sf-menu.rtl.sf-accordion li li li li li a,
+.oo .sidebar ul.sf-menu.rtl.sf-accordion li li li li li span.nolink {
+  padding-left: auto;
+  padding-right: 5em;
+}
+.oo .sidebar ul.sf-menu li.sf-multicolumn-wrapper ol,
+.oo .sidebar ul.sf-menu li.sf-multicolumn-wrapper ol li {
+  margin: 0;
+  padding: 0;
+}
+.oo .sidebar ul.sf-menu li.sf-multicolumn-wrapper a.menuparent,
+.oo .sidebar ul.sf-menu li.sf-multicolumn-wrapper span.nolink.menuparent {
+  font-weight: bold;
+}
+
+
+ul.sf-menu.sf-vertical .sf-sub-indicator:after {
+    color: #fff;
+}
+.oo .sidebar ul.sf-menu .sf-sub-indicator {
+	height: 12px;
+    width: 12px;
+    left: 0.5em;
+}
+/*.oo .sidebar .fz_menu ul.sf-menu .sf-sub-indicator:after {
+    content: " ";
+    width: 12px;
+    height: 12px;
+    background: #99cc33;
+    border-radius: 50%;
+}*/

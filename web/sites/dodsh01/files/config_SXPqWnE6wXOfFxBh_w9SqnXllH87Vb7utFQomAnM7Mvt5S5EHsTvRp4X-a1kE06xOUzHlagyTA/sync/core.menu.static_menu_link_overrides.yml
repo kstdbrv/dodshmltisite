@@ -1,0 +1,100 @@
+definitions:
+  contact__site_page:
+    enabled: false
+    menu_name: footer
+    parent: ''
+    expanded: false
+    weight: 0
+  standard__front_page:
+    weight: -50
+    menu_name: main
+    parent: ''
+    enabled: true
+    expanded: true
+  sitemap__page:
+    weight: -44
+    menu_name: tools
+    parent: ''
+    expanded: false
+    enabled: false
+  user__page:
+    enabled: true
+    menu_name: account
+    parent: ''
+    expanded: false
+    weight: -10
+  system__db_update:
+    enabled: false
+    menu_name: admin
+    parent: admin_toolbar_tools.help
+    expanded: false
+    weight: -6
+  admin_toolbar_tools__drupalorg:
+    enabled: false
+    menu_name: admin
+    parent: admin_toolbar_tools.help
+    weight: -5
+    expanded: false
+  admin_toolbar_tools__listchanges:
+    enabled: false
+    menu_name: admin
+    parent: admin_toolbar_tools.drupalorg
+    weight: -6
+    expanded: false
+  admin_toolbar_tools__doc:
+    enabled: false
+    menu_name: admin
+    parent: admin_toolbar_tools.drupalorg
+    weight: -5
+    expanded: false
+  update__theme_update_:
+    enabled: false
+    menu_name: admin
+    parent: system.themes_page
+    expanded: false
+    weight: 0
+  update__theme_install_:
+    enabled: false
+    menu_name: admin
+    parent: system.themes_page
+    weight: 0
+    expanded: false
+  search__view:
+    weight: -48
+    menu_name: tools
+    parent: ''
+    expanded: false
+    enabled: false
+  aggregator__feed_add:
+    weight: -46
+    menu_name: tools
+    parent: ''
+    expanded: false
+    enabled: false
+  node__add_page:
+    weight: -45
+    menu_name: tools
+    parent: ''
+    expanded: false
+    enabled: false
+  filter__tips_all:
+    weight: -43
+    menu_name: tools
+    parent: ''
+    expanded: false
+    enabled: false
+  forum__index:
+    weight: -42
+    menu_name: tools
+    parent: ''
+    expanded: false
+    enabled: false
+  aggregator__page_last:
+    weight: -41
+    menu_name: tools
+    parent: ''
+    expanded: false
+    enabled: false
+_core:
+  default_config_hash: jdY7AU0tU-QsjmiOw3W8vwpYMb-By--_MSFgbqKUTYM
+langcode: ru
