@@ -32,7 +32,7 @@ regions:
   screen_9: 'Экран № 9'
 
 # Information added by Drupal.org packaging script on 2016-07-28
-version: '8.x'
-core: '8.x'
+version: '9.x'
+core: '9.x'
 #project: 'fusionblue'
 

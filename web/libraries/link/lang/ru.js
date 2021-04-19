@@ -1,6 +1,6 @@
 ﻿/*
-Copyright (c) 2003-2021, CKSource - Frederico Knabben. All rights reserved.
-For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+Copyright (c) 2003-2017, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.md or http://ckeditor.com/license
 */
 CKEDITOR.plugins.setLang( 'link', 'ru', {
 	acccessKey: 'Клавиша доступа',
@@ -19,7 +19,7 @@ CKEDITOR.plugins.setLang( 'link', 'ru', {
 	anchorName: 'По имени',
 	charset: 'Кодировка ресурса',
 	cssClasses: 'Классы CSS',
-	download: 'Скачать как файл',
+	download: 'Force Download', // MISSING
 	displayText: 'Отображаемый текст',
 	emailAddress: 'Email адрес',
 	emailBody: 'Текст сообщения',
@@ -35,9 +35,7 @@ CKEDITOR.plugins.setLang( 'link', 'ru', {
 	noAnchors: '(В документе нет ни одного якоря)',
 	noEmail: 'Пожалуйста, введите email адрес',
 	noUrl: 'Пожалуйста, введите ссылку',
-	noTel: 'Please type the phone number', // MISSING
 	other: '<другой>',
-	phoneNumber: 'Phone number', // MISSING
 	popupDependent: 'Зависимое (Netscape)',
 	popupFeatures: 'Параметры всплывающего окна',
 	popupFullScreen: 'Полноэкранное (IE)',
@@ -62,7 +60,6 @@ CKEDITOR.plugins.setLang( 'link', 'ru', {
 	toAnchor: 'Ссылка на якорь в тексте',
 	toEmail: 'Email',
 	toUrl: 'Ссылка',
-	toPhone: 'Phone', // MISSING
 	toolbar: 'Вставить/Редактировать ссылку',
 	type: 'Тип ссылки',
 	unlink: 'Убрать ссылку',

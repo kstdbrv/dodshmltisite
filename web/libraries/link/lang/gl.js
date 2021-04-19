@@ -1,6 +1,6 @@
 ﻿/*
-Copyright (c) 2003-2021, CKSource - Frederico Knabben. All rights reserved.
-For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+Copyright (c) 2003-2017, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.md or http://ckeditor.com/license
 */
 CKEDITOR.plugins.setLang( 'link', 'gl', {
 	acccessKey: 'Chave de acceso',
@@ -19,8 +19,8 @@ CKEDITOR.plugins.setLang( 'link', 'gl', {
 	anchorName: 'Polo nome da ancoraxe',
 	charset: 'Codificación do recurso ligado',
 	cssClasses: 'Clases da folla de estilos',
-	download: 'Forzar a descarga',
-	displayText: 'Amosar o texto',
+	download: 'Force Download', // MISSING
+	displayText: 'Display Text', // MISSING
 	emailAddress: 'Enderezo de correo',
 	emailBody: 'Corpo da mensaxe',
 	emailSubject: 'Asunto da mensaxe',
@@ -35,9 +35,7 @@ CKEDITOR.plugins.setLang( 'link', 'gl', {
 	noAnchors: '(Non hai ancoraxes dispoñíbeis no documento)',
 	noEmail: 'Escriba o enderezo de correo',
 	noUrl: 'Escriba a ligazón URL',
-	noTel: 'Escriba o número de teléfono',
-	other: '<other>',
-	phoneNumber: 'Número de teléfono',
+	other: '<outro>',
 	popupDependent: 'Dependente (Netscape)',
 	popupFeatures: 'Características da xanela emerxente',
 	popupFullScreen: 'Pantalla completa (IE)',
@@ -62,7 +60,6 @@ CKEDITOR.plugins.setLang( 'link', 'gl', {
 	toAnchor: 'Ligar coa ancoraxe no testo',
 	toEmail: 'Correo',
 	toUrl: 'URL',
-	toPhone: 'Teléfono',
 	toolbar: 'Ligazón',
 	type: 'Tipo de ligazón',
 	unlink: 'Eliminar a ligazón',

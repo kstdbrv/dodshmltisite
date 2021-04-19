@@ -1,12 +1,12 @@
 ﻿/*
-Copyright (c) 2003-2021, CKSource - Frederico Knabben. All rights reserved.
-For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+Copyright (c) 2003-2017, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.md or http://ckeditor.com/license
 */
 CKEDITOR.plugins.setLang( 'link', 'hr', {
 	acccessKey: 'Pristupna tipka',
 	advanced: 'Napredno',
-	advisoryContentType: 'Savjetodavna vrsta sadržaja',
-	advisoryTitle: 'Savjetodavni naslov',
+	advisoryContentType: 'Advisory vrsta sadržaja',
+	advisoryTitle: 'Advisory naslov',
 	anchor: {
 		toolbar: 'Ubaci/promijeni sidro',
 		menu: 'Svojstva sidra',
@@ -19,8 +19,8 @@ CKEDITOR.plugins.setLang( 'link', 'hr', {
 	anchorName: 'Po nazivu sidra',
 	charset: 'Kodna stranica povezanih resursa',
 	cssClasses: 'Stylesheet klase',
-	download: 'Preuzmi na silu',
-	displayText: 'Prikaži tekst',
+	download: 'Force Download', // MISSING
+	displayText: 'Display Text', // MISSING
 	emailAddress: 'E-Mail adresa',
 	emailBody: 'Sadržaj poruke',
 	emailSubject: 'Naslov',
@@ -35,9 +35,7 @@ CKEDITOR.plugins.setLang( 'link', 'hr', {
 	noAnchors: '(Nema dostupnih sidra)',
 	noEmail: 'Molimo upišite e-mail adresu',
 	noUrl: 'Molimo upišite URL link',
-	noTel: 'Please type the phone number', // MISSING
 	other: '<drugi>',
-	phoneNumber: 'Phone number', // MISSING
 	popupDependent: 'Ovisno (Netscape)',
 	popupFeatures: 'Mogućnosti popup prozora',
 	popupFullScreen: 'Cijeli ekran (IE)',
@@ -58,13 +56,12 @@ CKEDITOR.plugins.setLang( 'link', 'hr', {
 	targetFrameName: 'Ime ciljnog okvira',
 	targetPopup: '<popup prozor>',
 	targetPopupName: 'Naziv popup prozora',
-	title: 'Veza',
+	title: 'Link',
 	toAnchor: 'Sidro na ovoj stranici',
 	toEmail: 'E-Mail',
 	toUrl: 'URL',
-	toPhone: 'Phone', // MISSING
-	toolbar: 'Ubaci/promijeni vezu',
-	type: 'Vrsta veze',
-	unlink: 'Ukloni vezu',
+	toolbar: 'Ubaci/promijeni link',
+	type: 'Link vrsta',
+	unlink: 'Ukloni link',
 	upload: 'Pošalji'
 } );

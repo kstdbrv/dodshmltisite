@@ -1,12 +1,11 @@
 /*
-Copyright (c) 2003-2021, CKSource - Frederico Knabben. All rights reserved.
-For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+Copyright (c) 2003-2017, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.md or http://ckeditor.com/license
 */
 CKEDITOR.plugins.setLang( 'iframe', 'el', {
 	border: 'Προβολή περιγράμματος πλαισίου',
 	noUrl: 'Παρακαλούμε εισάγεται το URL του iframe',
 	scrolling: 'Ενεργοποίηση μπαρών κύλισης',
 	title: 'Ιδιότητες IFrame',
-	toolbar: 'IFrame',
-	tabindex: 'Remove from tabindex' // MISSING
+	toolbar: 'IFrame'
 } );

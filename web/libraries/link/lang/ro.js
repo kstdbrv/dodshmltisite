@@ -1,6 +1,6 @@
 ﻿/*
-Copyright (c) 2003-2021, CKSource - Frederico Knabben. All rights reserved.
-For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+Copyright (c) 2003-2017, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.md or http://ckeditor.com/license
 */
 CKEDITOR.plugins.setLang( 'link', 'ro', {
 	acccessKey: 'Tasta de acces',
@@ -19,25 +19,23 @@ CKEDITOR.plugins.setLang( 'link', 'ro', {
 	anchorName: 'după numele ancorei',
 	charset: 'Setul de caractere al resursei legate',
 	cssClasses: 'Clasele cu stilul paginii (CSS)',
-	download: 'descarcă',
-	displayText: 'afișează textul',
+	download: 'Force Download', // MISSING
+	displayText: 'Display Text', // MISSING
 	emailAddress: 'Adresă de e-mail',
-	emailBody: 'conținut email',
+	emailBody: 'Opțiuni Meniu Contextual',
 	emailSubject: 'Subiectul mesajului',
-	id: 'identitate',
+	id: 'Id',
 	info: 'Informaţii despre link (Legătură web)',
 	langCode: 'Direcţia cuvintelor',
 	langDir: 'Direcţia cuvintelor',
-	langDirLTR: 'de la stânga la dreapta (LTR)',
-	langDirRTL: 'de la dreapta la stânga (RTL)',
+	langDirLTR: 'stânga-dreapta (LTR)',
+	langDirRTL: 'dreapta-stânga (RTL)',
 	menu: 'Editează Link',
 	name: 'Nume',
-	noAnchors: 'Nu există nici o ancoră',
+	noAnchors: '(Nicio ancoră disponibilă în document)',
 	noEmail: 'Vă rugăm să scrieţi adresa de e-mail',
 	noUrl: 'Vă rugăm să scrieţi URL-ul',
-	noTel: 'Please type the phone number', // MISSING
-	other: 'altceva',
-	phoneNumber: 'Phone number', // MISSING
+	other: '<alt>',
 	popupDependent: 'Dependent (Netscape)',
 	popupFeatures: 'Proprietăţile ferestrei popup',
 	popupFullScreen: 'Tot ecranul (Full Screen)(IE)',
@@ -46,23 +44,22 @@ CKEDITOR.plugins.setLang( 'link', 'ro', {
 	popupMenuBar: 'Bara de meniu',
 	popupResizable: 'Redimensionabil',
 	popupScrollBars: 'Bare de derulare',
-	popupStatusBar: 'Bara de stare',
+	popupStatusBar: 'Bara de status',
 	popupToolbar: 'Bara de opţiuni',
 	popupTop: 'Poziţia la dreapta',
-	rel: 'Relaționare',
+	rel: 'Relație',
 	selectAnchor: 'Selectaţi o ancoră',
 	styles: 'Stil',
 	tabIndex: 'Indexul tabului',
 	target: 'Ţintă (Target)',
-	targetFrame: 'frame țintă',
+	targetFrame: '<frame>',
 	targetFrameName: 'Numele frameului ţintă',
-	targetPopup: 'popup țintă',
+	targetPopup: '<fereastra popup>',
 	targetPopupName: 'Numele ferestrei popup',
-	title: 'titlu',
+	title: 'Link (Legătură web)',
 	toAnchor: 'Ancoră în această pagină',
 	toEmail: 'E-Mail',
 	toUrl: 'URL',
-	toPhone: 'Phone', // MISSING
 	toolbar: 'Inserează/Editează link (legătură web)',
 	type: 'Tipul link-ului (al legăturii web)',
 	unlink: 'Înlătură link (legătură web)',

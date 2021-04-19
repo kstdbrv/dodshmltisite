@@ -1,6 +1,6 @@
 ﻿/*
-Copyright (c) 2003-2021, CKSource - Frederico Knabben. All rights reserved.
-For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+Copyright (c) 2003-2017, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.md or http://ckeditor.com/license
 */
 CKEDITOR.plugins.setLang( 'link', 'lv', {
 	acccessKey: 'Pieejas taustiņš',
@@ -19,8 +19,8 @@ CKEDITOR.plugins.setLang( 'link', 'lv', {
 	anchorName: 'Pēc iezīmes nosaukuma',
 	charset: 'Pievienotā resursa kodējums',
 	cssClasses: 'Stilu saraksta klases',
-	download: 'Piespiedu ielāde',
-	displayText: 'Attēlot tekstu',
+	download: 'Force Download', // MISSING
+	displayText: 'Display Text', // MISSING
 	emailAddress: 'E-pasta adrese',
 	emailBody: 'Ziņas saturs',
 	emailSubject: 'Ziņas tēma',
@@ -35,9 +35,7 @@ CKEDITOR.plugins.setLang( 'link', 'lv', {
 	noAnchors: '(Šajā dokumentā nav iezīmju)',
 	noEmail: 'Lūdzu norādi e-pasta adresi',
 	noUrl: 'Lūdzu norādi hipersaiti',
-	noTel: 'Please type the phone number', // MISSING
 	other: '<cits>',
-	phoneNumber: 'Phone number', // MISSING
 	popupDependent: 'Atkarīgs (Netscape)',
 	popupFeatures: 'Uznirstošā loga nosaukums īpašības',
 	popupFullScreen: 'Pilnā ekrānā (IE)',
@@ -62,7 +60,6 @@ CKEDITOR.plugins.setLang( 'link', 'lv', {
 	toAnchor: 'Iezīme šajā lapā',
 	toEmail: 'E-pasts',
 	toUrl: 'Adrese',
-	toPhone: 'Phone', // MISSING
 	toolbar: 'Ievietot/Labot hipersaiti',
 	type: 'Hipersaites tips',
 	unlink: 'Noņemt hipersaiti',

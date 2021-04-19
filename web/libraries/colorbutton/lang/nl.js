@@ -1,6 +1,6 @@
-﻿/*
-Copyright (c) 2003-2021, CKSource - Frederico Knabben. All rights reserved.
-For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+/*
+Copyright (c) 2003-2016, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.md or http://ckeditor.com/license
 */
 CKEDITOR.plugins.setLang( 'colorbutton', 'nl', {
 	auto: 'Automatisch',
@@ -45,29 +45,7 @@ CKEDITOR.plugins.setLang( 'colorbutton', 'nl', {
 		F0FFFF: 'Azuur',
 		F0F8FF: 'Licht hemelsblauw',
 		E6E6FA: 'Lavendel',
-		FFF: 'Wit',
-		'1ABC9C': 'Strong Cyan', // MISSING
-		'2ECC71': 'Smaragdgroen',
-		'3498DB': 'Helderblauw',
-		'9B59B6': 'Amethyst', // MISSING
-		'4E5F70': 'Grayish Blue', // MISSING
-		'F1C40F': 'Vivid Yellow', // MISSING
-		'16A085': 'Dark Cyan', // MISSING
-		'27AE60': 'Dark Emerald', // MISSING
-		'2980B9': 'Strong Blue', // MISSING
-		'8E44AD': 'Dark Violet', // MISSING
-		'2C3E50': 'Desaturated Blue', // MISSING
-		'F39C12': 'Oranje',
-		'E67E22': 'Wortel',
-		'E74C3C': 'Pale Red', // MISSING
-		'ECF0F1': 'Bright Silver', // MISSING
-		'95A5A6': 'Light Grayish Cyan', // MISSING
-		'DDD': 'Light Gray', // MISSING
-		'D35400': 'Pompoen',
-		'C0392B': 'Strong Red', // MISSING
-		'BDC3C7': 'Zilver',
-		'7F8C8D': 'Grayish Cyan', // MISSING
-		'999': 'Donkergrijs'
+		FFF: 'Wit'
 	},
 	more: 'Meer kleuren...',
 	panelTitle: 'Kleuren',

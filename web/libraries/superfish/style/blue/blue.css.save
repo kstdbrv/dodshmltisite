@@ -29,47 +29,48 @@ ul.sf-menu.sf-style-blue.rtl span.nolink.sf-with-ul {
 ul.sf-menu.sf-style-blue span.sf-description {
   color: #ffffff;
   display: block;
-  font-size: smaller;
+  font-size: smailer;
   line-height: 1.5;
   margin: 0.25em 0 0 0;
   padding: 0;
 }
 ul.sf-menu.sf-style-blue li,
-ul.sf-menu.sf-style-blue.sf-navbar ul.sf-menu.sf-style-blue a.is-active {
+ul.sf-menu.sf-style-blue.sf-navbar {
+  background: #2b5b71;
+}ul.sf-menu.sf-style-blue a.is-active {
     color: #fff;
-    font-weight: 600;
 }
 ul.sf-menu.sf-style-blue li li,
 ul.sf-menu.sf-style-blue.sf-navbar > li > ul {
-  background: #4078c6;
+  background: #2b5b71;
 }
 ul.sf-menu.sf-style-blue li li li {
-  background: #4078c6;
+  background: #2b5b71;
 }
 ul.sf-menu.sf-style-blue li:hover,
 ul.sf-menu.sf-style-blue li.sfHover,
 ul.sf-menu.sf-style-blue a:focus,
 ul.sf-menu.sf-style-blue a:hover,
 ul.sf-menu.sf-style-blue span.nolink:hover {
-  /* background: #205297; */
+  background: #FFA500;
   color: #fff;
   outline: 0;
 }
 .sf-menu.sf-style-blue.sf-navbar li ul {
-  background: #4078c6;
+  background: #2b5b71;
 }
 .sf-menu.sf-style-blue.sf-navbar li ul li ul {
   background: transparent;
 }
 div.sf-accordion-toggle.sf-style-blue a {
-  background: #4078c6;
+  background: #2b5b71;
   color: #fff;
   display: inline-block;
   font-weight: bold;
   padding: 1em 3em 1em 1em;
   position: relative;
 }
-div.sf-accordion-toggle.sf-style-blue  > a:after {
+/*div.sf-accordion-toggle.sf-style-blue  > a:after {
   content: "≡";
   font-size: 2em;
   position: absolute;
@@ -80,10 +81,10 @@ div.sf-accordion-toggle.sf-style-blue  > a:after {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   speak: none;
-}
+}*/
 div.sf-accordion-toggle.sf-style-blue a.sf-expanded,
 ul.sf-menu.sf-style-blue.sf-accordion li.sf-expanded {
-  background: #4078c6;
+  background: #2b5b71;
 }
 div.sf-accordion-toggle.sf-style-blue a.sf-expanded,
 ul.sf-menu.sf-style-blue.sf-accordion li.sf-expanded > a,
@@ -141,4 +142,7 @@ ul.sf-menu.sf-style-blue li.sf-multicolumn-wrapper ol li {
 ul.sf-menu.sf-style-blue li.sf-multicolumn-wrapper a.menuparent,
 ul.sf-menu.sf-style-blue li.sf-multicolumn-wrapper span.nolink.menuparent {
   font-weight: bold;
+}
+ul.sf-menu a {
+    border-radius: 20px;
 }

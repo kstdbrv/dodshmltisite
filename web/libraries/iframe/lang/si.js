@@ -1,12 +1,11 @@
 /*
-Copyright (c) 2003-2021, CKSource - Frederico Knabben. All rights reserved.
-For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+Copyright (c) 2003-2017, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.md or http://ckeditor.com/license
 */
 CKEDITOR.plugins.setLang( 'iframe', 'si', {
 	border: 'සැකිල්ලේ කඩයිම් ',
 	noUrl: 'කරුණාකර රුපයේ URL ලියන්න',
 	scrolling: 'සක්ක්‍රිය කරන්න',
 	title: 'IFrame Properties', // MISSING
-	toolbar: 'IFrame',
-	tabindex: 'Remove from tabindex' // MISSING
+	toolbar: 'IFrame'
 } );

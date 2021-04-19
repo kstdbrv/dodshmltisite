@@ -1,6 +1,6 @@
 ﻿/*
-Copyright (c) 2003-2021, CKSource - Frederico Knabben. All rights reserved.
-For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+Copyright (c) 2003-2017, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.md or http://ckeditor.com/license
 */
 CKEDITOR.plugins.setLang( 'link', 'en-au', {
 	acccessKey: 'Access Key',
@@ -19,8 +19,8 @@ CKEDITOR.plugins.setLang( 'link', 'en-au', {
 	anchorName: 'By Anchor Name',
 	charset: 'Linked Resource Charset',
 	cssClasses: 'Stylesheet Classes',
-	download: 'Force Download',
-	displayText: 'Display Text',
+	download: 'Force Download', // MISSING
+	displayText: 'Display Text', // MISSING
 	emailAddress: 'E-Mail Address',
 	emailBody: 'Message Body',
 	emailSubject: 'Message Subject',
@@ -35,9 +35,7 @@ CKEDITOR.plugins.setLang( 'link', 'en-au', {
 	noAnchors: '(No anchors available in the document)',
 	noEmail: 'Please type the e-mail address',
 	noUrl: 'Please type the link URL',
-	noTel: 'Please type the phone number', // MISSING
 	other: '<other>',
-	phoneNumber: 'Phone number', // MISSING
 	popupDependent: 'Dependent (Netscape)',
 	popupFeatures: 'Popup Window Features',
 	popupFullScreen: 'Full Screen (IE)',
@@ -49,7 +47,7 @@ CKEDITOR.plugins.setLang( 'link', 'en-au', {
 	popupStatusBar: 'Status Bar',
 	popupToolbar: 'Toolbar',
 	popupTop: 'Top Position',
-	rel: 'Relationship',
+	rel: 'Relationship', // MISSING
 	selectAnchor: 'Select an Anchor',
 	styles: 'Style',
 	tabIndex: 'Tab Index',
@@ -62,7 +60,6 @@ CKEDITOR.plugins.setLang( 'link', 'en-au', {
 	toAnchor: 'Link to anchor in the text',
 	toEmail: 'E-mail',
 	toUrl: 'URL',
-	toPhone: 'Phone', // MISSING
 	toolbar: 'Link',
 	type: 'Link Type',
 	unlink: 'Unlink',
