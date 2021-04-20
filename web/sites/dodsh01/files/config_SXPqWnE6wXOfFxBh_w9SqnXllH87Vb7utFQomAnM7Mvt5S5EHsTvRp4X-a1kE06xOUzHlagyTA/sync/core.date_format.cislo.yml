@@ -1,8 +1,0 @@
-uuid: 6bdcf46c-68a2-46e7-bdf2-2281c2b1f3d7
-langcode: ru
-status: true
-dependencies: {  }
-id: cislo
-label: Число
-locked: false
-pattern: d

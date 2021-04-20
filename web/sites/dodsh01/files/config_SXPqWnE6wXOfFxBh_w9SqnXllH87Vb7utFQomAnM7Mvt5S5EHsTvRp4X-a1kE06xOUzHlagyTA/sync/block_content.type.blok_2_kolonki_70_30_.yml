@@ -1,8 +1,0 @@
-uuid: 14abf5ca-a8ef-46c4-963a-1df12979b203
-langcode: ru
-status: true
-dependencies: {  }
-id: blok_2_kolonki_70_30_
-label: 'Блок 2 колонки (70/30)'
-revision: 0
-description: 'Разделяет строку на две колонки Ширина первой колонки 70% Ширина второй колонки 30%'

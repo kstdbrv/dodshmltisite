@@ -1,9 +1,0 @@
-uuid: 435c61f9-8d0b-4153-a318-19cb2c5ec36d
-langcode: ru
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: O11nB9Assnic6AhIuaeK_CQdh_zO0udxABDnUZJupis
-formId: user_register_form
-captchaType: default
-label: null

@@ -35,34 +35,33 @@ ul.sf-menu.sf-style-blue span.sf-description {
   padding: 0;
 }
 ul.sf-menu.sf-style-blue li,
-ul.sf-menu.sf-style-blue.sf-navbar ul.sf-menu.sf-style-blue a.is-active {
-    color: #fff;
-    font-weight: 600;
+ul.sf-menu.sf-style-blue.sf-navbar {
+  background: #095cb1;
 }
 ul.sf-menu.sf-style-blue li li,
 ul.sf-menu.sf-style-blue.sf-navbar > li > ul {
-  background: #4078c6;
+  background: #0151a4;
 }
 ul.sf-menu.sf-style-blue li li li {
-  background: #4078c6;
+  background: #00478f;
 }
 ul.sf-menu.sf-style-blue li:hover,
 ul.sf-menu.sf-style-blue li.sfHover,
 ul.sf-menu.sf-style-blue a:focus,
 ul.sf-menu.sf-style-blue a:hover,
 ul.sf-menu.sf-style-blue span.nolink:hover {
-  /* background: #205297; */
-  color: #fff;
+  background: #3270c5;
+  color: #ffea00;
   outline: 0;
 }
 .sf-menu.sf-style-blue.sf-navbar li ul {
-  background: #4078c6;
+  background: #3270c5;
 }
 .sf-menu.sf-style-blue.sf-navbar li ul li ul {
   background: transparent;
 }
 div.sf-accordion-toggle.sf-style-blue a {
-  background: #4078c6;
+  background: #095cb1;
   color: #fff;
   display: inline-block;
   font-weight: bold;
@@ -83,7 +82,7 @@ div.sf-accordion-toggle.sf-style-blue  > a:after {
 }
 div.sf-accordion-toggle.sf-style-blue a.sf-expanded,
 ul.sf-menu.sf-style-blue.sf-accordion li.sf-expanded {
-  background: #4078c6;
+  background: #3270c5;
 }
 div.sf-accordion-toggle.sf-style-blue a.sf-expanded,
 ul.sf-menu.sf-style-blue.sf-accordion li.sf-expanded > a,

@@ -1,8 +1,0 @@
-uuid: 21fd4303-baab-4a5f-814d-bc65d67aaee2
-langcode: ru
-status: true
-dependencies: {  }
-id: blok_4_kolonki
-label: 'Блок 4 колонки'
-revision: 0
-description: "\tРазделяет строку на четыре колонки одинаковой ширины"

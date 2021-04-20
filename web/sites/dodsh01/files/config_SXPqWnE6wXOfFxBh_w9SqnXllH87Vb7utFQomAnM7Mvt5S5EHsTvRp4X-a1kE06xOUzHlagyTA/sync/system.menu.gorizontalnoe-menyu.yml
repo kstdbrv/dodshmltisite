@@ -1,8 +1,0 @@
-uuid: f41d0d01-2c9b-402d-87de-a06822122d34
-langcode: ru
-status: true
-dependencies: {  }
-id: gorizontalnoe-menyu
-label: 'Горизонтальное меню'
-description: ''
-locked: false

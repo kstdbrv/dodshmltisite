@@ -1,0 +1,59 @@
+uuid: 67259aad-1013-49c7-ae21-709b71571f29
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.comments.field_comment
+    - field.field.node.comments.field_face
+    - field.field.node.comments.field_name
+    - field.field.node.comments.field_photo
+    - node.type.comments
+  module:
+    - image
+    - user
+id: node.comments.default
+targetEntityType: node
+bundle: comments
+mode: default
+content:
+  field_comment:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_face:
+    weight: 4
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_name:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_photo:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  social_links: true

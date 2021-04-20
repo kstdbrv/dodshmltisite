@@ -1,28 +1,15 @@
 version: "3.7"
 
 services:
-  mariadb1:
+  mariadb:
     image: wodby/mariadb:$MARIADB_TAG
-    container_name: "${PROJECT_NAME}_mariadb1"
+    container_name: "${PROJECT_NAME}_mariadb"
     stop_grace_period: 30s
     environment:
-      MYSQL_ROOT_PASSWORD: $DB_ROOT_PASSWORD1
-      MYSQL_DATABASE: $DB_NAME1
-      MYSQL_USER: $DB_USER1
-      MYSQL_PASSWORD: $DB_PASSWORD1
-#    volumes:
-#      - ./mariadb-init:/docker-entrypoint-initdb.d # Place init .sql file(s) here.
-#      - /path/to/mariadb/data/on/host:/var/lib/mysql # Use bind mount
-
-  mariadb2:
-    image: wodby/mariadb:$MARIADB_TAG
-    container_name: "${PROJECT_NAME}_mariadb2"
-    stop_grace_period: 30s
-    environment:
-      MYSQL_ROOT_PASSWORD: $DB_ROOT_PASSWORD2
-      MYSQL_DATABASE: $DB_NAME2
-      MYSQL_USER: $DB_USER2
-      MYSQL_PASSWORD: $DB_PASSWORD2
+      MYSQL_ROOT_PASSWORD: $DB_ROOT_PASSWORD
+      MYSQL_DATABASE: $DB_NAME
+      MYSQL_USER: $DB_USER
+      MYSQL_PASSWORD: $DB_PASSWORD
 #    volumes:
 #      - ./mariadb-init:/docker-entrypoint-initdb.d # Place init .sql file(s) here.
 #      - /path/to/mariadb/data/on/host:/var/lib/mysql # Use bind mount
@@ -30,10 +17,7 @@ services:
   php:
     image: wodby/drupal-php:$PHP_TAG
     container_name: "${PROJECT_NAME}_php"
-    volumes:
-      - ./php-ini:/usr/local/etc/php/custom.d
     environment:
-      PHP_INI_SCAN_DIR: "/usr/local/etc/php/custom.d:/usr/local/etc/php/conf.d"
       PHP_SENDMAIL_PATH: /usr/sbin/sendmail -t -i -S mailhog:1025
 #      PHP_SENDMAIL_PATH: /usr/sbin/sendmail -t -i -S opensmtpd:25
 #      DB_HOST: $DB_HOST
@@ -92,10 +76,7 @@ services:
 #    - mutagen:/var/www/html
 
     labels:
-    - "traefik.port=80"
     - "traefik.http.routers.${PROJECT_NAME}_nginx.rule=Host(`${PROJECT_BASE_URL}`)"
-    - "traefik.http.routers.${PROJECT_NAME}_dodsh01.rule=Host(`dodsh01.${PROJECT_BASE_URL}`)"
-    - "traefik.http.routers.${PROJECT_NAME}_dodsh02.rule=Host(`dodsh02.${PROJECT_BASE_URL}`)"
 
   mailhog:
     image: mailhog/mailhog
@@ -164,27 +145,16 @@ services:
 #    labels:
 #    - "traefik.http.routers.${PROJECT_NAME}_adminer.rule=Host(`adminer.${PROJECT_BASE_URL}`)"
 
-  pma1:
+  pma:
     image: phpmyadmin/phpmyadmin
-    container_name: "${PROJECT_NAME}_pma1"
+    container_name: "${PROJECT_NAME}_pma"
     environment:
-      PMA_HOST: $DB_HOST1
-      PMA_USER: $DB_USER1
-      PMA_PASSWORD: $DB_PASSWORD1
+      PMA_HOST: $DB_HOST
+      PMA_USER: $DB_USER
+      PMA_PASSWORD: $DB_PASSWORD
       UPLOAD_LIMIT: 1G
     labels:
-    - "traefik.http.routers.${PROJECT_NAME}_pma1.rule=Host(`pma1.${PROJECT_BASE_URL}`)"
-
-  pma2:
-    image: phpmyadmin/phpmyadmin
-    container_name: "${PROJECT_NAME}_pma2"
-    environment:
-      PMA_HOST: $DB_HOST2
-      PMA_USER: $DB_USER2
-      PMA_PASSWORD: $DB_PASSWORD2
-      UPLOAD_LIMIT: 1G
-    labels:
-    - "traefik.http.routers.${PROJECT_NAME}_pma2.rule=Host(`pma2.${PROJECT_BASE_URL}`)"
+    - "traefik.http.routers.${PROJECT_NAME}_pma.rule=Host(`pma.${PROJECT_BASE_URL}`)"
 
 #  solr:
 #    image: wodby/solr:$SOLR_TAG
@@ -298,14 +268,14 @@ services:
 #    - "--verbose"
 #    - "--whitelisted-ips="
 
-#  portainer:
-#    image: portainer/portainer
-#    container_name: "${PROJECT_NAME}_portainer"
-#    command: --no-auth -H unix:///var/run/docker.sock
-#    volumes:
-#    - /var/run/docker.sock:/var/run/docker.sock
-#    labels:
-#    - "traefik.http.routers.${PROJECT_NAME}_portainer.rule=Host(`portainer.${PROJECT_BASE_URL}`)"
+  portainer:
+    image: portainer/portainer
+    container_name: "${PROJECT_NAME}_portainer"
+    command: --no-auth -H unix:///var/run/docker.sock
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+    labels:
+    - "traefik.http.routers.${PROJECT_NAME}_portainer.rule=Host(`portainer.${PROJECT_BASE_URL}`)"
 
   traefik:
     image: traefik:v2.0

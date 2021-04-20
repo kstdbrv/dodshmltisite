@@ -1,0 +1,60 @@
+global:
+  css:
+    base:
+      assets/css/normalize.css: {}
+      assets/css/base.css: {}
+    layout:
+      includes/css/materialize.css: {}
+      assets/css/tabs.css: {}
+      assets/css/login-popup.css: {}
+      assets/css/breadcrumb.css: {}
+    theme:
+      assets/css/header.css: {}
+      assets/css/slider.css: {}
+      assets/css/section-1.css: {}
+      assets/css/news.css: {}
+      assets/css/social-links.css: {}
+      assets/css/table.css: {}
+      assets/css/targets.css: {}
+      assets/css/section-2.css: {}
+      assets/css/section-3.css: {}
+      assets/css/photo-gallery.css: {}
+      assets/css/section-4.css: {}
+      assets/css/comments.css: {}
+  js:
+    assets/js/script.js: {}
+    assets/js/header.js: {}
+    assets/js/section-1.js: {}
+
+  dependencies:
+    - start_theme/adobe.fonts
+    - start_theme/materialize.icons
+    - start_theme/dynamic-adapt
+    - start_theme/slick
+    - core/jquery
+#    - core/drupal.ajax
+#    - core/drupal
+#    - core/drupalSettings
+#    - core/jquery.once
+  
+adobe.fonts:
+  css:
+    theme:
+      //use.typekit.net/iub5xya.css: { type: external, minified: true }
+
+materialize.icons:
+  css:
+    theme:
+      //fonts.googleapis.com/icon?family=Material+Icons: { type: external, minified: true }
+      
+materialize:
+  js:
+     includes/js/bin/materialize.min.js: { minified: true }
+
+dynamic-adapt:
+  js:
+     includes/js/dynamic-adapt.js: {}
+
+slick:
+  js:
+     includes/js/bin/slick.min.js: { minified: true }   

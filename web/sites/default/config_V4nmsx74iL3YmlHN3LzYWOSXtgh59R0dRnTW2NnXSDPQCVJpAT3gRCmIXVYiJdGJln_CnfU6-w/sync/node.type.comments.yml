@@ -1,0 +1,17 @@
+uuid: 6ae9d44c-19bf-490c-83a5-43ca69b2a242
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Комментарии
+type: comments
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

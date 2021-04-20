@@ -1,8 +1,0 @@
-uuid: ecc0d908-6725-4352-a0e5-6e75924d693c
-langcode: ru
-status: true
-dependencies: {  }
-name: 'Сведения об образовательной организации'
-vid: svedeniya_ob_obrazovatelnoy_orga
-description: ''
-weight: 0

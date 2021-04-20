@@ -1,6 +1,0 @@
-social_links:
-  version: VERSION
-  css:
-    layout:
-      assets/style.css: {}
-

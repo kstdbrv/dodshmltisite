@@ -1,8 +1,0 @@
-uuid: b5ad3084-7f40-43b8-b121-1de1229cb5b9
-langcode: ru
-status: true
-dependencies: {  }
-name: 'Категории новостей'
-vid: kategorii_novostei_
-description: ''
-weight: 0

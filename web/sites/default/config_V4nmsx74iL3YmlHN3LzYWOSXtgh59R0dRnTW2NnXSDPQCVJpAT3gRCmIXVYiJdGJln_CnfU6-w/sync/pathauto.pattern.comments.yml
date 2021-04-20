@@ -1,0 +1,22 @@
+uuid: c218100c-eb6f-4450-aeea-7ebf9976e77c
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+id: comments
+label: комментарии
+type: 'canonical_entities:node'
+pattern: 'comments/[node:title]'
+selection_criteria:
+  b502dac6-ea7c-47fc-b025-d73a0db16d46:
+    id: node_type
+    bundles:
+      comments: comments
+    negate: false
+    context_mapping:
+      node: node
+    uuid: b502dac6-ea7c-47fc-b025-d73a0db16d46
+selection_logic: and
+weight: -5
+relationships: {  }
