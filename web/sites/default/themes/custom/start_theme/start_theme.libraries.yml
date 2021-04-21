@@ -5,12 +5,15 @@ global:
       assets/css/base.css: {}
     layout:
       includes/css/materialize.css: {}
+      includes/css/slick.css: {}
       assets/css/tabs.css: {}
       assets/css/login-popup.css: {}
       assets/css/breadcrumb.css: {}
     theme:
       assets/css/header.css: {}
-      assets/css/slider.css: {}
+      assets/css/slider-banner.css: {}
+      assets/css/slider-banners.css: {}
+      assets/css/slider-comments.css: {}
       assets/css/section-1.css: {}
       assets/css/news.css: {}
       assets/css/social-links.css: {}
@@ -25,6 +28,7 @@ global:
     assets/js/script.js: {}
     assets/js/header.js: {}
     assets/js/section-1.js: {}
+    assets/js/comments-slider.js: {}
 
   dependencies:
     - start_theme/adobe.fonts

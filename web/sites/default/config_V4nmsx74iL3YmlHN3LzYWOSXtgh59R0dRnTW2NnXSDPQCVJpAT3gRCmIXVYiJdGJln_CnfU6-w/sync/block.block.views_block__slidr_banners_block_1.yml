@@ -1,6 +1,6 @@
 uuid: e4d341a4-e6ff-434e-9dbe-108df043b80c
 langcode: ru
-status: true
+status: false
 dependencies:
   config:
     - views.view.slidr_banners
