@@ -4,32 +4,20 @@ $(document).ready(function () {
   $('#block-views-block-comments .view-content').slick({
     speed: 500,
     infinite: true,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     adaptiveHeight: true,
     prevArrow: '<button class="slick-prev slick-arrow"></button>',
     nextArrow: '<button class="slick-next slick-arrow"></button>',
-     
-    /*      responsive: [
+          responsive: [
            {
              breakpoint: 768,
              settings: {
                arrows: false,
-               centerMode: true,
-               centerPadding: '40px',
-               slidesToShow: 3
+               dots: true,
              }
            },
-           {
-             breakpoint: 480,
-             settings: {
-               arrows: false,
-               centerMode: true,
-               centerPadding: '40px',
-               slidesToShow: 1
-             }
-           }
-         ] */
+         ] 
   });
 
 });

@@ -131,17 +131,23 @@ img {
 }
 
 .link-more a {
+  text-transform: lowercase;
+  /* text-transform: uppercase; */
+  letter-spacing: .12px;
   height: 50px;
-  padding: 15px 25px 17px;
+  /* padding: 15px 25px 17px; */
+  padding: 13px 25px 17px;
   text-decoration: none !important;
   color: #fff !important;
   text-align: center;
-  letter-spacing: .12px;
-  text-transform: uppercase;
   background-color: #569797;
   transition: all .2s;
   color: #fff !important;
   box-shadow: 1px 3px 4px rgba(59, 59, 59, 0.45);
+}
+
+.link-more a:first-letter {
+  text-transform: capitalize;
 }
 
 .link-more a:hover {

@@ -249,6 +249,7 @@
 }
 
 .section-1 .content-section-1 .view-content {
+  margin-bottom: 30px;
   display: -ms-grid;
   display: grid;
   justify-content: center;
@@ -257,6 +258,12 @@
   -ms-grid-columns: (255px)[auto-fill];
       grid-template-columns: repeat(auto-fill, 255px);
   grid-gap: clamp(0.5vw, 1vw, 2vw);
+}
+
+@media (max-width: 545px) {
+  .section-1 .content-section-1 .view-content {
+    grid-row-gap: 10px;
+  }
 }
 
 .section-1 .infinite-scroll .view-content {

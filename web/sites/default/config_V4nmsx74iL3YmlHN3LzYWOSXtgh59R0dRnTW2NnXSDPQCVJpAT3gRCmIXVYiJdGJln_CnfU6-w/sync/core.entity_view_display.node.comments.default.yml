@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.comments.field_face
     - field.field.node.comments.field_name
     - field.field.node.comments.field_photo
+    - image.style.avatar_comment
     - node.type.comments
   module:
     - image
@@ -44,7 +45,7 @@ content:
     weight: 2
     label: hidden
     settings:
-      image_style: ''
+      image_style: avatar_comment
       image_link: ''
     third_party_settings: {  }
     type: image
