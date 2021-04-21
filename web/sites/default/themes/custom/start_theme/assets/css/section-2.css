@@ -12,7 +12,7 @@
 
 @media (max-width: 1045px) {
   .section-2.grid {
-        grid-template-areas: "left" "content" "right";
+        grid-template-areas: "left" "content" "right";
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     justify-content: center;
@@ -20,6 +20,7 @@
 }
 
 .section-2__left {
+  margin-bottom: 30px;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: left;
@@ -49,4 +50,13 @@
   border: 1px solid #a7a6a6;
   margin-bottom: 5px;
   text-align: center;
+}
+
+@media (max-width: 1045px) {
+  .section-2__right {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }

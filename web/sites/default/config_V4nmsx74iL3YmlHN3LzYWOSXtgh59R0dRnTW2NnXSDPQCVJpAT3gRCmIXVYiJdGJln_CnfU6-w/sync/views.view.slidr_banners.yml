@@ -10,7 +10,6 @@ dependencies:
     - image
     - link
     - node
-    - slick_views
     - user
 id: slidr_banners
 label: 'Слайдер баннеров правый'
@@ -57,45 +56,18 @@ display:
           items_per_page: 10
           offset: 0
       style:
-        type: slick
+        type: default
         options:
-          vanilla: true
-          optionset: slider_banners_custom
-          skin: ''
-          layout: ''
-          caption:
-            field_link_banners: '0'
-            field_banner: '0'
-          optionset_thumbnail: ''
-          skin_thumbnail: ''
-          thumbnail_position: ''
-          grid: null
-          grid_medium: null
-          grid_small: null
-          visible_items: null
-          preserve_keys: false
-          image: ''
-          thumbnail: ''
-          overlay: ''
-          title: ''
-          link: ''
-          class: ''
-          id: banner_slider
-          override: false
-          overridables:
-            arrows: '0'
-            autoplay: '0'
-            dots: '0'
-            draggable: '0'
-            infinite: '0'
-            mouseWheel: '0'
-            randomize: '0'
-            variableWidth: '0'
-          cache: 0
-          current_view_mode: block_1
-          thumbnail_effect: ''
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
       row:
         type: fields
+        options:
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: true
       fields:
         field_link_banners:
           id: field_link_banners

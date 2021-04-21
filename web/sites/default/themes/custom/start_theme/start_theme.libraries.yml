@@ -5,12 +5,15 @@ global:
       assets/css/base.css: {}
     layout:
       includes/css/materialize.css: {}
+      includes/css/slick.css: {}
       assets/css/tabs.css: {}
       assets/css/login-popup.css: {}
       assets/css/breadcrumb.css: {}
     theme:
       assets/css/header.css: {}
-      assets/css/slider.css: {}
+      assets/css/slider-banner.css: {}
+      assets/css/slider-banners.css: {}
+      assets/css/slider-comments.css: {}
       assets/css/section-1.css: {}
       assets/css/news.css: {}
       assets/css/social-links.css: {}
@@ -19,15 +22,19 @@ global:
       assets/css/section-2.css: {}
       assets/css/section-3.css: {}
       assets/css/photo-gallery.css: {}
+      assets/css/section-4.css: {}
+      assets/css/comments.css: {}
   js:
     assets/js/script.js: {}
     assets/js/header.js: {}
     assets/js/section-1.js: {}
+    assets/js/comments-slider.js: {}
 
   dependencies:
     - start_theme/adobe.fonts
     - start_theme/materialize.icons
     - start_theme/dynamic-adapt
+    - start_theme/slick
     - core/jquery
 #    - core/drupal.ajax
 #    - core/drupal
@@ -51,3 +58,7 @@ materialize:
 dynamic-adapt:
   js:
      includes/js/dynamic-adapt.js: {}
+
+slick:
+  js:
+     includes/js/bin/slick.min.js: { minified: true }   

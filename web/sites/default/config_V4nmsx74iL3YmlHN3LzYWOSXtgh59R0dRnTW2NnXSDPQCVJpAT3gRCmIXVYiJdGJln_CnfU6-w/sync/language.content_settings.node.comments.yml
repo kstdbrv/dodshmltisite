@@ -1,0 +1,11 @@
+uuid: 4c3a499d-7f3b-4798-aa93-ba8f951e666e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.comments
+id: node.comments
+target_entity_type_id: node
+target_bundle: comments
+default_langcode: site_default
+language_alterable: false

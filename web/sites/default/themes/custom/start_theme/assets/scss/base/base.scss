@@ -102,15 +102,19 @@ img {
 .link-more {
   display: table;
   margin: 0 auto;
-  padding-top: 30px;
   a {
+    text-transform: lowercase;
+    /* text-transform: uppercase; */
+    letter-spacing: .12px;
+    &:first-letter {
+      text-transform: capitalize;
+    }
     height: 50px;
-    padding: 15px 25px 17px;
+    /* padding: 15px 25px 17px; */
+    padding: 13px 25px 17px;
     text-decoration: none !important;
     color: #fff !important;
     text-align: center;
-    letter-spacing: .12px;
-    text-transform: uppercase;
     background-color: $mainColor;
     transition: all .2s;
     color: #fff !important;

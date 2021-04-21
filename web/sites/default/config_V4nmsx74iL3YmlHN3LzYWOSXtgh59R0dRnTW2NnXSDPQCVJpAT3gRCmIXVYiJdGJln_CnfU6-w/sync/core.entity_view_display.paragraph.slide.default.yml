@@ -1,0 +1,32 @@
+uuid: 733f8ce3-270e-49cd-85d8-79fbbf2dfcab
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slide.field_comment
+    - field.field.paragraph.slide.field_photo
+    - paragraphs.paragraphs_type.slide
+  module:
+    - image
+id: paragraph.slide.default
+targetEntityType: paragraph
+bundle: slide
+mode: default
+content:
+  field_comment:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_photo:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }

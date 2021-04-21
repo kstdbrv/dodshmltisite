@@ -1,0 +1,19 @@
+uuid: 8a94a691-eed4-44db-9158-87e681e3bdca
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_comment
+    - node.type.comments
+id: node.comments.field_comment
+field_name: field_comment
+entity_type: node
+bundle: comments
+label: Комментарий
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

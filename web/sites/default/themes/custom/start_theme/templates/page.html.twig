@@ -93,9 +93,7 @@
       {{ page.section_1 }}
     </div>
 
-    <aside class="section-1__banners banners-custom">
-      {{ page.banners_right }}
-    </aside>
+    <aside class="section-1__banners banners-custom"></aside>
 </section>
 
 {% if page.section_2_center %}
@@ -118,7 +116,17 @@
 
 {% if page.section_3 %}
 <section class="section-3">
+  <div class="container">
   {{ page.section_3 }}
+  </div>
+</section>
+{% endif %}
+
+{% if page.section_4 %}
+<section class="section-4">
+  <div class="container">
+  {{ page.section_4 }}
+  </div>
 </section>
 {% endif %}
 

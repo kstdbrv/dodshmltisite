@@ -10,12 +10,7 @@
   grid-template-columns: minmax(260px, 21%) 1fr minmax(210px, 20%);
   grid-gap: clamp(0.5vw, 1vw, 2vw);
   @media (max-width:1045px) {
-    grid-template-areas:
-    "menu-main"
-    "content"
-    "banners";
-    grid-template-columns: 1fr;
-    justify-content: center;
+    display: block;
   }
   &__main-menu {
    grid-area: menu-main;
@@ -46,37 +41,10 @@
          margin: 0 auto;
       }
     }
-    .field-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
     .slick-list { // высота видимости баннеров (slides to show)
       height: 700px !important;
       @media (max-width: 1045px) {
-        height: 622px !important;
-      }
-    }
-    // вертикальный скролл
-    .views-field-field-banner {
-      @media (max-width:1045px) {
-        overflow-y: scroll;
-     }
-     .field-content {
-      @media (max-width:1045px) {
-        height: 550px;
-      }
-     }
-    }
-    .slide--0, .slide--1 {
-      @media (max-width:1045px) {
-        display: none;
-      }
-    }
-    .slide--2 {
-      @media (max-width:1045px) {
-        width: 280px;
-        margin: 0 auto;
+        height: auto !important;
       }
     }
   }
@@ -184,11 +152,15 @@
 
   .content-section-1 {
     .view-content {
+      margin-bottom: $distanceBlock;
       display: grid;
       justify-content: center;
       grid-template-rows: 1fr;
       grid-template-columns: repeat(auto-fill ,255px);
       grid-gap: clamp(0.5vw, 1vw, 2vw);
+      @media (max-width: 545px) {
+        grid-row-gap: 10px;
+      }
     }
   }
   .infinite-scroll { // Для страниц с сеткой с infinite-scroll добавить в css представления

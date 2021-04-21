@@ -1,0 +1,20 @@
+uuid: 38a10a3f-199a-4ee8-bd18-615b6aea8039
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slides.field_comment
+    - paragraphs.paragraphs_type.slides
+id: paragraph.slides.default
+targetEntityType: paragraph
+bundle: slides
+mode: default
+content:
+  field_comment:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden: {  }

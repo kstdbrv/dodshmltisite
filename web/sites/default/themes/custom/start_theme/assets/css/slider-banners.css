@@ -1,0 +1,128 @@
+@media (max-width: 700px) {
+  .banners-custom {
+    width: 260px;
+    margin: 0 auto;
+  }
+}
+
+.banners-custom .slick, .banners-custom .slick-wrapper {
+  max-width: 100%;
+  position: relative;
+}
+
+.banners-custom .slick-arrow.slick-prev, .banners-custom .slick-arrow.slick-next {
+  z-index: 5;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.banners-custom .slick-arrow.slick-prev {
+  left: -100px;
+}
+
+@media (max-width: 840px) {
+  .banners-custom .slick-arrow.slick-prev {
+    left: -60px;
+  }
+}
+
+.banners-custom .slick-arrow.slick-prev::before {
+  display: block;
+  content: ' ';
+  background-image: url("../images/icons/arrow.svg");
+  background-size: 28px 28px;
+  height: 28px;
+  width: 28px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.banners-custom .slick-arrow.slick-next {
+  right: -85px;
+}
+
+@media (max-width: 840px) {
+  .banners-custom .slick-arrow.slick-next {
+    right: -45px;
+  }
+}
+
+.banners-custom .slick-arrow.slick-next::before {
+  display: block;
+  content: ' ';
+  background-image: url("../images/icons/arrow.svg");
+  background-size: 28px 28px;
+  background-color: transparent;
+  height: 28px;
+  width: 28px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+@media (max-width: 1045px) {
+  .banners-custom .slick-track {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.banners-custom .slick-dots {
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+@media (max-width: 1422px) {
+  .banners-custom .slick-dots {
+    bottom: 265px;
+  }
+}
+
+@media (max-width: 1045px) {
+  .banners-custom .slick-dots {
+    bottom: -15px;
+  }
+}
+
+.banners-custom .slick-dots li {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.banners-custom .slick-dots button {
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #569797;
+  border-radius: 50%;
+  background-color: #fff;
+  outline: none;
+}
+
+@media (max-width: 640px) {
+  .banners-custom .slick-dots button {
+    width: 7px;
+    height: 7px;
+  }
+}
+
+.banners-custom .slick-active button {
+  background-color: #569797;
+}
