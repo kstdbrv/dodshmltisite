@@ -1,6 +1,8 @@
 
-
-
+// инициализируем анамацию появления блоков
+// https://wowjs.uk/docs.html
+new WOW().init();
+//https://animate.style/  - эффекты
 
 
 

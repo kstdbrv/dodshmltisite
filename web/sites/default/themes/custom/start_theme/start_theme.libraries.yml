@@ -6,6 +6,7 @@ global:
     layout:
       includes/css/materialize.css: {}
       includes/css/slick.css: {}
+      includes/css/animate.css: {}
       assets/css/tabs.css: {}
       assets/css/login-popup.css: {}
       assets/css/breadcrumb.css: {}
@@ -35,6 +36,7 @@ global:
     - start_theme/materialize.icons
     - start_theme/dynamic-adapt
     - start_theme/slick
+    - start_theme/wow
     - core/jquery
 #    - core/drupal.ajax
 #    - core/drupal
@@ -61,4 +63,8 @@ dynamic-adapt:
 
 slick:
   js:
-     includes/js/bin/slick.min.js: { minified: true }   
+     includes/js/bin/slick.min.js: { minified: true }
+
+wow:
+  js:
+     includes/js/bin/wow.min.js: { minified: true }   
