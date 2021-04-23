@@ -1,0 +1,18 @@
+uuid: c00b44a2-7a6f-4dd4-836f-154f24b85bec
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.staff
+id: node.staff.title
+field_name: title
+entity_type: node
+bundle: staff
+label: Заголовок
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

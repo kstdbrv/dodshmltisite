@@ -1,0 +1,29 @@
+uuid: fcfa5225-6ada-4096-ad23-d7286efe6848
+langcode: ru
+status: true
+dependencies:
+  config:
+    - views.view.remote_video
+  module:
+    - system
+    - views
+  theme:
+    - start_theme
+id: views_block__remote_video
+theme: start_theme
+region: section_5
+weight: 0
+provider: null
+plugin: 'views_block:remote_video-block_1'
+settings:
+  id: 'views_block:remote_video-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

@@ -1,3 +1,17 @@
+@media (max-width: 1025px) {
+  .slider-banner .view-content {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .slider-banner .view-content {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}
+
 .slider-banner .slick {
   /*  box-shadow: inset -20px -8px 0px 0px rgba(46, 179, 179, 1); */
   border: 1px solid #a7a6a6;
@@ -12,24 +26,6 @@
   position: relative;
 }
 
-.slider-banner .slick-arrow.slick-prev, .slider-banner .slick-arrow.slick-next {
-  font-size: 0;
-  line-height: 0;
-  position: absolute;
-  top: 50%;
-  display: block;
-  width: 20px;
-  height: 20px;
-  padding: 0;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-  cursor: pointer;
-  color: transparent;
-  border: none;
-  outline: none;
-  background: transparent;
-}
-
 .slider-banner .slick-arrow.slick-prev:hover, .slider-banner .slick-arrow.slick-next:hover {
   -webkit-filter: invert(1);
           filter: invert(1);
@@ -40,8 +36,6 @@
 }
 
 .slider-banner .slick-arrow.slick-prev::before {
-  display: block;
-  content: ' ';
   background-image: url("../images/icons/arrow.svg");
   background-size: 28px 28px;
   height: 28px;
@@ -55,8 +49,6 @@
 }
 
 .slider-banner .slick-arrow.slick-next::before {
-  display: block;
-  content: ' ';
   background-image: url("../images/icons/arrow.svg");
   background-size: 28px 28px;
   background-color: transparent;
@@ -67,10 +59,7 @@
 }
 
 .slider-banner .slick-dots {
-  position: absolute;
   bottom: 40px;
-  left: 0;
-  right: 0;
   text-align: center;
 }
 
@@ -86,44 +75,15 @@
   }
 }
 
-.slider-banner .slick-dots li {
-  display: inline-block;
-  padding: 0 5px;
-}
-
 .slider-banner .slick-dots button {
-  font-size: 0;
-  margin: 0;
-  padding: 0;
   width: 11px;
   height: 11px;
-  border: 1px solid #569797;
-  /* border: transparent; */
-  border-radius: 50%;
-  background-color: #fff;
-  outline: none;
 }
 
 @media (max-width: 640px) {
   .slider-banner .slick-dots button {
     width: 7px;
     height: 7px;
-  }
-}
-
-.slider-banner .slick-active button {
-  background-color: #569797;
-}
-
-.slider-banner .container-no-padding {
-  max-width: 1470px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-@media (max-width: 1025px) {
-  .slider-banner .container-no-padding {
-    padding: 0;
   }
 }
 

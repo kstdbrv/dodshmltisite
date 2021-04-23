@@ -1,0 +1,20 @@
+uuid: 6758a662-f210-4cf6-95c3-c952378e9119
+langcode: ru
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field__remote
+field_name: field__remote
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

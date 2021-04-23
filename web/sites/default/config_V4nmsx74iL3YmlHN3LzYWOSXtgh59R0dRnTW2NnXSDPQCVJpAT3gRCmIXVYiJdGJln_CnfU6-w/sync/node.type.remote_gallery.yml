@@ -1,0 +1,17 @@
+uuid: 5b9599d1-6c36-442c-b9bc-2668112a0cb3
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Видеогалерея
+type: remote_gallery
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

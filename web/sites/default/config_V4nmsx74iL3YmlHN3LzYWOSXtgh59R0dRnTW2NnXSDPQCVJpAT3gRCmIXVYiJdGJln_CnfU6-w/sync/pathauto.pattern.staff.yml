@@ -1,0 +1,22 @@
+uuid: 89fa07e1-54f3-4680-84b5-886f191abe01
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+id: staff
+label: сотрудники
+type: 'canonical_entities:node'
+pattern: 'staff/[node:title]'
+selection_criteria:
+  c82129d1-ac38-4c64-a56b-6d34fbbb481d:
+    id: node_type
+    bundles:
+      staff: staff
+    negate: false
+    context_mapping:
+      node: node
+    uuid: c82129d1-ac38-4c64-a56b-6d34fbbb481d
+selection_logic: and
+weight: -5
+relationships: {  }
