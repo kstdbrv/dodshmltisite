@@ -1,0 +1,22 @@
+uuid: 4797fe90-5a89-46c4-94fe-80f636d22560
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+id: remote_video
+label: Видеогалерея
+type: 'canonical_entities:node'
+pattern: '/videogallery/[node:title]'
+selection_criteria:
+  43183f02-9d3b-4c9b-984e-128f0974fbb4:
+    id: node_type
+    bundles:
+      remote_gallery: remote_gallery
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 43183f02-9d3b-4c9b-984e-128f0974fbb4
+selection_logic: and
+weight: -5
+relationships: {  }

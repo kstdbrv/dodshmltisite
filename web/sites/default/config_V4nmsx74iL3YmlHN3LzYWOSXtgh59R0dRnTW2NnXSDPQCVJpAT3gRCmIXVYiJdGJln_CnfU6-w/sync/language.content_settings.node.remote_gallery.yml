@@ -1,0 +1,11 @@
+uuid: 32b18c46-78b6-4cd2-b85a-3b6b981021b4
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.remote_gallery
+id: node.remote_gallery
+target_entity_type_id: node
+target_bundle: remote_gallery
+default_langcode: site_default
+language_alterable: false

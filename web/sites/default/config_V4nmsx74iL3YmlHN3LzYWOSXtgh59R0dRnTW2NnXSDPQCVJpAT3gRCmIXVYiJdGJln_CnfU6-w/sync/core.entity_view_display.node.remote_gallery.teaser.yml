@@ -1,0 +1,24 @@
+uuid: 4180efcc-d7ff-46e1-a98d-555d27673baf
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.remote_gallery.field__remote
+    - node.type.remote_gallery
+  module:
+    - user
+id: node.remote_gallery.teaser
+targetEntityType: node
+bundle: remote_gallery
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field__remote: true
+  langcode: true
+  social_links: true

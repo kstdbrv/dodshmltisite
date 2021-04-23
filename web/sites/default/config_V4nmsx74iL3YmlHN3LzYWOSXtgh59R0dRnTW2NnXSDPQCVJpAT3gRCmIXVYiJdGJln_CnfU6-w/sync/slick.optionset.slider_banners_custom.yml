@@ -10,7 +10,7 @@ _core:
 id: slider_banners_custom
 name: slider_banners_custom
 label: 'Слайдер баннеров правых'
-weight: -10
+weight: -7
 group: ''
 skin: default
 breakpoints: 1

@@ -1,0 +1,22 @@
+uuid: f053aed8-b893-4b75-a90c-52902cff2535
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.remote_gallery
+id: node.remote_gallery.promote
+field_name: promote
+entity_type: node
+bundle: remote_gallery
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

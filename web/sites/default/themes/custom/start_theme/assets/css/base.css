@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   font-weight: 300;
@@ -211,4 +212,110 @@ img {
 
 .views-field-edit-node a {
   display: none;
+}
+
+.slick-slider .slick-arrow.slick-prev, .slick-slider .slick-arrow.slick-next, .slick .slick-arrow.slick-prev, .slick .slick-arrow.slick-next {
+  z-index: 5;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.slick-slider .slick-arrow.slick-prev::before, .slick .slick-arrow.slick-prev::before {
+  display: block;
+  content: ' ';
+}
+
+.slick-slider .slick-arrow.slick-next::before, .slick .slick-arrow.slick-next::before {
+  display: block;
+  content: ' ';
+}
+
+.slick-slider .slick-dots li, .slick .slick-dots li {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.slick-slider .slick-dots, .slick .slick-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.slick-slider .slick-dots button, .slick .slick-dots button {
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #569797;
+  border-radius: 50%;
+  background-color: #fff;
+  outline: none;
+}
+
+@media (max-width: 640px) {
+  .slick-slider .slick-dots button, .slick .slick-dots button {
+    width: 7px;
+    height: 7px;
+  }
+}
+
+.slick-slider .slick-active button, .slick .slick-active button {
+  background-color: #569797;
+}
+
+.button-up {
+  position: relative;
+  right: 5px;
+  position: fixed;
+  bottom: 50px;
+  width: 60px;
+  height: 50px;
+  color: #569797;
+  background: url("../images/icons/arrow.svg") no-repeat;
+  background-size: 100%;
+  z-index: 100;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  cursor: pointer;
+}
+
+@media (max-width: 425px) {
+  .button-up {
+    right: 0;
+    width: 50px;
+    height: 40px;
+  }
+}
+
+.button-up::before {
+  position: absolute;
+  left: 19px;
+  top: 8px;
+  content: 'ВВЕРХ';
+  font-size: 14px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+@media (max-width: 425px) {
+  .button-up::before {
+    left: 15px;
+    top: 7px;
+    font-size: 12px;
+  }
 }

@@ -14,7 +14,6 @@ global:
       assets/css/header.css: {}
       assets/css/slider-banner.css: {}
       assets/css/slider-banners.css: {}
-      assets/css/slider-comments.css: {}
       assets/css/section-1.css: {}
       assets/css/news.css: {}
       assets/css/social-links.css: {}
@@ -25,6 +24,8 @@ global:
       assets/css/photo-gallery.css: {}
       assets/css/section-4.css: {}
       assets/css/comments.css: {}
+      assets/css/section-5.css: {}
+      assets/css/remote.css: {}
   js:
     assets/js/script.js: {}
     assets/js/header.js: {}
