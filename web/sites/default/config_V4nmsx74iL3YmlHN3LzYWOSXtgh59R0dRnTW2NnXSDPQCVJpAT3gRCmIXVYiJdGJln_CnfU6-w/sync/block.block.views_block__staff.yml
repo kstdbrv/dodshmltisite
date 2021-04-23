@@ -1,0 +1,29 @@
+uuid: 5816ccc4-438e-490e-9c11-50bd968537f3
+langcode: ru
+status: true
+dependencies:
+  config:
+    - views.view.staff
+  module:
+    - system
+    - views
+  theme:
+    - start_theme
+id: views_block__staff
+theme: start_theme
+region: section_6
+weight: 0
+provider: null
+plugin: 'views_block:staff-block_1'
+settings:
+  id: 'views_block:staff-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

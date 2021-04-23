@@ -1,0 +1,21 @@
+uuid: 0b1648fd-d696-4c82-9889-5c1cd5d11783
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_staff_extra
+    - node.type.staff
+  module:
+    - text
+id: node.staff.field_staff_extra
+field_name: field_staff_extra
+entity_type: node
+bundle: staff
+label: 'Дополнительная информация'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

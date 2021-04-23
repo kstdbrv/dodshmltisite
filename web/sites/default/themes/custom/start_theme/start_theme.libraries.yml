@@ -26,6 +26,8 @@ global:
       assets/css/comments.css: {}
       assets/css/section-5.css: {}
       assets/css/remote.css: {}
+      assets/css/section-6.css: {}
+      assets/css/staff.css: {}
   js:
     assets/js/script.js: {}
     assets/js/header.js: {}

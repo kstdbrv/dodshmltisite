@@ -1,0 +1,44 @@
+@import "../base/vars";
+
+
+#block-views-block-staff {
+  max-width: 845px;
+  margin: 0 auto;
+  h2 {   // заголовок блока
+    color: #fff;
+    margin-bottom: $distanceBlock;
+    text-align: center;
+    text-transform: uppercase;
+    @extend %calibri-bold;
+    letter-spacing: 1.3px;
+  }
+  .views-row {
+    position: relative;
+  }
+  .staff {
+    text-align: center;
+    a {
+      font-size: 0;
+      color: $mainFontColor;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+   &__image {
+     padding-top: 20px;
+     margin-bottom: 29px;
+     background: $mainColor;
+     width: 211px;
+     height: 211px;
+   }
+   &__bottom {
+     text-align: center;
+   }
+   &__position {
+    text-transform: lowercase;
+    margin-top: 10px;
+   }
+  }
+}

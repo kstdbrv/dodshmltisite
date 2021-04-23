@@ -1,0 +1,38 @@
+uuid: 0a96fa3c-da1d-4398-b555-f0a1eb3c0765
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_photo_staff
+    - node.type.staff
+  module:
+    - image
+id: node.staff.field_photo_staff
+field_name: field_photo_staff
+entity_type: node
+bundle: staff
+label: 'Фото сотрудника'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'images/staff/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '1  MB'
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: 9dc4c06c-05c5-41d7-ba1b-1c6be5134fc2
+    alt: фото
+    title: ''
+    width: 142
+    height: 166
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image
