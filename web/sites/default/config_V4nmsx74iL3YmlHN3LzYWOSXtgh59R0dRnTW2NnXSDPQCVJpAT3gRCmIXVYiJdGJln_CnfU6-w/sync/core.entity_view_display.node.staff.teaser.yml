@@ -6,8 +6,9 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.staff.field_photo_staff
     - field.field.node.staff.field_staff_extra
-    - field.field.node.staff.field_staff_name
     - field.field.node.staff.field_staff_position
+    - field.field.node.staff.field_staff_sername
+    - field.field.node.staff.field_staff_txt_name
     - node.type.staff
   module:
     - user
@@ -24,7 +25,8 @@ content:
 hidden:
   field_photo_staff: true
   field_staff_extra: true
-  field_staff_name: true
   field_staff_position: true
+  field_staff_sername: true
+  field_staff_txt_name: true
   langcode: true
   social_links: true

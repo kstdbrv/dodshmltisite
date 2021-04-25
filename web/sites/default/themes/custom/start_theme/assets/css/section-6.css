@@ -41,11 +41,13 @@
   margin-bottom: 30px;
   display: -ms-grid;
   display: grid;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  -ms-grid-columns: (211px)[auto-fill];
-      grid-template-columns: repeat(auto-fill, 211px);
+  -ms-grid-columns: (220px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 220px);
   grid-gap: clamp(0.5vw, 1vw, 2vw);
 }
 
