@@ -5,9 +5,9 @@ dependencies:
   config:
     - field.field.node.staff.field_photo_staff
     - field.field.node.staff.field_staff_extra
-    - field.field.node.staff.field_staff_name
     - field.field.node.staff.field_staff_position
-    - image.style.staff
+    - field.field.node.staff.field_staff_sername
+    - field.field.node.staff.field_staff_txt_name
     - node.type.staff
   module:
     - image
@@ -22,7 +22,7 @@ content:
     weight: 101
     label: hidden
     settings:
-      image_style: staff
+      image_style: ''
       image_link: ''
     third_party_settings: {  }
     type: image
@@ -34,14 +34,6 @@ content:
     third_party_settings: {  }
     type: text_default
     region: content
-  field_staff_name:
-    weight: 102
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
   field_staff_position:
     weight: 103
     label: hidden
@@ -49,6 +41,20 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_staff_sername:
+    weight: 106
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_staff_txt_name:
+    weight: 107
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
     region: content
   links:
     weight: 100

@@ -3,13 +3,13 @@ langcode: ru
 status: true
 dependencies: {  }
 name: staff
-label: 'Сотрудники (211*211)'
+label: 'Сотрудники (220*220)'
 effects:
   29ec419e-3f12-42fa-b0da-10c3c08ea20a:
     uuid: 29ec419e-3f12-42fa-b0da-10c3c08ea20a
     id: image_scale_and_crop
     weight: 1
     data:
-      width: 211
-      height: 211
+      width: 220
+      height: 220
       anchor: center-center

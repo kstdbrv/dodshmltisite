@@ -5,8 +5,9 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.storage.node.field_photo_staff
-    - field.storage.node.field_staff_name
     - field.storage.node.field_staff_position
+    - field.storage.node.field_staff_sername
+    - field.storage.node.field_staff_txt_name
     - node.type.staff
   module:
     - image
@@ -165,7 +166,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: Сотруднки
+      title: Сотрудники
       header: {  }
       footer: {  }
       empty: {  }
@@ -388,18 +389,18 @@ display:
           absolute: false
           entity_type: node
           plugin_id: entity_link
-        field_staff_name:
-          id: field_staff_name
-          table: node__field_staff_name
-          field: field_staff_name
+        field_staff_txt_name:
+          id: field_staff_txt_name
+          table: node__field_staff_txt_name
+          field: field_staff_txt_name
           relationship: none
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
-            alter_text: true
-            text: "<div class=\"staff\">\r\n  <div class=\"staff__image\">{{ field_photo_staff }}</div>\r\n  <div class=\"staff__bottom\">\r\n    <div class=\"staff__name\">{{ field_staff_name }}</div>\r\n    <div class=\"staff__position\">{{ field_staff_position }}</div>\r\n  </div>\r\n{{ view_node }}\r\n</div>"
+            alter_text: false
+            text: ''
             make_link: false
             path: ''
             absolute: false
@@ -437,9 +438,70 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: false
+          type: basic_string
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_staff_sername:
+          id: field_staff_sername
+          table: node__field_staff_sername
+          field: field_staff_sername
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: "<div class=\"staff\">\r\n  <div class=\"staff__image\">{{ field_photo_staff }}</div>\r\n  <div class=\"staff__bottom\">\r\n    <div class=\"staff__name\">{{ field_staff_sername }}</div>\r\n   <div class=\"staff__name\">{{ field_staff_txt_name }}</div>\r\n    <div class=\"staff__position\">{{ field_staff_position }}</div>\r\n  </div>\r\n{{ view_node }}\r\n</div>"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: basic_string
+          settings: {  }
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -464,8 +526,9 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_photo_staff'
-        - 'config:field.storage.node.field_staff_name'
         - 'config:field.storage.node.field_staff_position'
+        - 'config:field.storage.node.field_staff_sername'
+        - 'config:field.storage.node.field_staff_txt_name'
   page_1:
     display_plugin: page
     id: page_1
