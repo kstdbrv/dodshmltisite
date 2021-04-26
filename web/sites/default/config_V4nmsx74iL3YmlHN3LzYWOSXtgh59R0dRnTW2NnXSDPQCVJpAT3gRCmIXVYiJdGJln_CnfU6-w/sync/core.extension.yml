@@ -76,7 +76,6 @@ module:
   search: 0
   shortcut: 0
   slick: 0
-  slick_paragraphs: 0
   slick_ui: 0
   slick_views: 0
   social_links: 0
@@ -90,7 +89,6 @@ module:
   token: 0
   toolbar: 0
   tour: 0
-  update: 0
   user: 0
   views_infinite_scroll: 0
   views_ui: 0
