@@ -1,1 +1,51 @@
 @import "../base/vars";
+
+
+.section-8 {
+  position: relative;
+  z-index: 1;
+  background-color: $secondColor;
+  /* padding-top: $distanceBlock; */
+  /* padding-bottom: $distance; */
+  margin-top: 65px;
+  margin-bottom: 50px;
+  /* clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%); */
+  //косые углы
+  &:before,
+  &:after {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden; // for Chrome Windows
+  }
+
+  &:before {
+    top: 0;
+    transform: skewY(2deg);
+    transform-origin: 100% 0; // точка вращения
+  }
+  
+  &:after {
+    bottom: 0;
+    transform: skewY(2deg);
+    transform-origin: 0 0; // https://webref.ru/layout/html5-css3/transform/origin
+  }
+  
+  //
+  .view-content {
+    margin-bottom: $distanceBlock;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(auto-fill, 220px);
+    grid-gap: clamp(0.5vw, 1vw, 2vw);
+    @media (max-width: 545px) {
+      grid-row-gap: 10px;
+    }
+  }
+}

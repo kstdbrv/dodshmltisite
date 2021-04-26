@@ -1,1 +1,45 @@
-/* No CSS */
+#block-views-block-useful-links h2 {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#block-views-block-useful-links h2 {
+  color: #fff;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+}
+
+#block-views-block-useful-links .view-useful-links {
+  max-width: 845px;
+  margin: 0 auto;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+#block-views-block-useful-links .view-content {
+  display: flex;
+  width: 1300px;
+}
+
+.useful-links {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 159px;
+  height: 159px;
+}
+
+.useful-links:hover img {
+  opacity: 1;
+}
+
+.useful-links img {
+  opacity: 0.6;
+  transition: all .2s;
+}
+
+.useful-links__title {
+  display: none;
+}

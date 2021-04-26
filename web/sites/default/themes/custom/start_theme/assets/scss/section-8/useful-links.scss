@@ -1,1 +1,41 @@
 @import "../base/vars";
+
+
+#block-views-block-useful-links {
+  h2 {   // заголовок блока
+    color: #fff;
+    margin-bottom: $distanceBlock;
+    text-align: center;
+    text-transform: uppercase;
+    @extend %calibri-bold;
+    letter-spacing: 1.3px;
+  }
+  .view-useful-links {
+    max-width: 845px;
+    margin: 0 auto;
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+  .view-content {
+    display: flex;
+    width: 1300px;
+  }
+}
+.useful-links {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 159px;
+  height: 159px;
+  &:hover {
+    img {
+      opacity: 1;
+     }
+  }
+ img {
+  opacity: 0.6;
+  transition: all .2s;
+ }
+ &__title {
+   display: none;
+ }
+}
