@@ -2,8 +2,6 @@ uuid: 4a45cf6e-baf9-4475-8b56-8dff1b4e4051
 langcode: ru
 status: true
 dependencies:
-  module:
-    - node
   theme:
     - start_theme
 _core:
@@ -19,18 +17,4 @@ settings:
   label: 'Заголовок страницы'
   provider: core
   label_display: '0'
-visibility:
-  node_type:
-    id: node_type
-    bundles:
-      comments: comments
-      news: news
-      page: page
-      page_fz: page_fz
-      photo_gallery: photo_gallery
-      remote_gallery: remote_gallery
-      social: social
-      target: target
-    negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
+visibility: {  }

@@ -1,0 +1,19 @@
+uuid: 19381080-1f97-4d59-a730-dee0e378ecaa
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_achievements_txt
+field_name: field_achievements_txt
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

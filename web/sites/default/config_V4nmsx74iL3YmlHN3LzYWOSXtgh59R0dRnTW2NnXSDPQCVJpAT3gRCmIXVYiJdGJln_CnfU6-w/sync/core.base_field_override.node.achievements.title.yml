@@ -1,0 +1,18 @@
+uuid: b30a2b3d-f492-4fa7-ae08-a0eecd70cce0
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.achievements
+id: node.achievements.title
+field_name: title
+entity_type: node
+bundle: achievements
+label: Заголовок
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,21 @@
+@import "../base/vars";
+
+
+@import "../base/vars";
+
+
+.section-7 {
+  margin-top: 65px;
+  margin-bottom: $distanceBlock;
+  .view-content {
+    margin-bottom: $distanceBlock;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(auto-fill, 221px);
+    grid-gap: clamp(0.5vw, 1vw, 2vw);
+    @media (max-width: 545px) {
+      grid-row-gap: 10px;
+    }
+  }
+}

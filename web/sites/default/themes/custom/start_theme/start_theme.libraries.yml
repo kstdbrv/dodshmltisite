@@ -28,6 +28,11 @@ global:
       assets/css/remote.css: {}
       assets/css/section-6.css: {}
       assets/css/staff.css: {}
+      assets/css/section-7.css: {}
+      assets/css/achievements.css: {}
+      assets/css/section-8.css: {}
+      assets/css/useful-links.css: {}
+      
   js:
     assets/js/script.js: {}
     assets/js/header.js: {}
