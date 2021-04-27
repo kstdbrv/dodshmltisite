@@ -10,6 +10,7 @@ dependencies:
     - image
     - link
     - node
+    - statistics
     - user
 id: useful_links
 label: 'Полезные ссылки'
@@ -334,6 +335,47 @@ display:
             operator_limit_selection: false
             operator_list: {  }
       sorts:
+        totalcount:
+          id: totalcount
+          table: node_counter
+          field: totalcount
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
+        sticky:
+          id: sticky
+          table: node_field_data
+          field: sticky
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: node
+          entity_field: sticky
+          plugin_id: standard
+        changed:
+          id: changed
+          table: node_field_revision
+          field: changed
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: false
+          expose:
+            label: ''
+          granularity: second
+          entity_type: node
+          entity_field: changed
+          plugin_id: date
         created:
           id: created
           table: node_field_data
@@ -373,6 +415,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
+      block_description: 'полезные ссылки'
     cache_metadata:
       max-age: -1
       contexts:
