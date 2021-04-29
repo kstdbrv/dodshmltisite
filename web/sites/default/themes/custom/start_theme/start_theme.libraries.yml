@@ -32,6 +32,7 @@ global:
       assets/css/achievements.css: {}
       assets/css/section-8.css: {}
       assets/css/useful-links.css: {}
+      assets/css/search.css: {}
       
   js:
     assets/js/script.js: {}
@@ -46,10 +47,11 @@ global:
     - start_theme/slick
     - start_theme/wow
     - core/jquery
-#    - core/drupal.ajax
-#    - core/drupal
-#    - core/drupalSettings
-#    - core/jquery.once
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once
+  #  - core/once c 9.2.0
   
 adobe.fonts:
   css:

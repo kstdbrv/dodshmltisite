@@ -9,7 +9,6 @@
   /* padding-bottom: $distance; */
   margin-top: 65px;
   margin-bottom: 50px;
-  /* clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%); */
   //косые углы
   &:before,
   &:after {
@@ -26,14 +25,14 @@
 
   &:before {
     top: 0;
-    transform: skewY(2deg);
-    transform-origin: 100% 0; // точка вращения
+    transform: skewY(358deg);
+    transform-origin: 0 0; // точка вращения
   }
   
   &:after {
     bottom: 0;
-    transform: skewY(2deg);
-    transform-origin: 0 0; // https://webref.ru/layout/html5-css3/transform/origin
+    transform: skewY(358deg);
+    transform-origin: 100% 0; // https://webref.ru/layout/html5-css3/transform/origin
   }
   
   //

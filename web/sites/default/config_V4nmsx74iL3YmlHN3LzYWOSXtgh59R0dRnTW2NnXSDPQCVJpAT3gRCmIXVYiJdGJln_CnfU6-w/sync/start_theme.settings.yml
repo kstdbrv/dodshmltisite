@@ -7,4 +7,6 @@ logo:
   use_default: 0
   path: sites/default/themes/custom/start_theme/logo.png
 favicon:
-  use_default: 1
+  use_default: 0
+  path: 'public://start.png'
+  mimetype: image/png

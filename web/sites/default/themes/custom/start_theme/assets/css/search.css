@@ -1,0 +1,52 @@
+.search .view-content > div {
+  display: block !important;
+}
+
+.search .form--inline {
+  position: relative;
+  margin-top: 20px;
+}
+
+.search .js-form-item-text {
+  background: #f0f0f4;
+  border-radius: 3px;
+  width: 100%;
+  color: #1f1d21;
+  outline: none;
+  border: none;
+  margin: 0;
+  padding: 14px 20px;
+  padding-left: 10px;
+  padding-right: 45px;
+}
+
+.search .js-form-item-text input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  margin: 0;
+  height: 100%;
+  font-size: 19px;
+}
+
+.search .form-submit {
+  font-size: 0;
+  padding: 21px;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  background-image: url("../images/icons/search.svg");
+  -webkit-filter: invert(0.35);
+          filter: invert(0.35);
+  background-repeat: no-repeat;
+  right: 7px;
+  top: 7px;
+  background-size: 100%;
+  outline: none;
+  border: none;
+}
+
+.search input[type=text]:not(.browser-default):focus:not([readonly]) {
+  border: 0px;
+  box-shadow: none;
+}

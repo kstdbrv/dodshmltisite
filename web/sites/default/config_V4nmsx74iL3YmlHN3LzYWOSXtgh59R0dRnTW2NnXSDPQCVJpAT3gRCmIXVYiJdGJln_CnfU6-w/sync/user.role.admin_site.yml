@@ -1,0 +1,10 @@
+uuid: d853b3e0-bfac-409d-ac05-46418122f79f
+langcode: ru
+status: true
+dependencies: {  }
+id: admin_site
+label: Admin
+weight: -9
+is_admin: null
+permissions:
+  - 'restful get dlog_search_global_index'

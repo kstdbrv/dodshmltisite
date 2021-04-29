@@ -54,11 +54,12 @@
  }
 }
 
+
 // style for scroll
 
 /* https://active-vision.ru/blog/polosa-prokrutki-css/ */
 .view-useful-links::-webkit-scrollbar {
-  /* width: 6px; */
+  /* height: 10px; */
   background-color: $mainColor;
 }
 

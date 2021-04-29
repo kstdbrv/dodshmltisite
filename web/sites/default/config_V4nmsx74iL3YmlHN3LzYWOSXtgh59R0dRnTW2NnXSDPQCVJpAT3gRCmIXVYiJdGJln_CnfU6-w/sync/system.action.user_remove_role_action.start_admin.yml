@@ -1,0 +1,14 @@
+uuid: 7edde762-7bfa-46a1-9cd6-a44db895d541
+langcode: ru
+status: true
+dependencies:
+  config:
+    - user.role.start_admin
+  module:
+    - user
+id: user_remove_role_action.start_admin
+label: 'Удалить роль Start_admin из выбранных пользователей'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: start_admin

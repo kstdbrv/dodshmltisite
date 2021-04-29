@@ -53,21 +53,15 @@
 
 .banners-custom .slick-dots {
   position: absolute;
-  bottom: 2px;
+  bottom: -25px;
   left: 0;
   right: 0;
   text-align: center;
 }
 
-@media (max-width: 1422px) {
-  .banners-custom .slick-dots {
-    bottom: 265px;
-  }
-}
-
 @media (max-width: 1045px) {
   .banners-custom .slick-dots {
-    bottom: -15px;
+    bottom: 20px;
   }
 }
 

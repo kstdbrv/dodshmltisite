@@ -111,55 +111,80 @@ if (window.location.pathname === '/sveden/inter') {
 $(document).ready(function () {
 
   if ($(window).width() > 1045) {
+    // если админка, увеличиваем timout 
+    if ($('#toolbar-administration').length) { 
 
-    setTimeout(function () {
-    
-      jQuery('.banners-custom').slick({
-        /*       prevArrow: '<button class="slick-prev slick-arrow"></button>',
-              nextArrow: '<button class="slick-next slick-arrow"></button>', */
-        speed: 500,
-        infinite: true,
-        centerMode: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        vertical: true,
-        slidesToShow: 1,
-        arrows: false,
-        dots: true,
-        verticalSwiping: true,
-        responsive: [
-          {
-            breakpoint: 1047,
-            settings: "unslick"
-          }
-        ]
-      });
-
-        // mousewheel on   // прокрутка мышкой
-       let slider = $(".banners-custom");
-
-       slider.on('wheel', (function (e) {
-        e.preventDefault();
-
-       if (e.originalEvent.deltaY < 0) {
-         $(this).slick('slickNext');
-       } else {
-         $(this).slick('slickPrev');
-       }
-      }));
-
-    }, 500);
+      setTimeout(function () {
+      
+        jQuery('.banners-custom__inner').slick({
+          /*       prevArrow: '<button class="slick-prev slick-arrow"></button>',
+                nextArrow: '<button class="slick-next slick-arrow"></button>', */
+          speed: 500,
+          infinite: true,
+          centerMode: true,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          vertical: true,
+          slidesToShow: 1,
+          arrows: false,
+          dots: true,
+          verticalSwiping: true,
+          responsive: [
+            {
+              breakpoint: 1047,
+              settings: "unslick"
+            }
+          ]
+        });
+  
+          // mousewheel on   // прокрутка мышкой
+         let slider = $(".banners-custom__inner");
+  
+         slider.on('wheel', (function (e) {
+          e.preventDefault();
+  
+         if (e.originalEvent.deltaY < 0) {
+           $(this).slick('slickNext');
+         } else {
+           $(this).slick('slickPrev');
+         }
+        }));
+  
+      }, 2000);
+    } else {
+      setTimeout(function () {
+      
+        jQuery('.banners-custom__inner').slick({
+          /*       prevArrow: '<button class="slick-prev slick-arrow"></button>',
+                nextArrow: '<button class="slick-next slick-arrow"></button>', */
+          speed: 500,
+          infinite: true,
+          centerMode: true,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          vertical: true,
+          slidesToShow: 1,
+          arrows: false,
+          dots: true,
+          verticalSwiping: true,
+          responsive: [
+            {
+              breakpoint: 1047,
+              settings: "unslick"
+            }
+          ]
+        });
+  
+      }, 500);
+    }
   }
-
-
-
 
 
   if ($(window).width() < 1045) {
   
     setTimeout(function () {
   
-      jQuery('.banners-custom').slick({
+      jQuery('.banners-custom__inner').slick({
         speed: 500,
         infinite: true,
         autoplay: true,

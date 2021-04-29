@@ -1,8 +1,14 @@
+
+{# добавляем VUE #}
+{{ attach_library('start_search_vue/main') }}
+
 <header class="header">
 
   <div class="header__top top-header container">
     <div class="top-header__column">
      {{ page.header_top_left }}
+     {# точка монтирования VUE #}
+     <div id="vue-search"></div>
     </div>
     <div class="top-header__column">
       {{ page.header_top_right }}
@@ -93,7 +99,9 @@
       {{ page.section_1 }}
     </div>
 
-    <aside class="section-1__banners banners-custom"></aside>
+    <aside class="section-1__banners banners-custom">
+      <div class="banners-custom__inner"></din>
+    </aside>
 </section>
 
 {% if page.section_2_center %}
@@ -174,10 +182,10 @@
         </noscript>
         
         <label>Имя пользователя</label>
-        <input autocorrect="none" autocapitalize="none" spellcheck="false" autofocus="autofocus" data-drupal-selector="edit-name" aria-describedby="edit-name--description" type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required" required="required" aria-required="true">
+        <input autocorrect="none" autocapitalize="none" spellcheck="false" autofocus="autofocus" data-drupal-selector="edit-name" aria-describedby="edit-name--description" type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required" required="required" aria-required="true" placeholder="введите имя пользователя">
 
         <label for="edit-pass" class="js-form-required form-required active">Пароль</label>
-        <input data-drupal-selector="edit-pass" aria-describedby="edit-pass--description" type="password" id="edit-pass" name="pass" size="60" maxlength="128" class="form-text required" required="required" aria-required="true">
+        <input data-drupal-selector="edit-pass" aria-describedby="edit-pass--description" type="password" id="edit-pass" name="pass" size="60" maxlength="128" class="form-text required" required="required" aria-required="true" placeholder="введите пароль">
 
         <input data-drupal-selector="edit-user-login-form" type="hidden" name="form_id" value="user_login_form">
         

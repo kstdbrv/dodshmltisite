@@ -5,12 +5,6 @@
  */
 define('THEME_PATH', base_path() . drupal_get_path('theme', 'start_theme'));
 
-use Drupal\Core\Template\RenderWrapper;
-use Drupal\Core\Template\Attribute;
-use Drupal\search\Form\SearchBlockForm;
-use Drupal\Component\Utility\SafeMarkup;
-use Drupal\Component\Utility\Variable;
-use Drupal\Core\Path\AliasManager;
 
 /**
  * @file
@@ -34,7 +28,9 @@ function start_theme_preprocess_page(&$variables) {
   } */
 }
 
-
+/**
+ * Implements hook_preprocess_HOOK() for node.html.twig.
+ */
 function start_theme_preprocess_node(&$variables) {
 
   $statistics = \Drupal::service('statistics.storage.node')->fetchView($variables['node']->id());
@@ -43,8 +39,15 @@ function start_theme_preprocess_node(&$variables) {
     $variables['statistics'] = $statistics->getTotalCount();
   }
 
-  
   /* $variables['comment_count'] = $variables['node']->get('FIELD_WITH_COMMENTS')->comment_count; */
+
+  /*  добавляем абсолютную ссылку (переменную) во все node */
+  $node = $variables['node'];
+  $variables['url_absolute'] = $node->toUrl('canonical', ['absolute' => TRUE])
+    ->toString(TRUE)
+    ->getGeneratedUrl();
+
 }
+
 
 

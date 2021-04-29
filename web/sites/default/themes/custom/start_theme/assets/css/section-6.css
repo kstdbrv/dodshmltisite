@@ -6,7 +6,6 @@
   /* padding-bottom: $distance; */
   margin-top: 65px;
   margin-bottom: 50px;
-  /* clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%); */
 }
 
 .section-6:before, .section-6:after {
@@ -23,18 +22,18 @@
 
 .section-6:before {
   top: 0;
-  -webkit-transform: skewY(2deg);
-          transform: skewY(2deg);
-  -webkit-transform-origin: 100% 0;
-          transform-origin: 100% 0;
+  -webkit-transform: skewY(358deg);
+          transform: skewY(358deg);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
 }
 
 .section-6:after {
   bottom: 0;
-  -webkit-transform: skewY(2deg);
-          transform: skewY(2deg);
-  -webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
+  -webkit-transform: skewY(358deg);
+          transform: skewY(358deg);
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
 }
 
 .section-6 .view-content {

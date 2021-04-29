@@ -25,7 +25,7 @@ let psyConsult = "<a href='/psy_consult'><img alt='Консультация пс
 let content = psyConsult + good_st + populationCount + otzvDist + kultNorm + nacProject + oprosNasel;
 
 
-$('.banners-custom').append(content);
+$('.banners-custom__inner').append(content);
 
 
 

@@ -1,0 +1,20 @@
+uuid: 194cde6a-99d1-4b33-a7e4-64db1eda2112
+langcode: en
+status: true
+dependencies:
+  module:
+    - serialization
+    - start_search
+    - user
+_core:
+  default_config_hash: liDyE46_TDPPSLx8gjYBl-Vd4kXAf1-N3Kl3H60MiJg
+id: dlog_search_global_index
+plugin_id: dlog_search_global_index
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - cookie

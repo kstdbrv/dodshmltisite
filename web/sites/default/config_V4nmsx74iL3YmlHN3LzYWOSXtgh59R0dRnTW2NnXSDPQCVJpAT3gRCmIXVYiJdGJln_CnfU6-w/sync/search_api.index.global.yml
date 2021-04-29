@@ -1,0 +1,334 @@
+uuid: c59a2ace-480f-4a96-a2c2-eb03ee1b739f
+langcode: ru
+status: true
+dependencies:
+  module:
+    - file
+    - node
+    - taxonomy
+    - search_api
+    - snowball_stemmer
+  config:
+    - field.storage.node.body
+    - field.storage.node.field_staff_extra
+    - field.storage.node.field_extra_text
+    - field.storage.node.field_staff_txt_name
+    - field.storage.node.field_comment
+    - field.storage.node.field_tegs
+    - field.storage.node.field_text
+    - field.storage.node.field_achievements_txt
+    - field.storage.node.field_target_text
+    - search_api.server.database
+    - core.entity_view_mode.node.search_index
+id: global
+name: Global
+description: ''
+read_only: false
+field_settings:
+  body:
+    label: Body
+    datasource_id: 'entity:node'
+    property_path: body
+    type: text
+    boost: !!float 5
+    dependencies:
+      config:
+        - field.storage.node.body
+  description:
+    label: Описание
+    datasource_id: 'entity:taxonomy_term'
+    property_path: description
+    type: text
+    dependencies:
+      module:
+        - taxonomy
+  field_achievements_txt:
+    label: 'Текст (описание)'
+    datasource_id: 'entity:node'
+    property_path: field_achievements_txt
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_achievements_txt
+  field_comment:
+    label: Комментарий
+    datasource_id: 'entity:node'
+    property_path: field_comment
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_comment
+  field_extra_text:
+    label: 'Дополнительный текст'
+    datasource_id: 'entity:node'
+    property_path: field_extra_text
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_extra_text
+  field_staff_extra:
+    label: 'Дополнительная информация'
+    datasource_id: 'entity:node'
+    property_path: field_staff_extra
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_staff_extra
+  field_staff_txt_name:
+    label: И.О.
+    datasource_id: 'entity:node'
+    property_path: field_staff_txt_name
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_staff_txt_name
+  field_target_text:
+    label: 'Текст (описание)'
+    datasource_id: 'entity:node'
+    property_path: field_target_text
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_target_text
+  field_tegs:
+    label: Теги
+    datasource_id: 'entity:node'
+    property_path: field_tegs
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_tegs
+  field_text:
+    label: Текст
+    datasource_id: 'entity:node'
+    property_path: field_text
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_text
+  filename:
+    label: 'Имя файла'
+    datasource_id: 'entity:file'
+    property_path: filename
+    type: string
+    dependencies:
+      module:
+        - file
+  filename_1:
+    label: 'Имя файла'
+    datasource_id: 'entity:file'
+    property_path: filename
+    type: text
+    dependencies:
+      module:
+        - file
+  nid:
+    label: ID
+    datasource_id: 'entity:node'
+    property_path: nid
+    type: integer
+    dependencies:
+      module:
+        - node
+  promote:
+    label: 'Promoted to front page'
+    datasource_id: 'entity:node'
+    property_path: promote
+    type: boolean
+    dependencies:
+      module:
+        - node
+  rendered_item:
+    label: 'Rendered HTML output'
+    property_path: rendered_item
+    type: text
+    configuration:
+      roles:
+        anonymous: anonymous
+      view_mode:
+        'entity:node':
+          achievements: search_index
+          banners_custom: ''
+          book: ''
+          comments: ''
+          head_info: ''
+          news: ''
+          page: ''
+          page_fz: ''
+          photo_gallery: ''
+          remote_gallery: ''
+          slider_image: ''
+          social: ''
+          staff: ''
+          target: ''
+          useful_links: ''
+        'entity:taxonomy_term':
+          marker: ''
+  tid:
+    label: 'ID термина'
+    datasource_id: 'entity:taxonomy_term'
+    property_path: tid
+    type: integer
+    dependencies:
+      module:
+        - taxonomy
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: string
+    dependencies:
+      module:
+        - node
+  title_1:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+    boost: !!float 3
+    dependencies:
+      module:
+        - node
+  title_3:
+    label: Name
+    datasource_id: 'entity:taxonomy_term'
+    property_path: name
+    type: string
+    dependencies:
+      module:
+        - taxonomy
+  title_fultext:
+    label: Name
+    datasource_id: 'entity:taxonomy_term'
+    property_path: name
+    type: text
+    dependencies:
+      module:
+        - taxonomy
+  uid:
+    label: Автор
+    datasource_id: 'entity:node'
+    property_path: uid
+    type: integer
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:file': {  }
+  'entity:node':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+  'entity:taxonomy_term':
+    bundles:
+      default: true
+      selected:
+        - tags
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  entity_status: {  }
+  ignorecase:
+    all_fields: true
+    fields:
+      - body
+      - description
+      - field_achievements_txt
+      - field_comment
+      - field_extra_text
+      - field_staff_extra
+      - field_staff_txt_name
+      - field_target_text
+      - field_text
+      - filename
+      - filename_1
+      - rendered_item
+      - title
+      - title_1
+      - title_3
+      - title_fultext
+    weights:
+      preprocess_index: -46
+      preprocess_query: -20
+  language_with_fallback: {  }
+  rendered_item: {  }
+  snowball_stemmer:
+    all_fields: 1
+    fields:
+      - rendered_item
+      - filename_1
+      - body
+      - title_1
+      - field_staff_extra
+      - field_extra_text
+      - field_staff_txt_name
+      - field_comment
+      - field_text
+      - field_achievements_txt
+      - field_target_text
+      - title_fultext
+      - description
+    exceptions:
+      texan: texa
+      mexican: mexic
+    weights:
+      preprocess_index: -48
+      preprocess_query: 0
+  tokenizer:
+    all_fields: true
+    fields:
+      - body
+      - description
+      - field_achievements_txt
+      - field_comment
+      - field_extra_text
+      - field_staff_extra
+      - field_staff_txt_name
+      - field_target_text
+      - field_text
+      - filename_1
+      - rendered_item
+      - title_1
+      - title_fultext
+    ignored: ._-
+    spaces: ''
+    overlap_cjk: 1
+    minimum_word_size: '3'
+    weights:
+      preprocess_index: -49
+      preprocess_query: -6
+  transliteration:
+    all_fields: true
+    fields:
+      - body
+      - description
+      - field_achievements_txt
+      - field_comment
+      - field_extra_text
+      - field_staff_extra
+      - field_staff_txt_name
+      - field_target_text
+      - field_text
+      - filename
+      - filename_1
+      - rendered_item
+      - title
+      - title_1
+      - title_3
+      - title_fultext
+    weights:
+      preprocess_index: -47
+      preprocess_query: -20
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 100
+server: database

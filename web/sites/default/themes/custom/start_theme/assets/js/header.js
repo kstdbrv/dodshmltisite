@@ -1,10 +1,5 @@
 $ = jQuery.noConflict();
 
-/*  всплывающее модальное окно Login */
-jQuery(document).ready(function () {
-  $('#modal_login').modal();
-});
-
 
 window.addEventListener('DOMContentLoaded', e => {
 
