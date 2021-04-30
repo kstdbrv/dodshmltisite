@@ -1,0 +1,26 @@
+uuid: c8690ed5-d85a-4c59-87ab-5c2ba7cb0001
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.achievements.field_achievements_image
+    - field.field.node.achievements.field_achievements_txt
+    - node.type.achievements
+  module:
+    - user
+id: node.achievements.teaser
+targetEntityType: node
+bundle: achievements
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_achievements_image: true
+  field_achievements_txt: true
+  langcode: true
+  social_links: true

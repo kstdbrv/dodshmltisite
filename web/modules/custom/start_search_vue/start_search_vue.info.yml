@@ -1,0 +1,8 @@
+name: start - Search - Vue
+type: module
+description: управление поиском на Vue.js
+package: Модули разработанные сотрудниками "МКУ КМЦИКТ Старт"
+core: 8.x
+core_version_requirement: ^8 || ^9
+dependencies:
+  - start_search:start_search

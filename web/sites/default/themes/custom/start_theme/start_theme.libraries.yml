@@ -4,7 +4,6 @@ global:
       assets/css/normalize.css: {}
       assets/css/base.css: {}
     layout:
-      includes/css/materialize.css: {}
       includes/css/slick.css: {}
       includes/css/animate.css: {}
       assets/css/tabs.css: {}
@@ -28,6 +27,13 @@ global:
       assets/css/remote.css: {}
       assets/css/section-6.css: {}
       assets/css/staff.css: {}
+      assets/css/section-7.css: {}
+      assets/css/achievements.css: {}
+      assets/css/section-8.css: {}
+      assets/css/useful-links.css: {}
+      assets/css/search.css: {}
+      assets/css/site-map.css: {}
+      
   js:
     assets/js/script.js: {}
     assets/js/header.js: {}
@@ -36,29 +42,25 @@ global:
 
   dependencies:
     - start_theme/adobe.fonts
-    - start_theme/materialize.icons
     - start_theme/dynamic-adapt
     - start_theme/slick
     - start_theme/wow
+    - start_theme/materialize
     - core/jquery
-#    - core/drupal.ajax
-#    - core/drupal
-#    - core/drupalSettings
-#    - core/jquery.once
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once
+  #  - core/once c 9.2.0
   
 adobe.fonts:
   css:
     theme:
       //use.typekit.net/iub5xya.css: { type: external, minified: true }
-
-materialize.icons:
-  css:
-    theme:
-      //fonts.googleapis.com/icon?family=Material+Icons: { type: external, minified: true }
       
 materialize:
   js:
-     includes/js/bin/materialize.min.js: { minified: true }
+     includes/js/bin/materialize.min.js: {}
 
 dynamic-adapt:
   js:

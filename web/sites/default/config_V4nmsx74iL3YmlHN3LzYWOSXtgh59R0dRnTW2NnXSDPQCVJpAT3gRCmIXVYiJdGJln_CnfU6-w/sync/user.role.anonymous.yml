@@ -6,12 +6,13 @@ _core:
   default_config_hash: pq_mEIu_B4widZN7Ap81iCJSjShFFdcL0jEiCi8VrDk
 id: anonymous
 label: 'Анонимный пользователь'
-weight: 0
+weight: -8
 is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
   - 'access site-wide contact form'
+  - 'restful get dlog_search_global_index'
   - 'search content'
   - 'use text format restricted_html'
   - 'view media'

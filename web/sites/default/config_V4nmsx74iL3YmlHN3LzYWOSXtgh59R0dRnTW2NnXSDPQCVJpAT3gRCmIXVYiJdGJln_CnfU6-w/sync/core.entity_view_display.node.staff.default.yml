@@ -19,7 +19,7 @@ bundle: staff
 mode: default
 content:
   field_photo_staff:
-    weight: 101
+    weight: 1
     label: hidden
     settings:
       image_style: ''
@@ -28,14 +28,14 @@ content:
     type: image
     region: content
   field_staff_extra:
-    weight: 104
+    weight: 5
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_staff_position:
-    weight: 103
+    weight: 4
     label: hidden
     settings:
       link_to_entity: false
@@ -43,21 +43,21 @@ content:
     type: string
     region: content
   field_staff_sername:
-    weight: 106
+    weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: content
   field_staff_txt_name:
-    weight: 107
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: content
   links:
-    weight: 100
+    weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }

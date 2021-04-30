@@ -1,0 +1,29 @@
+uuid: 172ee2e6-280c-40e3-9d96-518836c1ae95
+langcode: ru
+status: true
+dependencies:
+  config:
+    - views.view.achievements
+  module:
+    - system
+    - views
+  theme:
+    - start_theme
+id: views_block__achievements
+theme: start_theme
+region: section_7
+weight: 0
+provider: null
+plugin: 'views_block:achievements-block_1'
+settings:
+  id: 'views_block:achievements-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

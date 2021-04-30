@@ -21,6 +21,33 @@ $(window).scroll(function () {
      return false;
  });
 
+/*  всплывающее модальное окно Login */
+
+/* позволяет корректно обрабатывать все поведения что могут быть вызваны Drupal API на фронте
+Например если разметка слайдера приедет через AJAX, бихейворы это поймают, а обычный JS нет */
+(function ($) {
+ Drupal.behaviors.modalLogin = {
+  attach: function (context, settings) {
+    $('#modal_login', context).once('modal-login').modal();
+  }
+ };
+})(jQuery);
+
+/*  https://drupal.ru/docs/videouroki/drupalbookru/88-rabota-s-javascriptjquery-v-drupal-8-chto-takoe-behaviors  */ 
+/* https://druki.ru/wiki/drupal-once   c 9.2.0 */
+// пример
+/*  Drupal.behaviors.syfyGlobalHideMenu = {
+    attach: function (context, settings) {
+      $('.nav-flyout', context).once('remove-modals', function () {
+        $(document).keyup(function (e) {
+          if (e.keyCode == 27) {
+            $('.nav-flyout', context).removeClass('js-flyout-active');
+          }
+        });
+      });
+    }
+  }; */
+
 
 
 /* accordeon */

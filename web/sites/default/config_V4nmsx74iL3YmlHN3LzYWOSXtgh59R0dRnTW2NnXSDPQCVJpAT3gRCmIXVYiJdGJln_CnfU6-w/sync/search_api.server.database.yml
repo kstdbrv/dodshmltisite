@@ -1,0 +1,14 @@
+uuid: cd4aad4d-b6df-431a-af5c-b6662ede738a
+langcode: ru
+status: true
+dependencies:
+  module:
+    - search_api_db
+id: database
+name: database
+description: ''
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 1
+  matching: partial

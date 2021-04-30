@@ -1,0 +1,29 @@
+uuid: 1ed34e9c-609b-4e25-a417-25833804f109
+langcode: ru
+status: true
+dependencies:
+  config:
+    - views.view.useful_links
+  module:
+    - system
+    - views
+  theme:
+    - start_theme
+id: views_block__useful_links
+theme: start_theme
+region: section_8
+weight: 0
+provider: null
+plugin: 'views_block:useful_links-block_1'
+settings:
+  id: 'views_block:useful_links-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

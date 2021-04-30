@@ -1,0 +1,92 @@
+
+.search-vue {
+  width: 80%;
+  position: relative;
+  @media (max-width: 765px) {
+    width: 100%;
+  }
+  &__input {
+    width: 33%;
+    padding: 5px 5px 5px 50px;
+    outline: none;
+    border: none;
+    background-color: #569797;
+    color: #fff;
+    transition: all .5s;
+    &::placeholder {
+      color: #fff;
+      opacity: 0.5;
+    }
+    &:focus {
+      width: 100%;
+      box-shadow: inset 0px 5px 4px rgba(59, 59, 59, 0.3);
+    }
+  }
+
+  &__submit {
+    padding: 15px 18px 16px 22px;
+    position: absolute;
+    background-image: url('./search.svg');
+    background-size: 70%;
+    background-color: #8ccaca;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 0px;
+    top: 0px;
+    outline: none;
+    border: none;
+  }
+
+  &__form {
+    width: 100%;
+    position: relative;
+    z-index: 50;
+    display: flex;
+  }
+
+  &__form_has-results {
+    box-shadow: none;
+  }
+
+  &__results {
+    a {
+      color: #000;
+    }
+    position: absolute;
+    z-index: 40;
+    top: 31px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #cccccc;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+  }
+
+  &__result {
+    padding: 8px 16px;
+    &:hover {
+      background-color: #569797;
+      a {
+        color: white;
+      }
+    }
+    &:last-child {
+      border-bottom: unset;
+    }
+  }
+
+  @media (max-width: 751px) {
+    &__search-submit {
+      padding: 0 8px;
+      font-size: 18px;
+      width: 130px;
+    }
+  }
+}
+
+
+
+
+
+
+

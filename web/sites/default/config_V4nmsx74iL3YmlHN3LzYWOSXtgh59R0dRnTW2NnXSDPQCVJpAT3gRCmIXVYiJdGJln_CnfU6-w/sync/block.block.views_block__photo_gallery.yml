@@ -12,7 +12,7 @@ dependencies:
 id: views_block__photo_gallery
 theme: start_theme
 region: section_3
-weight: -15
+weight: -17
 provider: null
 plugin: 'views_block:photo_gallery-block_1'
 settings:

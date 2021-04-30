@@ -1,0 +1,11 @@
+uuid: 6c60f323-965b-4520-8b8f-96adc41c04ea
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.achievements
+id: node.achievements
+target_entity_type_id: node
+target_bundle: achievements
+default_langcode: site_default
+language_alterable: false

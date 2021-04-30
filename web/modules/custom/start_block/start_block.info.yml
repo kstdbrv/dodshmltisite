@@ -1,6 +1,6 @@
 name: start_block
 type: module
 description: 'пользовательский блок'
-package: Custom
+package: Модули разработанные сотрудниками "МКУ КМЦИКТ Старт"
 core: 8.x
 core_version_requirement: ^8 || ^9

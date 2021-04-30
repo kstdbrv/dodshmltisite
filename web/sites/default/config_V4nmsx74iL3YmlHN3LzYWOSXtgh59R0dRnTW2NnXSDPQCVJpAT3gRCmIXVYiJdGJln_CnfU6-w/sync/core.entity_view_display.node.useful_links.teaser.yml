@@ -1,0 +1,26 @@
+uuid: 4ae63deb-01fa-48fa-a60f-5d774c1eafbe
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.useful_links.field_links_image
+    - field.field.node.useful_links.field_useful_link
+    - node.type.useful_links
+  module:
+    - user
+id: node.useful_links.teaser
+targetEntityType: node
+bundle: useful_links
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_links_image: true
+  field_useful_link: true
+  langcode: true
+  social_links: true

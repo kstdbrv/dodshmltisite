@@ -1,0 +1,14 @@
+uuid: b213c539-a31f-4b55-8069-7805e54f6b71
+langcode: ru
+status: true
+dependencies:
+  config:
+    - user.role.admin_site
+  module:
+    - user
+id: user_remove_role_action.admin_site
+label: 'Удалить роль Администратор сайта из выбранных пользователей'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: admin_site

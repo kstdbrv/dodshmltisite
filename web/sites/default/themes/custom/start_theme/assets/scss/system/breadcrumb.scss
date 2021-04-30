@@ -1,4 +1,4 @@
-@import 'vars';
+@import "../base/vars";
 
 .breadcrumbs {
   &__inner{
@@ -18,10 +18,10 @@
     font-size: 15px;
     line-height: 18px;
     position: relative;
-    text-transform: lowercase;
-    &:first-letter {
+    /* text-transform: lowercase; */
+/*     &:first-letter {
       text-transform: capitalize;
-    }
+    } */
     a {
       color: $mainFontColor;
       transition: all 0.2s;
@@ -31,9 +31,9 @@
       &:active {
         color: $mainFontColor;
       }
-      &:first-letter {
+/*       &:first-letter {
         text-transform: capitalize;
-      }
+      } */
     }
     &::after {
       position: absolute;

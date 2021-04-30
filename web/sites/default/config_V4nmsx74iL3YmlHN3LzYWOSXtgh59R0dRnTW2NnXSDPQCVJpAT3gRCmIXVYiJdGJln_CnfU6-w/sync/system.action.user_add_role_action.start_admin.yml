@@ -1,0 +1,14 @@
+uuid: 98a126da-a323-458b-8da0-6d7ae547a698
+langcode: ru
+status: true
+dependencies:
+  config:
+    - user.role.start_admin
+  module:
+    - user
+id: user_add_role_action.start_admin
+label: 'Добавьте роль Start_admin выбранным пользователям'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: start_admin

@@ -8,7 +8,7 @@ id: admin
 label: 'Профиль администратора'
 description: 'Конфигурация для администраторов сайта'
 conf:
-  extensions: 'doc docx xls xlsx txt pdf ppt pptx pps jpg jpeg gif png mp3 avi mp4 flv swf svg sig'
+  extensions: 'doc docx xls xlsx txt pdf ppt pptx pps jpg jpeg gif png mp3 avi mp4 flv swf svg sig jfif'
   maxsize: !!float 15
   quota: !!float 1024
   maxwidth: 2000

@@ -17,16 +17,18 @@
   font-size: 15px;
   line-height: 18px;
   position: relative;
-  text-transform: lowercase;
-}
-
-.breadcrumbs__list-item:first-letter {
-  text-transform: capitalize;
+  /* text-transform: lowercase; */
+  /*     &:first-letter {
+      text-transform: capitalize;
+    } */
 }
 
 .breadcrumbs__list-item a {
   color: #1f1d21;
   transition: all 0.2s;
+  /*       &:first-letter {
+        text-transform: capitalize;
+      } */
 }
 
 .breadcrumbs__list-item a:hover {
@@ -35,10 +37,6 @@
 
 .breadcrumbs__list-item a:active {
   color: #1f1d21;
-}
-
-.breadcrumbs__list-item a:first-letter {
-  text-transform: capitalize;
 }
 
 .breadcrumbs__list-item::after {

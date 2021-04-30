@@ -1,7 +1,7 @@
 @import "../base/vars";
 
 
-#block-views-block-staff {
+#block-views-block-staff, .staff-full {
   max-width: 845px;
   margin: 0 auto;
   h2 {   // заголовок блока
@@ -12,13 +12,20 @@
     @extend %calibri-bold;
     letter-spacing: 1.3px;
   }
+
   .views-row {
     position: relative;
+    &:hover {
+      .staff__bottom {
+        background-color: #fff;
+        opacity: 0.7;
+      } 
+    }
   }
+  
   .staff {
     text-align: center;
     a {
-     // box-shadow: 0 8px 16px rgba(51,51,51,.12);
       font-size: 0;
       color: $mainFontColor;
       position: absolute;
@@ -34,15 +41,15 @@
       }
     }
    &__image {
-     padding-top: 20px;
-     margin-bottom: 29px;
+     padding-top: 5px;
+     
      background: $mainColor;
-     width: 220px;
-     height: 220px;
    }
    &__bottom {
      text-align: center;
-     margin-bottom: 5px;
+     padding-top: 29px;
+     padding-bottom: 10px;
+     transition: all .2s;
    }
    &__position {
     text-transform: lowercase;
@@ -50,3 +57,28 @@
    }
   }
 }
+
+
+
+// переопределяем стили section-1
+.staff-full { // добавляем класс в views
+  .view-content > div { 
+      margin-bottom: $distanceBlock;
+      grid-template-columns: repeat(auto-fill, 220px) !important;
+  }
+}
+
+// страница
+.node-staff {
+  .field-staff-sername, .field-staff-txt-name, .field-staff-position {
+    text-align: center;
+    @extend %calibri-bold;
+  }
+  .field-photo-staff {
+    text-align: center;
+    margin-top: $distance;
+    margin-bottom: $distance;
+  }
+}
+
+
