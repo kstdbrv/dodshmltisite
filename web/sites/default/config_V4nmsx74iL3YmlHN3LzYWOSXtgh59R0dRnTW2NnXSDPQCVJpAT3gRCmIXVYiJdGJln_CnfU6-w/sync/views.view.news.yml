@@ -269,7 +269,7 @@ display:
       use_more_text: 'все новости'
       link_display: page_1
       link_url: ''
-      css_class: test
+      css_class: ''
       style:
         type: default
         options:

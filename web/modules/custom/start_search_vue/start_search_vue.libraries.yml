@@ -1,7 +1,11 @@
 main:
   version: VERSION
   js:
-    assets/js/dist/main.js: {}
+    assets/dist/main.js: {}
+  css:
+    theme:
+      assets/dist/style.css: {}
+    
   dependencies:
     - start_search_vue/vuejs
 

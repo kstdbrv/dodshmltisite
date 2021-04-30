@@ -1,11 +1,12 @@
 const path = require('path');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const miniCss = require('mini-css-extract-plugin');
 
 
 const PATHS = {
-  src: path.join(__dirname, './assets/js/src/main.js'),
-  dist: path.join(__dirname, './assets/js/dist'),
+  src: path.join(__dirname, './assets/src/main.js'),
+  dist: path.join(__dirname, './assets/dist'),
 }
 
 module.exports = {
@@ -36,25 +37,36 @@ module.exports = {
               }
             },
             {
-              test: /\.s[ac]ss$/,
+              test: /\.css$/,
+              use: [miniCss.loader, "css-loader",]
+            },
+            {
+              test: /\.s[ac]ss$/i,
               use: [
-                'style-loader',
-                {
-                  loader: 'css-loader',
-                  options: {
-                    sourceMap: false,
-                  }
-                },
-                {
-                  loader: 'sass-loader',
-                  options: { sourceMap: false }
-                }
+                miniCss.loader,
+                'css-loader',
+                'sass-loader',
               ]
             },
+        {
+          test: /\.svg$/,
+          use: [
+            {
+              loader: 'svg-url-loader', // A webpack loader which loads SVG file as utf-8 encoded DataUrl string.
+              options: {
+                name: './svg/[name].[ext]',
+                limit: 10000,
+              },
+            },
+          ]
+        },
         ],
     },
   plugins: [
     new CleanWebpackPlugin(),
+    new miniCss({
+      filename: 'style.css',
+    }),
     new VueLoaderPlugin()
   ]
 }

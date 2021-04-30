@@ -1,0 +1,109 @@
+.search-vue {
+  width: 80%;
+  position: relative;
+}
+
+@media (max-width: 765px) {
+  .search-vue {
+    width: 100%;
+  }
+}
+
+.search-vue__input {
+  width: 33%;
+  padding: 5px 5px 5px 50px;
+  outline: none;
+  border: none;
+  background-color: #569797;
+  color: #fff;
+  transition: all .5s;
+}
+
+.search-vue__input::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.search-vue__input:-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.search-vue__input::-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.search-vue__input::placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.search-vue__input:focus {
+  width: 100%;
+  box-shadow: inset 0px 5px 4px rgba(59, 59, 59, 0.3);
+}
+
+.search-vue__submit {
+  padding: 15px 18px 16px 22px;
+  position: absolute;
+  background-image: url("./search.svg");
+  background-size: 70%;
+  background-color: #8ccaca;
+  background-position: center;
+  background-repeat: no-repeat;
+  left: 0px;
+  top: 0px;
+  outline: none;
+  border: none;
+}
+
+.search-vue__form {
+  width: 100%;
+  position: relative;
+  z-index: 50;
+  display: flex;
+}
+
+.search-vue__form_has-results {
+  box-shadow: none;
+}
+
+.search-vue__results {
+  position: absolute;
+  z-index: 40;
+  top: 31px;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #cccccc;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+}
+
+.search-vue__results a {
+  color: #000;
+}
+
+.search-vue__result {
+  padding: 8px 16px;
+}
+
+.search-vue__result:hover {
+  background-color: #569797;
+}
+
+.search-vue__result:hover a {
+  color: white;
+}
+
+.search-vue__result:last-child {
+  border-bottom: unset;
+}
+
+@media (max-width: 751px) {
+  .search-vue__search-submit {
+    padding: 0 8px;
+    font-size: 18px;
+    width: 130px;
+  }
+}

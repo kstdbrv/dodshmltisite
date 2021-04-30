@@ -48,9 +48,7 @@
        {% endif %}
 
        {% if logged_in %}
-       <a class="link unregister" title="вход на сайт" href="{{ path('user.logout') }}">
-         <i class="material-icons main-color">logout</i>
-       </a>
+       <a class="link-unregister" title="выход" href="{{ path('user.logout') }}"><img src="/sites/default/themes/custom/start_theme/assets/images/icons/logout.svg" alt="выход"></a>
        {% endif %}
     </div>
 
@@ -193,7 +191,7 @@
 
   <div class="modal-footer">
     <button type="submit" class="waves-effect waves-light btn modal-trigger">
-       войти<i class="material-icons right">login</i>
+       войти
     </button>
    </div>
   </form>

@@ -30,6 +30,7 @@
 .top-header {
   &__column:nth-child(1) {
     display: flex;
+    flex: 0 1 550px;
     #block-poisk {
       height: 30px;
       position: relative;
@@ -188,35 +189,24 @@
       @media (max-width: 1450px){
         img {
           filter: invert(1);
-/*           height: 36px;
-          width: 42px; */
-        }
+        }  
       }
     }
-    .modal-trigger {
+    .modal-trigger, .link-unregister {
+      width: 44px;
       transition: all 0.2s;
+      img {
+        width: 44px;
+      }
       &:hover {
         transform: scale(1.1);
       }
       @media (max-width: 1450px){
         img {
           filter: invert(1);
-          width: 44px;
         }
       }
     }
-    .material-icons.main-color { 
-      color: #fff;
-      font-size: 48px;
-      transition: all 0.2s;
-      &:hover {
-        transform: scale(1.1);
-      }
-      @media (max-width:1495px) {
-        color: #000;
-        font-size: 32px;
-      }
-     }
   }
 }
 .bottom-header {

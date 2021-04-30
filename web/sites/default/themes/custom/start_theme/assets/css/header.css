@@ -53,6 +53,7 @@
 
 .top-header__column:nth-child(1) {
   display: flex;
+  flex: 0 1 550px;
 }
 
 .top-header__column:nth-child(1) #block-poisk {
@@ -268,43 +269,27 @@
   .center-header__icons .icon-impaired img {
     -webkit-filter: invert(1);
             filter: invert(1);
-    /*           height: 36px;
-          width: 42px; */
   }
 }
 
-.center-header__icons .modal-trigger {
+.center-header__icons .modal-trigger, .center-header__icons .link-unregister {
+  width: 44px;
   transition: all 0.2s;
 }
 
-.center-header__icons .modal-trigger:hover {
+.center-header__icons .modal-trigger img, .center-header__icons .link-unregister img {
+  width: 44px;
+}
+
+.center-header__icons .modal-trigger:hover, .center-header__icons .link-unregister:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
 @media (max-width: 1450px) {
-  .center-header__icons .modal-trigger img {
+  .center-header__icons .modal-trigger img, .center-header__icons .link-unregister img {
     -webkit-filter: invert(1);
             filter: invert(1);
-    width: 44px;
-  }
-}
-
-.center-header__icons .material-icons.main-color {
-  color: #fff;
-  font-size: 48px;
-  transition: all 0.2s;
-}
-
-.center-header__icons .material-icons.main-color:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-@media (max-width: 1495px) {
-  .center-header__icons .material-icons.main-color {
-    color: #000;
-    font-size: 32px;
   }
 }
 
