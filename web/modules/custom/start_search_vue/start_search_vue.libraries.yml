@@ -6,18 +6,20 @@ main:
     theme:
       assets/dist/style.css: {}
     
-  dependencies:
-    - start_search_vue/vuejs
+#  dependencies:
+#    - start_search_vue/vuejs
+
+#для работы нужно поставить в зависимость vuejs 2.6.12 либо здесь, либо в libraries
 
 # Third-party library (CDN).
-vuejs:
-  remote: https://vuejs.org
-  version: 2.6.12
-  license:
-    name: MIT
-    url: https://github.com/vuejs/vue/blob/dev/LICENSE
-    gpl-compatible: true
-  js:
-    /libraries/vue/dist/vue.js: {}
+#vuejs:
+#  remote: https://vuejs.org
+#  version: 2.6.12
+#  license:
+#    name: MIT
+#    url: https://github.com/vuejs/vue/blob/dev/LICENSE
+#    gpl-compatible: true
+#  js:
+#    /libraries/vue/dist/vue.js: {}
     #/libraries/vue/dist/vue.min.js: {minified: true}
 

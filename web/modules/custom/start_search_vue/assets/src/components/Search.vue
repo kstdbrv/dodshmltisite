@@ -1,7 +1,7 @@
 <template>
   <div class="search-vue" v-click-outside="onClickOutside">
     <div class="search-vue__form"
-         :class="{ 'search-vue__form_has-results': searchResults.length}">
+         :class="{ 'search-vue__form_has-results': searchResults.length }">
       <input type="search"
              autocomplete="off"
              class="search-vue__input"
@@ -12,6 +12,9 @@
       <button class="search-vue__submit"
               @click="onButtonClick">
       </button>
+      <button class="search-vue__clear"
+              @click="onClearClick">
+      </button>
     </div>
 
     <div class="search-vue__results"
@@ -19,6 +22,12 @@
       <div v-for="value in searchResults"
            class="search-vue__result">
         <a :href="value.url">{{value.label}}</a>
+      </div>
+    </div>
+    <div v-else-if="text.length > 3 && !searchResults.length && !resultsHidden"
+         class="search-vue__results">
+      <div class="search-vue__result">
+       К сожалению, ничего не найдено...
       </div>
     </div>
   </div>
@@ -63,11 +72,41 @@
         window.location.href = url.href;
       },
 
+      onClearClick: function() {
+        this.text = '';
+        document.querySelector('.search-vue__input').value = '';
+      },
+
       onClickOutside: function(event) {
         this.resultsHidden = true;
+        document.querySelector('.search-vue__input').value = '';
+
+        let search = document.querySelector('.search-vue__submit');
+        let clear = document.querySelector('.search-vue__clear');
+
+        clear.style.display = 'none';
+        search.style.display = 'block';
       },
+    },
+
+    mounted() {
+      let input = document.querySelector('.search-vue__input');
+      let search = document.querySelector('.search-vue__submit');
+      let clear = document.querySelector('.search-vue__clear');
+
+      input.oninput = function(e) {
+        if (e.target.value.length === 1) {
+        search.style.display = 'none';
+        clear.style.display = 'block';
+        }
+      }
+
+      document.querySelector('.search-vue__clear').onclick = function() {
+        clear.style.display = 'none';
+        search.style.display = 'block';
+      };
     },
   };
 </script>
 
-<style lang="scss" src="./search.scss" scoped></style>
+<style lang="scss" src="./search.scss"></style>

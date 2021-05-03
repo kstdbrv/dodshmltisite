@@ -46,6 +46,7 @@ global:
     - start_theme/slick
     - start_theme/wow
     - start_theme/materialize
+    - start_theme/vuejs
     - core/jquery
     - core/drupal.ajax
     - core/drupal
@@ -72,4 +73,9 @@ slick:
 
 wow:
   js:
-     includes/js/bin/wow.min.js: { minified: true }   
+     includes/js/bin/wow.min.js: { minified: true }
+
+vuejs:
+  js:
+     includes/js/bin/vue.min.js: { minified: true } 
+     

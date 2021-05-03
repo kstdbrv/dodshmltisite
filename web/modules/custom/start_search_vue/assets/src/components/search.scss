@@ -22,11 +22,10 @@
       box-shadow: inset 0px 5px 4px rgba(59, 59, 59, 0.3);
     }
   }
-
-  &__submit {
+  
+  button {
     padding: 15px 18px 16px 22px;
     position: absolute;
-    background-image: url('./search.svg');
     background-size: 70%;
     background-color: #8ccaca;
     background-position: center;
@@ -37,6 +36,14 @@
     border: none;
   }
 
+  &__submit {
+    background-image: url('./search.svg');
+  }
+
+  &__clear {
+    display: none;
+    background-image: url('./clear.svg');
+  }
   &__form {
     width: 100%;
     position: relative;

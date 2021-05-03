@@ -105,6 +105,7 @@
   display: block;
   padding-left: 27px;
   position: relative;
+  -webkit-transition: all .2s;
   transition: all .2s;
   cursor: pointer;
 }
@@ -218,7 +219,9 @@
   margin-bottom: 30px;
   display: -ms-grid;
   display: grid;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   -ms-grid-columns: (255px)[auto-fill];
@@ -240,7 +243,9 @@
 .section-1 .infinite-scroll .view-content > div {
   display: -ms-grid;
   display: grid;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   -ms-grid-columns: (255px)[auto-fill];

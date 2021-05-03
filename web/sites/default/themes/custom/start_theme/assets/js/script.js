@@ -80,5 +80,29 @@ $(window).scroll(function () {
   
     }); */
 
+    (function ($) {
+      // при клике удаляет placeholder
+      Drupal.behaviors.hidePlaceholder = {
+       attach: function (context, settings) {
+         $('input, texterea', context).once('hide-placeholder').each(function(){
+          
+          var _this = $(this);
+          $(this).on("click", function(){
+            var __this = $(this);
+            var placeholder = __this.attr('placeholder');
+            __this.attr('placeholder', "");
+            _this.attr('data-placeholder', placeholder)
+          }).blur(function(){
+            var __this = $(this);
+            var placeholder = __this.attr('data-placeholder');
+            __this.attr('placeholder', placeholder);
+          })
+
+         });
+       }
+      };
+     })(jQuery);
+
+
 
 
