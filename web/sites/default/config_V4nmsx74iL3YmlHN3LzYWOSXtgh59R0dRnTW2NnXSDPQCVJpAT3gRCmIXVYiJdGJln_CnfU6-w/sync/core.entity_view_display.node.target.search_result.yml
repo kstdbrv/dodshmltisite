@@ -1,0 +1,36 @@
+uuid: 2dd4168b-d8d3-413e-ba37-32c822ad1d54
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.target.body
+    - field.field.node.target.field__hover
+    - field.field.node.target.field_galary
+    - field.field.node.target.field_image_target
+    - field.field.node.target.field_target_image
+    - field.field.node.target.field_target_text
+    - node.type.target
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.target.search_result
+targetEntityType: node
+bundle: target
+mode: search_result
+content: {  }
+hidden:
+  body: true
+  field__hover: true
+  field_galary: true
+  field_image_target: true
+  field_target_image: true
+  field_target_text: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  social_links: true

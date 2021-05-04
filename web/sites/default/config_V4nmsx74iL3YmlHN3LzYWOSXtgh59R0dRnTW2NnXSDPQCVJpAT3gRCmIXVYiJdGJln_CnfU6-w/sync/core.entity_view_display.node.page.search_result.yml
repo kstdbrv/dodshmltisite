@@ -1,21 +1,27 @@
-uuid: 01b4619d-4e10-498f-a2ff-a0dd998ef1e4
+uuid: a332c060-028b-4525-a1b1-b28537fd3d51
 langcode: ru
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.search_result
     - field.field.node.page.body
     - field.field.node.page.field_marker
     - field.field.node.page.field_tegs
     - node.type.page
   module:
+    - layout_builder
     - text
     - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
 _core:
   default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
-id: node.page.default
+id: node.page.search_result
 targetEntityType: node
 bundle: page
-mode: default
+mode: search_result
 content:
   body:
     label: hidden

@@ -1,0 +1,26 @@
+uuid: fccb593a-eaff-4b62-b108-5085cad0705e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.remote_gallery.field__remote
+    - node.type.remote_gallery
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.remote_gallery.search_result
+targetEntityType: node
+bundle: remote_gallery
+mode: search_result
+content: {  }
+hidden:
+  field__remote: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  social_links: true
