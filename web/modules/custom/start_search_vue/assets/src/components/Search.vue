@@ -19,16 +19,17 @@
 
     <div class="search-vue__results"
          v-if="searchResults.length && !resultsHidden">
-      <div v-for="value in searchResults"
-           class="search-vue__result">
-        <a :href="value.url">{{value.label}}</a>
+      <div v-for="value in searchResults">
+        <a class="search-vue__result" 
+           :href="value.url">{{value.label}}
+        </a>
       </div>
     </div>
     <div v-else-if="text.length > 3 && !searchResults.length && !resultsHidden"
          class="search-vue__results">
-      <div class="search-vue__result">
+      <p class="search-vue__result">
        К сожалению, ничего не найдено...
-      </div>
+      </p>
     </div>
   </div>
 </template>
@@ -78,6 +79,7 @@
       },
 
       onClickOutside: function(event) {
+        this.text = '';
         this.resultsHidden = true;
         document.querySelector('.search-vue__input').value = '';
 
@@ -101,7 +103,7 @@
         }
       }
 
-      document.querySelector('.search-vue__clear').onclick = function() {
+      clear.onclick = function() {
         clear.style.display = 'none';
         search.style.display = 'block';
       };

@@ -1,13 +1,16 @@
 
 .search-vue {
-  width: 80%;
+  width: 100%;
   position: relative;
-  @media (max-width: 765px) {
+  &__form {
     width: 100%;
+    z-index: 50;
+    display: flex;
+    height: 32px;
   }
   &__input {
     width: 33%;
-    padding: 5px 5px 5px 50px;
+    padding: 5px 5px 5px 55px;
     outline: none;
     border: none;
     background-color: #569797;
@@ -21,12 +24,15 @@
       width: 100%;
       box-shadow: inset 0px 5px 4px rgba(59, 59, 59, 0.3);
     }
+    @media (max-width: 795px) {
+      width: 45%;
+    }
   }
   
   button {
-    padding: 15px 18px 16px 22px;
+    height: inherit;
+    width: 45px;
     position: absolute;
-    background-size: 70%;
     background-color: #8ccaca;
     background-position: center;
     background-repeat: no-repeat;
@@ -37,18 +43,14 @@
   }
 
   &__submit {
-    background-image: url('./search.svg');
+    background-size: 60%;
+    background-image: url('./icons/search.svg');
   }
 
   &__clear {
     display: none;
-    background-image: url('./clear.svg');
-  }
-  &__form {
-    width: 100%;
-    position: relative;
-    z-index: 50;
-    display: flex;
+    background-size: 80%;
+    background-image: url('./icons/clear.svg');
   }
 
   &__form_has-results {
@@ -56,12 +58,9 @@
   }
 
   &__results {
-    a {
-      color: #000;
-    }
     position: absolute;
     z-index: 40;
-    top: 31px;
+    top: 32px;
     width: 100%;
     background-color: white;
     border: 1px solid #cccccc;
@@ -71,22 +70,14 @@
 
   &__result {
     padding: 8px 16px;
+    color: #000;
+    display: block;
     &:hover {
       background-color: #569797;
-      a {
-        color: white;
-      }
+      color: white;
     }
     &:last-child {
       border-bottom: unset;
-    }
-  }
-
-  @media (max-width: 751px) {
-    &__search-submit {
-      padding: 0 8px;
-      font-size: 18px;
-      width: 130px;
     }
   }
 }

@@ -2,10 +2,8 @@
 
 .social-links {
   display: flex;
-  flex: 0 1 100%;
-  margin-top: 7px;
-  margin-bottom: 7px;
-  margin-left: 40px;
+  margin-left: 20px;
+  justify-content: center;
   li:not(:last-child) {
     margin-right: 10px;
   }
@@ -16,13 +14,11 @@
       height: 29px;
       width: 29px;
       color: transparent;
-      @media (max-width:475px) {
+      @media (max-width:555px) {
         padding: 0;
         padding-top: 20px;
         margin-bottom: 40px;
-        li:not(:last-child) {
-          margin-right: 0px;
-        }
+        margin-left: 0;
       }
     }
   }

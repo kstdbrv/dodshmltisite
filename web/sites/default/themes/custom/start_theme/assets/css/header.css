@@ -61,13 +61,17 @@
   }
 }
 
+.top-header {
+  min-height: 40px;
+}
+
 .top-header__column:nth-child(1) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 550px;
-          flex: 0 1 550px;
+      -ms-flex: 0 1 850px;
+          flex: 0 1 850px;
 }
 
 .top-header__column:nth-child(1) #block-poisk {
