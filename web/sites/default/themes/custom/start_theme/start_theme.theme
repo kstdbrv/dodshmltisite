@@ -3,7 +3,7 @@
  * @file
  * Contains theme override functions and preprocess functions
  */
-
+use Drupal\imagemagick\ImagemagickExecArguments;
 
 /**
  * @file
@@ -46,6 +46,15 @@ function start_theme_preprocess_node(&$variables) {
     ->toString(TRUE)
     ->getGeneratedUrl();
 
+}
+
+/**
+ * Implements hook_imagemagick_arguments_alter().
+ */
+function start_theme_imagemagick_arguments_alter(ImagemagickExecArguments $arguments, $command) {
+  $arguments->add('-sampling-factor 4:2:0');
+  $arguments->add('-interlace Plane');
+  $arguments->add('-strip');
 }
 
 

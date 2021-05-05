@@ -1,8 +1,8 @@
 {{ attach_library('social_links/social_links') }}
 
 {% set links = {
-  'vk': 'https://vk.com/share.php?url=' ~ url ~ '&title=' ~ text ~ '&imageUrl=' ~ img,
-  'ok': 'https://connect.ok.ru/offer?url=' ~ url ~ '&title=' ~ text ~ '&imageUrl=' ~ img,
+  'vk': 'https://vk.com/share.php?url=' ~ url ~ '&title=' ~ text,
+  'ok': 'https://connect.ok.ru/offer?url=' ~ url ~ '&title=' ~ text,
   'facebook': 'https://facebook.com/sharer/sharer.php?u=' ~ url,
   'twitter': 'https://twitter.com/intent/tweet?url=' ~ url ~ '&text=' ~ text,
   'telegram': 'https://telegram.me/share/url?url=' ~ url ~ '&text=' ~ text,

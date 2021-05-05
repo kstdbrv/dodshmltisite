@@ -28,22 +28,6 @@ function social_links_entity_extra_field_info() {
 }
 
 /**
- * Implements hook_ENTITY_TYPE_view().
- */
-function social_links_node_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
-  if ($display->getComponent('social_links')) {
-    $build['social_links'] = [
-      '#theme' => 'social_links',
-      '#url' => $entity->toUrl('canonical', ['absolute' => TRUE])->toString(TRUE)->getGeneratedUrl(),
-      '#text' => $entity->label(),
-    ];
-    if (!$entity->get('field_image_news')->isEmpty()) {
-      $build['social_links']['#img'] = file_create_url($entity->field_image_news->entity->getFileUri());
-    }
-  }
-}
-
-/**
 * Implements hook_theme().
 */
 function social_links_theme($existing, $type, $theme, $path) {
@@ -57,6 +41,22 @@ function social_links_theme($existing, $type, $theme, $path) {
       ],
     ],
   ];
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_view().
+ */
+function social_links_node_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+  if ($display->getComponent('social_links')) {
+    $build['social_links'] = [
+      '#theme' => 'social_links',
+      '#url' => $entity->toUrl('canonical', ['absolute' => TRUE])->toString(TRUE)->getGeneratedUrl(),
+      '#text' => $entity->label(),
+    ];
+    if (!$entity->get('field_image_news')->isEmpty()) {
+      $build['social_links']['#img'] = file_create_url($entity->field_image_news->entity->getFileUri());
+    }
+  }
 }
 
 
