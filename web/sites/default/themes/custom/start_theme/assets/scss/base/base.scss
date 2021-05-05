@@ -137,6 +137,16 @@ img {
   }
 }
 
+.file { // стиль для загружаемых файлов
+  margin-bottom: 15px;
+  a {
+    color: $mainFontColor;
+    &:hover {
+      color: $mainColor;
+    }
+  }
+}
+
 #block-start-theme-content { // убирает кнопку "добавить материал" на главной
   .view-empty {
     display: none;

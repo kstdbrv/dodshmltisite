@@ -1,5 +1,6 @@
 <?php
 
+use Drupal\imagemagick\ImagemagickExecArguments;
 /**
  * @param $variables
  * Implements hook_preprocess_page()
@@ -9,4 +10,13 @@ function code_block_preprocess_page(&$variables){
   # Add library
   $variables['#attached']['library'][] =  'code_block/code_block';
 
+}
+
+/**
+ * Implements hook_imagemagick_arguments_alter().
+ */
+function code_block_imagemagick_arguments_alter(ImagemagickExecArguments $arguments, $command) {
+  $arguments->add('-sampling-factor 4:2:0');
+  $arguments->add('-interlace Plane');
+  $arguments->add('-strip');
 }

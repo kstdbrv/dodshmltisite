@@ -179,6 +179,18 @@ img {
   }
 }
 
+.file {
+  margin-bottom: 15px;
+}
+
+.file a {
+  color: #1f1d21;
+}
+
+.file a:hover {
+  color: #569797;
+}
+
 #block-start-theme-content .view-empty {
   display: none;
 }

@@ -1,10 +1,11 @@
 main:
   version: VERSION
   js:
-    assets/dist/main.js: {}
+    assets/vue.min.js: { minified: true }
+    assets/dist/main.js: { minified: true }
   css:
     theme:
-      assets/dist/style.css: {}
+      assets/dist/style.css: { minified: true }
     
 #  dependencies:
 #    - start_search_vue/vuejs

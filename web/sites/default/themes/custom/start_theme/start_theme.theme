@@ -3,7 +3,6 @@
  * @file
  * Contains theme override functions and preprocess functions
  */
-define('THEME_PATH', base_path() . drupal_get_path('theme', 'start_theme'));
 
 
 /**
@@ -48,6 +47,9 @@ function start_theme_preprocess_node(&$variables) {
     ->getGeneratedUrl();
 
 }
+
+
+
 
 
 

@@ -63,7 +63,7 @@
     top: 32px;
     width: 100%;
     background-color: white;
-    border: 1px solid #cccccc;
+    border: 1px solid #a7a6a6;
     border-radius: 0 0 4px 4px;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
   }
@@ -73,8 +73,7 @@
     color: #000;
     display: block;
     &:hover {
-      background-color: #569797;
-      color: white;
+      background-color: #8ccaca;
     }
     &:last-child {
       border-bottom: unset;
