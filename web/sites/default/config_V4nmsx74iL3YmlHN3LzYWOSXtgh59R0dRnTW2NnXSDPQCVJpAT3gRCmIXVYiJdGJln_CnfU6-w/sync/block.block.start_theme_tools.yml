@@ -12,7 +12,7 @@ _core:
   default_config_hash: rH6PpAn7-RScha1rGkohGAYSSh_1OVeZzioJPzPw6O4
 id: start_theme_tools
 theme: start_theme
-region: footer
+region: header_top_left
 weight: -9
 provider: null
 plugin: 'system_menu_block:tools'

@@ -1,0 +1,25 @@
+uuid: 6de06e02-3bb0-4e03-a904-b0a6f3e44802
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - start_theme
+id: contacts
+theme: start_theme
+region: footer_top
+weight: -17
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: Контакты
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 2
+  expand_all_items: true
+visibility: {  }

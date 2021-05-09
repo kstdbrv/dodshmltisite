@@ -10,7 +10,7 @@ dependencies:
     - start_theme
 id: administrirovanie
 theme: start_theme
-region: footer
+region: header_top_left
 weight: -7
 provider: null
 plugin: 'system_menu_block:admin'

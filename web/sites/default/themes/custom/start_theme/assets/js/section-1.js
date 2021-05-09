@@ -41,48 +41,48 @@ $(document).ready(function () {
 
 
 /* раскрывает главное меню, если открыты страницы */
-const toggle = () => {
+const slideDown = () => {
   $('.main-menu').children().first().toggleClass('active');
-  $('.main-menu .submenu').first().slideToggle(0);
+  $('.main-menu .submenu').first().slideDown(0);
 }
 if (window.location.pathname === '/sveden/education') {
-  toggle();
+  slideDown();
 }
 if (window.location.pathname === '/sveden/common') {
-  toggle();
+  slideDown();
 }
 if (window.location.pathname ==='/sveden/struct') {
-  toggle();
+  slideDown();
 }
 if (window.location.pathname ==='/sveden/document') {
-  toggle();
+  slideDown();
 }
 if (window.location.pathname === '/sveden/eduStandarts') {
-  toggle();
+  slideDown();
 }
 if (window.location.pathname === '/sveden/employees') {
-  toggle();
+  slideDown();
 }
 if (window.location.pathname === '/sveden/objects') {
-  toggle();
+  slideDown();
 }
 if (window.location.pathname === '/sveden/grants') {
-  toggle();
+  slideDown();
 }
 if (window.location.pathname === '/sveden/paid_edu') {
-  toggle();
+  slideDown();
 }
 if (window.location.pathname === '/sveden/budget') {
-  toggle();
+  slideDown();
 }
 if (window.location.pathname === '/sveden/vacant') {
-  toggle();
+  slideDown();
 }
 if (window.location.pathname === '/sveden/ovz') {
-  toggle();
+  slideDown();
 }
 if (window.location.pathname === '/sveden/inter') {
-  toggle();
+  slideDown();
 }
 
 
