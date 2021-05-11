@@ -20,16 +20,26 @@
 }
 
 #block-views-block-useful-links .view-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 1900px;
 }
 
 .useful-links {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #fff;
   border-radius: 50%;
   width: 159px;
@@ -47,6 +57,7 @@
 
 .useful-links img {
   opacity: 1;
+  -webkit-transition: all .2s;
   transition: all .2s;
 }
 
@@ -56,6 +67,7 @@
   top: 20px;
   left: -2px;
   opacity: 0;
+  -webkit-transition: all .2s;
   transition: all .2s;
 }
 

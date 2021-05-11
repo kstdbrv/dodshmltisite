@@ -5,11 +5,13 @@ dependencies:
   config:
     - field.field.node.head_info.field_email
     - field.field.node.head_info.field_image_flags
+    - field.field.node.head_info.field_location
     - field.field.node.head_info.field_phone
     - image.style.thumbnail
     - node.type.head_info
   module:
     - image
+    - imce
     - telephone
 id: node.head_info.default
 targetEntityType: node
@@ -31,12 +33,22 @@ content:
     type: email_default
     region: content
   field_image_flags:
+    weight: 7
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    third_party_settings:
+      imce:
+        enabled: true
+    type: image_image
+    region: content
+  field_location:
     weight: 6
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      rows: 5
+      placeholder: ''
     third_party_settings: {  }
-    type: image_image
+    type: string_textarea
     region: content
   field_phone:
     weight: 5

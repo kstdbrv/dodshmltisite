@@ -1,3 +1,154 @@
+@import "../base/vars";
+
 .footer {
-  color: azure;
+  margin-top: 35px;
+  &__top {
+    margin-bottom: 35px;
+    min-height: 365px;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width:1275px) {
+      display: block;
+    }
+  }
+
+  &__bottom {
+    min-height: 134px;
+    background-color: $mainColor;
+  }
+  
 }
+
+.top-footer {
+  align-items: center;
+  color: $mainColor;
+  &__left {
+    margin-right: 15px;
+    @media (max-width: 1275px) {
+      margin-right: 0;
+      text-align: center;
+    }
+    #block-contacts-menu { // заголовок
+     text-transform: uppercase;
+     letter-spacing: 1.3px;
+     @extend %calibri-bold;
+     margin-bottom: 20px;
+     @media (max-width: 1275px) {
+      position: relative;
+      display: inline-block;
+      background-color: $mainColor;
+      color: #fff;
+      letter-spacing: 1.5px;
+      padding-left: 100px;
+      padding-right: 100px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      @media (max-width: 425px) {
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+      &::before {
+        position: absolute;
+        content: "";
+        background-image: url('../images/icons/arrow-nav.svg');
+        background-color: transparent;
+        left: 70px;
+        bottom: 12px;
+        width: 18px;
+        height: 12px;
+        transform: rotate(180deg);
+        filter: brightness(10);
+        @media (max-width: 425px) {
+         left: 15%;
+      }
+    }
+   }
+  }
+  .active#block-contacts-menu::before {
+    transform: rotate(0);
+    }
+    .menu-footer {
+      margin-bottom: 20px;
+      &__item:not(:last-child) {
+        margin-bottom: 5px;
+      }
+      @media (max-width:1275px) {
+       display: none;
+      }
+    }
+    .view-head-info {
+      max-width: 330px;
+      @media (max-width:1275px) {
+        max-width: unset;
+        margin-bottom: 20px;
+        display: none;
+      }
+      .views-field:not(:last-child) {
+        margin-bottom: 5px;
+      }
+      .views-field-field-phone {
+       .field-content {
+         display: inline-flex;
+         flex-direction: column;
+       }
+      }
+      .views-field-field-email a {
+        position: relative;
+        padding-left: 25px;
+        transition: all .2s;
+        &::before {
+          transition: all .2s;
+          position: absolute;
+          left: -3px;
+          height: 24px;
+          width: 24px;
+          content: '';
+          filter: invert(.35);
+          transform: scale(.7);
+          background: url('../images/icons/mail.svg') 50% 50% no-repeat;
+        }
+        &:hover {
+          &::before {
+            filter: invert(.1);
+          }
+        }
+      }
+      .views-field-field-phone a {
+        position: relative;
+        padding-left: 25px;
+        transition: all .2s;
+        &::before {
+          transition: all .2s;
+          position: absolute;
+          left: -3px;
+          height: 24px;
+          width: 24px;
+          content: '';
+          filter: invert(.35);
+          transform: scale(.7);
+          background: url('../images/icons/phone.svg') 50% 50% no-repeat;
+        }
+        &:hover {
+          &::before {
+            filter: invert(.1);
+          }
+        }
+      }
+    }
+  }
+  &__right {
+    flex: 0 1 1045px;
+    @media (max-width: 1275px) {
+      margin-left: -15px; // убирает отступы при адаптиве
+      margin-right: -15px;
+    }
+    @media (max-width: 375px) {
+      margin-left: -10px; // убирает отступы при адаптиве
+      margin-right: -10px;
+    }
+  }
+}
+
+
+

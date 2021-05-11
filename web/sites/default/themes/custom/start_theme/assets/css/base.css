@@ -7,7 +7,8 @@ body {
 
 /* Global */
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   min-height: 100vh;
 }
 
@@ -29,7 +30,8 @@ body {
 }
 
 *, *:before, *:after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -45,6 +47,7 @@ a {
   text-decoration: none;
   color: #569797;
   display: inline-block;
+  -webkit-transition: all .2s;
   transition: all .2s;
 }
 
@@ -142,9 +145,11 @@ img {
   color: #fff !important;
   text-align: center;
   background-color: #569797;
+  -webkit-transition: all .2s;
   transition: all .2s;
   color: #fff !important;
-  box-shadow: 1px 3px 4px rgba(59, 59, 59, 0.45);
+  -webkit-box-shadow: 1px 3px 4px rgba(59, 59, 59, 0.45);
+          box-shadow: 1px 3px 4px rgba(59, 59, 59, 0.45);
 }
 
 .link-more a:first-letter {
@@ -152,11 +157,13 @@ img {
 }
 
 .link-more a:hover {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .link-more a:active {
-  box-shadow: inset 0px 5px 4px rgba(59, 59, 59, 0.3);
+  -webkit-box-shadow: inset 0px 5px 4px rgba(59, 59, 59, 0.3);
+          box-shadow: inset 0px 5px 4px rgba(59, 59, 59, 0.3);
 }
 
 .page-title {
@@ -170,6 +177,18 @@ img {
   .page-title {
     font-size: 19px;
   }
+}
+
+.file {
+  margin-bottom: 15px;
+}
+
+.file a {
+  color: #1f1d21;
+}
+
+.file a:hover {
+  color: #569797;
 }
 
 #block-start-theme-content .view-empty {
@@ -187,8 +206,10 @@ img {
   border-radius: 25px;
   background-color: #1565c0;
   color: #fff;
+  -webkit-transition: all .2s;
   transition: all .2s;
-  box-shadow: 1px 3px 4px rgba(59, 59, 59, 0.45);
+  -webkit-box-shadow: 1px 3px 4px rgba(59, 59, 59, 0.45);
+          box-shadow: 1px 3px 4px rgba(59, 59, 59, 0.45);
 }
 
 @media (max-width: 425px) {
@@ -199,11 +220,13 @@ img {
 }
 
 .views-field-edit-node a:hover {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .views-field-edit-node a:active {
-  box-shadow: inset 0px 5px 4px rgba(59, 59, 59, 0.3);
+  -webkit-box-shadow: inset 0px 5px 4px rgba(59, 59, 59, 0.3);
+          box-shadow: inset 0px 5px 4px rgba(59, 59, 59, 0.3);
 }
 
 .toolbar-icon-9 .views-field-edit-node a {

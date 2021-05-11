@@ -11,6 +11,7 @@ global:
       assets/css/breadcrumb.css: {}
     theme:
       assets/css/header.css: {}
+      assets/css/footer.css: {}
       assets/css/slider-banner.css: {}
       assets/css/slider-banners.css: {}
       assets/css/section-1.css: {}
@@ -37,6 +38,7 @@ global:
   js:
     assets/js/script.js: {}
     assets/js/header.js: {}
+    assets/js/footer.js: {}
     assets/js/section-1.js: {}
     assets/js/comments-slider.js: {}
 
@@ -72,4 +74,5 @@ slick:
 
 wow:
   js:
-     includes/js/bin/wow.min.js: { minified: true }   
+     includes/js/bin/wow.min.js: { minified: true }
+     

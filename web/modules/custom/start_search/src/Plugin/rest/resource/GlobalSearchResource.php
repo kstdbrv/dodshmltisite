@@ -149,7 +149,7 @@ class GlobalSearchResource extends ResourceBase implements DependentPluginInterf
       $cache = BubbleableMetadata::createFromRenderArray([
         '#cache' => [
           'contexts' => ['url.query_args:text'],
-          'max-age' => 1 * 0 * 0,
+          'max-age' => 0 * 0 * 0,
         ],
       ]);
 

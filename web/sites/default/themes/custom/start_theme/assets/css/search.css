@@ -4,7 +4,6 @@
 
 .search .view-filters {
   position: relative;
-  margin-top: 20px;
 }
 
 .search .js-form-item-text {
@@ -13,9 +12,13 @@
   outline: none;
   border: none;
   margin: 0;
-  padding: 14px 20px;
-  padding-left: 10px;
-  padding-right: 45px;
+  padding: 14px 45px 20px 10px;
+}
+
+@media (max-width: 555px) {
+  .search .js-form-item-text {
+    padding: 10px 13px 0px 0px;
+  }
 }
 
 .search .js-form-item-text input {
@@ -35,14 +38,20 @@
   margin: 0 0 8px 0;
   margin-top: 10px;
   padding-left: 10px;
-  box-shadow: none;
-  box-sizing: content-box;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  -webkit-transition: border .3s, -webkit-box-shadow .3s;
+  transition: border .3s, -webkit-box-shadow .3s;
   transition: box-shadow .3s, border .3s;
+  transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s;
 }
 
 .search .js-form-item-text input:focus:not([readonly]) {
   border-bottom: 1px solid #26a69a;
-  box-shadow: 0 1px 0 0 #26a69a;
+  -webkit-box-shadow: 0 1px 0 0 #26a69a;
+          box-shadow: 0 1px 0 0 #26a69a;
 }
 
 .search .form-submit {
@@ -59,4 +68,77 @@
   background-size: 100%;
   outline: none;
   border: none;
+}
+
+@media (max-width: 555px) {
+  .search .form-submit {
+    background-size: 85%;
+    right: 0;
+  }
+}
+
+.global-search {
+  margin-bottom: 25px;
+}
+
+.global-search__title {
+  margin-bottom: 5px;
+}
+
+.global-search__title a {
+  color: #1f1d21;
+}
+
+.global-search__title a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 555px) {
+  .global-search__overflow {
+    overflow-x: scroll;
+  }
+}
+
+.global-search__link {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 555px) {
+  .global-search__link {
+    width: 555px;
+  }
+}
+
+.global-search__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #000;
+  -webkit-filter: invert(0.35);
+          filter: invert(0.35);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.global-search__tags {
+  margin-left: 15px;
+}
+
+.global-search__tags .field__item {
+  display: inline-block;
+  color: #000;
+  -webkit-filter: invert(0.35);
+          filter: invert(0.35);
+}
+
+.global-search__text {
+  max-height: 65px;
+  overflow: hidden;
+}
+
+@media (max-width: 555px) {
+  .global-search__text {
+    max-height: 60px;
+  }
 }

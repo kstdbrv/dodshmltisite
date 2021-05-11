@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.head_info.field_email
     - field.field.node.head_info.field_image_flags
+    - field.field.node.head_info.field_location
     - field.field.node.head_info.field_phone
     - node.type.head_info
   module:
@@ -28,5 +29,8 @@ content:
 hidden:
   field_email: true
   field_image_flags: true
+  field_location: true
   field_phone: true
   langcode: true
+  search_api_excerpt: true
+  social_links: true

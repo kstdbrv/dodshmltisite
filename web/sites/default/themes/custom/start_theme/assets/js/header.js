@@ -67,7 +67,7 @@ $(document).ready(function () {
     $('.menu-header').attr('id', 'menu-mobile');
   }
 
-   $('#menu-mobile li.menu-header__item_collapsed>a').on('click', function () {
+  $('#menu-mobile li.menu-header__item_collapsed>a').on('click', function () {
      
       $(this).removeAttr('href');
       var element = $(this).parent('li');
@@ -84,5 +84,18 @@ $(document).ready(function () {
         element.siblings('li').find('li').removeClass('active');
         element.siblings('li').find('ul').slideUp();
       }
-    });
+  });
+
+
+     /* меняем место при адаптиве */
+  if ($(window).width() < 1450) {
+    $('.center-header__contacts').appendTo('#menu-mobile');
+  }
+
+  if ($(window).width() < 555) {
+      $('#block-views-block-social-links').appendTo('#menu-mobile');
+  }
+
 });
+
+

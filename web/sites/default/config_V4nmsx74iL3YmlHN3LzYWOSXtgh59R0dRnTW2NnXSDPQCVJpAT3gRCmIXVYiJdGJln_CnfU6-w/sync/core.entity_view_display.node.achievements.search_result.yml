@@ -1,0 +1,28 @@
+uuid: d7a7ff24-d467-40b7-b967-c93ceaaa2009
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.achievements.field_achievements_image
+    - field.field.node.achievements.field_achievements_txt
+    - node.type.achievements
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.achievements.search_result
+targetEntityType: node
+bundle: achievements
+mode: search_result
+content: {  }
+hidden:
+  field_achievements_image: true
+  field_achievements_txt: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  social_links: true

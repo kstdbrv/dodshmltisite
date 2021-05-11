@@ -1,9 +1,11 @@
 .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex: 0 1 100%;
-  margin-top: 7px;
-  margin-bottom: 7px;
-  margin-left: 40px;
+  margin-left: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .social-links li:not(:last-child) {
@@ -12,6 +14,7 @@
 
 .social-links li {
   background-color: #fff;
+  -webkit-transition: all .2s;
   transition: all .2s;
 }
 
@@ -21,14 +24,12 @@
   color: transparent;
 }
 
-@media (max-width: 475px) {
+@media (max-width: 555px) {
   .social-links li a {
     padding: 0;
     padding-top: 20px;
     margin-bottom: 40px;
-  }
-  .social-links li a li:not(:last-child) {
-    margin-right: 0px;
+    margin-left: 0;
   }
 }
 

@@ -80,5 +80,58 @@ $(window).scroll(function () {
   
     }); */
 
+    (function ($) {
+      // при клике удаляет placeholder
+      Drupal.behaviors.hidePlaceholder = {
+       attach: function (context, settings) {
+         $('input, texterea', context).once('hide-placeholder').each(function(){
+          
+          var _this = $(this);
+          $(this).on("click", function(){
+            var __this = $(this);
+            var placeholder = __this.attr('placeholder');
+            __this.attr('placeholder', "");
+            _this.attr('data-placeholder', placeholder)
+          }).blur(function(){
+            var __this = $(this);
+            var placeholder = __this.attr('data-placeholder');
+            __this.attr('placeholder', placeholder);
+          })
+
+         });
+       }
+      };
+     })(jQuery);
+
+ /**
+ * @file
+ * Mobile menu behaviors.
+ */
+
+//(function(Drupal) {
+//
+//  Drupal.behaviors.dlogMobileMenu = {
+//    attach: function(context, settings) {
+//      let toggler = context.querySelector('.mobile-menu-toggle:not(.//menu-toggle--processed)');
+//      let mobileMenu = context.querySelector('.header-mobile__content');
+//
+//      if (toggler && mobileMenu) {
+//        toggler.addEventListener('click', e => {
+//          this.toggle(e, mobileMenu);
+//        });
+//        toggler.classList.add('menu-toggle--processed');
+//      }
+//    },
+//
+//    toggle: function(event, mobileMenu) {
+//      event.target.classList.toggle('header-mobile__menu-button--active');
+//      mobileMenu.classList.toggle('header-mobile__content--active');
+//    },
+//  };
+//
+//})(Drupal);
+
+
+
 
 

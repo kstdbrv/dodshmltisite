@@ -28,9 +28,10 @@
   }
 }
 .top-header {
+  min-height: 40px;
   &__column:nth-child(1) {
     display: flex;
-    flex: 0 1 550px;
+    flex: 0 1 850px;
     #block-poisk {
       height: 30px;
       position: relative;

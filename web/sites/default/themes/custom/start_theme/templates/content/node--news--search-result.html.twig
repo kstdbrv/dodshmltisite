@@ -1,6 +1,6 @@
 {%
   set classes = [
-    'news-search',
+    'global-search',
     'node',
     'node-' ~ node.bundle|clean_class,
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
@@ -9,14 +9,20 @@
 
 <div{{ attributes.addClass(classes) }}>
 
-  <h2 class="news-search__title"><a href="{{ url }}">{{ label }}</a></h2>
-  <a href="{{ url }}" class="news-search__link">{{ url_absolute }}</a>
-  <div class="news-search__created">{{ node.getCreatedTime()|date("d.m.Y") }}</div>
-  {% set field_tegs = content.field_tegs|render %}
-  {% if field_tegs|length %}
-  <div class="news-search__tags">{{ content.field_tegs }}</div>
-  {% endif %}
-  <div class="news-search__text">{{ content.field_text }}</div>
+  <h2 class="global-search__title"><a href="{{ url }}">{{ label }}</a></h2>
+  <div class="global-search__overflow">
+    <a href="{{ url }}" class="global-search__link">{{ url_absolute }}</a>
+  </div>
+
+  <div class="global-search__wrap">
+    <div class="global-search__created">{{ node.getCreatedTime()|date("d.m.Y") }}</div>
+    {% set field_tegs = content.field_tegs|render %}
+    {% if field_tegs|length %}
+    <div class="global-search__tags">{{ content.field_tegs }}</div>
+    {% endif %}
+  </div>
+
+  <div class="global-search__text">{{ content.field_text }}</div>
 
 </div>
 
