@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.head_info.field_email
+    - field.field.node.head_info.field_full_name
     - field.field.node.head_info.field_image_flags
     - field.field.node.head_info.field_location
     - field.field.node.head_info.field_phone
@@ -20,6 +21,13 @@ mode: default
 content:
   field_email:
     weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_full_name:
+    weight: 5
     label: above
     settings: {  }
     third_party_settings: {  }

@@ -23,14 +23,12 @@
   background-color: #8ccaca;
   height: 221px;
   text-align: center;
-  -webkit-transition: .2s;
   transition: .2s;
   overflow: hidden;
 }
 
 #block-views-block-achievements .views-row:hover, #block-views-block-achievements .field-content:hover, .achievements-full .views-row:hover, .achievements-full .field-content:hover {
-  -webkit-box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
-          box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+  box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
 }
 
 #block-views-block-achievements .views-row:hover img, #block-views-block-achievements .field-content:hover img, .achievements-full .views-row:hover img, .achievements-full .field-content:hover img {
@@ -39,6 +37,5 @@
 }
 
 #block-views-block-achievements .views-row img, #block-views-block-achievements .field-content img, .achievements-full .views-row img, .achievements-full .field-content img {
-  -webkit-transition: 1s;
   transition: 1s;
 }

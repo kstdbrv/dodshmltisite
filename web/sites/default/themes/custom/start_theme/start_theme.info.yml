@@ -34,4 +34,5 @@ regions:
   section_7: 'Секция-7'
   section_8: 'Секция-8'
   footer_top: 'Подвал-верх'
-  footer_bottom: 'Подвал-низ'
+  footer_bottom_left: 'Подвал-низ-лево'
+  footer_bottom_right: 'Подвал-низ-право'

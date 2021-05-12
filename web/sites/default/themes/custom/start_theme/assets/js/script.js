@@ -12,6 +12,12 @@ $(window).scroll(function () {
      } else {
          $('.button-up').fadeOut();
      }
+  
+     if ($(this).scrollTop() > 50) {
+      $('.button-up').fadeIn();
+  } else {
+      $('.button-up').fadeOut();
+  }
  });
  /** При нажатии на кнопку мы перемещаемся к началу страницы */
  $('.button-up').click(function () {

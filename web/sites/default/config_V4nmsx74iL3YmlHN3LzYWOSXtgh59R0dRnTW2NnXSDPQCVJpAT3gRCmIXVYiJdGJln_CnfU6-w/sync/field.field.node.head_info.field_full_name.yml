@@ -1,0 +1,19 @@
+uuid: f6321d23-5568-4900-924f-05f9ffbbc504
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_full_name
+    - node.type.head_info
+id: node.head_info.field_full_name
+field_name: field_full_name
+entity_type: node
+bundle: head_info
+label: 'Полное название ОО'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

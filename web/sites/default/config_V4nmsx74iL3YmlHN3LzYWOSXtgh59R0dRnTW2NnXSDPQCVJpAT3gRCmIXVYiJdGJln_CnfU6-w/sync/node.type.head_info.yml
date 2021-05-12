@@ -8,9 +8,9 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
-name: 'Шапка сайта'
+name: 'Инфо сайта'
 type: head_info
-description: 'Контакты (почта, телефон организации) + изображения слева (гербы)'
+description: 'Информация о сайте (гербы + контакты + полное название ОО)'
 help: ''
 new_revision: false
 preview_mode: 1

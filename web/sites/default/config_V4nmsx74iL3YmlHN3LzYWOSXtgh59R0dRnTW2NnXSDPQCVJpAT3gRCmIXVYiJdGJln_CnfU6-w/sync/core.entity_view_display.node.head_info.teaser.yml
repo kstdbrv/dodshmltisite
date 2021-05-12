@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.head_info.field_email
+    - field.field.node.head_info.field_full_name
     - field.field.node.head_info.field_image_flags
     - field.field.node.head_info.field_location
     - field.field.node.head_info.field_phone
@@ -28,6 +29,7 @@ content:
     region: content
 hidden:
   field_email: true
+  field_full_name: true
   field_image_flags: true
   field_location: true
   field_phone: true

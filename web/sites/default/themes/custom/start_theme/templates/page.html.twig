@@ -173,8 +173,20 @@
    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/35/krasnodar/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Краснодар</a><a href="https://yandex.ru/maps/profile?ll=38.963168%2C45.069047&utm_medium=mapframe&utm_source=maps&z=16" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCU4i0RddB" width="100%" height="370px" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe></div>  
   </div>
  </div>
-  <div class="footer__bottom">
-  {{ page.footer_bottom }}
+  <div class="footer__bottom bottom-footer">
+    <div class="container">
+     <div class="bottom-footer__column">
+      <p>Сайт создан на основе шаблона МКУКМЦИКТ «Старт»</p>
+      {{ page.footer_bottom_left }}
+     </div>
+     <div class="bottom-footer__column">
+      {{ page.footer_bottom_right }}
+     </div>
+     <div class="bottom-footer__column">
+      <a class="bottom-footer__links" href="#">Политика конфиденциальности</a>
+      <a class="bottom-footer__links" href="#">Использование Cookie</a>
+     </div>
+    </div>
  </div>
 </footer>
 

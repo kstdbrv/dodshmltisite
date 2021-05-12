@@ -1,0 +1,25 @@
+uuid: 3e75a5e6-ece9-47f5-a720-e135ccfbeb6e
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:94c80767-3985-40ca-9e9c-3156dc38bdfb'
+  module:
+    - block_content
+  theme:
+    - start_theme
+id: counter
+theme: start_theme
+region: footer_bottom_right
+weight: 0
+provider: null
+plugin: 'block_content:94c80767-3985-40ca-9e9c-3156dc38bdfb'
+settings:
+  id: 'block_content:94c80767-3985-40ca-9e9c-3156dc38bdfb'
+  label: 'Счетчик посещений'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.head_info.field_email
+    - field.field.node.head_info.field_full_name
     - field.field.node.head_info.field_image_flags
     - field.field.node.head_info.field_location
     - field.field.node.head_info.field_phone
@@ -31,6 +32,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: email_default
+    region: content
+  field_full_name:
+    weight: 8
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
     region: content
   field_image_flags:
     weight: 7
