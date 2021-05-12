@@ -52,7 +52,7 @@ global:
     - core/drupal.ajax
     - core/drupal
     - core/drupalSettings
-    - core/jquery.once
+  #  - core/jquery.once
   #  - core/once c 9.2.0
   
 adobe.fonts:

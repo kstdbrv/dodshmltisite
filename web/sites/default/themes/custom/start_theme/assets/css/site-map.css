@@ -1,3 +1,31 @@
 #block-site-map {
   white-space: nowrap;
 }
+
+.sitemap .sitemap-item h2 {
+  color: #569797;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.sitemap .sitemap-menu a {
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.sitemap .sitemap-menu .main-menu__item_collapsed > a::before {
+  left: -20px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.sitemap .sitemap-menu .submenu, .sitemap .sitemap-menu .submenu-2 {
+  margin-left: 15px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-left: 1px solid #569797;
+}
+
+.sitemap .sitemap-menu .submenu a, .sitemap .sitemap-menu .submenu-2 a {
+  padding-left: 5px;
+}

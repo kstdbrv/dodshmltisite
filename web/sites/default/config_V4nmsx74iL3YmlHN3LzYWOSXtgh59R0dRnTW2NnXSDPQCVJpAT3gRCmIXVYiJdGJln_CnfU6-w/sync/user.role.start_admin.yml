@@ -73,6 +73,7 @@ permissions:
   - 'administer search_api'
   - 'administer shortcuts'
   - 'administer site configuration'
+  - 'administer sitemap'
   - 'administer slick'
   - 'administer software updates'
   - 'administer statistics'

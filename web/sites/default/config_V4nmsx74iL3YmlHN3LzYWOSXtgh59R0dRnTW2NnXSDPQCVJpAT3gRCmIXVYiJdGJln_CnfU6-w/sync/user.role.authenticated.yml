@@ -13,6 +13,7 @@ permissions:
   - 'access content'
   - 'access shortcuts'
   - 'access site-wide contact form'
+  - 'access sitemap'
   - 'post comments'
   - 'restful get dlog_search_global_index'
   - 'search content'
