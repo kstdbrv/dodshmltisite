@@ -1,7 +1,7 @@
 $ = jQuery.noConflict();
 // инициализируем анамацию появления блоков
 // https://wowjs.uk/docs.html
-new WOW().init();
+//new WOW().init();
 //https://animate.style/  - эффекты
 
 
@@ -150,7 +150,7 @@ $('#modal_login').modal();
 //
 //})(Drupal);
 
-
+// добавляет стили для страницы sitemap
 if ($('.sitemap').length) {
   $('.sitemap .main-menu').addClass('sitemap-menu');
   $('.sitemap .main-menu').removeClass('main-menu');

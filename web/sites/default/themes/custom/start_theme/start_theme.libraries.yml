@@ -5,7 +5,7 @@ global:
       assets/css/base.css: {}
     layout:
       includes/css/slick.css: {}
-      includes/css/animate.css: {}
+    #  includes/css/animate.css: {}
       assets/css/tabs.css: {}
       assets/css/login-popup.css: {}
       assets/css/breadcrumb.css: {}
@@ -33,7 +33,8 @@ global:
       assets/css/section-8.css: {}
       assets/css/useful-links.css: {}
       assets/css/search.css: {}
-      assets/css/site-map.css: {}
+      assets/css/sitemap.css: {}
+      assets/css/contact.css: {}
       
   js:
     assets/js/script.js: {}
@@ -43,22 +44,16 @@ global:
     assets/js/comments-slider.js: {}
 
   dependencies:
-    - start_theme/adobe.fonts
     - start_theme/dynamic-adapt
     - start_theme/slick
-    - start_theme/wow
     - start_theme/materialize
     - core/jquery
     - core/drupal.ajax
     - core/drupal
     - core/drupalSettings
+  #  - start_theme/wow
   #  - core/jquery.once
   #  - core/once c 9.2.0
-  
-adobe.fonts:
-  css:
-    theme:
-      //use.typekit.net/iub5xya.css: { type: external, minified: true }
       
 materialize:
   js:
@@ -72,7 +67,7 @@ slick:
   js:
      includes/js/bin/slick.min.js: { minified: true }
 
-wow:
-  js:
-     includes/js/bin/wow.min.js: { minified: true }
+#wow:
+#  js:
+#     includes/js/bin/wow.min.js: { minified: true }
      

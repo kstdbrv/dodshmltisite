@@ -189,6 +189,25 @@
     a {
       color:#fff;
     }
+    .line {
+      position: relative;
+      margin-bottom: 14px;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 29px;
+        left: 29px;
+        width: 195px;
+        height: 1px;
+        background-color: #fff;
+        @media (max-width:1050px) {
+          display: none;
+        }
+      }
+      @media (max-width:1050px) {
+        margin-bottom: 0px;
+      }
+    }
    }
 }
 

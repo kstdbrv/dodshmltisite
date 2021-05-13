@@ -105,15 +105,15 @@
 {% if page.section_2_center %}
 <section class="section-2{{ grid }}">
 {% if page.section_2_left %}
-  <aside class="section-2__left wow animate__animated animate__slideInLeft" data-wow-offset="100">
+  <aside class="section-2__left">
     {{ page.section_2_left }}
   </aside>
 {% endif %}
-  <div class="section-2__content wow animate__animated animate__slideInUp" data-wow-offset="100">
+  <div class="section-2__content">
     {{ page.section_2_center }}
   </div>
 {% if page.section_2_right %}
-  <aside class="section-2__right wow animate__animated animate__slideInRight" data-wow-offset="100">
+  <aside class="section-2__right">
      {{ page.section_2_right }}
   </aside>
 {% endif %}  
@@ -121,7 +121,7 @@
 {% endif %}
 
 {% if page.section_3 %}
-<section class="section-3 wow animate__animated animate__slideInUp" data-wow-offset="100">
+<section class="section-3">
   <div class="container">
   {{ page.section_3 }}
   </div>
@@ -129,7 +129,7 @@
 {% endif %}
 
 {% if page.section_4 %}
-<section class="section-4 wow animate__animated animate__slideInUp" data-wow-offset="100">
+<section class="section-4">
   <div class="container">
   {{ page.section_4 }}
   </div>
@@ -183,8 +183,8 @@
       {{ page.footer_bottom_right }}
      </div>
      <div class="bottom-footer__column">
-      <a class="bottom-footer__links" href="#">Политика конфиденциальности</a>
-      <a class="bottom-footer__links" href="#">Использование Cookie</a>
+      <a class="line" href="/privacy-policy">Политика конфиденциальности</a>
+      <a href="#">Использование Cookie</a>
      </div>
     </div>
  </div>

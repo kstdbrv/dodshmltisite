@@ -1,0 +1,70 @@
+#block-descr-contact-form {
+  margin-top: 15px;
+}
+
+.contact-message-feedback-form .form-item-name, .contact-message-feedback-form .form-type-email, .contact-message-feedback-form .js-form-type-textfield {
+  padding-right: 10px;
+}
+
+.contact-message-feedback-form textarea {
+  width: 100%;
+  margin-top: 15px;
+  border: 1px solid #a7a6a6;
+  height: 222px;
+  resize: none;
+  padding: 10px;
+}
+
+.contact-message-feedback-form .button.form-submit {
+  text-transform: lowercase;
+  outline: none;
+  border: none;
+  /* text-transform: uppercase; */
+  letter-spacing: .12px;
+  height: 50px;
+  /* padding: 15px 25px 17px; */
+  padding: 13px 25px 17px;
+  text-decoration: none !important;
+  color: #fff !important;
+  text-align: center;
+  background-color: #569797;
+  transition: all .2s;
+  color: #fff !important;
+  box-shadow: 1px 3px 4px rgba(59, 59, 59, 0.45);
+}
+
+.contact-message-feedback-form .button.form-submit:first-letter {
+  text-transform: capitalize;
+}
+
+.contact-message-feedback-form .button.form-submit:hover {
+  box-shadow: none;
+}
+
+.contact-message-feedback-form .button.form-submit:active {
+  box-shadow: inset 0px 5px 4px rgba(59, 59, 59, 0.3);
+}
+
+.contact-message-feedback-form #edit-preview {
+  display: none;
+}
+
+.contact-message-feedback-form input[type=text]:not(.browser-default), .contact-message-feedback-form input[type=email]:not(.browser-default) {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #9e9e9e;
+  border-radius: 0;
+  outline: none;
+  height: 2.5rem;
+  width: 100%;
+  font-size: 19px;
+  padding-left: 10px;
+  box-shadow: none;
+  box-sizing: content-box;
+  transition: box-shadow .3s, border .3s;
+}
+
+.contact-message-feedback-form input:not([type]):focus:not([readonly]), .contact-message-feedback-form input[type=text]:not(.browser-default):focus:not([readonly]), .contact-message-feedback-form input[type=password]:not(.browser-default):focus:not([readonly]), .contact-message-feedback-form input[type=email]:not(.browser-default):focus:not([readonly]), .contact-message-feedback-form input[type=url]:not(.browser-default):focus:not([readonly]), .contact-message-feedback-form input[type=time]:not(.browser-default):focus:not([readonly]), .contact-message-feedback-form input[type=date]:not(.browser-default):focus:not([readonly]), .contact-message-feedback-form input[type=datetime]:not(.browser-default):focus:not([readonly]), .contact-message-feedback-form input[type=datetime-local]:not(.browser-default):focus:not([readonly]), .contact-message-feedback-form input[type=tel]:not(.browser-default):focus:not([readonly]), .contact-message-feedback-form input[type=number]:not(.browser-default):focus:not([readonly]), .contact-message-feedback-form input[type=search]:not(.browser-default):focus:not([readonly]), .contact-message-feedback-form textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #26a69a;
+  box-shadow: 0 1px 0 0 #26a69a;
+}

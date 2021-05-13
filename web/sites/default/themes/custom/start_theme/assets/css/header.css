@@ -57,6 +57,7 @@
 
 .top-header__column:nth-child(1) {
   display: flex;
+  align-items: center;
   flex: 0 1 850px;
 }
 

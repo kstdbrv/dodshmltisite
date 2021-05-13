@@ -3,6 +3,8 @@
 /* для всех таблиц */
 
 table {
+  border-collapse: collapse;
+  border-spacing: 0;
   margin-top: $distance;
   margin-bottom: 45px;
   background-color: #fff;

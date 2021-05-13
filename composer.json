@@ -47,6 +47,7 @@
         "drupal/devel_kint_extras": "^1.0",
         "drupal/easy_breadcrumb": "^1.15",
         "drupal/flexslider": "^2.0",
+        "drupal/fz152": "^1.8",
         "drupal/imagemagick": "^3.1",
         "drupal/imce": "^2.3",
         "drupal/libraries": "^3.0@beta",

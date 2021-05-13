@@ -1,4 +1,6 @@
 @import "vars";
+@import "./form.scss";
+@import "./messages.scss";
 
 /* Global */
 html {
@@ -98,7 +100,7 @@ img {
   }
 }
 
-.link-more {
+.link-more { // кнопка смотреть еще
   display: table;
   margin: 0 auto;
   a {
@@ -285,4 +287,3 @@ img {
     }
   }
 }
-
