@@ -8,4 +8,3 @@ cookie:
     js/cookie.js: {}
   dependencies:
     - core/jquery
-    - core/jquery.once

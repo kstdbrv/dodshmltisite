@@ -10,4 +10,3 @@ info_block:
     
   dependencies:
     - core/jquery
-    - core/jquery.once

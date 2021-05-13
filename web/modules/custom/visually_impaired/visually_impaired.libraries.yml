@@ -4,16 +4,13 @@ visually_impaired:
     base:
       css/bvi.min.css: {}
       css/bvi-font.min.css: {}
-      css/style.css: {}
   js:
     js/custom.js: {}
     js/responsivevoice.min.js: {}
     js/js.cookie.min.js: {}
     js/bvi-init.js: {}
     js/bvi.min.js: {}
-    js/removeClass.js: {}
 
 
   dependencies:
     - core/jquery
-    - core/jquery.once
