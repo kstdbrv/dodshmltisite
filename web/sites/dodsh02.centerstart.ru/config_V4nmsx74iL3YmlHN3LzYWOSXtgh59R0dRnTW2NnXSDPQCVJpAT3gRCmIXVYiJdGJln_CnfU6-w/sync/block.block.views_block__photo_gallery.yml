@@ -1,0 +1,29 @@
+uuid: fb9b8b7e-47e0-4c42-bcd4-c5491ea556a8
+langcode: ru
+status: true
+dependencies:
+  config:
+    - views.view.photo_gallery
+  module:
+    - system
+    - views
+  theme:
+    - start_theme
+id: views_block__photo_gallery
+theme: start_theme
+region: section_3
+weight: -17
+provider: null
+plugin: 'views_block:photo_gallery-block_1'
+settings:
+  id: 'views_block:photo_gallery-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

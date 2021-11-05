@@ -1,0 +1,15 @@
+uuid: 80e869c5-2a7e-4485-9ea9-e1f8d992fdcb
+langcode: ru
+status: true
+dependencies: {  }
+name: achievements
+label: 'Достижения ()'
+effects:
+  feacba78-214b-4269-963c-b7694072fae2:
+    uuid: feacba78-214b-4269-963c-b7694072fae2
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 155
+      height: 221
+      anchor: center-center

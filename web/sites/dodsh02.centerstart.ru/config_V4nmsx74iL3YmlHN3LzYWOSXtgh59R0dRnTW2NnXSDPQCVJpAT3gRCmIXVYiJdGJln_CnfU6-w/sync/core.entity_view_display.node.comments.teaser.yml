@@ -1,0 +1,30 @@
+uuid: 873df437-0852-473f-aea1-322f53c76a8c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.comments.field_comment
+    - field.field.node.comments.field_face
+    - field.field.node.comments.field_name
+    - field.field.node.comments.field_photo
+    - node.type.comments
+  module:
+    - user
+id: node.comments.teaser
+targetEntityType: node
+bundle: comments
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_comment: true
+  field_face: true
+  field_name: true
+  field_photo: true
+  langcode: true
+  social_links: true

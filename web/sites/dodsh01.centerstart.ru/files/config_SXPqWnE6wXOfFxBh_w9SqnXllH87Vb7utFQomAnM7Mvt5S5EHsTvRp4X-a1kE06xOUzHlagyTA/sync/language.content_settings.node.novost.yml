@@ -1,0 +1,18 @@
+uuid: 04eae310-07e5-404d-b6bc-6102b8b21807
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.novost
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.novost
+target_entity_type_id: node
+target_bundle: novost
+default_langcode: site_default
+language_alterable: false

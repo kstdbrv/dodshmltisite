@@ -1,0 +1,8 @@
+uuid: d1308593-1d33-4929-8cee-f60609e72280
+langcode: ru
+status: true
+dependencies: {  }
+id: shapka
+label: Шапка
+revision: 0
+description: ''

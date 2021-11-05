@@ -1,0 +1,22 @@
+uuid: 483f5d9c-387d-46e3-b267-e1ad0a4594ee
+langcode: ru
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - professional_responsive_theme
+_core:
+  default_config_hash: JM8_Iyo3pw-NaEtTd6WFiMCP-pDUgWZU-2D0eag5QZk
+id: professional_responsive_theme_search
+theme: professional_responsive_theme
+region: sidebar_second
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Поиск
+  provider: search
+  label_display: visible
+visibility: {  }

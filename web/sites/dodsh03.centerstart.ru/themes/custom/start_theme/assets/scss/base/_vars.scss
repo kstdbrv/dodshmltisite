@@ -1,0 +1,30 @@
+// COLORS
+$mainFontColor           : #242424;
+$mainColor               : #016a94;
+$secondColor             : #0083b7;
+$activeColor             : #d60202;
+$mainFontSize            : 17px;
+$mainLineHeight          : 1.15;
+$distance                : 15px;
+$distanceBlock           : 30px;
+
+
+@font-face { 
+  font-family: 'Antelive-Bold';
+  src: url('../../assets/fonts/antelive-Bold.woff2') format('woff2'),
+       url('../../assets/fonts/antelive-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+//FONTS
+%montserrat-regular { //mainFont
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+%antelive-Bold { 
+  font-family: 'Antelive-Bold', sans-serif;
+  font-weight: 700;
+}

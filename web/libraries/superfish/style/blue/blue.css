@@ -34,10 +34,10 @@ ul.sf-menu.sf-style-blue span.sf-description {
   margin: 0.25em 0 0 0;
   padding: 0;
 }
-ul.sf-menu.sf-style-blue li,
+/* ul.sf-menu.sf-style-blue li,
 ul.sf-menu.sf-style-blue.sf-navbar {
   background: #095cb1;
-}
+} */
 ul.sf-menu.sf-style-blue li li,
 ul.sf-menu.sf-style-blue.sf-navbar > li > ul {
   background: #0151a4;
@@ -50,8 +50,8 @@ ul.sf-menu.sf-style-blue li.sfHover,
 ul.sf-menu.sf-style-blue a:focus,
 ul.sf-menu.sf-style-blue a:hover,
 ul.sf-menu.sf-style-blue span.nolink:hover {
-  background: #3270c5;
-  color: #ffea00;
+  /* background: #3270c5; */
+  /* color: #ffea00; */
   outline: 0;
 }
 .sf-menu.sf-style-blue.sf-navbar li ul {

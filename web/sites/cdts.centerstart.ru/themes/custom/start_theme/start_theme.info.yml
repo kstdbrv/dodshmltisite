@@ -1,0 +1,36 @@
+# Theme base information.
+screenshot: logo.png
+name: start_theme
+type: theme
+base theme: false
+description: 'template for centerstart website'
+core_version_requirement: ^8 || ^9
+#package: Core
+
+libraries:
+  - start_theme/global
+
+regions:
+  header_top_left: 'Шапка-верх-лево'
+  header_top_right: 'Шапка-верх-право'
+  header_center_flags: 'Шапка (гербы)'
+  header_center_name: 'Шапка (название)'
+  header_center_logo: 'Шапка (логотип)'
+  header_center_contacts: 'Шапка (контакты)'
+  menu: 'Меню в шапке'
+  slider: 'Слайдер'
+  system: 'Система'
+  sidebar_menu: 'Главное меню (левое)'
+  section_1: 'Секция-1'
+  section_2_left: 'Секция-2 слева'
+  section_2_center: 'Секция-2 центр'
+  section_2_right: 'Секция-2 справа'
+  section_3: 'Секция-3'
+  section_4: 'Секция-4'
+  section_5: 'Секция-5'
+  section_6: 'Секция-6'
+  section_7: 'Секция-7'
+  section_8: 'Секция-8'
+  footer_top: 'Подвал-верх'
+  footer_bottom_left: 'Подвал-низ-лево'
+  footer_bottom_right: 'Подвал-низ-право'

@@ -1,0 +1,14 @@
+uuid: 7197e7f8-c8a4-49ed-8447-5f000b26a440
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Написать нам письмо'
+recipients:
+  - kstdbrv1@gmail.com
+reply: ''
+weight: 0
+message: 'Ваше сообщение отправлено.'
+redirect: /

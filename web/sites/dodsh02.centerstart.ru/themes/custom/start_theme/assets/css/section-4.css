@@ -1,0 +1,20 @@
+.section-4 .block.block-views h2 {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.section-4 {
+  margin-top: 65px;
+  margin-bottom: 65px;
+}
+
+.section-4 .block.block-views h2 {
+  margin-left: -10px;
+  margin-right: -10px;
+  color: #fff;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+}

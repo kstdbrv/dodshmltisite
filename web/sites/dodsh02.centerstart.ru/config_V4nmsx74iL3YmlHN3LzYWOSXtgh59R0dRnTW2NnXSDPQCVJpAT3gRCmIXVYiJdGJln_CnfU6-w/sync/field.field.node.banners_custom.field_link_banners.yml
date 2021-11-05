@@ -1,0 +1,23 @@
+uuid: eb4a3768-f5b2-4988-9284-566d4f9e70f0
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_banners
+    - node.type.banners_custom
+  module:
+    - link
+id: node.banners_custom.field_link_banners
+field_name: field_link_banners
+entity_type: node
+bundle: banners_custom
+label: 'Ссылка для баннера'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

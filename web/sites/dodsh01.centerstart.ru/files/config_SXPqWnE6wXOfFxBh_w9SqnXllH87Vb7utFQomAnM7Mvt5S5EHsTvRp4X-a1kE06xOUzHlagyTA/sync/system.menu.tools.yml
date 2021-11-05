@@ -1,0 +1,10 @@
+uuid: b73f6eb3-d8f1-4385-a473-1b18d903f23a
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: BCM-vV1zzRaLHN18dqAR_CuGOj8AFJvTx7BKl_8Gcxc
+id: tools
+label: Tools
+description: 'Ссылки инструментов пользователя, часто добавленные модулями'
+locked: true

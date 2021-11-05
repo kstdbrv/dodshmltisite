@@ -1,0 +1,30 @@
+uuid: 0a70bccb-6e0f-4168-af3a-1968ca88c6e2
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:fd4b1093-03bf-4871-8221-fde5b6e93d79'
+  module:
+    - block_content
+    - system
+  theme:
+    - start_theme
+id: targets
+theme: start_theme
+region: section_2_center
+weight: -17
+provider: null
+plugin: 'block_content:fd4b1093-03bf-4871-8221-fde5b6e93d79'
+settings:
+  id: 'block_content:fd4b1093-03bf-4871-8221-fde5b6e93d79'
+  label: 'Направленности (заглавие блока)'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

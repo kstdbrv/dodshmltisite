@@ -1,0 +1,16 @@
+uuid: 20d396c2-8443-403d-8755-5954adcaf8e6
+langcode: ru
+status: true
+dependencies:
+  config:
+    - block_content.type.shapka
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: block_content.shapka
+target_entity_type_id: block_content
+target_bundle: shapka
+default_langcode: site_default
+language_alterable: false

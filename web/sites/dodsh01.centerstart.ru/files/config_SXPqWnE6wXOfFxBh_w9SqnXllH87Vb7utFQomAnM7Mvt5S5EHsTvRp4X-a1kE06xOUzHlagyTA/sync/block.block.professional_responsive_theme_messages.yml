@@ -1,0 +1,22 @@
+uuid: ead65874-62a8-4334-9698-2a6568071f09
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - professional_responsive_theme
+_core:
+  default_config_hash: YFzXMOJOhs9d7fIh8s1cKkKnDnPETiKBFRXfrib8SB0
+id: professional_responsive_theme_messages
+theme: professional_responsive_theme
+region: highlighted
+weight: -50
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

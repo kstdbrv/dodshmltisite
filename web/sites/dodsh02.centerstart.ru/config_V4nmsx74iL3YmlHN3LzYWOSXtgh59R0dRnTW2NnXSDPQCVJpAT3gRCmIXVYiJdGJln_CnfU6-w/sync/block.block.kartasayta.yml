@@ -1,0 +1,25 @@
+uuid: 9a366e68-b474-43c9-a8c8-9e37d307bf97
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:50d22246-e8b3-470c-9b6a-ea10076e63a1'
+  module:
+    - block_content
+  theme:
+    - start_theme
+id: kartasayta
+theme: start_theme
+region: footer_bottom_right
+weight: 0
+provider: null
+plugin: 'block_content:50d22246-e8b3-470c-9b6a-ea10076e63a1'
+settings:
+  id: 'block_content:50d22246-e8b3-470c-9b6a-ea10076e63a1'
+  label: 'Карта сайта'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

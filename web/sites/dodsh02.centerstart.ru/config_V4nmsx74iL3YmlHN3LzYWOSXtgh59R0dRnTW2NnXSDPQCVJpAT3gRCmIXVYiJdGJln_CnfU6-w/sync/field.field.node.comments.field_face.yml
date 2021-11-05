@@ -1,0 +1,38 @@
+uuid: 73cfb62b-1eba-4c5c-8b36-be1ab835985d
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_face
+    - node.type.comments
+  module:
+    - image
+id: node.comments.field_face
+field_name: field_face
+entity_type: node
+bundle: comments
+label: Смайлы
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: images/comments
+  file_extensions: 'png gif jpg jpeg svg'
+  max_filesize: '1  MB'
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: 11
+    height: 7
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

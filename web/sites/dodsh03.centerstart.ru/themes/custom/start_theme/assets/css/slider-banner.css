@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'Antelive-Bold';
+  src: url("../../assets/fonts/antelive-Bold.woff2") format("woff2"), url("../../assets/fonts/antelive-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+.slider-banner {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1025px) {
+  .slider-banner .view-content {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .slider-banner .view-content {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}
+
+.slider-banner .slick {
+  border: 1px solid #a7a6a6;
+}
+
+.slider-banner .slick, .slider-banner .slick-wrapper {
+  max-width: 100%;
+  position: relative;
+}
+
+.slider-banner .slick-arrow.slick-prev, .slider-banner .slick-arrow.slick-next {
+  height: 46px;
+  width: 25px;
+  -webkit-filter: invert(0.5);
+          filter: invert(0.5);
+}
+
+.slider-banner .slick-arrow.slick-prev:hover, .slider-banner .slick-arrow.slick-next:hover {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.slider-banner .slick-arrow.slick-prev {
+  left: 95px;
+}
+
+.slider-banner .slick-arrow.slick-prev::before {
+  background-image: url("../images/icons/arrow.png");
+  height: 46px;
+  width: 25px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.slider-banner .slick-arrow.slick-next {
+  right: 95px;
+}
+
+.slider-banner .slick-arrow.slick-next::before {
+  background-image: url("../images/icons/arrow.png");
+  background-color: transparent;
+  height: 46px;
+  width: 25px;
+}
+
+.slider-banner .slick-dots {
+  bottom: 40px;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .slider-banner .slick-dots {
+    bottom: 25px;
+  }
+}
+
+@media (max-width: 440px) {
+  .slider-banner .slick-dots {
+    bottom: 15px;
+  }
+}
+
+.slider-banner .slick-dots button {
+  width: 11px;
+  height: 11px;
+}
+
+@media (max-width: 640px) {
+  .slider-banner .slick-dots button {
+    width: 7px;
+    height: 7px;
+  }
+}
+
+.slider-banner .views-field-field-image a {
+  position: relative;
+}
+
+.slider-banner .views-field-edit-node a {
+  bottom: 20px;
+  right: 25px;
+}
+
+.slider-banner a {
+  display: block;
+}

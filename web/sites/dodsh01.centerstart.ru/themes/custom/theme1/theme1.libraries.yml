@@ -1,0 +1,72 @@
+global-css:
+  version: VERSION
+  css:
+    theme:
+     css/fonts.css: {}
+     css/index.css: {}
+     css/media.css: {}
+#     css/menu.css:  {}
+     css/file.css: {}
+     css/maintenance-page.css: {}
+     css/form.css: {}
+     css/buttons.css: {}
+     css/table.css: {}
+     css/tabs.css: {}
+     css/print.css: {}
+     css/icons.css: {}
+     css/comments.css: {}
+     css/menu-main.css: {}
+    
+  js:
+    js/modernizr.custom.js: {}
+    js/custom.js: {}
+    js/comments-slider.js: {}
+    js/slider-bunners.js: {}
+    js/menu-main.js: {}
+    
+  dependencies:
+    - core/jquery
+    - start_theme/slick
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once
+
+
+theme1-bootstrap:
+  version: 1.x
+  css:
+    theme:
+      includes/bootstrap/css/bootstrap.css: {}
+
+  js:
+    includes/bootstrap/js/bootstrap.min.js: {}
+
+
+slick:
+  remote: http://kenwheeler.github.io/slick/
+  version: 1.x
+  license:
+    name: MIT
+    url: https://github.com/kenwheeler/slick/blob/master/LICENSE
+    gpl-compatible: true
+  js:
+    /libraries/slick/slick/slick.min.js: { weight: -3, minified: true }
+  css:
+    base:
+      /libraries/slick/slick/slick.css: {}
+  dependencies:
+    - core/jquery
+
+    #color.preview:
+# version: 1.x
+# css:
+#   theme:
+#     color/preview.css: {}
+# js:
+#   color/preview.js: {}
+# dependencies:
+#   - color/drupal.color
+
+     
+

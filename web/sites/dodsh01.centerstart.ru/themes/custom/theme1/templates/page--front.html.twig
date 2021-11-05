@@ -1,0 +1,197 @@
+{# добавляем VUE #}
+{{ attach_library('start_search_vue/main') }}
+<div class="wrap-oo">
+	<div class="oo">
+      	<header>
+        <div class="header_up">
+	  			<div class="container">
+          
+          			<div class="row">
+            			
+							{{ page.header_up }}
+             			<div id="vue-search"></div>
+           			</div>
+          		</div>
+			</div>
+        	<div class="header_top"> 
+	  			 <div class="container"> 
+          			<div class="row">
+							{{ page.header_top }}
+             			
+           			 </div>
+          		</div> 
+			</div> 
+			<div class="header_center bgcolor_darkBlue">
+				<div class="container vs">
+					<div class="row">
+						<div class="col-md-2">
+							{{ page.header_left }}
+						</div>
+						<div class="col-md-8">
+							{{ page.header_center }}
+						</div>
+		            	<div class="col-md-2 key">
+		            		<a  class="vs_panel" href="#" title="Версия для слабовидящих">
+					<span class="vs_img"></span>
+                            </a>
+				<a class="search_btn" href="/search" title="Поиск"></a>
+							{{page.header_right}}
+						</div>
+					</div>
+				</div>
+		    </div>
+		    <div class="header_info">
+		        <div class="container">
+		            <div class="row">
+		            	<div class="col-md-12">
+		                	{{ page.header_info }}
+		             	</div>
+		            </div>
+		         </div>
+		    </div>
+		</header>	
+        <nav class="top_menu bgcolor_darkBlue">
+	  		<div class="container">        
+			  <div class="row">       
+					{{ page.nav_top }}        
+			 </div>	
+			</div>
+		</nav>
+		<!--main-->
+                <div class="main">
+		<div class="container" role="main">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="sidebar left_sidebar">
+						{{ page.system_menu }}
+						{{ page.left_sidebar }}
+                	</div>
+				</div>
+				<div class="col-lg-6 content">
+					{{ page.system  }}
+					<div class="vs_voice"><div class="main_top">{{ page.main_top }}</div>{{ page.content }}</div>
+				</div>
+				<div class="col-lg-3 banners-custom">
+					<div class="sidebar  banners-custom__inner right_sidebar">
+	                    {{ page.right_sidebar }}
+	                </div>
+				</div>
+			</div>
+		</div>
+               </div>
+             <div class="screen screen_1">
+               <div class="wrap">
+                 {{ page.screen_1 }}
+               </div>
+             </div>
+             <div class="line_img">
+              <img src="{{ url('<front>') }}{{ directory }}/images/oblbgt.png">
+             </div>
+             <div class="screen screen_2">
+               <div class="wrap">
+                 {{ page.screen_2 }}
+               </div>
+             </div>
+             <div class="screen screen_3">
+               <div class="container">
+                <div class="row">
+                  <div class="wrap2">
+                  {{ page.screen_3 }}
+                  </div>
+                </div>
+               </div>
+             </div>
+             <div class="screen screen_4">
+               <div class="wrap">
+                 {{ page.screen_4 }}
+               </div>
+             </div>
+              <div class="line_img line_img_2">
+                <img src="{{ url('<front>') }}{{ directory }}/images/oblbgb.png">
+             </div>
+
+             <div class="screen screen_5">
+               <div class="wrap">
+                 {{ page.screen_5 }}
+               </div>
+             </div>
+             <div class="screen screen_6">
+                <div class="container">
+               <div class="row">
+                <div class="col-md-12">
+               <div class="wrap">
+
+                 {{ page.screen_6 }}
+
+               </div>
+               </div>
+              </div>
+             </div>
+
+             </div>
+             <div class="screen screen_7">
+                <div class="container">
+               <div class="row">
+                <div class="col-md-12">
+               <div class="wrap">
+
+                 {{ page.screen_7 }}
+
+               </div>
+               </div>
+              </div>
+             </div>
+
+             </div>
+             <div class="screen screen_8">
+                <div class="container">
+               <div class="row">
+                <div class="col-md-12">
+               <div class="wrap">
+
+                 {{ page.screen_8 }}
+
+               </div>
+               </div>
+              </div>
+             </div>
+
+             </div>
+              <div class="line_img line_img_3">
+              <img src="{{ url('<front>') }}{{ directory }}/images/oblbgb.png">
+             </div>
+
+             <div class="screen screen_9">
+              <div class="container footer__top">
+              <div class="top-footer__left">
+              {{ page.footer__left }}
+              </div>
+               <div class="row">
+                <div class="col-md-12">
+               <div class="wrap">
+   <div class="top-footer__right"><div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/?um=constructor%3Afebb29803c2cc5900cd6d25288bc87c242958b067e3dafb172930edce706e164&source=constructorLink"></a><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Afebb29803c2cc5900cd6d25288bc87c242958b067e3dafb172930edce706e164&amp;source=constructor" width="1170" height="370" frameborder="0"></iframe></div></div>  
+               </div>
+               </div>
+              </div>
+             </div>
+             </div>
+	
+	</div> <!-- oo -->
+  <div class="footer__bottom bottom-footer">
+    <div class="container">
+     <div class="bottom-footer__column">
+      <p>Сайт создан на основе шаблона МКУКМЦИКТ «Старт»</p>
+      {{ page.footer_bottom_left }}
+     </div>
+     <div class="bottom-footer__column">
+      <a class="popup_cookie__info" href="/privacy-policy">Политика конфиденциальности |</a>
+      <a class="popup_cookie__info" href="#">| Использование Cookie</a>
+     </div>
+    </div>
+ </div>
+</div>
+<div id="button-up">
+<span class="button-up-txt">Наверх ^</span>
+</div>
+
+

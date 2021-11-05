@@ -1,0 +1,16 @@
+/*Адаптивная таблица*/
+.oo .wrap_table {
+    overflow: auto;
+    max-width: 2000px;
+}
+
+table {
+    
+    /*word-break: break-all; */
+    background: #fff;
+}
+
+td, th {
+    padding: 10px;
+    border: 1px solid #bbb;
+} 

@@ -1,0 +1,202 @@
+
+{# добавляем VUE #}
+{{ attach_library('start_search_vue/main') }}
+
+<header class="header">
+
+  <div class="header__top top-header">
+    <div class="container">
+      <div class="top-header__column">
+       {{ page.header_top_left }}
+       {# точка монтирования VUE #}
+       <div id="vue-search"></div>
+      </div>
+      <div class="top-header__column">
+        <div class="top-header__icons">
+         <a class="icon-impaired vs_panel bvi-open" href="#" title="Версия для слабовидящих" itemprop="copy">
+           <img src={{ '/' ~ active_theme_path() ~ '/assets/images/icons/eye.png' }} alt="Версия для слабовидящих">
+         </a>
+
+         {% if logged_in == false %}
+       <!-- Modal Trigger -->
+         <a data-fancybox data-src="#modal_login" href="javascript:;" class="modal-trigger" title="вход на сайт">
+           <img src={{ '/' ~ active_theme_path() ~ '/assets/images/icons/login.png' }} alt="Вход на сайт">
+         </a>
+         {% endif %}
+
+         {% if logged_in %}
+         <a class="link-unregister" title="выход" href="{{ path('user.logout') }}"><img src={{ '/' ~ active_theme_path() ~ '/assets/images/icons/logout.svg' }} alt="выход"></a>
+         {% endif %}
+        </div>
+       </div>
+    </div>
+  </div>
+
+<div class="header__center center-header container">
+  <div class="center-header__column">
+    <div class="center-header__logo">
+      {{ page.header_center_logo }}
+       </div>
+    <div class="center-header__name">
+      {{ page.header_center_name }}
+    </div>
+  </div>
+  <div class="center-header__column">
+    <div class="center-header__contacts">
+      {{ page.header_center_contacts }}
+    </div> 
+    <div class="center-header__flags">
+      {{ page.header_center_flags }}
+    </div> 
+  </div>
+</div>
+
+  <div class="header__bottom bottom-header">
+    <div class="bottom-header__menu">
+      {{ page.menu }}
+     </div> 
+     <div class="bottom-header__burger container">
+       <p class="icon-menu">МЕНЮ</p>
+       <div class="icon-menu">
+         <span></span>
+         <span></span> {# hamburger icon #}
+         <span></span>
+       </div>
+     </div>
+  </div>
+     
+</header>
+
+{% if page.system %}
+<section class="system">
+  <div class="container">
+    {{ page.system }}
+  </div>
+</section>
+{% endif %}
+
+{% if page.slider %}
+<section class="slider-banner">
+  {{ page.slider }}
+</section>
+{% endif %}
+
+<section class="container section-1">
+    <div class="section-1__content content-section-1 vs_voice">
+      {{ page.section_1 }}
+    </div>
+    <div class="section-1__main-menu menu-main">
+      {{ page.sidebar_menu }}
+      <div class="section-1__banners">
+        {{ page.custom_banners }}
+      </div>
+    </div>
+</section>
+
+<section class="banners-custom">
+  <div class="banners-custom__inner container"></div>
+</section>
+
+{% if page.section_3 %}
+<section class="section-3">
+  <div class="container-padding">
+  {{ page.section_3 }}
+  </div>
+</section>
+{% endif %}
+
+{% if page.section_4 %}
+<section class="section-4">
+  <div class="container-padding">
+  {{ page.section_4 }}
+  </div>
+</section>
+{% endif %}
+
+{% if page.section_5 %}
+<section class="section-5">
+  <div class="container-padding">
+  {{ page.section_5 }}
+  </div>
+</section>
+{% endif %}
+
+{% if page.section_6 %}
+<section class="section-6">
+  <div class="container-padding">
+  {{ page.section_6 }}
+  </div>
+</section>
+{% endif %}
+
+{% if page.section_7 %}
+<section class="section-7">
+  <div class="container-padding">
+  {{ page.section_7 }}
+  </div>
+</section>
+{% endif %}
+
+{% if page.section_8 %}
+<section class="section-8">
+  <div class="container-padding">
+  {{ page.section_8 }}
+  </div>
+</section>
+{% endif %}
+
+{% if page.section_9 %}
+<section class="section-9">
+  <div class="container-padding">
+  {{ page.section_9 }}
+  </div>
+</section>
+{% endif %}
+
+<footer class="footer">
+ <div class="footer__top top-footer container">
+  <div class="top-footer__left">
+   {{ page.footer_top }}
+  </div>
+  <div class="top-footer__right">
+   <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/35/krasnodar/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Краснодар</a><a href="https://yandex.ru/maps/profile?ll=38.963168%2C45.069047&utm_medium=mapframe&utm_source=maps&z=16" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCU4i0RddB" width="100%" height="390px" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe></div>
+  </div>
+ </div>
+ <div class="bottom-footer">
+    <a class="line" href="/privacy-policy">Политика конфиденциальности</a>
+    <a class="popup_cookie__info" href="#">Использование Cookie</a> 
+ </div>
+
+</footer>
+
+
+  <!-- modal_login Structure -->
+<div id="modal_login" class="modal">
+  <div class="modal-content">
+      <form class="user-login-form antibot" data-drupal-selector="user-login-form" data-action="/user/login" action="/user/login" method="post" id="user-login-form" accept-charset="UTF-8">
+        <noscript>
+          <div class="antibot-no-js antibot-message antibot-message-warning">Вы должны включить JavaScript чтобы использовать эту форму.</div>
+        </noscript>
+        
+        <label class="js-form-required form-required active">Имя пользователя</label>
+        <input autocorrect="none" autocapitalize="none" spellcheck="false" autofocus="autofocus" data-drupal-selector="edit-name" aria-describedby="edit-name--description" type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required" required="required" aria-required="true" placeholder="введите имя пользователя">
+
+        <label for="edit-pass" class="js-form-required form-required active">Пароль</label>
+        <input data-drupal-selector="edit-pass" aria-describedby="edit-pass--description" type="password" id="edit-pass" name="pass" size="60" maxlength="128" class="form-text required" required="required" aria-required="true" placeholder="введите пароль">
+
+        <input data-drupal-selector="edit-user-login-form" type="hidden" name="form_id" value="user_login_form">
+        
+        <input data-drupal-selector="edit-antibot-key" type="hidden" name="antibot_key" value="bUcEpvn70wYuyn-OQ8_zbOdLXsI15V0oE8hkQKaU4z8">
+
+  <div class="modal-footer">
+    <button type="submit" class="waves-effect waves-light btn modal-trigger">
+       войти
+    </button>
+   </div>
+  </form>
+ </div>
+</div>
+
+
+{#  кнопка вверх #}
+<div class="button-up" title="вверх"></div>

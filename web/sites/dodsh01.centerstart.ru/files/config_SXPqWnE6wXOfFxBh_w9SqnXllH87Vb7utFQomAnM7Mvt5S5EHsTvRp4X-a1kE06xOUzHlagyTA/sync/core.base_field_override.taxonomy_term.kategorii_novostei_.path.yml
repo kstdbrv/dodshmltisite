@@ -1,0 +1,20 @@
+uuid: f64fbd75-c2f0-4351-99e5-453868888207
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.kategorii_novostei_
+  module:
+    - path
+id: taxonomy_term.kategorii_novostei_.path
+field_name: path
+entity_type: taxonomy_term
+bundle: kategorii_novostei_
+label: 'Синоним URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

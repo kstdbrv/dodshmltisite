@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Antelive-Bold';
+  src: url("../../assets/fonts/antelive-Bold.woff2") format("woff2"), url("../../assets/fonts/antelive-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+.section-3 .block.block-views h2 {
+  font-family: 'Antelive-Bold', sans-serif;
+  font-weight: 700;
+}
+
+.section-3 {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+@media (max-width: 555px) {
+  .section-3 {
+    margin-top: 0px;
+  }
+}
+
+.section-3 .block.block-views h2 {
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 36px;
+  color: #016a94;
+}
+
+@media (max-width: 555px) {
+  .section-3 .block.block-views h2 {
+    font-size: 28px;
+  }
+}

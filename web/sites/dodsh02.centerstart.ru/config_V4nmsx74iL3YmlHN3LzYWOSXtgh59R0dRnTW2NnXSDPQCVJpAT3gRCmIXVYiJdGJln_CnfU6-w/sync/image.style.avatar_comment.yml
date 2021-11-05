@@ -1,0 +1,15 @@
+uuid: 0b7cab0d-31ed-433d-8113-e734e47225d2
+langcode: ru
+status: true
+dependencies: {  }
+name: avatar_comment
+label: 'Фото в коммент (44*57)'
+effects:
+  e24c92c8-a49d-4efa-81b1-82066b60eafc:
+    uuid: e24c92c8-a49d-4efa-81b1-82066b60eafc
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 44
+      height: 57
+      anchor: center-center

@@ -1,0 +1,22 @@
+uuid: 71fd84ce-eef0-44fa-9522-e61bceae53e2
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.bolsoi_slaider_s_tekstom
+id: node.bolsoi_slaider_s_tekstom.promote
+field_name: promote
+entity_type: node
+bundle: bolsoi_slaider_s_tekstom
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

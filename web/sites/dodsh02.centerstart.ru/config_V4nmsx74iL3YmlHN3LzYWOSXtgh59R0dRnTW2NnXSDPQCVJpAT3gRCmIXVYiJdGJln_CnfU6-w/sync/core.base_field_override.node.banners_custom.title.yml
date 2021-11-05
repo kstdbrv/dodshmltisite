@@ -1,0 +1,18 @@
+uuid: 46a969f7-3010-446e-b790-24e1343defd6
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.banners_custom
+id: node.banners_custom.title
+field_name: title
+entity_type: node
+bundle: banners_custom
+label: Заголовок
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

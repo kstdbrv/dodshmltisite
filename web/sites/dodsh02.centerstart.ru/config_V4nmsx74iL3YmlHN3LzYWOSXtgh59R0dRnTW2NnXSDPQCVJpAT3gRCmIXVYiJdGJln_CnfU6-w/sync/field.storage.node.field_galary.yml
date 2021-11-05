@@ -1,0 +1,30 @@
+uuid: 5dc62c16-9b15-420c-8f55-7a54fb2cefc1
+langcode: ru
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - node
+id: node.field_galary
+field_name: field_galary
+entity_type: node
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 10
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

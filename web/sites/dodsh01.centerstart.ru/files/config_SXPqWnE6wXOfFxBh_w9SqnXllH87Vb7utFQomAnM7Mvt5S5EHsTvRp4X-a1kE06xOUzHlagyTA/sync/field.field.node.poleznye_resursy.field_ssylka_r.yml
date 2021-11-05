@@ -1,0 +1,23 @@
+uuid: 9abc596e-44ea-49cb-9441-62de6b0484ce
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ssylka_r
+    - node.type.poleznye_resursy
+  module:
+    - link
+id: node.poleznye_resursy.field_ssylka_r
+field_name: field_ssylka_r
+entity_type: node
+bundle: poleznye_resursy
+label: Ссылка
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

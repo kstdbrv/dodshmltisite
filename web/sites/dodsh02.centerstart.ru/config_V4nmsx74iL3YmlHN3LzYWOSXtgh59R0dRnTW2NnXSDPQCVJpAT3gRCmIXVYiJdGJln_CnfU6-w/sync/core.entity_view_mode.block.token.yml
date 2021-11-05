@@ -1,0 +1,10 @@
+uuid: 05394801-8378-4028-bacc-d4797517bb3f
+langcode: ru
+status: true
+dependencies:
+  module:
+    - block
+id: block.token
+label: Token
+targetEntityType: block
+cache: true

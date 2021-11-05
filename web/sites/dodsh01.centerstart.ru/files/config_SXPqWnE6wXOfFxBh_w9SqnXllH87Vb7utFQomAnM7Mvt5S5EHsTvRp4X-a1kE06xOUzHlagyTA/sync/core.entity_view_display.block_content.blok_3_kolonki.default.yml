@@ -1,0 +1,80 @@
+uuid: 552f722a-3541-4e0e-96fc-46c1d63db1b7
+langcode: ru
+status: true
+dependencies:
+  config:
+    - block_content.type.blok_3_kolonki
+    - field.field.block_content.blok_3_kolonki.field_cont_1
+    - field.field.block_content.blok_3_kolonki.field_cont_2
+    - field.field.block_content.blok_3_kolonki.field_cont_3
+  module:
+    - ds
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: bs_3col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          left:
+            wrapper: div
+            classes:
+              col-sm-4: col-sm-4
+            add_region_classes: 1
+            attributes: ''
+          middle:
+            wrapper: div
+            classes:
+              col-sm-4: col-sm-4
+            add_region_classes: 1
+            attributes: ''
+          right:
+            wrapper: div
+            classes:
+              col-sm-4: col-sm-4
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      left:
+        - field_cont_1
+      middle:
+        - field_cont_3
+      right:
+        - field_cont_2
+id: block_content.blok_3_kolonki.default
+targetEntityType: block_content
+bundle: blok_3_kolonki
+mode: default
+content:
+  field_cont_1:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: left
+  field_cont_2:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: right
+  field_cont_3:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: middle
+hidden:
+  langcode: true

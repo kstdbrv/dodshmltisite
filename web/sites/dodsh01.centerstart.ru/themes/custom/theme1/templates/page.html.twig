@@ -1,0 +1,123 @@
+{# добавляем VUE #}
+{{ attach_library('start_search_vue/main') }}
+<div class="wrap-oo">
+	<div class="oo">
+      	<header>
+				<div class="header_up">
+	  			<div class="container">
+					
+          			<div class="row">
+            			
+							{{ page.header_up }}
+             			<div id="vue-search"></div>
+           			</div>
+          		</div>
+			</div>
+        	<div class="header_top">
+	  			<div class="container">
+          			<div class="row">
+            			
+							{{ page.header_top }}
+             			
+           			</div>
+          		</div>
+			</div>
+			<div class="header_center bgcolor_darkBlue">
+				<div class="container vs">
+					<div class="row">
+						<div class="col-md-2">
+							{{ page.header_left }}
+						</div>
+						<div class="col-md-8">
+							{{ page.header_center }}
+						</div>
+		            	<div class="col-md-2 key">
+		            		<a  class="vs_panel" href="#" title="Версия для слабовидящих">
+					<span class="vs_img"></span>
+                            </a>
+				<a class="search_btn" href="/search" title="Поиск"></a>
+							{{page.header_right}}
+						</div>
+					</div>
+				</div>
+		    </div>
+		    <div class="header_info">
+		        <div class="container">
+		            <div class="row">
+		            	<div class="col-md-12">
+		                	{{ page.header_info }}
+		             	</div>
+		            </div>
+		         </div>
+		    </div>
+		</header>	
+        <nav class="top_menu bgcolor_darkBlue">
+	  		<div class="container">        
+			  <div class="row">
+                           
+					{{ page.nav_top }}
+                          
+			 </div>	
+			</div>
+		</nav>
+		<!--main-->
+        <div class="main">
+			<div class="container" role="main">
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="left_sidebar">
+							{{ page.system_menu }}
+							{{ page.left_sidebar }}
+	                	</div>
+					</div>
+					<div class="col-lg-6 content">
+						{{ page.system  }}
+						<div class="vs_voice"><div class="main_top">{{ page.main_top }}</div>{{ page.content }}</div>
+					</div>
+					<div class="col-lg-3 banners-custom">
+						<div class="sidebar banners-custom__inner right_sidebar"></div>
+					</div>
+				</div>
+			</div>
+     	</div>
+             
+             <div class="screen screen_8">
+                <div class="container">
+               <div class="row">
+                <div class="col-md-12">
+               <div class="wrap">
+
+                 {{ page.screen_8 }}
+
+               </div>
+               </div>
+              </div>
+             </div>
+
+             </div>
+              <div class="line_img line_img_3">
+              <img src="{{ url('<front>') }}{{ directory }}/images/oblbgb.png">
+             </div>
+
+             <div class="screen screen_9">
+              <div class="container footer__top top-footer">
+							<div class="top-footer__left">
+              {{ page.footer__left }}
+              </div>
+               <div class="row">
+                <div class="col-md-12">
+               <div class="wrap">
+   <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/35/krasnodar/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Краснодар</a><a href="https://yandex.ru/maps/profile?ll=38.963168%2C45.069047&utm_medium=mapframe&utm_source=maps&z=16" style="color:#eee;font-size:12px;position:absolute;top:14px;"></a><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Afebb29803c2cc5900cd6d25288bc87c242958b067e3dafb172930edce706e164&amp;source=constructor" width="1170" height="370" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe></div>  
+               </div>
+               </div>
+              </div>
+             </div>
+             </div>
+	
+	</div> <!-- oo -->
+</div>
+<div id="button-up">
+<span class="button-up-txt">Наверх ^</span>
+</div>
+
+

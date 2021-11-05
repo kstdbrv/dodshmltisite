@@ -1,0 +1,280 @@
+@import "vars";
+@import "./form.scss";
+@import "./messages.scss";
+
+/* Global */
+html {
+  box-sizing: border-box;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body {
+  @extend %montserrat-regular;
+  font-size: $mainFontSize;
+  color: $mainFontColor;
+  line-height: $mainLineHeight;
+  min-width: 320px;
+  overflow-x: hidden;
+  position: relative;
+  @media (max-width: 555px) {
+    font-size: 15px;
+  }
+}
+
+*, *:before, *:after { 
+  box-sizing: border-box; 
+}
+
+h1, h2, h3, h4, h5, h6 { 
+  margin: 0;
+  font-size: inherit; 
+}
+
+p { 
+  margin: 0; 
+}
+
+a { 
+  text-decoration: none;
+  color: $mainColor;
+  display: inline-block; 
+  transition: all .2s;
+  &:hover {
+    color: $mainFontColor;
+  }
+  &:active {
+    color: $mainColor;
+  }
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1540px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.container-padding {
+  @media (max-width: 910px) {
+    padding: 0 10px;
+  }
+}
+
+.visually-hidden {
+  display: none;
+}
+
+//STYLE FOR menu-icon
+/* body.lock{
+  overflow: hidden;
+} */
+
+.system {
+  .messages {
+    margin-bottom: 20px;
+  }
+}
+
+.link-more { // кнопка смотреть еще
+  display: table;
+  margin: 0 auto;
+  a {
+    text-transform: lowercase;
+    /* text-transform: uppercase; */
+    letter-spacing: .12px;
+    &:first-letter {
+      text-transform: capitalize;
+    }
+    height: 50px;
+    /* padding: 15px 25px 17px; */
+    padding: 13px 25px 17px;
+    text-decoration: none !important;
+    text-align: center;
+    background-color: $activeColor;
+    transition: all .2s;
+    color: #fff !important;
+    box-shadow: 1px 3px 4px rgba(59, 59, 59, 0.45);
+    &:hover {
+      box-shadow: none;
+    }
+    &:active {
+      box-shadow: inset 0px 5px 4px rgba(59, 59, 59, 0.3);
+    }
+  }
+}
+
+.page-title {
+  text-align: center;
+  text-transform: uppercase;
+  color: $mainColor;
+  font-size: 23px;
+  @media (max-width: 555px) {
+    font-size: 19px;
+  }
+}
+
+.file { // стиль для загружаемых файлов
+  margin-bottom: 15px;
+  a {
+    color: $mainFontColor;
+    &:hover {
+      color: $mainColor;
+    }
+  }
+}
+
+#block-start-theme-content { // убирает кнопку "добавить материал" на главной
+  .view-empty {
+    display: none;
+  }
+}
+
+// кнопка изменить содержимое
+.views-field-edit-node a {
+  display: none;
+  font-size: 15px;
+  position: absolute;
+  z-index: 5;
+  bottom: -20px;
+  right: 0px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  padding:  7px 15px;
+  border-radius: 25px;
+  background-color: $activeColor;
+  color: #fff;
+  transition: all .2s;
+  @media (max-width:425px) {
+    font-size: 12px;
+    bottom: 5px; 
+  } 
+
+  box-shadow: 1px 3px 4px rgba(59, 59, 59, 0.45);
+  &:hover {
+    box-shadow: none;
+  }
+  &:active {
+    box-shadow: inset 0px 5px 4px rgba(59, 59, 59, 0.3);
+  }
+}
+
+.adminimal-admin-toolbar {
+  .views-field-edit-node a {
+    display: block;
+  }
+ }
+
+// общие стили для слайдеров
+.slick-slider, .slick {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .slick-arrow {
+    &.slick-prev, &.slick-next {
+      z-index: 5;
+      font-size: 0;
+      line-height: 0;
+      position: absolute;
+      top: 50%;
+      display: block;
+      width: 20px;
+      height: 20px;
+      padding: 0;
+      transform: translate(0, -50%);
+      cursor: pointer;
+      color: transparent;
+      border: none;
+      outline: none;
+      background: transparent;
+    }
+    &.slick-prev {
+      &::before {
+        display: block;
+        content: ' ';
+      }
+    }
+    &.slick-next {
+      &::before {
+        display: block;
+        content: ' ';
+      }
+    }
+  }
+  .slick-dots li {
+    display: inline-block;
+    padding: 0 5px;
+  }
+  .slick-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  .slick-dots button {
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    width: 11px;
+    height: 11px;
+    border: 1px solid $mainColor;
+    border-radius: 50%;
+    background-color: #fff;
+    outline: none;
+    @media (max-width: 640px) {
+      width: 7px;
+      height: 7px;
+    }
+  }
+  .slick-active button {
+    background-color:$activeColor;
+  }
+}
+
+// кнопка вверх
+.button-up {
+  position: relative;
+  right: 5px;
+  position: fixed;
+  bottom: 50px;
+  width: 60px;
+  height: 50px;
+  color: $mainColor;
+  background: url('../images/icons/arrow.svg') no-repeat;
+  background-size: 100%;
+  z-index: 100;
+  transform: rotate(180deg);
+  cursor: pointer;
+  @media (max-width: 425px) {
+    right: 0;
+    width: 50px;
+    height: 40px;
+  }
+  &::before {
+    position: absolute;
+    left: 19px;
+    top: 13px;
+    content: 'ВВЕРХ';
+    font-size: 14px;
+    transform: rotate(90deg);
+    @media (max-width: 425px) {
+      left: 15px;
+      top: 7px;
+      font-size: 12px;
+    }
+  }
+}
+
+.fancybox-slide--html {
+  padding-top: 10%;
+}
+
+.hide {
+  display: none;
+}

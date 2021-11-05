@@ -1,0 +1,20 @@
+uuid: 0f2d7a26-0423-4919-87e2-66f3503b1775
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - demo
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: demo_local_actions
+theme: demo
+region: content
+weight: -7
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Основные действия администратора'
+  provider: core
+  label_display: '0'
+visibility: {  }

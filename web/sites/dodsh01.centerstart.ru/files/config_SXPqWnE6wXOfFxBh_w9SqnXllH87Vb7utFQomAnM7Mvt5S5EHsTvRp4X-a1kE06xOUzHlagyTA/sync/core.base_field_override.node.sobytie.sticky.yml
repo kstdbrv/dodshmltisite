@@ -1,0 +1,22 @@
+uuid: 24e8643e-2d98-4054-a113-2fa29b1e3858
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.sobytie
+id: node.sobytie.sticky
+field_name: sticky
+entity_type: node
+bundle: sobytie
+label: 'Закреплять вверху списков'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,195 @@
+@charset "UTF-8";
+#block-views-block-remote-video {
+  max-width: 638px;
+  margin: 0 auto;
+}
+
+#block-views-block-remote-video .view-content {
+  position: relative;
+  margin: 90px 0 60px 0;
+  background: #7f7f7f;
+  padding: 40px 130px 40px 40px;
+  border-radius: 20px;
+}
+
+@media (max-width: 665px) {
+  #block-views-block-remote-video .view-content {
+    background: transparent;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+
+@media (max-width: 375px) {
+  #block-views-block-remote-video .view-content {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}
+
+#block-views-block-remote-video .view-content::before {
+  position: absolute;
+  content: '';
+  top: -33px;
+  left: 195px;
+  width: 150px;
+  height: 49px;
+  background: url("../images/remote/remote-bg-1.png") no-repeat;
+  background-size: 100%;
+}
+
+@media (max-width: 665px) {
+  #block-views-block-remote-video .view-content::before {
+    display: none;
+  }
+}
+
+#block-views-block-remote-video .view-content::after {
+  position: absolute;
+  content: '';
+  top: 69px;
+  right: 31px;
+  width: 81px;
+  height: 168px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+@media (max-width: 665px) {
+  #block-views-block-remote-video .view-content::after {
+    display: none;
+  }
+}
+
+#block-views-block-remote-video .field__item {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  /* Если соотношения 4:3 :75%. */
+  /* padding-top:30px; */
+  height: 0;
+}
+
+#block-views-block-remote-video .field__item iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 15px;
+}
+
+@media (max-width: 665px) {
+  #block-views-block-remote-video .field__item iframe {
+    border-radius: 0px;
+  }
+}
+
+@media (max-width: 665px) {
+  #block-views-block-remote-video .field__item {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+#block-views-block-remote-video .slick .slick-arrow.slick-prev {
+  right: 85px;
+  transition: all .2s;
+}
+
+#block-views-block-remote-video .slick .slick-arrow.slick-prev:hover {
+  opacity: 0.7;
+}
+
+#block-views-block-remote-video .slick .slick-arrow.slick-prev::before {
+  background-image: url("../images/remote/remote-arrow.png");
+  background-size: 66px 66px;
+  height: 66px;
+  width: 66px;
+}
+
+#block-views-block-remote-video .slick .slick-arrow.slick-next {
+  top: 90px;
+  right: 85px;
+  transition: all .2s;
+}
+
+#block-views-block-remote-video .slick .slick-arrow.slick-next:hover {
+  opacity: 0.7;
+}
+
+#block-views-block-remote-video .slick .slick-arrow.slick-next::before {
+  background-image: url("../images/remote/remote-arrow.png");
+  background-size: 66px 66px;
+  height: 66px;
+  width: 66px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#block-views-block-remote-video .slick .slick-dots {
+  bottom: 15px;
+}
+
+@media (max-width: 665px) {
+  #block-views-block-remote-video .slick .slick-dots {
+    bottom: -20px;
+  }
+}
+
+.remote-full .view-content > div {
+  -ms-grid-columns: (395px)[auto-fill] !important;
+      grid-template-columns: repeat(auto-fill, 395px) !important;
+}
+@media (max-width: 665px) {
+  .remote-full .view-content > div {
+    grid-template-columns: repeat(auto-fill, 310px) !important;
+  }
+}
+.remote-full .field__item {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  /* Если соотношения 4:3 :75%. */
+  /* padding-top:30px; */
+  height: 0;
+}
+
+.remote-full .field__item iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 15px;
+}
+
+@media (max-width: 665px) {
+  .remote-full .field__item iframe {
+    border-radius: 0px;
+  }
+}
+
+@media (max-width: 665px) {
+  .remote-full .field__item {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.remote-full .views-field-title {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.remote-full .field__item {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+.node-remote-gallery {
+  margin-top: 15px;
+}

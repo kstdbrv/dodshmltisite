@@ -1,0 +1,25 @@
+uuid: 074d0cae-377a-4035-a104-148c14fe51b3
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ead53f38-0431-4ba5-9180-cc65eabb9717'
+  module:
+    - block_content
+  theme:
+    - fusionblue
+id: kartasayta
+theme: fusionblue
+region: footer_top
+weight: -7
+provider: null
+plugin: 'block_content:ead53f38-0431-4ba5-9180-cc65eabb9717'
+settings:
+  id: 'block_content:ead53f38-0431-4ba5-9180-cc65eabb9717'
+  label: 'Карта сайта'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

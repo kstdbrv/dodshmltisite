@@ -1,0 +1,15 @@
+uuid: a92ddab0-e38e-4723-81d5-8fc1bbeae095
+langcode: ru
+status: true
+dependencies: {  }
+name: target
+label: 'Изображение (255*96) target'
+effects:
+  d5bf6f0e-7823-4ef5-86e8-6543c14d8568:
+    uuid: d5bf6f0e-7823-4ef5-86e8-6543c14d8568
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 255
+      height: 96
+      anchor: center-center

@@ -1,0 +1,84 @@
+@import "../base/vars";
+
+
+#block-views-block-stuff, .staff-full {
+
+  .view-content {
+    max-width: 845px;
+    margin: 0 auto;
+    margin-bottom: $distanceBlock;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(auto-fill, 220px);
+    grid-gap: clamp(0.5vw, 1vw, 2vw);
+    @media (max-width: 545px) {
+      grid-row-gap: 10px;
+    }
+  }
+
+  .views-row {
+    position: relative;
+  }
+  
+  .staff {
+    text-align: center;
+    a {
+      font-size: 0;
+      color: $mainFontColor;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      will-change: transform;
+      transition: .2s;
+      &:hover {
+        box-shadow: 0 10px 20px rgba(51,51,51,.2);
+        transform: scale(1.01);
+        .staff__bottom {
+          background-color: $mainColor;
+        }
+      }
+    }
+   &__image {
+     height: 210px;
+     background: $activeColor;
+   }
+   &__bottom {
+     @extend %antelive-Bold;
+     font-size: 16px;
+     text-align: center;
+     padding-top: 15px;
+     padding-bottom: 10px;
+   }
+   &__position {
+    margin-top: 10px;
+   }
+  }
+}
+
+
+
+// переопределяем стили section-1
+.staff-full { // добавляем класс в views
+  .view-content > div { 
+      margin-bottom: $distanceBlock;
+      grid-template-columns: repeat(auto-fill, 220px) !important;
+  }
+}
+
+// страница
+.node-stuff {
+  .field-staff-sername, .field-staff-txt-name, .field-staff-position {
+    text-align: center;
+    
+  }
+  .field-photo-staff {
+    text-align: center;
+    margin-top: $distance;
+    margin-bottom: $distance;
+  }
+}
+
+

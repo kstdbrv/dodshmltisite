@@ -5,7 +5,7 @@
       <input type="search"
              autocomplete="off"
              class="search-vue__input"
-             placeholder="Поиск по сайту"
+             placeholder="Поиск"
              @input="onTextInput"
              @focus="onTextFocus"
              @keypress.enter="onButtonClick">

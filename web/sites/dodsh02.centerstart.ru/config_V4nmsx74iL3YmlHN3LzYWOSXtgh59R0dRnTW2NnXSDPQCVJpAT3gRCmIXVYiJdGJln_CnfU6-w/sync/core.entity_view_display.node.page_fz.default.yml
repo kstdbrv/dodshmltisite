@@ -1,0 +1,38 @@
+uuid: de642e7f-c18b-4b12-9e8a-66d794c2b8d5
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.page_fz.body
+    - field.field.node.page_fz.field_file_fz
+    - field.field.node.page_fz.field_tegs
+    - node.type.page_fz
+  module:
+    - file
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.page_fz.default
+targetEntityType: node
+bundle: page_fz
+mode: default
+content:
+  field_file_fz:
+    weight: 1
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+hidden:
+  body: true
+  field_tegs: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  sharethis: true
+  social_links: true

@@ -1,0 +1,18 @@
+uuid: 1286c987-f15c-4d60-af3e-74ee924b5685
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.slider_image
+id: node.slider_image.title
+field_name: title
+entity_type: node
+bundle: slider_image
+label: Заголовок
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

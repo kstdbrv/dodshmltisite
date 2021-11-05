@@ -1,0 +1,47 @@
+uuid: 3bed4533-d909-41e8-8a3f-24cd62007324
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.banners_custom.field_banner
+    - field.field.node.banners_custom.field_link_banners
+    - node.type.banners_custom
+  module:
+    - image
+    - link
+    - user
+id: node.banners_custom.default
+targetEntityType: node
+bundle: banners_custom
+mode: default
+content:
+  field_banner:
+    weight: 102
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_link_banners:
+    weight: 103
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true
+  social_links: true

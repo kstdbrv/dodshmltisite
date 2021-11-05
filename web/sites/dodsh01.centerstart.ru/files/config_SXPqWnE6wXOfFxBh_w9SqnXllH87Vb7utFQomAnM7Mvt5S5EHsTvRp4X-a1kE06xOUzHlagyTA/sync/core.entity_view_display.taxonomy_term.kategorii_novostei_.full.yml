@@ -1,0 +1,23 @@
+uuid: f330895a-3603-4b0d-b90e-759b43b1a69e
+langcode: ru
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.full
+    - taxonomy.vocabulary.kategorii_novostei_
+  module:
+    - text
+id: taxonomy_term.kategorii_novostei_.full
+targetEntityType: taxonomy_term
+bundle: kategorii_novostei_
+mode: full
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

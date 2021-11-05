@@ -1,0 +1,61 @@
+@import "../base/vars";
+
+.social-links {
+  display: flex;
+  margin-left: 20px;
+  justify-content: center;
+  li:not(:last-child) {
+    margin-right: 10px;
+  }
+  li {
+    background-color: #fff;
+    transition: all .2s;
+    a {
+      height: 29px;
+      width: 29px;
+      color: transparent;
+      @media (max-width:555px) {
+        padding: 0;
+        padding-top: 20px;
+        margin-bottom: 40px;
+        margin-left: 0;
+      }
+    }
+  }
+  &__vk {
+    background: url('../images/icons/vk-bg.png') 50% 50% no-repeat;
+    &:hover {
+      background-image: url('../images/icons/vk.png');
+    }
+  }
+
+  &__ok {
+    background: url('../images/icons/ok-bg.png') 50% 50% no-repeat;
+    &:hover {
+      background-image: url('../images/icons/ok.png');
+    }
+  }
+  &__facebook {
+    background: url('../images/icons/facebook-bg.png') 50% 50% no-repeat;
+    &:hover {
+      background-image: url('../images/icons/facebook.png');
+    }
+  }
+  &__instagram {
+    background: url('../images/icons/instagram-bg.png') 50% 50% no-repeat;
+    &:hover {
+      background-image: url('../images/icons/instagram.png');
+    }
+  }
+  &__ytube {
+    background: url('../images/icons/ytube-bg.png') 50% 50% no-repeat;
+    &:hover {
+      background-image: url('../images/icons/ytube.png');
+    }
+  }
+ }
+
+
+
+
+

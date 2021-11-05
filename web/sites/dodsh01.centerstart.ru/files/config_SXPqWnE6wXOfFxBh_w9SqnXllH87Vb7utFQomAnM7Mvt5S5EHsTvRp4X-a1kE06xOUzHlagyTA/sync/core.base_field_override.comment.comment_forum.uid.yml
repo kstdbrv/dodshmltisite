@@ -1,0 +1,22 @@
+uuid: 2bd0f63e-b818-4747-9f42-00637fde5e27
+langcode: ru
+status: true
+dependencies:
+  config:
+    - comment.type.comment_forum
+id: comment.comment_forum.uid
+field_name: uid
+entity_type: comment
+bundle: comment_forum
+label: 'ID Пользователя'
+description: 'ID пользователя автора комментария.'
+required: false
+translatable: false
+default_value:
+  -
+    target_id: '0'
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

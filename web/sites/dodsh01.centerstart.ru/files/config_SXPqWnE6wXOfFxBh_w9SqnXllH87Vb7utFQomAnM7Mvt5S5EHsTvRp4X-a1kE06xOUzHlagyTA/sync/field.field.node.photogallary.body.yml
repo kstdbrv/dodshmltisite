@@ -1,0 +1,22 @@
+uuid: eaa6bdee-16e8-46e1-8a1d-b32bfe508e4c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.photogallary
+  module:
+    - text
+id: node.photogallary.body
+field_name: body
+entity_type: node
+bundle: photogallary
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

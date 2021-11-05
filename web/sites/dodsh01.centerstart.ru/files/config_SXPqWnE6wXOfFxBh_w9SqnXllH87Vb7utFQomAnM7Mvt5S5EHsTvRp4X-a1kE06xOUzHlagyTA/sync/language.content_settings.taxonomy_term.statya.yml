@@ -1,0 +1,11 @@
+uuid: 96cb8a30-6d29-4dc5-a3fd-75bbdb063e23
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.statya
+id: taxonomy_term.statya
+target_entity_type_id: taxonomy_term
+target_bundle: statya
+default_langcode: site_default
+language_alterable: false

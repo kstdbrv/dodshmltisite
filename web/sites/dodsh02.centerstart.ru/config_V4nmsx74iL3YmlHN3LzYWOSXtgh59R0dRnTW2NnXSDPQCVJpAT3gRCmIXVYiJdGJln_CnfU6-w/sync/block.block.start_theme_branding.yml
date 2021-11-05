@@ -1,0 +1,25 @@
+uuid: 07b3249c-0415-4a5d-977a-d43a1949adea
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - start_theme
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: start_theme_branding
+theme: start_theme
+region: header_center_name
+weight: -10
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding - name'
+  provider: system
+  label_display: '0'
+  use_site_logo: false
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

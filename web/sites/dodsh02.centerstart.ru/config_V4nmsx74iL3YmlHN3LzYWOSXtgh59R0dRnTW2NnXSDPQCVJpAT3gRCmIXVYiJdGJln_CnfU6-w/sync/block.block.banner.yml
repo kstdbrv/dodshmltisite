@@ -1,0 +1,30 @@
+uuid: ecafdadb-d3bc-42c9-8798-e1e369b2d63e
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ea574d03-3353-442a-aa9b-1f7b66d8936d'
+  module:
+    - block_content
+    - system
+  theme:
+    - start_theme
+id: banner
+theme: start_theme
+region: section_2_right
+weight: -13
+provider: null
+plugin: 'block_content:ea574d03-3353-442a-aa9b-1f7b66d8936d'
+settings:
+  id: 'block_content:ea574d03-3353-442a-aa9b-1f7b66d8936d'
+  label: Баннер
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

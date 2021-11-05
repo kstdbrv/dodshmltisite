@@ -1,0 +1,50 @@
+uuid: 5429847d-5231-4f31-b916-f3d95a05da61
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.marker
+    - views.view.taxonomy_term
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - views
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          4539f40f-5625-431f-a09b-008fd8edfc5e:
+            uuid: 4539f40f-5625-431f-a09b-008fd8edfc5e
+            region: content
+            configuration:
+              id: 'views_block:taxonomy_term-block_2'
+              label: ''
+              provider: views
+              label_display: visible
+              views_label: ''
+              items_per_page: none
+              context_mapping: {  }
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: taxonomy_term.marker.default
+targetEntityType: taxonomy_term
+bundle: marker
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

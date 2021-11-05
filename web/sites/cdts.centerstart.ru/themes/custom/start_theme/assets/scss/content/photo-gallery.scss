@@ -1,0 +1,154 @@
+@import "../base/vars";
+
+// teaser
+.photo-gallery {
+  position: relative;
+  height: 295px;
+  width: 255px;
+  border: 1px solid $borderColor;
+  background-color: #fff;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 8px 10px 8px;
+    width: 100%;
+    min-height: 20%;
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+  }
+  &__link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  &:hover {
+    box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+    border-radius: 3px;
+    background-color: #fff;
+    opacity: 0.8;
+    .photo-gallery__hover-text {
+      opacity: 1;
+    }
+  }
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @extend %calibri-medium;
+    margin-bottom: 10px;
+    span {
+      text-align: center;
+      
+    }
+  }
+  &__hover-text {
+    opacity: 0;
+    transition: all .3s;
+    position: absolute;
+    top: 30px;
+    left: 13px;
+    color: $mainFontColor;
+    margin-right: 5px;
+  }
+  &__statistics {
+    text-decoration: none;
+    color: $mainFontColor; 
+    position: relative;
+    padding-left: 30px;
+    transition: all .2s;
+    &::before {
+      position: absolute;
+      left: 0;
+      height: 22px;
+      width: 22px;
+      content: '';
+      background: url('../images/icons/eye.svg') 50% 50% no-repeat;
+      filter: invert(.35);
+      transition: all .2s;
+    }
+    &:hover::before {
+      filter: invert(.65);
+    }
+  }
+  &__created {
+    text-decoration: none;
+    color: $mainFontColor; 
+    position: relative;
+    padding-left: 27px;
+    transition: all .2s;
+    &::before {
+      position: absolute;
+      left: 0;
+      height: 22px;
+      width: 23px;
+      content: '';
+      background: url('../images/icons/calendar.svg') 50% 50% no-repeat;
+      filter: invert(.35);
+      transition: all .2s;
+    }
+    &:hover::before {
+      filter: invert(.65);
+    }
+  }
+}
+
+#block-views-block-photo-gallery {
+
+  .view-content {
+    max-width: 845px;
+    margin: 0 auto;
+    margin-bottom: $distanceBlock;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(auto-fill, 255px);
+    grid-gap: clamp(0.5vw, 1vw, 2vw);
+    @media (max-width: 545px) {
+      grid-row-gap: 10px;
+    }
+  }
+}
+
+//full
+.node-photo-gallery {
+  .field-photo-text {
+   margin-top: $distance;
+  }
+  .field-photo-image {
+    text-align: center;
+    margin-top: $distance;
+    margin-bottom: $distance;
+    .field__item {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 2px;
+      margin-bottom: 5px;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+      overflow: hidden;
+      a {
+        display: inline; // убирает отступы
+      }
+      img {
+        display: block; // убирает отступы
+        width: 260px;
+        transition: 1s;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+      &:hover {
+        box-shadow: none;
+      }
+    }
+  }
+
+}

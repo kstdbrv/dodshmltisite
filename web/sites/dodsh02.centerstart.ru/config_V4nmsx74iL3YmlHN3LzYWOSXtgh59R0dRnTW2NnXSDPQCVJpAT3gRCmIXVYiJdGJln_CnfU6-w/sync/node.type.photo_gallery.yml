@@ -1,0 +1,17 @@
+uuid: 87e613b7-1f64-4d67-b45b-7bde94687b77
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Фотогалерея
+type: photo_gallery
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

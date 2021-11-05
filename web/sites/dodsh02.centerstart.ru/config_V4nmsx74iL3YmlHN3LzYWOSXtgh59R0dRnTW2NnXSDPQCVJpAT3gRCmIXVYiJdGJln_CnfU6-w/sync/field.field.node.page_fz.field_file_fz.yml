@@ -1,0 +1,27 @@
+uuid: 0e3331ac-b204-4906-940e-dc4142679613
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file_fz
+    - node.type.page_fz
+  module:
+    - file
+id: node.page_fz.field_file_fz
+field_name: field_file_fz
+entity_type: node
+bundle: page_fz
+label: 'Прикрепить файл'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'document/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'jpg jpeg gif png bmp txt doc xls pdf ppt pps odt ods odp docx xlt xltx xlsx pptx avi mpeg mpg wmv swf mp3 sig'
+  max_filesize: '5  MB'
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

@@ -1,0 +1,27 @@
+uuid: 52cad346-2c34-48f9-a706-b09fabda9e78
+langcode: ru
+status: false
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - zircon
+_core:
+  default_config_hash: sqq79TO5Cb_GpL16x4unVw9mVi3Tb3YKkNXJHa9dxcM
+id: zircon_main_menu
+theme: zircon
+region: ''
+weight: -8
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+  expand_all_items: false
+visibility: {  }

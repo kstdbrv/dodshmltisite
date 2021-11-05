@@ -1,0 +1,42 @@
+uuid: f936760a-d114-495d-b948-7ad83bf6c63a
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.page_fz.body
+    - field.field.node.page_fz.field_file_fz
+    - field.field.node.page_fz.field_tegs
+    - node.type.page_fz
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.page_fz.search_result
+targetEntityType: node
+bundle: page_fz
+mode: search_result
+content:
+  field_tegs:
+    type: entity_reference_label
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+  search_api_excerpt:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_file_fz: true
+  langcode: true
+  links: true
+  sharethis: true
+  social_links: true

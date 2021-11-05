@@ -1,0 +1,22 @@
+uuid: b9dcd0b6-bdde-4412-ade2-410e4bbc0b4f
+langcode: ru
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - liceum_1
+_core:
+  default_config_hash: 4s2kdWvGJWWkDASiP5Ig5UjcJJOb52uHpX_Oo6rxjEA
+id: liceum_1_help
+theme: liceum_1
+region: content
+weight: -9
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

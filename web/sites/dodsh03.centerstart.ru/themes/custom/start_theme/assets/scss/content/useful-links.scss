@@ -1,0 +1,78 @@
+@import "../base/vars";
+
+
+.useful-links {
+  &__title {   // заголовок блока
+    color: #fff;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+  }
+  &__container {
+    max-width: 845px;
+    margin: 0 auto;
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+  &__content {
+    display: flex;
+    justify-content: flex-start;
+    gap: clamp(0.5vw,1vw,2vw);
+    width: 1250px;
+    margin-bottom: 30px;
+  }
+  &__item {
+    position: relative;
+    display:flex; // картинка по центру
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    color: $mainFontColor;
+    &:hover {
+      img {
+        opacity: 0.3;
+       }
+       .useful-links__text {
+        opacity: 1;
+      } 
+    }
+   img {
+    width: 159px;
+    height: 159px;
+    opacity: 1;
+    transition: all .2s;
+   }
+  }
+  .useful-links__text {
+    font-size: 18px;
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    left: -2px;
+    opacity: 0;
+    transition: all .2s;
+  }
+}
+
+
+
+// style for scroll
+
+/* https://active-vision.ru/blog/polosa-prokrutki-css/ */
+.useful-links::-webkit-scrollbar {
+  /* height: 10px; */
+  background-color: $mainColor;
+}
+
+.useful-links::-webkit-scrollbar-thumb {
+  /* border-radius: 8px; */
+  background-color: #fff;
+}
+
+.useful-links::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+  /* border-radius: 8px; */
+  background-color: $mainColor;
+}

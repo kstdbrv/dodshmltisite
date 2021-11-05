@@ -1,0 +1,18 @@
+@import "../base/vars";
+
+.section-5 {
+  .block.block-views {
+    h2 {   // заголовок блока
+      margin-left: -10px;
+      margin-right: -10px;
+      padding: 20px 0;
+      margin-bottom: $distance;
+      text-align: center;
+      background-color: $mainColor;
+      color: #fff;
+      text-transform: uppercase;
+      @extend %calibri-bold;
+      letter-spacing: 1.3px;
+    }
+  }
+}

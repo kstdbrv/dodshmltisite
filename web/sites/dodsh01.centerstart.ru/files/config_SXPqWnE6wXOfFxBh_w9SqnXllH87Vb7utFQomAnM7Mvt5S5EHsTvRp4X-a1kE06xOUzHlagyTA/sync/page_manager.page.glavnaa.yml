@@ -1,0 +1,12 @@
+uuid: 684cf92d-9d29-4680-8ebb-b11ab0151b4e
+langcode: ru
+status: true
+dependencies: {  }
+id: glavnaa
+label: Главная
+description: ''
+use_admin_theme: false
+path: /frontpage
+access_logic: and
+access_conditions: {  }
+parameters: {  }

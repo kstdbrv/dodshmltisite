@@ -1,0 +1,29 @@
+uuid: 3949a070-c83b-43ea-b2f0-8c6d83eec705
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c6ad821d-c7ec-4859-b3a7-90f51ca7d91b'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - liceum_1
+third_party_settings:
+  block_class:
+    classes: ''
+id: statistika
+theme: liceum_1
+region: footer_second
+weight: -9
+provider: null
+plugin: 'block_content:c6ad821d-c7ec-4859-b3a7-90f51ca7d91b'
+settings:
+  id: 'block_content:c6ad821d-c7ec-4859-b3a7-90f51ca7d91b'
+  label: Статистика
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

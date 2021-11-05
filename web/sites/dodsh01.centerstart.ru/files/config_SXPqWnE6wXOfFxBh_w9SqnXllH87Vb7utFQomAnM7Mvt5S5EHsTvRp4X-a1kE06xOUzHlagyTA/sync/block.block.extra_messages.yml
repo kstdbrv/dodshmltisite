@@ -1,0 +1,22 @@
+uuid: 72fd821b-5d77-4323-896d-3a06eb31928f
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - extra
+_core:
+  default_config_hash: Y3vA-FHR0Ew7pBDZycWH4cD7J0FJyt_08yo9OUBRvcA
+id: extra_messages
+theme: extra
+region: footer
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

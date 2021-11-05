@@ -1,0 +1,27 @@
+uuid: af88ada5-818d-4541-8a2a-7931c32a533b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - olivero
+_core:
+  default_config_hash: 9rMeB9hFDDKsbKpqVK67NJiM0cbgSl2FUJYVmp5bfGc
+id: olivero_main_menu
+theme: olivero
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Меню в шапке'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+  expand_all_items: true
+visibility: {  }

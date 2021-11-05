@@ -1,0 +1,22 @@
+uuid: b3f54091-e972-4238-a8fa-a524dbddd442
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
+id: authenticated
+label: 'Аутентифицированный пользователь'
+weight: -7
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'access sitemap'
+  - 'post comments'
+  - 'restful get dlog_search_global_index'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use text format basic_html'
+  - 'view media'

@@ -1,0 +1,8 @@
+uuid: 4271c78d-5ee6-4bc9-ac38-56c3b0ae92ce
+langcode: ru
+status: true
+dependencies: {  }
+id: kastomnyi_format_1
+label: 'Число и месяц'
+locked: false
+pattern: 'j M'

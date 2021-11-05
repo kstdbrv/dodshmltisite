@@ -1,0 +1,22 @@
+uuid: 5316ef07-f5e8-4c77-bde4-d2680247ade7
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - startupgrowth_lite
+_core:
+  default_config_hash: SZZYSZ9z-m5uU14vuhrsJpvTjropuv_Dgiexwe3aX9A
+id: startupgrowth_lite_content
+theme: startupgrowth_lite
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: a96b22d9-3bea-46c7-bf3b-e1ada31f510a
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:50d22246-e8b3-470c-9b6a-ea10076e63a1'
+  module:
+    - block_content
+  theme:
+    - start_theme
+id: site_map
+theme: start_theme
+region: header_top_left
+weight: -13
+provider: null
+plugin: 'block_content:50d22246-e8b3-470c-9b6a-ea10076e63a1'
+settings:
+  id: 'block_content:50d22246-e8b3-470c-9b6a-ea10076e63a1'
+  label: 'Карта сайта'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

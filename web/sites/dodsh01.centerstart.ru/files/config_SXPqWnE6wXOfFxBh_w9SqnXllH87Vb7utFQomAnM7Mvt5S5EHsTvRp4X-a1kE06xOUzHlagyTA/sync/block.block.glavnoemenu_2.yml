@@ -1,0 +1,25 @@
+uuid: 4d1c0053-e1d7-445c-a4d6-005659caf1a7
+langcode: ru
+status: false
+dependencies:
+  config:
+    - system.menu.glavnoe-menu
+  module:
+    - system
+  theme:
+    - demo
+id: glavnoemenu_2
+theme: demo
+region: ''
+weight: 0
+provider: null
+plugin: 'system_menu_block:glavnoe-menu'
+settings:
+  id: 'system_menu_block:glavnoe-menu'
+  label: 'Главное меню'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

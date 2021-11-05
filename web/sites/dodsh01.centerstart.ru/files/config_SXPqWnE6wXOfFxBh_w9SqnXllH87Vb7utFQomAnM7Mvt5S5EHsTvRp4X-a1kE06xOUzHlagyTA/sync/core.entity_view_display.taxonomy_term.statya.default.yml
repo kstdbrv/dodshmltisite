@@ -1,0 +1,22 @@
+uuid: e457cd90-c5cf-4005-94a5-82275eaee5ec
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.statya
+  module:
+    - text
+id: taxonomy_term.statya.default
+targetEntityType: taxonomy_term
+bundle: statya
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

@@ -1,0 +1,22 @@
+uuid: 8b5af52c-c337-4723-b399-4b3e1461ed51
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.slider_five_cols
+id: node.slider_five_cols.status
+field_name: status
+entity_type: node
+bundle: slider_five_cols
+label: Опубликовано
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

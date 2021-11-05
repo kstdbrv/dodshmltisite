@@ -3747,3 +3747,18 @@ html body .bvi-body {
   html body .bvi-body[data-bvi-flash-iframe='false'] video,
   html body .bvi-body[data-bvi-flash-iframe='false'] figure {
     display: none; }
+
+    .bvi-not-supported-wrapper {
+      position: relative;
+    }
+    .bvi-not-supported p {
+      color: #013d7c;
+      display: none;
+      position: absolute;
+      top:10px;
+      left: 0;
+      width: 300px;
+    }
+    .bvi-not-supported-wrapper:hover .bvi-not-supported {
+      display: block;
+    }

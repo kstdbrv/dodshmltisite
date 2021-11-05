@@ -1,0 +1,22 @@
+uuid: 5906048f-57ff-4183-b56f-92658f31f1c8
+langcode: ru
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - professional_responsive_theme
+_core:
+  default_config_hash: pt6TOyOyKi9ANai4VDSkzqUuN2_xcqws_oZdrcnwKLM
+id: professional_responsive_theme_help
+theme: professional_responsive_theme
+region: highlighted
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Справка
+  provider: help
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,101 @@
+@import "../base/vars";
+
+#block-views-block-remote-video-block-1 {
+  max-width: 720px;
+  margin: 0 auto;
+  .view-content {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      top: -10px;
+      left: -10px;
+      width: 720px;
+      height: 405px;
+      background-color: $mainColor;
+      @media (max-width: 665px) {
+        width: 0;
+     }
+    } 
+    &::after {
+      z-index: -1;
+      position: absolute;
+      content: '';
+      top: 10px;
+      right: -10px;
+      width: 720px;
+      height: 405px;
+      background-color: $activeColor;
+      @media (max-width: 665px) {
+       width: 0;
+    }
+   }
+  }
+  .field__item {
+    overflow:hidden;
+    position:relative;
+    padding-bottom:56.25%; /* Если соотношения 4:3 :75%. */
+    /* padding-top:30px; */
+    height:0;
+    iframe {
+      position:absolute;
+      width:100%;
+      height:100%;
+      left:0;
+      top:0;
+    }
+    @media (max-width: 665px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.remote-full {
+  .view-content > div {
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(auto-fill ,365px);
+    grid-gap: clamp(0.5vw, 1vw, 2vw);
+    @media (max-width: 545px) {
+      grid-row-gap: 10px;
+      grid-template-columns: repeat(auto-fill ,310px);
+    }
+  }
+  .field__item {
+    overflow:hidden;
+    position:relative;
+    padding-bottom:56.25%; /* Если соотношения 4:3 :75%. */
+    /* padding-top:30px; */
+    height:0;
+    iframe {
+      position:absolute;
+      width:100%;
+      height:100%;
+      left:0;
+      top:0;
+      border-radius: 15px;
+      @media (max-width: 665px) {
+        border-radius: 0px;
+      }
+    }
+    @media (max-width: 665px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .views-field-title {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .field__item {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+  }
+}
+
+.node-remote-gallery {
+  margin-top: 15px;
+}

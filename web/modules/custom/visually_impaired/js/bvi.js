@@ -76,16 +76,21 @@
         }
 
         function bvi_voice() {
+            var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+            var content
+            isOpera ? content = '<a href="#" class="bvi-play bvi-btn bvi-btn-outline-dark bvi-btn-sm bvi-center">К сожалению, чтение голосом в данном браузере не поддерживается</a>'
+                :
+                content = '<a href="#" class="bvi-play bvi-btn bvi-btn-outline-dark bvi-btn-sm">Воспроизвести</a>' +
+                '<a href="#" class="bvi-stop bvi-btn bvi-btn-outline-dark bvi-btn-sm">Стоп</i></a>'
+               
+
             if(responsiveVoice.voiceSupport() || versionIE >= 11 || versionIE >= 10 || versionIE >= 9) {
                 responsiveVoice.setDefaultVoice("Russian Female");
                 var bvi_voice = $(".bvi-voice");
                 bvi_voice.each(function(index){
                     var bvi_voice_text_id = 'bvi-voice-text-id-' + index;
                     $(this).wrapInner('<div class="bvi-voice-text ' + bvi_voice_text_id + '"></div>');
-                    $(this).prepend('<div class="bvi bvi-link" data-bvi-voice-class=".'+ bvi_voice_text_id +'"><div class="bvi-btn-group">' +
-                        '<a href="#" class="bvi-play bvi-btn bvi-btn-outline-dark bvi-btn-sm">Воспроизвести</a>' +
-                        '<a href="#" class="bvi-stop bvi-btn bvi-btn-outline-dark bvi-btn-sm">Стоп</i></a>' +
-                        '</div></div>');
+                    $(this).prepend('<div class="bvi bvi-link bvi-center" data-bvi-voice-class=".' + bvi_voice_text_id + '"><div class="bvi-btn-group">' + content)
                 });
                 $('.bvi-play').click(function() {
                     var bvi_voice_class = $(this).parent().parent().data('bvi-voice-class');

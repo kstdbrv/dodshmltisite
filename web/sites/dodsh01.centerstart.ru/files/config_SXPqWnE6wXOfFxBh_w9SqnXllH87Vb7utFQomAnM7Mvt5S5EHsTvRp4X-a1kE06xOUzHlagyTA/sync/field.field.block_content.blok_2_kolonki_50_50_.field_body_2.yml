@@ -1,0 +1,22 @@
+uuid: 71f7779c-0b8b-426f-a00e-a16293ec2dcc
+langcode: ru
+status: true
+dependencies:
+  config:
+    - block_content.type.blok_2_kolonki_50_50_
+    - field.storage.block_content.field_body_2
+  module:
+    - text
+id: block_content.blok_2_kolonki_50_50_.field_body_2
+field_name: field_body_2
+entity_type: block_content
+bundle: blok_2_kolonki_50_50_
+label: Содержимое
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

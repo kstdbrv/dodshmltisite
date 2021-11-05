@@ -1,0 +1,22 @@
+uuid: 08033a52-fee6-4428-a7a3-1de7cd1aca17
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - glisseo
+_core:
+  default_config_hash: 80N66GdzEvwqi1m-_GZ-ulkk8AJG9beoXcZ4-pMVKjI
+id: glisseo_content
+theme: glisseo
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 0b2f87cf-963b-403e-8fbb-9bf2e032684f
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_news
+    - node.type.novost
+  module:
+    - text
+id: node.novost.field_content_news
+field_name: field_content_news
+entity_type: node
+bundle: novost
+label: Содержимое
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

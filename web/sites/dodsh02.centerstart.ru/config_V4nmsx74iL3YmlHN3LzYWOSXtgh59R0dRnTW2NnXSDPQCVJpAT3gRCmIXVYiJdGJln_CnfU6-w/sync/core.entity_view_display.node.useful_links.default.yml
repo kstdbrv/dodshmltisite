@@ -1,0 +1,46 @@
+uuid: 8b875c98-8b58-4fa3-b0ff-67f5b0a91aa5
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.useful_links.field_links_image
+    - field.field.node.useful_links.field_useful_link
+    - node.type.useful_links
+  module:
+    - image
+    - link
+    - user
+id: node.useful_links.default
+targetEntityType: node
+bundle: useful_links
+mode: default
+content:
+  field_links_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_useful_link:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  social_links: true

@@ -1,0 +1,84 @@
+uuid: 2427b606-08c5-4731-afa5-c63db6292102
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.social.field_facebook
+    - field.field.node.social.field_instagram
+    - field.field.node.social.field_ok
+    - field.field.node.social.field_social_link
+    - field.field.node.social.field_utube
+    - node.type.social
+  module:
+    - link
+    - user
+id: node.social.default
+targetEntityType: node
+bundle: social
+mode: default
+content:
+  field_facebook:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 1
+      rel: nofollow
+      target: _blank
+      url_only: true
+      url_plain: true
+    third_party_settings: {  }
+    type: link_separate
+    region: content
+  field_instagram:
+    weight: 4
+    label: hidden
+    settings:
+      trim_length: 1
+      rel: nofollow
+      target: _blank
+      url_only: false
+      url_plain: false
+    third_party_settings: {  }
+    type: link_separate
+    region: content
+  field_ok:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 1
+      rel: nofollow
+      target: _blank
+      url_only: true
+      url_plain: false
+    third_party_settings: {  }
+    type: link_separate
+    region: content
+  field_social_link:
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: 1
+      rel: nofollow
+      target: _blank
+      url_only: false
+      url_plain: false
+    third_party_settings: {  }
+    type: link_separate
+    region: content
+  field_utube:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 1
+      rel: nofollow
+      target: _blank
+      url_only: false
+      url_plain: false
+    third_party_settings: {  }
+    type: link_separate
+    region: content
+hidden:
+  langcode: true
+  links: true
+  sharethis: true
+  social_links: true

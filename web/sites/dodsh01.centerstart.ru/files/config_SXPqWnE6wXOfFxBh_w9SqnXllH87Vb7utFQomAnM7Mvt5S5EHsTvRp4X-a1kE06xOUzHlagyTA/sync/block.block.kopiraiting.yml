@@ -1,0 +1,29 @@
+uuid: 5b4f96a7-6781-4e16-8f32-168954713766
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:fc08e467-67f1-4b4e-9668-73079ed520dc'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - liceum_1
+third_party_settings:
+  block_class:
+    classes: ''
+id: kopiraiting
+theme: liceum_1
+region: footer_first
+weight: -9
+provider: null
+plugin: 'block_content:fc08e467-67f1-4b4e-9668-73079ed520dc'
+settings:
+  id: 'block_content:fc08e467-67f1-4b4e-9668-73079ed520dc'
+  label: Копирайтинг
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

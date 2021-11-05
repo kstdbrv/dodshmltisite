@@ -1,0 +1,18 @@
+uuid: a937b165-feec-45a7-be8e-5b62632fa390
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.comments
+id: node.comments.title
+field_name: title
+entity_type: node
+bundle: comments
+label: Заголовок
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

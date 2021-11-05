@@ -1,0 +1,22 @@
+uuid: 19496d28-2cb3-455c-b473-a84a3ae9611f
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - glisseo
+_core:
+  default_config_hash: DJ7Om1C2xWr2GI8CjZaZtyWpP-0S3hRR3oROZl1oesc
+id: glisseo_secondary_local_tasks
+theme: glisseo
+region: sidebar_first
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  provider: core
+  label_display: '0'
+  primary: false
+  secondary: true
+visibility: {  }

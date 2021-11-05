@@ -1,0 +1,23 @@
+uuid: 710fb0fa-bad6-4e82-907a-b823e4129b48
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ok
+    - node.type.social
+  module:
+    - link
+id: node.social.field_ok
+field_name: field_ok
+entity_type: node
+bundle: social
+label: 'Ссылка на OK (одноклассиники)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

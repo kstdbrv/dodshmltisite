@@ -1,0 +1,11 @@
+uuid: ba052eaf-4901-4ac9-bfde-4d7b76f5f337
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.target
+id: node.target
+target_entity_type_id: node
+target_bundle: target
+default_langcode: site_default
+language_alterable: false

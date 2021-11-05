@@ -1,0 +1,59 @@
+uuid: 998b7177-bb9e-442c-a2c9-d8ab84b7d48e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - block_content.type.blok_3_kolonki
+    - field.field.block_content.blok_3_kolonki.field_cont_1
+    - field.field.block_content.blok_3_kolonki.field_cont_2
+    - field.field.block_content.blok_3_kolonki.field_cont_3
+  module:
+    - text
+id: block_content.blok_3_kolonki.default
+targetEntityType: block_content
+bundle: blok_3_kolonki
+mode: default
+content:
+  field_cont_1:
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_cont_2:
+    weight: 27
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_cont_3:
+    weight: 28
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

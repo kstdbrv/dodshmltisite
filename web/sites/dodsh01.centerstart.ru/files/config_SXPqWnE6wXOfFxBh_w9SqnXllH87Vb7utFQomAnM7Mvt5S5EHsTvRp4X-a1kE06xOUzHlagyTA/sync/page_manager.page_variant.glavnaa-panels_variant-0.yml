@@ -1,0 +1,53 @@
+uuid: b1ebe842-6cdb-4225-8876-96e55a67af63
+langcode: ru
+status: true
+dependencies:
+  config:
+    - page_manager.page.glavnaa
+    - views.view.poleznye_resursy_2_x_10_
+    - views.view.slaider_
+  module:
+    - panels
+    - views
+id: glavnaa-panels_variant-0
+label: Панели
+variant: panels_variant
+variant_settings:
+  blocks:
+    6756fd93-c0d2-4efc-89a1-5c55fdefa876:
+      id: 'views_block:slaider_-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: content
+      weight: 0
+      uuid: 6756fd93-c0d2-4efc-89a1-5c55fdefa876
+      context_mapping: {  }
+    ed19b626-32dc-47a4-b3d0-b339d93a1a54:
+      id: 'views_block:poleznye_resursy_2_x_10_-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: content
+      weight: 0
+      uuid: ed19b626-32dc-47a4-b3d0-b339d93a1a54
+      context_mapping: {  }
+  id: panels_variant
+  uuid: 1795078f-a8a9-47cc-8e04-958a28757478
+  label: null
+  weight: 0
+  layout: layout_onecol
+  layout_settings: {  }
+  page_title: ''
+  storage_type: page_manager
+  storage_id: glavnaa-panels_variant-0
+  builder: standard
+page: glavnaa
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

@@ -1,0 +1,30 @@
+uuid: 56fbb3ef-39cb-490c-93ac-701435375f73
+langcode: ru
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - paragraphs
+id: paragraph.field_photo
+field_name: field_photo
+entity_type: paragraph
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: 8463bc1c-1b72-42e0-9fe2-18675a312d72
+    alt: фото
+    title: ''
+    width: 44
+    height: 57
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

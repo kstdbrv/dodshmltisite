@@ -1,0 +1,25 @@
+{%
+  set classes = [
+    'global-search',
+    'node',
+    'node-' ~ node.bundle|clean_class,
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+  ]
+%}
+
+<div{{ attributes.addClass(classes) }}>
+
+  <h2 class="global-search__title"><a href="{{ url }}">{{ label }}</a></h2>
+  <div class="global-search__overflow">
+    <a href="{{ url }}" class="global-search__link">{{ url_absolute }}</a>
+  </div>
+
+  <div class="global-search__wrap">
+    <div class="global-search__created">{{ node.getCreatedTime()|date("d.m.Y") }}</div>
+    {% set field_tegs = content.field_tegs|render %}
+    {% if field_tegs|length %}
+    <div class="global-search__tags">{{ content.field_tegs }}</div>
+    {% endif %}
+  </div>
+  <div class="global-search__text">{{ content.body }}</div>
+</div>

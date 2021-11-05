@@ -1,0 +1,15 @@
+#modal_login {
+  z-index: 1003;
+  display: block;
+  opacity: 1;
+  top: 10%;
+  -webkit-transform: scaleX(1) scaleY(1);
+          transform: scaleX(1) scaleY(1);
+}
+
+#modal_login .modal {
+  overflow: hidden;
+  font-size: 19px;
+  max-width: 450px;
+  border-radius: 5px;
+}

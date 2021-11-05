@@ -11,7 +11,7 @@
 }
 
 .search-vue__input {
-  width: 33%;
+  width: 25%;
   padding: 5px 5px 5px 55px;
   outline: none;
   border: none;
@@ -51,7 +51,12 @@
   }
 }
 
+.search-vue__input::-ms-clear {
+  display: none;
+}
+
 .search-vue button {
+  cursor: pointer;
   height: inherit;
   width: 45px;
   position: absolute;

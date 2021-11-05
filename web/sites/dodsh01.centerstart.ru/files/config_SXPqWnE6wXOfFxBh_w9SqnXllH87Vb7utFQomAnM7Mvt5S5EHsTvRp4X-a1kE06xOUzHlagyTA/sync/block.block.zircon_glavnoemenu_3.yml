@@ -1,0 +1,25 @@
+uuid: 8b771a5a-83b1-4ddb-8830-2b2dd999b97b
+langcode: ru
+status: false
+dependencies:
+  config:
+    - system.menu.glavnoe-menu
+  module:
+    - system
+  theme:
+    - zircon
+id: zircon_glavnoemenu_3
+theme: zircon
+region: ''
+weight: -8
+provider: null
+plugin: 'system_menu_block:glavnoe-menu'
+settings:
+  id: 'system_menu_block:glavnoe-menu'
+  label: 'Главное меню'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 2d61af78-7b09-472c-ae31-5f93c4af247f
+langcode: ru
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - zircon
+_core:
+  default_config_hash: pt6TOyOyKi9ANai4VDSkzqUuN2_xcqws_oZdrcnwKLM
+id: zircon_help
+theme: zircon
+region: header
+weight: -9
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

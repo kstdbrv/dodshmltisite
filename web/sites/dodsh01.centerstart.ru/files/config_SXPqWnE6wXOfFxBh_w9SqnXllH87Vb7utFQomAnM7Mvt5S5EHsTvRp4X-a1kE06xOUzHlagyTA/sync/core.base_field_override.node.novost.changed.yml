@@ -1,0 +1,18 @@
+uuid: a5392aaa-f97b-4197-b430-a807a1a12ba5
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.novost
+id: node.novost.changed
+field_name: changed
+entity_type: node
+bundle: novost
+label: Изменение
+description: 'Время последнего редактирования материала.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

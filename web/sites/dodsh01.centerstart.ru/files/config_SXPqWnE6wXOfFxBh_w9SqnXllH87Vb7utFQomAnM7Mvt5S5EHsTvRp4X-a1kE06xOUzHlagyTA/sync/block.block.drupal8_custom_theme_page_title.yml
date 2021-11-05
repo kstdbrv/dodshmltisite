@@ -1,0 +1,20 @@
+uuid: b1e7fd68-be94-4d58-9a49-152ce3b886a4
+langcode: ru
+status: false
+dependencies:
+  theme:
+    - drupal8_custom_theme
+_core:
+  default_config_hash: kqZQnR1TUbxPC7NSveYa1zq-mU19WvcZt-sXR1xk6As
+id: drupal8_custom_theme_page_title
+theme: drupal8_custom_theme
+region: page_title
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

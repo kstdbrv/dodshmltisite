@@ -1,0 +1,6 @@
+name: social-links
+type: module
+description: Добавляет ссылки на комментирование в соцсетях
+package: Модули разработанные сотрудниками "МКУ КМЦИКТ Старт"
+core: 8.x
+core_version_requirement: ^8 || ^9

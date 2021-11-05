@@ -1,0 +1,22 @@
+uuid: f15ecd99-47c3-42e9-bb05-9da4593f761e
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - liceum_1
+_core:
+  default_config_hash: 5uTUBtmfJzB01ZjPotp-_m3vbxR9VWf3EvHv-5yVsmE
+id: liceum_1_local_tasks
+theme: liceum_1
+region: content
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

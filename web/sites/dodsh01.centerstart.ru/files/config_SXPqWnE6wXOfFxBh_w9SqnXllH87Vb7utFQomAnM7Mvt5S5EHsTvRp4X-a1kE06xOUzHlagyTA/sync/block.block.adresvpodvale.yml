@@ -1,0 +1,29 @@
+uuid: fcc04e0e-deeb-4f73-aecc-72a423ce3a74
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e7a17f5a-2f9d-475f-ac50-6e8a7bda8d01'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - liceum_1
+third_party_settings:
+  block_class:
+    classes: ''
+id: adresvpodvale
+theme: liceum_1
+region: footer_forch
+weight: -9
+provider: null
+plugin: 'block_content:e7a17f5a-2f9d-475f-ac50-6e8a7bda8d01'
+settings:
+  id: 'block_content:e7a17f5a-2f9d-475f-ac50-6e8a7bda8d01'
+  label: 'Адрес в подвале'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

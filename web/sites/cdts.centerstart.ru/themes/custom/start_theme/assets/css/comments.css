@@ -1,0 +1,189 @@
+#block-views-block-comments .view-content {
+  max-width: 445px;
+  margin: 0 auto;
+}
+
+#block-views-block-comments .slick-slider .slick-arrow.slick-prev {
+  left: -100px;
+}
+
+@media (max-width: 840px) {
+  #block-views-block-comments .slick-slider .slick-arrow.slick-prev {
+    left: -60px;
+  }
+}
+
+#block-views-block-comments .slick-slider .slick-arrow.slick-prev::before {
+  background-image: url("../images/icons/arrow.svg");
+  background-size: 28px 28px;
+  height: 28px;
+  width: 28px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+#block-views-block-comments .slick-slider .slick-arrow.slick-next {
+  right: -85px;
+}
+
+@media (max-width: 840px) {
+  #block-views-block-comments .slick-slider .slick-arrow.slick-next {
+    right: -45px;
+  }
+}
+
+#block-views-block-comments .slick-slider .slick-arrow.slick-next::before {
+  background-image: url("../images/icons/arrow.svg");
+  background-size: 28px 28px;
+  background-color: transparent;
+  height: 28px;
+  width: 28px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+#block-views-block-comments .slick-slider .slick-dots {
+  bottom: 15px;
+}
+
+#block-views-block-comments .slick-slider .slick-dots button {
+  width: 11px;
+  height: 11px;
+}
+
+@media (max-width: 640px) {
+  #block-views-block-comments .slick-slider .slick-dots button {
+    width: 7px;
+    height: 7px;
+  }
+}
+
+#block-views-block-comments .slick-slider .slick-slide img {
+  display: inline-block;
+}
+
+#block-views-block-comments .comments {
+  position: relative;
+  text-align: center;
+}
+
+#block-views-block-comments .comments__photo {
+  margin: 0 auto;
+  margin-bottom: 32px;
+  width: 72px;
+  height: 72px;
+  background-color: #8ccaca;
+  border-radius: 50%;
+  border: 1px solid #a7a6a6;
+}
+
+#block-views-block-comments .comments__photo img {
+  margin-top: 6px;
+  border-radius: 20%;
+}
+
+#block-views-block-comments .comments__name {
+  margin-bottom: 32px;
+}
+
+#block-views-block-comments .comments__comment {
+  margin-bottom: 32px;
+}
+
+#block-views-block-comments .comments__face > div {
+  display: inline-flex;
+  margin-bottom: 32px;
+  opacity: 1;
+  transition: all .3s ease;
+}
+
+#block-views-block-comments .comments__hover {
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  left: 154px;
+  transition: all .4s;
+}
+
+#block-views-block-comments .comments .comments__inner:hover .comments__hover {
+  opacity: 1;
+}
+
+#block-views-block-comments .comments .comments__inner:hover .comments__face {
+  opacity: 0;
+}
+
+#block-views-block-comments .comments__links {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 375px) {
+  #block-views-block-comments .comments__links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+#block-views-block-comments .comments__links .link-contact a {
+  text-transform: lowercase;
+  letter-spacing: .12px;
+  height: 50px;
+  padding: 13px 25px 17px;
+  text-decoration: none !important;
+  text-align: center;
+  background-color: #fff;
+  transition: all .2s;
+  color: #1f1d21;
+  border: 1px solid #a7a6a6;
+  box-shadow: 1px 3px 4px rgba(59, 59, 59, 0.45);
+}
+
+#block-views-block-comments .comments__links .link-contact a:first-letter {
+  text-transform: capitalize;
+}
+
+#block-views-block-comments .comments__links .link-contact a:hover {
+  box-shadow: none;
+}
+
+#block-views-block-comments .comments__links .link-contact a:active {
+  box-shadow: inset 0px 5px 4px rgba(59, 59, 59, 0.3);
+}
+
+#block-views-block-comments .comments__links .link-more {
+  margin: 0;
+  margin-left: 20px;
+}
+
+@media (max-width: 375px) {
+  #block-views-block-comments .comments__links .link-more {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}
+
+#block-views-block-comments .view-comments {
+  margin-top: 30px;
+}
+
+#block-views-block-comments .view-comments .view-content {
+  display: block !important;
+}
+
+.view-comments .views-row {
+  margin-bottom: 25px;
+}
+
+.view-comments .comments__photo {
+  margin-bottom: 15px;
+}
+
+.view-comments .comments__name {
+  margin-bottom: 25px;
+}
+
+.view-comments .comments__face {
+  display: none;
+}
+

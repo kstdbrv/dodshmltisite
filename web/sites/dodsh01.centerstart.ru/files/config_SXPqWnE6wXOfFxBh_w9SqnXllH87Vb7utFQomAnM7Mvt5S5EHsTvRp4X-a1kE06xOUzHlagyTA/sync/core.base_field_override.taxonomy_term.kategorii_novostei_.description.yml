@@ -1,0 +1,20 @@
+uuid: 04ed91c8-ac59-4971-9894-cca165530e6a
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.kategorii_novostei_
+  module:
+    - text
+id: taxonomy_term.kategorii_novostei_.description
+field_name: description
+entity_type: taxonomy_term
+bundle: kategorii_novostei_
+label: Описание
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,43 @@
+#block-views-block-achievements .view-achievements, .achievements-full .view-achievements {
+  max-width: 845px;
+  margin: 0 auto;
+}
+
+#block-views-block-achievements .view-content, .achievements-full .view-content {
+  margin-bottom: 30px;
+  display: -ms-grid;
+  display: grid;
+  justify-content: center;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: (221px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 221px);
+  grid-gap: clamp(0.5vw, 1vw, 2vw);
+}
+
+@media (max-width: 545px) {
+  #block-views-block-achievements .view-content, .achievements-full .view-content {
+    grid-row-gap: 10px;
+  }
+}
+
+#block-views-block-achievements .views-row, #block-views-block-achievements .field-content, .achievements-full .views-row, .achievements-full .field-content {
+  background-color: #8ccaca;
+  height: 221px;
+  text-align: center;
+  transition: .2s;
+  overflow: hidden;
+}
+
+#block-views-block-achievements .views-row:hover, #block-views-block-achievements .field-content:hover, .achievements-full .views-row:hover, .achievements-full .field-content:hover {
+  box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+}
+
+#block-views-block-achievements .views-row:hover img, #block-views-block-achievements .field-content:hover img, .achievements-full .views-row:hover img, .achievements-full .field-content:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#block-views-block-achievements .views-row img, #block-views-block-achievements .field-content img, .achievements-full .views-row img, .achievements-full .field-content img {
+  transition: 1s;
+}

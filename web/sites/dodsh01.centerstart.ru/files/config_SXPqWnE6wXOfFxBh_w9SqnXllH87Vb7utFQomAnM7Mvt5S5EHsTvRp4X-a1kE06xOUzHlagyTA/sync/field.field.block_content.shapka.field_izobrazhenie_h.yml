@@ -1,0 +1,38 @@
+uuid: 1739cfeb-83cc-4bec-8ec7-458f6dccdb1a
+langcode: ru
+status: true
+dependencies:
+  config:
+    - block_content.type.shapka
+    - field.storage.block_content.field_izobrazhenie_h
+  module:
+    - image
+id: block_content.shapka.field_izobrazhenie_h
+field_name: field_izobrazhenie_h
+entity_type: block_content
+bundle: shapka
+label: Изображение
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: dir
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: 2MB
+  max_resolution: 1920x400
+  min_resolution: 1920x300
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: b6af2a3e-3118-43a6-bdd4-52a9fe8be625
+    alt: ''
+    title: ''
+    width: 1920
+    height: 400
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

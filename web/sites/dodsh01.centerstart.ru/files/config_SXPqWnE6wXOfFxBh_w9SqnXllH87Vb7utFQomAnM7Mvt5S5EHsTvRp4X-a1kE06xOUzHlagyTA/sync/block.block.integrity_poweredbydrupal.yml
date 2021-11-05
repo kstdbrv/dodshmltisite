@@ -1,0 +1,22 @@
+uuid: b1412e68-5e31-4ff8-9eaa-04af46a4e3a1
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - integrity
+_core:
+  default_config_hash: _kWZrlVlVIZlQ0bOlcIou2iU0GlMRHYNuKbbVgcwv6s
+id: integrity_poweredbydrupal
+theme: integrity
+region: main_menu
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

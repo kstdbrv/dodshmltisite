@@ -1,0 +1,21 @@
+uuid: d830364d-fa6e-4800-8ed4-24dfa3887f77
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: rpwvgyEURXLz_JjgMCrkS1rUv-0k3L79BpO-ReN7fDI
+id: node
+label: Content
+tags:
+  title: '[node:title] | [site:name]'
+  canonical_url: '[node:url]'
+  description: '[node:summary]'
+  og_image: '[node:field_image_news]'
+  og_description: '[node:summary]'
+  og_title: '[node:title]'
+  og_url: '[node:url]'
+  twitter_cards_type: summary_large_image
+  twitter_cards_page_url: '[node:url]'
+  twitter_cards_description: '[node:summary]'
+  twitter_cards_title: '[node:title]'
+  twitter_cards_image: '[node:field_image_news]'

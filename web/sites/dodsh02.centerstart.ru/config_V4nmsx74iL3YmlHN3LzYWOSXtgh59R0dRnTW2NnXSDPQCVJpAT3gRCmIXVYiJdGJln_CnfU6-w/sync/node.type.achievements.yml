@@ -1,0 +1,17 @@
+uuid: 19d9f29f-ee15-4c3c-9830-e787f384a0ce
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Достижения
+type: achievements
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

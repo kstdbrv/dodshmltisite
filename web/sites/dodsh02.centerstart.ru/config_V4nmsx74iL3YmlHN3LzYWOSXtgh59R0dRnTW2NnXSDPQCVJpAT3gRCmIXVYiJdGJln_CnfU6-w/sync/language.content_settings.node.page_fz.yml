@@ -1,0 +1,11 @@
+uuid: b9b00815-9013-4043-b61b-ba5bf634189f
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.page_fz
+id: node.page_fz
+target_entity_type_id: node
+target_bundle: page_fz
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,10 @@
+uuid: 5f7ce693-1c10-4a2b-b2a8-78c08250c37f
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 7yrlW5z9zdg2eBucB2GPqXKSMQfH9lSRSO4DbWF7AFc
+id: footer
+label: Контакты
+description: 'Ссылки информации о сайте'
+locked: true

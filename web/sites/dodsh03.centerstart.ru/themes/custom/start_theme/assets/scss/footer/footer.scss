@@ -1,0 +1,211 @@
+@import "../base/vars";
+
+.footer {
+  margin-top: 35px;
+  background-color: $mainColor;
+  padding-top: 50px;
+  @media (max-width:555px) {
+    margin-top: 0;
+  }
+  &__top {
+    min-height: 365px;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width:1275px) {
+      display: block;
+    }
+  }
+}
+
+.top-footer {
+  align-items: center;
+  color: #fff;
+  .field-content {
+    margin-bottom: 15px;
+  }
+  a {
+    color: #fff;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__left {
+    margin-right: 15px;
+    flex: 0 1 415px;
+    @media (max-width: 1275px) {
+      margin-right: 0;
+      text-align: center;
+    }
+    #block-contacts-menu { // заголовок
+     text-transform: uppercase;
+     letter-spacing: 1.3px;
+     margin-bottom: 20px;
+     @media (max-width: 1275px) {
+      position: relative;
+      display: inline-block;
+      background-color: $mainColor;
+      color: #fff;
+      letter-spacing: 1.5px;
+      padding-left: 100px;
+      padding-right: 100px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      @media (max-width: 425px) {
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+      &::before {
+        position: absolute;
+        content: "";
+        background-image: url('../images/icons/arrow-nav.svg');
+        background-color: transparent;
+        left: 70px;
+        bottom: 12px;
+        width: 18px;
+        height: 12px;
+        transform: rotate(180deg);
+        filter: brightness(10);
+        @media (max-width: 425px) {
+         left: 15%;
+      }
+    }
+   }
+  }
+  #block-schetchikposescheniy {
+    @media (max-width:1275px) {
+      margin-top: 15px; 
+     margin-bottom: 15px;
+    }
+  }
+    .menu-footer {
+      margin-bottom: 20px;
+    }
+    .view-site-info {
+      max-width: 330px;
+      @media (max-width:1275px) {
+        max-width: unset;
+        margin-bottom: 20px;
+      }
+      .views-field:not(:last-child) {
+        margin-bottom: 5px;
+      }
+      .views-field-field-phone {
+       .field-content {
+        max-width: 265px;
+         display: inline-flex;
+         flex-direction: column;
+       }
+      }
+      .views-field-field-email a {
+        position: relative;
+        padding-left: 25px;
+        transition: all .2s;
+        &::before {
+          transition: all .2s;
+          position: absolute;
+          left: -3px;
+          height: 24px;
+          width: 24px;
+          content: '';
+          filter: invert(1);
+          transform: scale(.7);
+          background: url('../images/icons/mail.svg') 50% 50% no-repeat;
+        }
+        &:hover {
+          &::before {
+            filter: invert(.1);
+          }
+        }
+      }
+      .views-field-field-phone a {
+        position: relative;
+        padding-left: 25px;
+        transition: all .2s;
+        &::before {
+          transition: all .2s;
+          position: absolute;
+          left: -3px;
+          height: 24px;
+          width: 24px;
+          content: '';
+          filter: invert(1);
+          transform: scale(.7);
+          background: url('../images/icons/phone.svg') 50% 50% no-repeat;
+        }
+        &:hover {
+          &::before {
+            filter: invert(.1);
+          }
+        }
+      }
+    }
+  }
+  &__right {
+    flex: 0 1 1045px;
+    @media (max-width: 1275px) {
+      margin-left: -15px; // убирает отступы при адаптиве
+      margin-right: -15px;
+    }
+    @media (max-width: 375px) {
+      margin-left: -10px; // убирает отступы при адаптиве
+      margin-right: -10px;
+    }
+  }
+  .line {
+    position: relative;
+    margin-bottom: 14px;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 29px;
+      left: 29px;
+      width: 195px;
+      height: 1px;
+      background-color: #fff;
+      @media (max-width:1050px) {
+        display: none;
+      }
+    }
+    @media (max-width:1050px) {
+      margin-bottom: 0px;
+    }
+  }
+}
+.bottom-footer {
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width:597px) {
+    flex-direction: column;
+    min-height: 60px;
+  }
+  .line {
+    margin-right: 10px;
+    padding-right: 10px;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      top: 3px;
+      right: -2px;
+      width: 2px;
+      height: 15px;
+      background: #fff;
+       @media (max-width:597px) {
+       width: 0;
+      }
+    }
+  }
+  a{
+    color: #fff;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+ }
+
+
+
+

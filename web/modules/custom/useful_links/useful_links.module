@@ -1,0 +1,62 @@
+<?php
+
+/**
+ * @file
+ * Main file for hooks and custom functions.
+ */
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\node\Entity\NodeType;
+
+//добавляем поле в сущность
+/**
+ * Implements hook_entity_extra_field_info().
+ */
+function useful_links_entity_extra_field_info() {
+  $extra = [];
+
+  foreach (NodeType::loadMultiple() as $bundle) {
+    $extra['node'][$bundle->id()]['display']['useful_links'] = [
+      'label' => t('useful links'),
+      'description' => t('Add useful links on website'),
+      'weight' => 100,
+      'visible' => FALSE,
+    ];
+  }
+  return $extra;
+}
+
+/**
+* Implements hook_theme().
+*/
+function useful_links_theme($existing, $type, $theme, $path) {
+  //переменные по умолчанию
+  return [
+    'useful_links' => [
+      'variables' => [],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_view().
+ */
+function useful_links_node_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+  if ($display->getComponent('useful_links')) {
+    $build['useful_links'] = [
+      '#theme' => 'useful_links'
+    ];
+  }
+}
+
+/* можно так подключить, а можно в twig (как я сделал) */
+function template_preprocess_useful_links(&$variables){
+  # Add library
+  $variables['#attached']['library'][] = 'useful_links/useful_links';
+  $variables['path'] = '/' . drupal_get_path('module', 'useful_links') . '/assets/images/';
+}
+
+
+/* ресурс!  */
+
+/* https://niklan.net/blog/151#primer-no1-prostoe-obyavlenie-theme-hook */

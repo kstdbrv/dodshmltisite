@@ -1,0 +1,8 @@
+uuid: 5cc4b85b-c33f-45bd-ae22-3cc46f80c9d9
+langcode: ru
+status: true
+dependencies: {  }
+id: glavnoe-menu
+label: Меню
+description: ''
+locked: false

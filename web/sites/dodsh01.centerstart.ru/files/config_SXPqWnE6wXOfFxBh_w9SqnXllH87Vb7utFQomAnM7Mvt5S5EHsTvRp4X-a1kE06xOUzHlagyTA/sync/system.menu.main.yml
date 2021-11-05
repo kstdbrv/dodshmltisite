@@ -1,0 +1,10 @@
+uuid: 3e5245d1-81cf-4c5b-8b70-2c8edbcc12ad
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Q2Ra3jfoIVk0f3SjxJX61byRQFVBAbpzYDQOiY-kno8
+id: main
+label: 'Main navigation'
+description: 'Верхнее горизонтальное меню'
+locked: true

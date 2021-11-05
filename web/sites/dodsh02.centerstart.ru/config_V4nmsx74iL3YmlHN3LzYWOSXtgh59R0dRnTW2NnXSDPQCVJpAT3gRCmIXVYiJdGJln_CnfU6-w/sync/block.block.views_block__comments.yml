@@ -1,0 +1,29 @@
+uuid: 7cdd209e-7dd0-4932-adc8-1429731395cc
+langcode: ru
+status: true
+dependencies:
+  config:
+    - views.view.comments
+  module:
+    - system
+    - views
+  theme:
+    - start_theme
+id: views_block__comments
+theme: start_theme
+region: section_4
+weight: 0
+provider: null
+plugin: 'views_block:comments-block_1'
+settings:
+  id: 'views_block:comments-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

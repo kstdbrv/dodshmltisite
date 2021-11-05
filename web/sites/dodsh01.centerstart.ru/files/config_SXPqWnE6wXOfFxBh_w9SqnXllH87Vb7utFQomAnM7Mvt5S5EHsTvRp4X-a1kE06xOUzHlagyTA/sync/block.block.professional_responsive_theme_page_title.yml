@@ -1,0 +1,20 @@
+uuid: cc920407-bc1b-4e2b-b6cc-b532d2e44f99
+langcode: ru
+status: false
+dependencies:
+  theme:
+    - professional_responsive_theme
+_core:
+  default_config_hash: eOEr94APnHrDmGOc98F7HJOMeVZPmXVHzBSUNNvdPng
+id: professional_responsive_theme_page_title
+theme: professional_responsive_theme
+region: page_title
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

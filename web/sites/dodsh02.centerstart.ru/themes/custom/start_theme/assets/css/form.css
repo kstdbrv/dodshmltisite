@@ -1,0 +1,29 @@
+.form-item,
+.form-actions {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.form-required:after {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 0.3em;
+  content: "";
+  vertical-align: super;
+  /* Use a background image to prevent screen readers from announcing the text. */
+  background-image: url(../images/icons/system/required.svg);
+  background-repeat: no-repeat;
+  background-size: 6px 6px;
+}
+
+/* Inline error messages. */
+.form-item--error-message:before {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  content: "";
+  vertical-align: sub;
+  background: url(../images/icons/system/error.svg) no-repeat;
+  background-size: contain;
+}

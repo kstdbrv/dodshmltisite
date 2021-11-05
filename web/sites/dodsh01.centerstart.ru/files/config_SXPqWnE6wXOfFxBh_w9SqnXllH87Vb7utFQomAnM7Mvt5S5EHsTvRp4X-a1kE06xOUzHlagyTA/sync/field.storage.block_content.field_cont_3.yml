@@ -1,0 +1,19 @@
+uuid: 2dc6a405-fb6d-458f-9d0b-c43e2d28ccfd
+langcode: ru
+status: true
+dependencies:
+  module:
+    - block_content
+    - text
+id: block_content.field_cont_3
+field_name: field_cont_3
+entity_type: block_content
+type: text_with_summary
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

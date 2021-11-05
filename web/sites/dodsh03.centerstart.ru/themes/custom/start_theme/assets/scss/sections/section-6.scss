@@ -1,0 +1,26 @@
+@import "../base/vars";
+
+
+.section-6 {
+  padding-top: 35px;
+  padding-bottom: 1px;
+  background-color: $mainColor;
+  margin-bottom: 35px;
+  .block.block-views {
+    h2 {   // заголовок блока
+      font-size: 36px;
+      @extend %antelive-Bold;
+      margin-left: -10px;
+      margin-right: -10px;
+      color: #fff;
+      margin-bottom: 10px;
+      text-align: center;
+      @media (max-width:555px) {
+        font-size: 28px;
+      }
+    }
+  }
+  .staff__bottom {
+    color: #fff !important;
+  }
+}

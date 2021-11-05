@@ -1,0 +1,20 @@
+uuid: 2eef3578-bba0-41e9-99be-a40bf93f4265
+langcode: ru
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - mayo
+id: mayo_formapoiska_2
+theme: mayo
+region: footer
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Форма поиска'
+  provider: search
+  label_display: '0'
+visibility: {  }

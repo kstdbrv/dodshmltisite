@@ -1,0 +1,30 @@
+#block-views-block-useful-links h2 {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#block-views-block-useful-links h2 {
+  color: #fff;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+}
+
+/* https://active-vision.ru/blog/polosa-prokrutki-css/ */
+.useful-links__container::-webkit-scrollbar {
+  /* height: 10px; */
+  background-color: #569797;
+}
+
+.useful-links__container::-webkit-scrollbar-thumb {
+  /* border-radius: 8px; */
+  background-color: #fff;
+}
+
+.useful-links__container::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  /* border-radius: 8px; */
+  background-color: #569797;
+}

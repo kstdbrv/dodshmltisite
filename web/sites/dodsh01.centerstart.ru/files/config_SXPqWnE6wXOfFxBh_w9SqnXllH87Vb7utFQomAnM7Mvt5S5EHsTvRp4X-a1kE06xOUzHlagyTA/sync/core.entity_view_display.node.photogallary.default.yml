@@ -1,0 +1,54 @@
+uuid: 95eb1acf-901a-4b1d-91ee-303344894edf
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.photogallary.body
+    - field.field.node.photogallary.field_kategoriya_materiala
+    - field.field.node.photogallary.field_photo
+    - image.style.262_x_262
+    - node.type.photogallary
+  module:
+    - colorbox
+    - ds
+    - text
+    - user
+id: node.photogallary.default
+targetEntityType: node
+bundle: photogallary
+mode: default
+content:
+  body:
+    type: text_default
+    weight: 1
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_kategoriya_materiala:
+    type: entity_reference_label
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_photo:
+    type: colorbox
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      colorbox_node_style: 262_x_262
+      colorbox_node_style_first: ''
+      colorbox_image_style: ''
+      colorbox_gallery: post
+      colorbox_gallery_custom: ''
+      colorbox_caption: auto
+      colorbox_caption_custom: ''
+    third_party_settings:
+      ds:
+        ds_limit: ''
+hidden:
+  langcode: true
+  links: true

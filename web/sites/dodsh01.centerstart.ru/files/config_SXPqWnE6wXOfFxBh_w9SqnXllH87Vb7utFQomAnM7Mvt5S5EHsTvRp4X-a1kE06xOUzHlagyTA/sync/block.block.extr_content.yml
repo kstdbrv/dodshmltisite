@@ -1,0 +1,22 @@
+uuid: e6ee7a04-c89a-42c5-bdbd-9ccfa89c5647
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - extr
+_core:
+  default_config_hash: gJW7q4kEiSp_Zb6bRcQj-9gciwFVKGQCoKI5WcRic_Q
+id: extr_content
+theme: extr
+region: content
+weight: 1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

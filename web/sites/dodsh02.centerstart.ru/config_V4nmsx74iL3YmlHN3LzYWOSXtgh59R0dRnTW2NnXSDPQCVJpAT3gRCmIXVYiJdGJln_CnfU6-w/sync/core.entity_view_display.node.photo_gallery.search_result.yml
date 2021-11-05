@@ -1,0 +1,28 @@
+uuid: f5318128-2d66-4088-815c-bdd17b3eaf9c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.photo_gallery.field_photo_image
+    - field.field.node.photo_gallery.field_photo_text
+    - node.type.photo_gallery
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.photo_gallery.search_result
+targetEntityType: node
+bundle: photo_gallery
+mode: search_result
+content: {  }
+hidden:
+  field_photo_image: true
+  field_photo_text: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  social_links: true

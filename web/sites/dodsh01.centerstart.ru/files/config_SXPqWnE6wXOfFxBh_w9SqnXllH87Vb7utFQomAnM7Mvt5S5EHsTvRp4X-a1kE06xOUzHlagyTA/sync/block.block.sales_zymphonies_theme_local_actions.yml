@@ -1,0 +1,20 @@
+uuid: cc68164d-077a-4f57-a231-056c865e85b9
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - sales_zymphonies_theme
+_core:
+  default_config_hash: '-8Z7FRWPgE6I00Yk0u7Mky9U3EzM8dvPwcwC3tCbc7k'
+id: sales_zymphonies_theme_local_actions
+theme: sales_zymphonies_theme
+region: auto_hidden_block
+weight: 20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

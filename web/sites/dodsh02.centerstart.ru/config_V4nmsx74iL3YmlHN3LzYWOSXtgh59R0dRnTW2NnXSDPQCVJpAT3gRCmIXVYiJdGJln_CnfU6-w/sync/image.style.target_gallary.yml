@@ -1,0 +1,15 @@
+uuid: 543b1b93-0a8c-46cc-8bf8-9586733b1927
+langcode: ru
+status: true
+dependencies: {  }
+name: target_gallary
+label: 'Изображение target-gallary (260*175)'
+effects:
+  edbdcdcb-6c2c-45d7-93a1-b27d99a0a129:
+    uuid: edbdcdcb-6c2c-45d7-93a1-b27d99a0a129
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 260
+      height: 175
+      anchor: center-center

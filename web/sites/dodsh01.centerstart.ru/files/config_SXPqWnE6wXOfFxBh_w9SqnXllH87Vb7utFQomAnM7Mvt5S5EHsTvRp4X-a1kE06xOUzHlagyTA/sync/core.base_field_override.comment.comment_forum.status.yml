@@ -1,0 +1,22 @@
+uuid: 245ad601-7416-45ea-835c-22b7799720d1
+langcode: ru
+status: true
+dependencies:
+  config:
+    - comment.type.comment_forum
+id: comment.comment_forum.status
+field_name: status
+entity_type: comment
+bundle: comment_forum
+label: Опубликовано
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: 'Drupal\comment\Entity\Comment::getDefaultStatus'
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

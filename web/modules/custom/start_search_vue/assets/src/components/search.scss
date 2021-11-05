@@ -9,7 +9,7 @@
     height: 32px;
   }
   &__input {
-    width: 33%;
+    width: 25%;
     padding: 5px 5px 5px 55px;
     outline: none;
     border: none;
@@ -27,9 +27,13 @@
     @media (max-width: 795px) {
       width: 45%;
     }
+    &::-ms-clear {
+      display: none;
+   }
   }
   
   button {
+    cursor: pointer;
     height: inherit;
     width: 45px;
     position: absolute;

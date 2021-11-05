@@ -1,0 +1,440 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Antelive-Bold';
+  src: url("../../assets/fonts/antelive-Bold.woff2") format("woff2"), url("../../assets/fonts/antelive-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.form-item,
+.form-actions {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.form-required:after {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 0.3em;
+  content: "";
+  vertical-align: super;
+  /* Use a background image to prevent screen readers from announcing the text. */
+  background-image: url(../images/icons/system/required.svg);
+  background-repeat: no-repeat;
+  background-size: 6px 6px;
+}
+
+/* Inline error messages. */
+.form-item--error-message:before {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  content: "";
+  vertical-align: sub;
+  background: url(../images/icons/system/error.svg) no-repeat;
+  background-size: contain;
+}
+
+/**
+ * @file
+ * Styles for system messages.
+ */
+.messages {
+  padding: 15px 20px 15px 35px;
+  /* LTR */
+  word-wrap: break-word;
+  border: 1px solid;
+  border-width: 1px 1px 1px 0;
+  /* LTR */
+  border-radius: 2px;
+  background: no-repeat 10px 17px;
+  /* LTR */
+  overflow-wrap: break-word;
+}
+
+[dir="rtl"] .messages {
+  padding-right: 35px;
+  padding-left: 20px;
+  text-align: right;
+  border-width: 1px 0 1px 1px;
+  background-position: right 10px top 17px;
+}
+
+.messages + .messages {
+  margin-top: 1.538em;
+}
+
+.messages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.messages__item + .messages__item {
+  margin-top: 0.769em;
+}
+
+/* See .color-success in Seven's colors.css */
+.messages--status {
+  color: #325e1c;
+  border-color: #c9e1bd #c9e1bd #c9e1bd transparent;
+  /* LTR */
+  background-color: #f3faef;
+  background-image: url(../images/icons/system/check.svg);
+  box-shadow: -8px 0 0 #77b259;
+  /* LTR */
+}
+
+[dir="rtl"] .messages--status {
+  margin-left: 0;
+  border-color: #c9e1bd transparent #c9e1bd #c9e1bd;
+  box-shadow: 8px 0 0 #77b259;
+}
+
+/* See .color-warning in Seven's colors.css */
+.messages--warning {
+  color: #734c00;
+  border-color: #f4daa6 #f4daa6 #f4daa6 transparent;
+  /* LTR */
+  background-color: #fdf8ed;
+  background-image: url(../images/icons/system/warning.svg);
+  box-shadow: -8px 0 0 #e09600;
+  /* LTR */
+}
+
+[dir="rtl"] .messages--warning {
+  border-color: #f4daa6 transparent #f4daa6 #f4daa6;
+  box-shadow: 8px 0 0 #e09600;
+}
+
+/* See .color-error in Seven's colors.css */
+.messages--error {
+  color: #a51b00;
+  border-color: #f9c9bf #f9c9bf #f9c9bf transparent;
+  /* LTR */
+  background-color: #fcf4f2;
+  background-image: url(../images/icons/system/error.svg);
+  box-shadow: -8px 0 0 #e62600;
+  /* LTR */
+}
+
+[dir="rtl"] .messages--error {
+  border-color: #f9c9bf transparent #f9c9bf #f9c9bf;
+  box-shadow: 8px 0 0 #e62600;
+}
+
+.messages--error p.error {
+  color: #a51b00;
+}
+
+/* Global */
+html {
+  box-sizing: border-box;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 17px;
+  color: #242424;
+  line-height: 1.15;
+  min-width: 320px;
+  overflow-x: hidden;
+  position: relative;
+}
+
+@media (max-width: 555px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-size: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #016a94;
+  display: inline-block;
+  transition: all .2s;
+}
+
+a:hover {
+  color: #242424;
+}
+
+a:active {
+  color: #016a94;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1540px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+@media (max-width: 910px) {
+  .container-padding {
+    padding: 0 10px;
+  }
+}
+
+.visually-hidden {
+  display: none;
+}
+
+body.lock{
+  overflow: hidden;
+}
+.system .messages {
+  margin-bottom: 20px;
+}
+
+.link-more {
+  display: table;
+  margin: 0 auto;
+}
+
+.link-more a {
+  text-transform: lowercase;
+  /* text-transform: uppercase; */
+  letter-spacing: .12px;
+  height: 50px;
+  /* padding: 15px 25px 17px; */
+  padding: 13px 25px 17px;
+  text-decoration: none !important;
+  text-align: center;
+  background-color: #d60202;
+  transition: all .2s;
+  color: #fff !important;
+  box-shadow: 1px 3px 4px rgba(59, 59, 59, 0.45);
+}
+
+.link-more a:first-letter {
+  text-transform: capitalize;
+}
+
+.link-more a:hover {
+  box-shadow: none;
+}
+
+.link-more a:active {
+  box-shadow: inset 0px 5px 4px rgba(59, 59, 59, 0.3);
+}
+
+.page-title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #016a94;
+  font-size: 23px;
+}
+
+@media (max-width: 555px) {
+  .page-title {
+    font-size: 19px;
+  }
+}
+
+.file {
+  margin-bottom: 15px;
+}
+
+.file a {
+  color: #242424;
+}
+
+.file a:hover {
+  color: #016a94;
+}
+
+#block-start-theme-content .view-empty {
+  display: none;
+}
+
+.views-field-edit-node a {
+  display: none;
+  font-size: 15px;
+  position: absolute;
+  z-index: 5;
+  bottom: -20px;
+  right: 0px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  padding: 7px 15px;
+  border-radius: 25px;
+  background-color: #d60202;
+  color: #fff;
+  transition: all .2s;
+  box-shadow: 1px 3px 4px rgba(59, 59, 59, 0.45);
+}
+
+@media (max-width: 425px) {
+  .views-field-edit-node a {
+    font-size: 12px;
+    bottom: 5px;
+  }
+}
+
+.views-field-edit-node a:hover {
+  box-shadow: none;
+}
+
+.views-field-edit-node a:active {
+  box-shadow: inset 0px 5px 4px rgba(59, 59, 59, 0.3);
+}
+
+.adminimal-admin-toolbar .views-field-edit-node a {
+  display: block;
+}
+
+.slick-slider img, .slick img {
+  max-width: 100%;
+  height: auto;
+}
+
+.slick-slider .slick-arrow.slick-prev, .slick-slider .slick-arrow.slick-next, .slick .slick-arrow.slick-prev, .slick .slick-arrow.slick-next {
+  z-index: 5;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.slick-slider .slick-arrow.slick-prev::before, .slick .slick-arrow.slick-prev::before {
+  display: block;
+  content: ' ';
+}
+
+.slick-slider .slick-arrow.slick-next::before, .slick .slick-arrow.slick-next::before {
+  display: block;
+  content: ' ';
+}
+
+.slick-slider .slick-dots li, .slick .slick-dots li {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.slick-slider .slick-dots, .slick .slick-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.slick-slider .slick-dots button, .slick .slick-dots button {
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #016a94;
+  border-radius: 50%;
+  background-color: #fff;
+  outline: none;
+}
+
+@media (max-width: 640px) {
+  .slick-slider .slick-dots button, .slick .slick-dots button {
+    width: 7px;
+    height: 7px;
+  }
+}
+
+.slick-slider .slick-active button, .slick .slick-active button {
+  background-color: #d60202;
+}
+
+.button-up {
+  position: relative;
+  right: 5px;
+  position: fixed;
+  bottom: 50px;
+  width: 60px;
+  height: 50px;
+  color: #016a94;
+  background: url("../images/icons/arrow.svg") no-repeat;
+  background-size: 100%;
+  z-index: 100;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  cursor: pointer;
+}
+
+@media (max-width: 425px) {
+  .button-up {
+    right: 0;
+    width: 50px;
+    height: 40px;
+  }
+}
+
+.button-up::before {
+  position: absolute;
+  left: 19px;
+  top: 13px;
+  content: 'ВВЕРХ';
+  font-size: 14px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+@media (max-width: 425px) {
+  .button-up::before {
+    left: 15px;
+    top: 7px;
+    font-size: 12px;
+  }
+}
+
+.fancybox-slide--html {
+  padding-top: 10%;
+}
+
+.hide {
+  display: none;
+}
+
+  .cookie-popup__close {
+      margin-left: 10px;
+  }
+
+
+  .bvi.bvi-link {
+    margin-bottom: 10px;
+    margin-left: 50%;
+  }

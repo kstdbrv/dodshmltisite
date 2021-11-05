@@ -1,0 +1,36 @@
+uuid: 9ccbc2ed-1e3e-4d63-b5f2-17fdb5683e90
+langcode: ru
+status: false
+dependencies:
+  enforced:
+    module:
+      - slick
+_core:
+  default_config_hash: R44sHtkxxZrBiHA2kQiOrgfOwXDce6s8fpQCTUoDhf0
+id: slider_banners_custom
+name: slider_banners_custom
+label: 'Слайдер баннеров правых'
+weight: -7
+group: ''
+skin: default
+breakpoints: 1
+optimized: true
+options:
+  options__active_tab: edit-options-responsives
+  settings:
+    adaptiveHeight: true
+    autoplay: true
+    autoplaySpeed: 0
+    arrows: false
+    lazyLoad: ondemand
+    slidesToShow: 1
+    speed: 20000
+    swipeToSlide: true
+    cssEase: linear
+    vertical: true
+  responsives:
+    responsive:
+      -
+        breakpoint: 1045
+        unslick: true
+        settings: {  }

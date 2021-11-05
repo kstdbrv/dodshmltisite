@@ -1,0 +1,22 @@
+uuid: 77998370-9f11-46cd-aa77-ed0ec0ec4974
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupal8_custom_theme
+_core:
+  default_config_hash: oeVuISAGvPACU6aw_v8d93367e6g_AQplrspqo-mkcQ
+id: drupal8_custom_theme_breadcrumbs
+theme: drupal8_custom_theme
+region: breadcrumb
+weight: -100
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,15 @@
+uuid: 9d7340a0-c6e9-4499-a1ec-2cb821679afa
+langcode: ru
+status: true
+dependencies: {  }
+name: staff
+label: 'Сотрудники (220*220)'
+effects:
+  29ec419e-3f12-42fa-b0da-10c3c08ea20a:
+    uuid: 29ec419e-3f12-42fa-b0da-10c3c08ea20a
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 210
+      height: 210
+      anchor: center-center

@@ -1,0 +1,17 @@
+uuid: 574c3dcd-71c4-43da-93ac-f58a8fb484a4
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Баннер в правую карусель'
+type: banners_custom
+description: 'Картинка в правую карусель баннеров'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

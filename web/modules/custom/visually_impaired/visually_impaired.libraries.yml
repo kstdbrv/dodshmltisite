@@ -9,7 +9,7 @@ visually_impaired:
     js/responsivevoice.min.js: {}
     js/js.cookie.min.js: {}
     js/bvi-init.js: {}
-    js/bvi.min.js: {}
+    js/bvi.js: {}
 
 
   dependencies:

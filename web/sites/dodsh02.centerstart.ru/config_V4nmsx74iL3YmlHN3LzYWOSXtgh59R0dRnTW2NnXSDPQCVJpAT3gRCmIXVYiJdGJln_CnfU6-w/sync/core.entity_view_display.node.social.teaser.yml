@@ -1,0 +1,37 @@
+uuid: e9dab088-8ee3-4c38-9b4a-3fe27f6a1e9d
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.social.field_facebook
+    - field.field.node.social.field_instagram
+    - field.field.node.social.field_ok
+    - field.field.node.social.field_social_link
+    - field.field.node.social.field_utube
+    - node.type.social
+  module:
+    - user
+id: node.social.teaser
+targetEntityType: node
+bundle: social
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_facebook: true
+  field_instagram: true
+  field_ok: true
+  field_social_link: true
+  field_utube: true
+  langcode: true
+  social_links: true

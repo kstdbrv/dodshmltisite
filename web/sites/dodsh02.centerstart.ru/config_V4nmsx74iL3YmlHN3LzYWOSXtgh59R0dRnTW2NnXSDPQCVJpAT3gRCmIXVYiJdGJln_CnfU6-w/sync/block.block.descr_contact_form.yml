@@ -1,0 +1,30 @@
+uuid: fb56dabb-b6f3-4a35-91c2-1ed2c3a1abdf
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:279a5575-2e18-4041-b728-b17385b8c46d'
+  module:
+    - block_content
+    - system
+  theme:
+    - start_theme
+id: descr_contact_form
+theme: start_theme
+region: section_1
+weight: -17
+provider: null
+plugin: 'block_content:279a5575-2e18-4041-b728-b17385b8c46d'
+settings:
+  id: 'block_content:279a5575-2e18-4041-b728-b17385b8c46d'
+  label: 'Описание к контактной форме (Написать нам письмо) НЕ УДАЛЯТЬ! '
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /contact
+    negate: false

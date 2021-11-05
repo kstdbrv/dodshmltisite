@@ -1,0 +1,27 @@
+uuid: bf9ba69a-9d90-4a7f-b85a-72f062826ab6
+langcode: ru
+status: false
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - drupal8_custom_theme
+_core:
+  default_config_hash: NFc09vR7sWBNIqnP7WxhYwmUVAu2r9PgPv5UDyU6mY8
+id: drupal8_custom_theme_main_menu
+theme: drupal8_custom_theme
+region: ''
+weight: 10
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+  expand_all_items: false
+visibility: {  }

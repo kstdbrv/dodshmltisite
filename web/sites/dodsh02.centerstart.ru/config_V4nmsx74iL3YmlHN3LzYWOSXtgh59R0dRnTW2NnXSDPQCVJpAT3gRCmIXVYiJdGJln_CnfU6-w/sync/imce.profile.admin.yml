@@ -1,0 +1,23 @@
+uuid: 7ab51f5c-52f6-4e1e-aa8b-a08a01cd4358
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 3NOiSBMBGHe1kVq0fScDAOZPOvZKcoLIezF5_ORAWsw
+id: admin
+label: 'Профиль администратора'
+description: 'Конфигурация для администраторов сайта'
+conf:
+  extensions: 'doc docx xls xlsx txt pdf ppt pptx pps jpg jpeg gif png mp3 avi mp4 flv swf svg sig jfif'
+  maxsize: !!float 15
+  quota: !!float 1024
+  maxwidth: 2000
+  maxheight: 2000
+  replace: 0
+  thumbnail_style: ''
+  thumbnail_grid_style: false
+  folders:
+    -
+      path: .
+      permissions:
+        all: true

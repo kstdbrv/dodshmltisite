@@ -1,0 +1,24 @@
+uuid: 5a2f5587-a7c8-4970-a05c-ed98c8155b39
+langcode: ru
+status: true
+dependencies:
+  config:
+    - views.view.head_info
+  module:
+    - views
+  theme:
+    - start_theme
+id: views_block__head_info_block_4
+theme: start_theme
+region: footer_bottom_left
+weight: 0
+provider: null
+plugin: 'views_block:head_info-block_4'
+settings:
+  id: 'views_block:head_info-block_4'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

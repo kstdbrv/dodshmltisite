@@ -1,0 +1,28 @@
+// COLORS
+$mainFontColor           : #1f1d21;
+$mainColor               : #569797;
+$secondColor             : #8ccaca;
+$borderColor             : #a7a6a6;
+$mainFontSize            : 19px;
+$mainLineHeight          : 1.15;
+$distance                : 15px;
+$distanceBlock           : 30px;
+
+//FONTS
+%calibri-light { //mainFont
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+%calibri-medium { 
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+%calibri-bold { 
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}

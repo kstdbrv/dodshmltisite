@@ -1,0 +1,19 @@
+
+{%
+  set classes = [
+    'news-full',
+    'node',
+    'node-' ~ node.bundle|clean_class,
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+  ]
+%}
+
+<article{{ attributes.addClass(classes) }}>
+  {% set field_title = content.field_title|render %}
+  {% if field_title|length %}
+  <div class="news-full__tags">
+    {{ content.field_title }}
+  </div>
+  {% endif %}
+    {{ content|without('field_title') }}
+</article>

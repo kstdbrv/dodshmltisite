@@ -1,0 +1,18 @@
+uuid: 3ae5ef24-d80c-4e93-8de7-358a9dbd00bf
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - fusionblue
+id: fusionblue_pagetitle
+theme: fusionblue
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

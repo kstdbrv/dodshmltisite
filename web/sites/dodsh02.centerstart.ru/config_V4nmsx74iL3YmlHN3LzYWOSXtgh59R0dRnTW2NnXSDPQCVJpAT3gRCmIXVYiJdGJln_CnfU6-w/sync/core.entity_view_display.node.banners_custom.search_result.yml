@@ -1,0 +1,28 @@
+uuid: 908d8f31-7eb2-4ddf-84df-f8fb31f912aa
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.banners_custom.field_banner
+    - field.field.node.banners_custom.field_link_banners
+    - node.type.banners_custom
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.banners_custom.search_result
+targetEntityType: node
+bundle: banners_custom
+mode: search_result
+content: {  }
+hidden:
+  field_banner: true
+  field_link_banners: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  social_links: true

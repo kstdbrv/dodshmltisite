@@ -1,0 +1,76 @@
+global:
+  css:
+    base:
+      assets/css/normalize.css: {}
+      assets/css/base.css: {}
+    layout:
+      //fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap: { type: external }
+      assets/css/tabs.css: {}
+      assets/css/login-popup.css: {}
+      assets/css/breadcrumb.css: {}
+    theme:
+      assets/css/header.css: {}
+      assets/css/footer.css: {}
+      assets/css/slider-banner.css: {}
+      assets/css/section-1.css: {}
+      assets/css/news.css: {}
+      assets/css/social-links.css: {}
+      assets/css/table.css: {}
+      assets/css/targets.css: {}
+      assets/css/section-2.css: {}
+      assets/css/section-3.css: {}
+      assets/css/photo-gallery.css: {}
+      assets/css/section-4.css: {}
+      assets/css/comments.css: {}
+      assets/css/section-5.css: {}
+      assets/css/remote.css: {}
+      assets/css/section-6.css: {}
+      assets/css/staff.css: {}
+      assets/css/section-7.css: {}
+      assets/css/achievements.css: {}
+      assets/css/section-8.css: {}
+      assets/css/useful-links.css: {}
+      assets/css/search.css: {}
+      assets/css/sitemap.css: {}
+      assets/css/contact.css: {}
+      
+  js:
+    assets/js/script.js: {}
+    assets/js/menu-header.js: {}
+    assets/js/menu-main.js: {}
+    assets/js/slider-bunners.js: {}
+    assets/js/comments-slider.js: {}
+    assets/js/footer.js: {}
+
+  dependencies:
+    - start_theme/fancybox
+    - start_theme/slick
+    - core/jquery
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+  #  - core/jquery.once
+  #  - core/once c 9.2.0
+      
+fancybox:
+  js:
+     includes/js/bin/jquery.fancybox.min.js: { minified: true }
+  css:
+    base:
+      includes/css/jquery.fancybox.css: {}   
+
+slick:
+  remote: http://kenwheeler.github.io/slick/
+  version: 1.x
+  license:
+    name: MIT
+    url: https://github.com/kenwheeler/slick/blob/master/LICENSE
+    gpl-compatible: true
+  js:
+    /libraries/slick/slick/slick.min.js: { weight: -3, minified: true }
+  css:
+    base:
+      /libraries/slick/slick/slick.css: {}
+  dependencies:
+    - core/jquery
+     

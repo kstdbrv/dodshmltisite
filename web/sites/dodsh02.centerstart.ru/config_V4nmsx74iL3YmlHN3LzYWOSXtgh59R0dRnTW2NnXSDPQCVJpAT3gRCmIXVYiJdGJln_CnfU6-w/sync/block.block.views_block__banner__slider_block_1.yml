@@ -1,0 +1,29 @@
+uuid: 5f2bd4cd-4b1a-4579-9b32-b10c3e6dde16
+langcode: ru
+status: true
+dependencies:
+  config:
+    - views.view.banner__slider
+  module:
+    - system
+    - views
+  theme:
+    - start_theme
+id: views_block__banner__slider_block_1
+theme: start_theme
+region: slider
+weight: 0
+provider: null
+plugin: 'views_block:banner__slider-block_1'
+settings:
+  id: 'views_block:banner__slider-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

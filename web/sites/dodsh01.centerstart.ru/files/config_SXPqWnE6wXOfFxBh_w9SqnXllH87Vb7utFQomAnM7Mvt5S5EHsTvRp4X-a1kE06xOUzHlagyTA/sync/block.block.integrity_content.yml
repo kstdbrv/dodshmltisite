@@ -1,0 +1,22 @@
+uuid: 0420fe72-1c9e-4c1b-9b55-3e4f470ae650
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - integrity
+_core:
+  default_config_hash: SZZYSZ9z-m5uU14vuhrsJpvTjropuv_Dgiexwe3aX9A
+id: integrity_content
+theme: integrity
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

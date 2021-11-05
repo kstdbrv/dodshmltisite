@@ -1,0 +1,18 @@
+uuid: ba1927b2-e901-406b-b398-605c50b8f155
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.photogallary
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.photogallary
+target_entity_type_id: node
+target_bundle: photogallary
+default_langcode: site_default
+language_alterable: false

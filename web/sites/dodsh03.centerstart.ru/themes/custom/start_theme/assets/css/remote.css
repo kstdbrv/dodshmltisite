@@ -1,0 +1,137 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Antelive-Bold';
+  src: url("../../assets/fonts/antelive-Bold.woff2") format("woff2"), url("../../assets/fonts/antelive-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+#block-views-block-remote-video-block-1 {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+#block-views-block-remote-video-block-1 .view-content {
+  position: relative;
+}
+
+#block-views-block-remote-video-block-1 .view-content::before {
+  position: absolute;
+  content: '';
+  top: -10px;
+  left: -10px;
+  width: 720px;
+  height: 405px;
+  background-color: #016a94;
+}
+
+@media (max-width: 665px) {
+  #block-views-block-remote-video-block-1 .view-content::before {
+    width: 0;
+  }
+}
+
+#block-views-block-remote-video-block-1 .view-content::after {
+  z-index: -1;
+  position: absolute;
+  content: '';
+  top: 10px;
+  right: -10px;
+  width: 720px;
+  height: 405px;
+  background-color: #d60202;
+}
+
+@media (max-width: 665px) {
+  #block-views-block-remote-video-block-1 .view-content::after {
+    width: 0;
+  }
+}
+
+#block-views-block-remote-video-block-1 .field__item {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  /* Если соотношения 4:3 :75%. */
+  /* padding-top:30px; */
+  height: 0;
+}
+
+#block-views-block-remote-video-block-1 .field__item iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+@media (max-width: 665px) {
+  #block-views-block-remote-video-block-1 .field__item {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.remote-full .view-content > div {
+  display: -ms-grid;
+  display: grid;
+  justify-content: center;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: (365px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 365px);
+  grid-gap: clamp(0.5vw, 1vw, 2vw);
+}
+
+@media (max-width: 545px) {
+  .remote-full .view-content > div {
+    grid-row-gap: 10px;
+    -ms-grid-columns: (310px)[auto-fill];
+        grid-template-columns: repeat(auto-fill, 310px);
+  }
+}
+
+.remote-full .field__item {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  /* Если соотношения 4:3 :75%. */
+  /* padding-top:30px; */
+  height: 0;
+}
+
+.remote-full .field__item iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 15px;
+}
+
+@media (max-width: 665px) {
+  .remote-full .field__item iframe {
+    border-radius: 0px;
+  }
+}
+
+@media (max-width: 665px) {
+  .remote-full .field__item {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.remote-full .views-field-title {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.remote-full .field__item {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+.node-remote-gallery {
+  margin-top: 15px;
+}

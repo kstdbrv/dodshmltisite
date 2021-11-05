@@ -1,0 +1,10 @@
+.section-8 {
+  background-color: #8ccaca;
+  /* padding-top: $distanceBlock; */
+  /* padding-bottom: $distance; */
+  margin-top: 45px;
+  padding-top: 25px;
+  padding-bottom: 85px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 79%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 79%);
+}

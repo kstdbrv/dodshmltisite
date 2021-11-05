@@ -1,0 +1,18 @@
+uuid: 505a0b72-9165-477c-a4d6-5a456be3fe97
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.useful_links
+id: node.useful_links.title
+field_name: title
+entity_type: node
+bundle: useful_links
+label: Заголовок
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
